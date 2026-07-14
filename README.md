@@ -15,7 +15,7 @@ Provide professional portfolio.
 Technology
 
 WordPress
-Divi (if retained)
+Kadence
 GitHub
 Future AI integration
 
