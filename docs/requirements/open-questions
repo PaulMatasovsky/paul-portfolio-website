@@ -1,0 +1,44 @@
+Open Questions
+
+This document tracks unresolved business and system questions discovered during domain analysis.
+
+Questions should remain here until they are answered through business analysis or an explicit project decision.
+
+Inventory
+
+ID	Question	Priority	Status
+Q-001	Can on-hand inventory legitimately be negative?	High	Open
+Q-002	Can the minimum stock level be zero?	High	Open
+Q-003	Is a description required for every part?	Medium	Open
+Q-004	Is the product line required for every part?	Medium	Open
+Q-005	What constitutes a duplicate inventory record?	High	Open
+Q-006	What should happen when an inventory record contains invalid data?	High	Open
+Q-007	Should malformed part numbers be automatically corrected or rejected?	High	Open
+Q-008	What should happen when inventory falls below the minimum stock level?	High	Open
+
+Suppliers
+
+ID	Question	Priority	Status
+Q-009	Can a part have more than one supplier?	Medium	Open
+Q-010	Can an inactive supplier remain associated with an active part?	Medium	Open
+
+Data Processing
+
+ID	Question	Priority	Status
+Q-011	Which fields are mandatory for ETL processing?	High	Open
+Q-012	Should invalid records be rejected, quarantined, or flagged?	High	Open
+Q-013	Should the ETL stop processing when invalid records are encountered, or continue processing valid records?	High	Open
+Q-014	How should duplicate source records be handled?	High	Open
+
+Database
+
+ID	Question	Priority	Status
+Q-015	What is the authoritative source for each domain entity?	Medium	Open
+Q-016	Which fields should be stored versus calculated?	Medium	Open
+Q-017	What fields should constitute the unique identity of an inventory record?	High	Open
+
+Notes
+
+Open questions are intentionally not treated as requirements until they have been resolved.
+
+When a question is answered, the resolution should be documented as a project decision and, when appropriate, converted into a formal business rule.
