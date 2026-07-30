@@ -1,0 +1,29 @@
+Project Journal
+
+2026-07-29 — Project Reframing and Domain Discovery
+
+Background
+
+This project began as an experiment in learning about artificial intelligence. I wanted to understand not only what AI could do, but how I could work alongside it effectively.
+
+That experiment soon became practical.
+
+I identified a recurring need at work: inventory data arrived in inconsistent spreadsheet formats and required repetitive cleanup before it could be used. Rather than simply asking AI to solve the problem, I began working with it to design and refine an ETL workflow that could automate the process.
+
+The project gradually became more than an exercise in AI. It became an exploration of how human judgment and AI assistance can work together to solve a real problem.
+
+Project Reframing
+
+For the portfolio, the original workflow is being transformed into a fictional business system for Northstar Industrial Supply, a multi-warehouse industrial-parts distributor.
+
+The goal is no longer simply to demonstrate that an ETL process works. The project is being developed as though it were a real client engagement, beginning with the business domain and moving deliberately toward requirements, data modeling, ETL, database design, and QA.
+
+Current Direction
+
+The project will eventually move through:
+
+Business Domain → Requirements → Data → ETL → SQLite → QA
+
+The emphasis is on understanding the problem before building the solution.
+
+The spreadsheet is only the beginning. The larger goal is to demonstrate how I approach ambiguity, make decisions, use AI as a collaborative tool, and turn a practical problem into a thoughtful, testable system.
