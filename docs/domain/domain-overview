@@ -1,0 +1,131 @@
+Domain Overview
+
+Business
+
+Northstar Industrial Supply
+
+Northstar Industrial Supply is a fictional B2B distributor of industrial maintenance parts.
+
+The company maintains inventory across multiple distribution warehouses and supplies parts to manufacturing customers.
+
+Business Problem
+
+Northstar receives inventory information from warehouse operations in spreadsheet form.
+
+Raw inventory data may contain:
+
+* Inconsistent capitalization
+* Inconsistent part-number formatting
+* Missing values
+* Duplicate records
+* Invalid quantities
+* Unexpected values
+* Formatting inconsistencies
+
+Manual correction of this information creates unnecessary work and introduces the possibility of data errors.
+
+The ETL system is intended to standardize, validate, and transform this information into reliable inventory data.
+
+Core Business Goal
+
+The system should provide accurate, consistent, and traceable inventory information for downstream inventory management, replenishment, and reporting activities.
+
+Primary Stakeholders
+
+Warehouse Operations
+
+Maintains information about physical inventory and warehouse activity.
+
+Inventory Control
+
+Responsible for ensuring inventory records accurately represent available stock.
+
+Purchasing
+
+Uses inventory information to identify parts that may require replenishment.
+
+Operations Management
+
+Uses inventory information for operational reporting and decision-making.
+
+IT / Data Operations
+
+Maintains the ETL and supporting data systems.
+
+QA
+
+Evaluates whether the system behaves according to defined business requirements and whether data is processed without unacceptable errors.
+
+Core Domain Concepts
+
+The current domain model includes:
+
+* Warehouse
+* Part
+* Inventory Record
+* Part Number
+* Product Line
+* Category
+* Supplier
+* On-Hand Quantity
+* Minimum Stock Level
+* Unit Cost
+* Raw Inventory Data
+* Validated Inventory Data
+* Output Inventory Data
+
+Current Data Relationships
+
+The current working model assumes that:
+
+* A warehouse contains inventory.
+* A part may exist in multiple warehouses.
+* An inventory record represents the quantity of a particular part at a particular warehouse.
+* Parts may be associated with suppliers.
+* Parts belong to a product line and category.
+
+These relationships are subject to further domain analysis and may change as open questions are resolved.
+
+Current Data Sources
+
+The initial project uses Google Sheets as the working environment for raw data, transformed data, reference data, and QA data.
+
+The eventual persistence layer is planned to be SQLite.
+
+Current Scope
+
+The initial project focuses on inventory data transformation and validation for a multi-warehouse industrial-parts distributor.
+
+The project currently focuses on:
+
+* Warehouses
+* Parts
+* Inventory
+* Suppliers
+* Categories
+* Product Lines
+* Data transformation
+* Data validation
+* QA testing
+* SQLite persistence
+
+Current Out-of-Scope Areas
+
+The following are not currently part of the project’s core scope:
+
+* Customer management
+* Sales orders
+* Shipping management
+* Employee management
+* Full purchasing workflows
+* Customer relationship management
+
+These may be considered future extensions but are intentionally excluded from the initial project.
+
+Domain-Driven Design Principle
+
+The database schema and software implementation should follow the business domain rather than forcing the business domain to conform to the existing spreadsheet structure.
+
+The spreadsheet represents a source of information.
+
+It does not necessarily represent the final domain model or database schema.
