@@ -26,4 +26,37 @@ Business Domain → Requirements → Data → ETL → SQLite → QA
 
 The emphasis is on understanding the problem before building the solution.
 
-The spreadsheet is only the beginning. The larger goal is to demonstrate how I approach ambiguity, make decisions, use AI as a collaborative tool, and turn a practical problem into a thoughtful, testable system.
+The spreadsheet is only the beginning. The larger goal is to demonstrate how I approach ambiguity, make decisions, use AI as a collaborative tool, and turn a practical problem into a thoughtful, testable Project Journal
+
+---
+
+2026-08-03 — From Building a Website to Building a Portfolio
+
+Over the past week, this project has continued to evolve beyond simply creating a personal website.
+
+Originally, the goal was to build a place to host my resume and showcase a few projects. As I continued learning about Domain-Driven Design, I realized the website itself should reflect how I approach software development. Instead of thinking in terms of pages and features, I began thinking about the people using the site and the problems they are trying to solve.
+
+That change in perspective influenced nearly every design decision.
+
+Rather than adding more content, I focused on simplifying the experience. Every page, project, and navigation element is intended to have a clear purpose while avoiding unnecessary complexity. This continues to reinforce the Shibumi philosophy that guides the project.
+
+The portfolio itself has also become one of the featured projects. Instead of simply displaying finished work, the site documents the reasoning behind design decisions, lessons learned, and the development process. The goal is to demonstrate not only what I built, but how I think.
+
+Several projects have become more clearly defined:
+
+* Personal Portfolio – A professional website documenting projects, technical writing, and ongoing learning.
+* QA Toolkit – A growing collection of QA documentation, testing practices, and reusable processes that will be applied to this and future projects.
+* Inventory ETL Workflow – An automated spreadsheet workflow that is gradually evolving into a more complete demonstration with a database backend and interactive interface.
+
+Another realization during this period is that documentation has fallen behind development. While significant progress has been made, many design decisions exist only in conversations or in my own notes rather than in the repositories themselves.
+
+Going forward, I want documentation to become part of the normal development process instead of something completed afterward. That includes keeping project journals current, updating READMEs as the projects evolve, recording architectural decisions when appropriate, and ensuring each repository tells the story of how the project developed over time.
+
+Current Focus
+
+* Finish the portfolio website.
+* Complete documentation for each featured project.
+* Continue developing the QA Toolkit alongside the portfolio.
+* Begin the next phase of the Inventory ETL demonstration after the website is complete.
+
+---
