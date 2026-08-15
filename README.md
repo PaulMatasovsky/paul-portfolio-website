@@ -1,58 +1,56 @@
 paul-portfolio-website
 
-The development repository for my personal portfolio, projects, QA work, and AI-assisted workflow.
 
-Purpose
+## Project Overview
+This project is my personal portfolio. I built this in order to showcase my skills and serve as basis for changing careers.
+This website is mainly intended for recruiters and hiring managers.
+The intent for this repository is to document my personal growth, how I think, and how I learn, while the website demonstrates my skillset.
+This repository also demonstrates my ability to plan and build projects, my problem-solving abilities, and my QA/testing mindset.
 
-This site is more than a portfolio. It is a place to demonstrate how I approach problems, learn new tools, build software, and think about quality.
 
-Goals
+## Current Scope
+As of this writing, my website contains my ETL project and documentation about the website itself.
+The major areas of my site are the projects page, a separate QA toolkit page, the insights blog posts, a contact form, and my Resume.
 
-* Demonstrate software development and QA practices
-* Showcase practical projects and technical work
-* Document what I learn and how my thinking develops
-* Demonstrate thoughtful, effective collaboration with AI
-* Provide a clear professional portfolio for recruiters and employers
 
-Technology
+## How the Project Has Changed
+I started making the portfolio website as a tool to help me change careers.
+However, the first version of the site became more complicated and AI-driven than I had intended. 
+This caused me to reconsider what the actual intent of the website was, and what I wanted it to communicate.
+Website 2.0 is the result of simplifying and focusing the project.
 
-* WordPress
-* Divi
-* GitHub
-* SQLite
-* AI-assisted development
-* Future AI portfolio assistant
 
-AI as a Collaborative Tool
+## Design and Development Philosophy
+During the development of Website 1.0, I came across the Japanese concept of Shibumi and its emphasis on simple elegance resonated with me.
+I like the idea of avoiding unnecessary complexity, while keeping items to a singular focus and a purposeful design.
+I also like the idea that features or documentation should have a reason for existing, and not just be added to make something appear more impressive.
 
-AI is integrated throughout the development process, not simply added as a feature.
 
-I use AI to explore ideas, question assumptions, refine designs, learn unfamiliar concepts, and work through technical problems. The goal is not to replace judgment, but to combine human direction with AI assistance to build better solutions.
+## Technology
+I am currently using WordPress, Divi 5, Git/GitHub, and Google Sheets/Excel for my website and projects, and I am using Asana for project management.
 
-The portfolio itself will eventually include an AI assistant trained on my resume, projects, and portfolio work. Rather than a traditional “About Me” page, the assistant will provide an interactive way for visitors to learn about my experience and work.
 
-Roadmap
+## Documentation 
+I am currently using [Architecture Decision Records (ADRs)](Documentation/ADRs/) to capture my major design decisions, and a [Project Journal](Documentation/Journal/) to capture meaningful changes in my thinking, such as lessons learned, mistakes recognized, and personal growth I notice.
 
-Phase 1 — Infrastructure
 
-Establish hosting, WordPress, GitHub, design system, and site structure.
+## AI's Role
+I am currently using AI in the following ways: skill coach, brainstorming partner, work reviewer and grammar coach, troubleshooter, and question raiser.
+I wanted my own decisions, reasoning, and contributions to remain identifiable, as these became muddied in the earlier version of the website.
+I wanted to use this site to show what AI can do as a collaborator, without allowing AI's contribution to gradually overtake my own.
 
-Phase 2 — Portfolio
+## Project Status
+The website is still an active project.
+I am currently rewriting all of the documentation.
 
-Build the homepage, project pages, technical skills, and professional content.
 
-Phase 3 — QA Lab
+## Future Plans
+- Upload ETL screenshots and project files.
+- Perform a QA audit of the portfolio website.
+- Add an AI chatbot in place of a traditional About Me page.
+- Expand the ETL project with an SQLite database backend and interactive dashboard frontend.
 
-Document and demonstrate QA practices, testing methodology, and project-based examples.
 
-Phase 4 — Projects
-
-Develop and document portfolio projects, including the Northstar Industrial Supply inventory ETL system.
-
-Phase 5 — AI Assistant
-
-Build an AI-powered portfolio assistant that allows visitors to explore my experience and work conversationally.
-
-Guiding Principle
-
-Build with purpose. Test with curiosity. Use AI thoughtfully.
+## Links
+- [Portfolio Website](https://paulmatasovsky.com/)
+- [LinkedIn](https://www.linkedin.com/in/paulmatasovsky)
