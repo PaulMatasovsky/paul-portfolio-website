@@ -27,7 +27,8 @@ I also like the idea that features or documentation should have a reason for exi
 
 
 ## Technology
-I am currently using WordPress, Divi 5, Git/GitHub, and Google Sheets/Excel for my website and projects, and I am using Asana for project management.
+I am currently using WordPress, Divi 5, Git/GitHub, and Google Sheets/Excel for my website and projects, and I am using Google Docs for project management.
+I have used both Trello and Asana in the past. This is a solo project and I only need a to-do list, but I still want AI to have read/write access.
 
 
 ## Documentation 
