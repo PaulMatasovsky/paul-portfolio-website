@@ -6,7 +6,8 @@ This project is my personal portfolio. I built this in order to showcase my skil
 This website is mainly intended for recruiters and hiring managers.
 The intent for this repository is to document my personal growth, how I think, and how I learn, while the website demonstrates my skillset.
 This repository also demonstrates my ability to plan and build projects, my problem-solving abilities, and my QA/testing mindset.
-
+Finally, this repository is where I can get much more technical, as the website is designed with non-technical people in mind.
+I will link directly to individual sections in this repository, where applicable.
 
 ## Current Scope
 As of this writing, my website contains my ETL project and documentation about the website itself.
@@ -39,6 +40,8 @@ I am currently using [Architecture Decision Records (ADRs)](Documentation/ADRs/)
 I am currently using AI in the following ways: skill coach, brainstorming partner, work reviewer and grammar coach, troubleshooter, and question raiser.
 I wanted my own decisions, reasoning, and contributions to remain identifiable, as these became muddied in the earlier version of the website.
 I wanted to use this site to show what AI can do as a collaborator, without allowing AI's contribution to gradually overtake my own.
+These are not the only ways I use AI, but starting over with this website, I wanted to be purposeful with my intent for AI was.
+
 
 ## Project Status
 The website is still an active project.
@@ -50,6 +53,7 @@ I am currently rewriting all of the documentation.
 - Perform a QA audit of the portfolio website.
 - Add an AI chatbot in place of a traditional About Me page.
 - Expand the ETL project with an SQLite database backend and interactive dashboard frontend.
+- Add a project that has heavy AI use, to demonstrate my skills there.
 
 
 ## Links
