@@ -1,0 +1,20 @@
+## What the Project is
+This project is an automated spreadsheet-based ETL Workflow.
+It automatically extracts, transforms, and organizes many different types of part numbers into ascending order.
+It then loads the sorted list into one of three reports that can then be priinted out.
+These reports are used for the planning and moving of hundreds of parts at a time, to differnt locations in the warehouse.
+
+
+## The Problem
+It would take over an hour to manually cut and paste the data into ascending order, and is repetitive and error-prone.
+A repeatable process w sneeded to transform the source data into standardized, usable reports.
+Source files could potentially arrive with inconsistent formatting/structure.
+This would need to be a minimal interaction solution, due to potential non-technical users being involved.
+
+
+## How it Works
+Raw Data
+clean
+parse
+sort
+output
