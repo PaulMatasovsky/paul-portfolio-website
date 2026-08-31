@@ -1,9 +1,25 @@
 ## What the Project is
 This project is an automated spreadsheet-based ETL Workflow.
 It automatically extracts, transforms, and organizes many different types of part numbers into ascending order.
-It then loads the sorted list into one of three reports that can then be priinted out.
+It then loads the sorted list into one of three reports that can then be printed out.
 These reports are used for the planning and moving of hundreds of parts at a time, to differnt locations in the warehouse.
 
+What is this project?
+A spreadsheet-based ETL workflow.
+Built to take vendor/product data and turn it into standardized, sorted reports.
+Why did you build it?
+To automate a process that would otherwise require repetitive manual manipulation of spreadsheet data.
+To make the process more consistent and less susceptible to human error.
+What does ETL mean in this context?
+Extract: source data enters the workbook.
+Transform: the workbook cleans, standardizes, parses, and sorts the data.
+Load: the processed information is placed into usable output/report worksheets.
+What does the project demonstrate?
+Spreadsheet automation.
+Data transformation.
+Business-rule implementation.
+QA and validation thinking.
+Designing a repeatable process rather than solving a problem manually each time.
 
 ## The Problem
 It would take over an hour to manually cut and paste the data into ascending order, and is repetitive and error-prone.
