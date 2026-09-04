@@ -35,9 +35,8 @@ parse
 sort
 output
 
-README, because it becomes the front door to everything else. Once you’ve written it, the remaining documents can provide the depth without forcing the README to carry it.
-ETL README.md Outline
-Keep this relatively short. Someone should be able to skim it and understand the project before deciding whether to explore further.
+⸻
+
 1. Project Overview
 Briefly establish:
 * Spreadsheet-based ETL project.
@@ -46,7 +45,9 @@ Briefly establish:
 * Currently finished and in real-world use.
 * Designed so it could be shared with other managers facing the same problem.
 Main idea to communicate: You built a practical tool around an actual business need, not a demonstration project looking for a problem.
- 
+
+
+
 ⸻
  
 2. The Problem
@@ -157,13 +158,3 @@ Potential future direction:
 The important distinction is:
 Future development would automate around the existing solution, not replace a failed prototype.
  
-⸻
- 
-Target README size
-I’d aim for roughly 700–1,200 words maximum, and shorter is perfectly acceptable.
-A recruiter should be able to read the first three sections and understand:
-What was wrong → what you built → how someone uses it.
-Everything after that gives a technical reader somewhere to go deeper.
-And importantly, I wouldn’t try to prove your technical ability in the README by dumping formulas into it. The fact that there is a Technical Overview, Business Rules document, ADR, Journal, test data, screenshots, and an inspectable working spreadsheet will do that much more effectively.
-Once you’ve written this one, Business-Rules.md is the next document in the sequence.
-
