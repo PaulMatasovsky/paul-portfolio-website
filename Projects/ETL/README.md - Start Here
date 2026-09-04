@@ -34,3 +34,136 @@ clean
 parse
 sort
 output
+
+README, because it becomes the front door to everything else. Once you’ve written it, the remaining documents can provide the depth without forcing the README to carry it.
+ETL README.md Outline
+Keep this relatively short. Someone should be able to skim it and understand the project before deciding whether to explore further.
+1. Project Overview
+Briefly establish:
+* Spreadsheet-based ETL project.
+* Built to solve a real workplace problem.
+* Designed for managers with limited spreadsheet experience.
+* Currently finished and in real-world use.
+* Designed so it could be shared with other managers facing the same problem.
+Main idea to communicate: You built a practical tool around an actual business need, not a demonstration project looking for a problem.
+ 
+⸻
+ 
+2. The Problem
+Explain the business problem before getting technical.
+Cover:
+* An existing parts report stopped sorting part numbers in a useful order.
+* The report was effectively sorting them like text rather than in the numeric-like sequence needed for warehouse work.
+* Part numbers aren’t simple numbers; they contain different combinations of letters, numbers, prefixes, suffixes, and other patterns.
+* Your manager was manually rearranging the report to compensate.
+* That process could take substantial time on larger reports.
+* You recognized that this was something that could be automated.
+You don’t need to explain the decision tree here.
+ 
+⸻
+ 
+3. How the Solution Works
+Explain this from the manager’s perspective.
+Essentially:
+Get report → paste entire report into RawData → choose one of three report tabs → print
+Mention:
+* Headers are included when pasting.
+* Everything between input and output happens automatically.
+* Users don’t need to understand the processing.
+* The template provides three different sorting priorities.
+This is a good place to emphasize your design philosophy:
+The workbook should handle the complexity rather than requiring the user to understand it.
+ 
+⸻
+ 
+4. Key Features
+Keep this to a short list.
+Automated part-number interpretation
+* Handles different part-number structures.
+* Produces numeric-like sorting rather than ordinary text sorting.
+Dynamic header detection
+* Finds required fields even when their column positions change.
+* Supports anticipated header-name variations.
+Three report options
+* Part Number First
+* Category First
+* Line First
+Built-in QA
+* Checks important conditions before allowing normal report output.
+* Uses data-integrity checks between processing stages.
+Print-ready output
+* Generates reports intended to be used directly in the warehouse.
+* Includes sequential row numbers useful for physical inventory/shelf planning.
+Minimal user interaction
+* Processing complexity is hidden from normal users.
+* Processing tabs are protected to reduce accidental changes.
+Don’t explain formulas here.
+ 
+⸻
+ 
+5. Technical Architecture
+Only give the reader the 10,000-foot view:
+RawData → HeaderMap → Step1 → Step2 → Step3 → Step4 → QA → Reports
+Then perhaps one sentence explaining that each stage has a defined responsibility and generally feeds the next stage.
+Then point the reader to:
+Documentation/Technical-Overview.md
+That’s where the detailed architecture belongs.
+ 
+⸻
+ 
+6. Documentation
+Use this as the navigation section.
+Something approximately like:
+* Business Rules — what the system is supposed to do with the data.
+* Technical Overview — how the spreadsheet implements the solution.
+* ADRs — important architectural decisions and why they were made.
+* Project Journal — development history, problems encountered, lessons learned, and how the project evolved.
+* Screenshots — visual examples of the input, processing, QA, and finished output.
+Eventually these should be clickable relative GitHub links.
+ 
+⸻
+ 
+7. Project Files
+Explain what someone can actually inspect/use.
+For example:
+* Google Sheets portfolio/demo version.
+* Downloadable Excel/LibreOffice-compatible artifact, if you decide to maintain one.
+* Sanitized test data.
+* Screenshots/documentation.
+Make it clear that the public version contains sanitized data, not actual company inventory information.
+I would also eventually put the link to the Google Sheets version somewhere prominent enough that a recruiter doesn’t have to hunt for it.
+ 
+⸻
+ 
+8. Current Status
+Keep this short because the spreadsheet itself is finished.
+Cover:
+* Current spreadsheet version is complete and has been used in the real workflow.
+* Updates are made when necessary.
+* Known validation limitations are documented rather than hidden.
+* The spreadsheet represents the completed first stage of a potentially larger ETL project.
+ 
+⸻
+ 
+9. Future Direction
+Don’t make this sound like the existing project is incomplete.
+Potential future direction:
+* Preserve the proven business logic.
+* Add a front-end interface.
+* Pull source data automatically rather than requiring copy/paste.
+* Potentially use a SQL database/backend.
+* Reduce manager interaction even further.
+* Potentially add additional sorting/configuration options where they provide genuine value.
+The important distinction is:
+Future development would automate around the existing solution, not replace a failed prototype.
+ 
+⸻
+ 
+Target README size
+I’d aim for roughly 700–1,200 words maximum, and shorter is perfectly acceptable.
+A recruiter should be able to read the first three sections and understand:
+What was wrong → what you built → how someone uses it.
+Everything after that gives a technical reader somewhere to go deeper.
+And importantly, I wouldn’t try to prove your technical ability in the README by dumping formulas into it. The fact that there is a Technical Overview, Business Rules document, ADR, Journal, test data, screenshots, and an inspectable working spreadsheet will do that much more effectively.
+Once you’ve written this one, Business-Rules.md is the next document in the sequence.
+
