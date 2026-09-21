@@ -157,4 +157,19 @@ Potential future direction:
 * Potentially add additional sorting/configuration options where they provide genuine value.
 The important distinction is:
 Future development would automate around the existing solution, not replace a failed prototype.
- 
+
+⸻
+
+### Excel Compatibility Notes
+The Excel version required several formula adjustments after being exported from Google Sheets. 
+The header-mapping formula was rewritten without `FILTER` so Excel could dynamically locate reordered source columns. 
+Excel also inserted implicit-intersection (`@`) operators into several formulas on the HeaderMap and QA tabs. 
+These operators forced formulas designed to evaluate complete ranges to examine only a single value, so they were removed.
+
+The template-overflow check was also updated to detect both excess rows and excess populated columns correctly in Excel. 
+Optional blank fields—particularly Description—were adjusted so Excel displays an empty cell instead of converting a blank reference to `0`.
+
+The instructional images were updated as well so the Excel version clearly shows how to select the entire worksheet before copying or clearing data.
+
+These changes affect Excel compatibility and user instructions only. 
+The underlying ETL workflow, parsing rules, sorting logic, reports, and QA requirements remain the same in both versions.
