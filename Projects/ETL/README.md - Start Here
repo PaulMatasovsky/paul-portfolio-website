@@ -7,13 +7,16 @@ These reports are used for the planning and moving of hundreds of parts at a tim
 What is this project?
 A spreadsheet-based ETL workflow.
 Built to take vendor/product data and turn it into standardized, sorted reports.
-Why did you build it?
+
+Why did I build it?
 To automate a process that would otherwise require repetitive manual manipulation of spreadsheet data.
 To make the process more consistent and less susceptible to human error.
+
 What does ETL mean in this context?
 Extract: source data enters the workbook.
 Transform: the workbook cleans, standardizes, parses, and sorts the data.
 Load: the processed information is placed into usable output/report worksheets.
+
 What does the project demonstrate?
 Spreadsheet automation.
 Data transformation.
