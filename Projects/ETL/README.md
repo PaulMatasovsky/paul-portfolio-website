@@ -28,8 +28,8 @@ I developed an automated spreadsheet workflow that interprets and sorts the data
 ### Current Status
 The spreadsheet workflow is complete and is currently used in actual warehouse operations.
 The project remains available for maintenance and improvements.
-- [Google Sheets](https://docs.google.com/spreadsheets/d/1-h7BjpiVBTfXUplCqvHsUb9QcV0sLdSG287sO5V9kcM/edit?usp=sharing)
-- [Excel](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/FINAL_Automated_Sorting_Template.xlsx) versions have been developed.
+- [Google Sheets](https://docs.google.com/spreadsheets/d/1-h7BjpiVBTfXUplCqvHsUb9QcV0sLdSG287sO5V9kcM/edit?usp=sharing) is a copy of the original.
+- [Excel](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/FINAL_Automated_Sorting_Template.xlsx) version for downloading and viewing.
 
 ### Future Development
 Add a database backend, potentially using SQL.
