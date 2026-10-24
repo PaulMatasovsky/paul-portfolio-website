@@ -1,14 +1,14 @@
 Correct order of the screenshots as per the file.
 
-RawData
-HeaderMap
-Step1_1
-Step2_1, Step2_2, Step2_3, Step2_4, Step2_5
-Step3_1, Step3_2, Step3_3
-Step4_1, Step4_2
-PartNoFirst_1, PartNoFirst_2
-CategpryFirst_1, CategpryFirst_2
-LineFirst_1, LineFirst_2
-QA_1, QA_2, QA_3
-TestData_1
-Comments_1
+RawData_1.png
+HeaderMap_1.png
+Step1_1.png
+Step2_1.png, Step2_2.png.png, Step2_3.png, Step2_4.png, Step2_5.png
+Step3_1.png, Step3_2.png, Step3_3.png
+Step4_1.png, Step4_2.png
+PartNoFirst_1.png, PartNoFirst_2.png
+CategpryFirst_1.png, CategpryFirst_2.png
+LineFirst_1.png, LineFirst_2.png
+QA_1.png, QA_2.png, QA_3.png
+TestData_1.png
+Comments_1.png
