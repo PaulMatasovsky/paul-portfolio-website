@@ -1,7 +1,6 @@
 future documentation will go here.
 
-
-# Excel Compatibility Notes
+# Excel Compatibility
 The Excel version required several formula adjustments after being exported from Google Sheets. 
 The header-mapping formula was rewritten without `FILTER` so Excel could dynamically locate reordered source columns. 
 Excel also inserted implicit-intersection (`@`) operators into several formulas on the HeaderMap and QA tabs. 
