@@ -1,6 +1,6 @@
 Correct order of the screenshots as per the file.
 
-[RawData_1.png](paul-portfolio-website/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/)
+[RawData_1.png](Screenshots/RawData_1.png)
 HeaderMap_1.png
 Step1_1.png
 Step2_1.png, Step2_2.png.png, Step2_3.png, Step2_4.png, Step2_5.png
