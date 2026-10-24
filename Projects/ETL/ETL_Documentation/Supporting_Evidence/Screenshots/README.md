@@ -1,4 +1,5 @@
-Correct order of the screenshots as per the file.
+These screenshots document the ETL workbook's workflow, from the original input through processing, generated reports, and QA validation.
+The screenshots contain sanitized example data. The screenshots are listed below in the order in which they appear in the workbook.
 
 [RawData_1.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/RawData_1.png)
 [HeaderMap_1.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/HeaderMap_1.png)
@@ -23,5 +24,5 @@ Correct order of the screenshots as per the file.
 [QA_2.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/QA_2.png)
 [QA_3.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/QA_3.png)
 [TestData_1.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/TestData_1.png)
-[Comments_1.png]
+[Comments_1.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/Comments_1.png)
 
