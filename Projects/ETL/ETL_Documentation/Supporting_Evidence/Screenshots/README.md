@@ -24,5 +24,5 @@ The screenshots contain sanitized example data. The screenshots are listed below
 - [QA_2.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/QA_2.png)
 - [QA_3.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/QA_3.png)
 - [TestData_1.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/TestData_1.png)
-[Comments_1.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/Comments_1.png)
+- [Comments_1.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/Comments_1.png)
 
