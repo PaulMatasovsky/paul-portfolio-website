@@ -5,22 +5,22 @@ I developed an automated spreadsheet workflow that interprets and sorts the data
  
 ⸻
  
-# How it Works
+## How it Works
 
-Input: Obtain the source report, clear the RawData worksheet, and paste the entire report, including its headers.
-Processing: The workbook automatically processes the data and prepares three sorted reports.
-Output: Select the desired report (Part Number, Line, or Category) and print it.
+- Input: Obtain the source report, clear the RawData worksheet, and paste the entire report, including its headers.
+- Processing: The workbook automatically processes the data and prepares three sorted reports.
+- Output: Select the desired report (Part Number, Line, or Category) and print it.
 
 ⸻
  
-# Key Features
-Part-number sorting: Handles complex part-number structures, including prefixes, numbers, and suffixes.
-Dynamic header mapping: Accommodates changes in source column positions.
-Built-in validation: Checks for missing fields, data discrepancies, and template overflow.
+## Key Features
+- Part-number sorting: Handles complex part-number structures, including prefixes, numbers, and suffixes.
+- Dynamic header mapping: Accommodates changes in source column positions.
+- Built-in validation: Checks for missing fields, data discrepancies, and template overflow.
  
 ⸻
  
-# Project Files and Documentation
+## Project Files and Documentation
 - [Workbook](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/FINAL_Automated_Sorting_Template.xlsx): The downloadable Excel file and Google Sheets demonstration.
 - [Business Rules](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/Business_Rules.md): What the system is required to do.
 - [Technical Overview](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/Technical_Overview): How the system implements those requirements.
@@ -29,7 +29,7 @@ Built-in validation: Checks for missing fields, data discrepancies, and template
 
 ⸻
  
-# Status & Future Development
+## Status & Future Development
 
 Current Status
 The spreadsheet workflow is complete and is currently used in actual warehouse operations.
