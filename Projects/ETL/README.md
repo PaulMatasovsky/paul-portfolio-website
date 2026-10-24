@@ -19,7 +19,8 @@ I developed an automated spreadsheet workflow that interprets and sorts the data
  
  
 ## Project Files and Documentation
-- [Workbook](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/FINAL_Automated_Sorting_Template.xlsx): The downloadable Excel file and Google Sheets demonstration.
+- [Excel](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/FINAL_Automated_Sorting_Template.xlsx) version for downloading and viewing.
+- Please note: the Excel version required formula adjustments to preserve the functionality of the original Google Sheets implementation.
 - [Business Rules](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/Business_Rules.md): What the system is required to do.
 - [Technical Overview](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/Technical_Overview): How the system implements those requirements.
 - [ADRs](https://github.com/PaulMatasovsky/paul-portfolio-website/tree/main/Projects/ETL/ETL_Documentation/ETL_ADR) and [Project Journal](https://github.com/PaulMatasovsky/paul-portfolio-website/tree/main/Projects/ETL/ETL_Documentation/ETL_Learning_Journal): Design decisions and lessons learned.
@@ -30,9 +31,8 @@ I developed an automated spreadsheet workflow that interprets and sorts the data
 ### Current Status
 The spreadsheet workflow is complete and is currently used in actual warehouse operations.
 The project remains available for maintenance and improvements.
-- [Google Sheets](https://docs.google.com/spreadsheets/d/1-h7BjpiVBTfXUplCqvHsUb9QcV0sLdSG287sO5V9kcM/edit?usp=sharing) is a copy of the original.
-- [Excel](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/FINAL_Automated_Sorting_Template.xlsx) version for downloading and viewing.
-- Please note: the Excel version required formula adjustments to preserve the functionality of the original Google Sheets implementation.
+- This [Google Sheets](https://docs.google.com/spreadsheets/d/1-h7BjpiVBTfXUplCqvHsUb9QcV0sLdSG287sO5V9kcM/edit?usp=sharing) is a copy of the original file.
+
 
 ### Future Development
 Add a database backend, potentially using SQL.
