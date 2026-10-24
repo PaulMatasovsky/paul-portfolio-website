@@ -1,15 +1,27 @@
 Correct order of the screenshots as per the file.
 
 [RawData_1.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/RawData_1.png)
-HeaderMap_1.png
-Step1_1.png
-Step2_1.png, Step2_2.png.png, Step2_3.png, Step2_4.png, Step2_5.png
-Step3_1.png, Step3_2.png, Step3_3.png
-Step4_1.png, Step4_2.png
-PartNoFirst_1.png, PartNoFirst_2.png
-CategpryFirst_1.png, CategpryFirst_2.png
-LineFirst_1.png, LineFirst_2.png
-QA_1.png, QA_2.png, QA_3.png
-TestData_1.png
-Comments_1.png
+[HeaderMap_1.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/HeaderMap_1.png)
+[Step1_1.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/Step1_1.png)
+[Step2_1.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/Step2_1.png)
+[Step2_2.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/Step2_2.png)
+[Step2_3.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/Step2_3.png)
+[Step2_4.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/Step2_4.png)
+[Step2_5.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/Step2_5.png)
+[Step3_1.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/Step3_1.png)
+[Step3_2.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/Step3_2.png)
+[Step3_3.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/Step3_3.png)
+[Step4_1.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/Step4_1.png)
+[Step4_2.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/Step4_2.png)
+[PartNoFirst_1.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/PartNoFirst_1.png)
+[PartNoFirst_2.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/PartNoFirst_2.png)
+[CategpryFirst_1.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/CategpryFirst_1.png)
+[CategpryFirst_2.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/CategpryFirst_2.png)
+[LineFirst_1.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/LineFirst_1.png)
+[LineFirst_2.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/LineFirst_2.png)
+[QA_1.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/QA_1.png)
+[QA_2.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/QA_2.png)
+[QA_3.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/QA_3.png)
+[TestData_1.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/TestData_1.png)
+[Comments_1.png]
 
