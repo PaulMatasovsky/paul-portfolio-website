@@ -19,7 +19,7 @@ The screenshots contain sanitized example data. The screenshots are listed below
 [CategoryFirstReport_1.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/CategoryFirstReport_1.png)
 [CategoryFirstReport_2.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/CategoryFirstReport_2.png)
 [LineFirstReport_1.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/LineFirstReport_1.png)
-[LineFirst_2.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/LineFirst_2.png)
+[LineFirstReport_2.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/LineFirstReport_2.png)
 [QA_1.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/QA_1.png)
 [QA_2.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/QA_2.png)
 [QA_3.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/QA_3.png)
