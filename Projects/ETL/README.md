@@ -31,29 +31,12 @@ Built-in validation: Checks for missing fields, data discrepancies, and template
  
 # Status & Future Development
 
-* 1. Current Status
+Current Status
 The spreadsheet workflow is complete and is currently used in actual warehouse operations.
 Both [Google Sheets](https://docs.google.com/spreadsheets/d/1-h7BjpiVBTfXUplCqvHsUb9QcV0sLdSG287sO5V9kcM/edit?usp=sharing) and [Excel](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/FINAL_Automated_Sorting_Template.xlsx) versions have been developed.
 The project remains available for maintenance and improvements.
 
-2. Future Development
+Future Development
 Add a database backend, potentially using SQL.
 Develop a user-friendly dashboard.
 Automate importing source data, eliminating the manual copy-and-paste process.
-
-
-⸻
-
-# Excel Compatibility Notes
-The Excel version required several formula adjustments after being exported from Google Sheets. 
-The header-mapping formula was rewritten without `FILTER` so Excel could dynamically locate reordered source columns. 
-Excel also inserted implicit-intersection (`@`) operators into several formulas on the HeaderMap and QA tabs. 
-These operators forced formulas designed to evaluate complete ranges to examine only a single value, so they were removed.
-
-The template-overflow check was also updated to detect both excess rows and excess populated columns correctly in Excel. 
-Optional blank fields—particularly Description—were adjusted so Excel displays an empty cell instead of converting a blank reference to `0`.
-
-The instructional images were updated as well so the Excel version clearly shows how to select the entire worksheet before copying or clearing data.
-
-These changes affect Excel compatibility and user instructions only. 
-The underlying ETL workflow, parsing rules, sorting logic, reports, and QA requirements remain the same in both versions.
