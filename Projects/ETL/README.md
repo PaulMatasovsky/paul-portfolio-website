@@ -1,3 +1,5 @@
+AI transparency Note: I used AI to help develop cleaner documentation and reduce redundant documentation.
+
 # Project Overview
 Manually sorting warehouse parts reports could take over an hour and was prone to errors. Different part-number formats and inconsistent source layouts made the process more complicated.
 
@@ -30,6 +32,7 @@ The spreadsheet workflow is complete and is currently used in actual warehouse o
 The project remains available for maintenance and improvements.
 - [Google Sheets](https://docs.google.com/spreadsheets/d/1-h7BjpiVBTfXUplCqvHsUb9QcV0sLdSG287sO5V9kcM/edit?usp=sharing) is a copy of the original.
 - [Excel](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/FINAL_Automated_Sorting_Template.xlsx) version for downloading and viewing.
+- Please note: the Excel version required formula adjustments to preserve the functionality of the original Google Sheets implementation.
 
 ### Future Development
 Add a database backend, potentially using SQL.
