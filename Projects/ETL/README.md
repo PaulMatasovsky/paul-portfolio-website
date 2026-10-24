@@ -1,4 +1,4 @@
-AI transparency Note: I used AI to help develop cleaner documentation and reduce redundant documentation.
+AI Transparency: I used AI to help review and streamline the documentation. I also used AI to troubleshoot and resolve persistent errors in several parts of the original workbook after multiple unsuccessful revisions.
 
 # Project Overview
 Manually sorting warehouse parts reports could take over an hour and was prone to errors. Different part-number formats and inconsistent source layouts made the process more complicated.
