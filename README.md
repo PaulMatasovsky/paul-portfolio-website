@@ -6,12 +6,14 @@ I want the portfolio to show not just what I built, but the problems I worked on
 
 ## Current Work
 
-| Area | Status | Where to look |
-|---|---|---|
-| Warehouse ETL sorting workbook | **Complete and documented.** Used in warehouse operations; an Excel copy and supporting evidence are available. | [ETL project](Projects/ETL/) |
-| Computer Science 050 teaching course | **Curriculum development and teaching preparation.** AI-assisted lesson planning; delivery evidence not yet published here. | [Teaching project](Projects/Computer_Science_050/) |
-| QA Toolkit | **AI-generated learning project.** Draft testing resources; the planned hands-on audit has not been completed. | [Separate QA Toolkit repository](https://github.com/PaulMatasovsky/qa-toolkit) |
-| Portfolio website | **Active work in progress.** The site and its presentation are being refined. | [Live website](https://paulmatasovsky.com/) and [website decision records](Documentation/ADRs/) |
+I group projects by who produced most of their substantive work. **Human-led** means I did most of the development or creation, using AI in a supporting role. **AI-led** means AI generated most of the implementation or instructional materials under requirements and direction I provided. These are informal overall judgments, **not measured percentages** or a claim that AI autonomously owned the project. Each project explains the specific contributions in more detail.
+
+| Area | Approach | Status | Where to look |
+|---|---|---|---|
+| Warehouse ETL sorting workbook | **Human-led** | **Complete and documented.** Used in warehouse operations; an Excel copy and supporting evidence are available. | [ETL project](Projects/ETL/) |
+| Computer Science 050 teaching course | **AI-led** | **Curriculum development and teaching preparation.** AI-assisted lesson planning; delivery evidence not yet published here. | [Teaching project](Projects/Computer_Science_050/) |
+| QA Toolkit | **AI-led** | **AI-generated learning project.** Draft testing resources; the planned hands-on audit has not been completed. | [Separate QA Toolkit repository](https://github.com/PaulMatasovsky/qa-toolkit) |
+| Portfolio website | **Human-led** | **Active work in progress.** The site and its presentation are being refined. | [Live website](https://paulmatasovsky.com/) and [website decision records](Documentation/ADRs/) |
 
 The ETL documentation includes [business rules](Projects/ETL/Business_Rules.md), a [technical overview](Projects/ETL/Technical_Overview.md), [architectural decisions](Projects/ETL/ETL_Documentation/ETL_ADR/), a [retrospective journal](Projects/ETL/ETL_Documentation/ETL_Learning_Journal/Retrospective.md), and [screenshots](Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/).
 
