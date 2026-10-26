@@ -98,9 +98,9 @@ These are the primary worksheets intended for normal use. The intermediate proce
 
 ## 6. Excel Compatibility
 
-The project began in Excel, but I restarted the implementation in Google Sheets partway through development. Google Sheets resolved blank-row printing problems and allowed the workbook to be accessed from any company computer with internet access and appropriate sign-in permissions.
+The project began in LibreOffice, but I restarted the implementation in Google Sheets partway through development. Google Sheets resolved blank-row printing problems and allowed the workbook to be accessed from any company computer with internet access and appropriate sign-in permissions.
 
-After the Google Sheets version was completed, I adapted the workflow back to Excel as a downloadable version.
+After the Google Sheets version was completed, I adapted the workflow for Excel as a downloadable version.
 
 The Excel header-mapping formulas were rewritten without `FILTER` so reordered source columns could be located. Formula changes also addressed implicit-intersection (`@`) operators that affected range-based calculations.
 
