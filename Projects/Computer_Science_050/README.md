@@ -2,7 +2,7 @@
 
 **Project status:** Curriculum and lesson preparation underway; teaching evidence is being collected separately and is not yet published here.  
 **Course plan:** 20 weeks, ages 10 and older (including adult beginners), with two hours of core instruction each week and an optional third-hour computer lab.  
-**Scheduled start:** October 25, 2026.
+**Scheduled start:** October 25, 2026; session-by-session delivery evidence is pending.
 
 > **AI transparency:** This is a more AI-involved project than my warehouse ETL workbook. AI has played a substantial role in researching approaches, comparing curriculum ideas, generating instructional drafts, and helping refine lessons and activities. I defined the teaching goals, student audience, progression, examples, and instructional constraints. I am responsible for reviewing what is taught and delivering the course. These GitHub documents were also drafted with AI and are open to my further revision.
 
@@ -33,12 +33,17 @@ The optional lab is for experiments, questions, extra practice, and help for int
 
 ## Project Documentation
 
+- [Parent Syllabus](Parent_Syllabus.md) — the parent-facing 20-week course outline and expectations.
 - [Curriculum and Teaching Approach](Curriculum_and_Teaching_Approach.md) — learning goals, sequence, teaching choices, and tradeoffs.
 - [AI Collaboration and Authorship](AI_Collaboration_and_Authorship.md) — which responsibilities are mine, which work AI helps generate, and what requires verification.
 - [Artifacts and Evidence Status](Artifacts_and_Evidence.md) — what has been prepared, what is not yet public, and what is not yet verified as taught.
 
+## Maintenance
+
+The private Google Sheets tracker keeps planned and delivered topic coverage. GitHub keeps the stable syllabus and meaningful teaching evidence, not a duplicate of the tracker. See the [weekly update process](Artifacts_and_Evidence.md#low-maintenance-weekly-update-process).
+
 ## Current Scope and Limitations
 
-A parent syllabus and lesson-planning documents have been prepared in the working environment, but the source teaching materials have not been published to this repository. The initial GitHub materials are documentation **about course development**, not proof of completed lessons or student achievement.
+A Markdown copy of the parent syllabus is published here. Detailed instructor lesson plans and the private circular-training tracker remain in the working environment. The current GitHub materials document the **course plan and development process**, not proof of completed lessons or student achievement.
 
 Robotics is used as an analogy and source of examples; the course does not include physical robotics instruction or require robot hardware. Refurbishing computers for an offline Scratch/Python lab is preparation work, not a completed deliverable shown here.
