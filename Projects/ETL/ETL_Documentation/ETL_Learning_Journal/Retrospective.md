@@ -9,11 +9,11 @@
 
 We had been using a company website to sort our warehouse parts reports, but one day it stopped working. IT considered the problem a low priority, so my boss started sorting the part numbers by hand. That could take over an hour, and on at least one occasion it took even longer.
 
-I thought I could make a temporary workaround to save him time. I started building a spreadsheet in Excel that would let him paste in the report, select a sorted output, and print it.
+I thought I could make a temporary workaround to save him time. I started building a spreadsheet in LibreOffice that would let him paste in the report, select a sorted output, and print it.
 
 ## Development and the Decision to Change Platforms
 
-Partway through the project, I kept running into blank rows in the printed Excel reports. Excel also was not installed on every company computer, even though all of them had internet access.
+Partway through the project, I kept running into blank rows in the printed LibreOffice reports. I also wanted the workbook to be accessible from different company computers, not all of which had Excel installed, even though they all had internet access.
 
 I restarted the project in Google Sheets. That gave my manager access from any company computer with the appropriate login and, more importantly, solved the blank-row printing problem for the operational version.
 
