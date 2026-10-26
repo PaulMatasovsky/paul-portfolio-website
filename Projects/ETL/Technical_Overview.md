@@ -98,15 +98,15 @@ These are the primary worksheets intended for normal use. The intermediate proce
 
 ## 6. Excel Compatibility
 
-The workbook was originally developed in Google Sheets and later adapted for Excel.
+The project began in Excel, but I restarted the implementation in Google Sheets partway through development. Google Sheets resolved blank-row printing problems and allowed the workbook to be accessed from any company computer with internet access and appropriate sign-in permissions.
 
-The header-mapping formulas were rewritten without `FILTER` so Excel could locate reordered source columns. Formula changes also addressed implicit-intersection (`@`) operators that caused range-based calculations to behave incorrectly.
+After the Google Sheets version was completed, I adapted the workflow back to Excel as a downloadable version.
 
-The overflow check was adjusted to detect excess populated rows and columns. Blank optional Description values were also handled so Excel would not display an unintended `0`.
+The Excel header-mapping formulas were rewritten without `FILTER` so reordered source columns could be located. Formula changes also addressed implicit-intersection (`@`) operators that affected range-based calculations.
 
-The workbook instructions and screenshots were updated to explain selecting the complete worksheet before copying or clearing data.
+The overflow check was adjusted to detect excess populated rows and columns. Blank optional Description values were handled so Excel would not display an unintended `0`.
 
-These changes were made to preserve the intended ETL workflow and outputs across the two spreadsheet applications.
+The underlying data-processing workflow was preserved, but **the Excel version still prints blank rows**. The operational Google Sheets version does not have that printing problem. See [ADR-001](ETL_Documentation/ETL_ADR/ADR-001.md) for the platform decision and its tradeoffs.
 
 ## 7. Supporting Worksheets and Limitations
 
