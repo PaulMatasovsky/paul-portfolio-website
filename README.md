@@ -1,61 +1,55 @@
-paul-portfolio-website
+# Portfolio Website — Website 2.0
 
+This repository supports my [personal portfolio website](https://paulmatasovsky.com/), which I am developing as part of a career transition. The website introduces my work to recruiters and hiring managers; GitHub holds the more technical details, documentation, and project evidence.
 
-## Project Overview
-This project is my personal portfolio. I built this in order to showcase my skills and serve as basis for changing careers.
-This website is mainly intended for recruiters and hiring managers.
-The intent for this repository is to document my personal growth, how I think, and how I learn, while the website demonstrates my skillset.
-This repository also demonstrates my ability to plan and build projects, my problem-solving abilities, and my QA/testing mindset.
-Finally, this repository is where I can get much more technical, as the website is designed with non-technical people in mind.
-I will link directly to individual sections in this repository, where applicable.
+I want the portfolio to show not just what I built, but the problems I worked on, the decisions I made, and what I learned.
 
-## Current Scope
-As of this writing, my website contains my ETL project and documentation about the website itself.
-The major areas of my site are the projects page, a separate QA toolkit page, the insights blog posts, a contact form, and my Resume.
+## Current Work
 
+| Area | Status | Where to look |
+|---|---|---|
+| Warehouse ETL sorting workbook | **Complete and documented.** Used in warehouse operations; an Excel copy and supporting evidence are available. | [ETL project](Projects/ETL/) |
+| QA Toolkit | **AI-generated learning project.** Draft testing resources; the planned hands-on audit has not been completed. | [Separate QA Toolkit repository](https://github.com/PaulMatasovsky/qa-toolkit) |
+| Portfolio website | **Active work in progress.** The site and its presentation are being refined. | [Live website](https://paulmatasovsky.com/) and [website decision records](Documentation/ADRs/) |
 
-## How the Project Has Changed
-I started making the portfolio website as a tool to help me change careers.
-However, the first version of the site became more complicated and AI-driven than I had intended. 
-This caused me to reconsider what the actual intent of the website was, and what I wanted it to communicate.
-Website 2.0 is the result of simplifying and focusing the project.
+The ETL documentation includes [business rules](Projects/ETL/Business_Rules.md), a [technical overview](Projects/ETL/Technical_Overview.md), [architectural decisions](Projects/ETL/ETL_Documentation/ETL_ADR/), a [retrospective journal](Projects/ETL/ETL_Documentation/ETL_Learning_Journal/Retrospective.md), and [screenshots](Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/).
 
+This repository is primarily a place for portfolio and project documentation; it is **not a full export of the WordPress website's source code**.
 
-## Design and Development Philosophy
-During the development of Website 1.0, I came across the Japanese concept of Shibumi and its emphasis on simple elegance resonated with me.
-I like the idea of avoiding unnecessary complexity, while keeping items to a singular focus and a purposeful design.
-I also like the idea that features or documentation should have a reason for existing, and not just be added to make something appear more impressive.
+## Why Website 2.0?
 
+My first portfolio grew more complex and more AI-driven than I intended. I had trouble separating my own decisions and contributions from AI-generated work.
+
+I started Website 2.0 to simplify the presentation and make that distinction clearer. I use *Shibumi*—purposeful simplicity—as a guide: keep what helps the reader understand the work, and avoid adding features or documentation simply to make the site look more elaborate.
 
 ## Technology
-I am currently using WordPress, Divi 5, Git/GitHub, and Google Sheets/Excel for my website and projects, and I am using Google Docs for project management.
-I have used both Trello and Asana in the past. This is a solo project and I only need a to-do list, but I still want AI to have read/write access.
 
+- **Website:** WordPress and Divi 5.
+- **ETL project:** Google Sheets for the operational workbook; a downloadable Microsoft Excel version is also available.
+- **Project documentation:** GitHub and Markdown, with Google Docs used for planning and drafting.
 
-## Documentation 
-I am currently using [Architecture Decision Records (ADRs)](Documentation/ADRs/) to capture my major design decisions, and a [Project Journal](Documentation/Journal/) to capture meaningful changes in my thinking, such as lessons learned, mistakes recognized, and personal growth I notice.
+## Documentation Approach
 
+I use [Architecture Decision Records (ADRs)](Documentation/ADRs/) for meaningful website-level decisions and a [project journal](Documentation/Journal/) for learning and changes in perspective. Project-specific documentation stays with the project it describes.
 
-## AI's Role
-I am currently using AI in the following ways: skill coach, brainstorming partner, work reviewer and grammar coach, troubleshooter, and question raiser.
-I wanted my own decisions, reasoning, and contributions to remain identifiable, as these became muddied in the earlier version of the website.
-I wanted to use this site to show what AI can do as a collaborator, without allowing AI's contribution to gradually overtake my own.
-These are not the only ways I use AI, but starting over with this website, I wanted to be purposeful with my intent for AI was.
+Earlier decision records describe the process I originally established, including personally writing final ADRs. For the later, retrospective ETL documentation, I chose to use AI drafting to help reconstruct the work and explicitly disclosed that assistance in the affected documents. The dated original records remain as a history of how the process developed.
 
+## AI Transparency
 
-## Project Status
-The website is still an active project.
-I am currently rewriting all of the documentation.
+AI has contributed to my projects in different ways, and I do not treat all of that work as equivalent.
 
+- **ETL:** I identified the warehouse problem, made the operational and platform decisions, and developed the workbook with AI assistance in troubleshooting persistent formula errors. AI also helped draft and streamline the retrospective documentation.
+- **QA Toolkit:** The resources were generated by AI as a learning exercise. I have not yet completed or validated the planned hands-on QA audit.
+- **Portfolio website:** I use AI for learning, planning, critique, troubleshooting, and editorial support. The goal is to keep my own decisions and contributions distinguishable from AI's work.
 
-## Future Plans
-- Upload ETL screenshots and project files.
-- Perform a QA audit of the portfolio website.
-- Add an AI chatbot in place of a traditional About Me page.
-- Expand the ETL project with an SQLite database backend and interactive dashboard frontend.
-- Add a project that has heavy AI use, to demonstrate my skills there.
+## Next Steps
 
+- Keep the portfolio website's project descriptions and links aligned with the evidence on GitHub.
+- Carry out and document a hands-on QA audit when the site is ready.
+- Add the computer science teaching project when its own GitHub materials are prepared.
 
 ## Links
-- [Portfolio Website](https://paulmatasovsky.com/)
+
+- [Portfolio website](https://paulmatasovsky.com/)
 - [LinkedIn](https://www.linkedin.com/in/paulmatasovsky)
+- [QA Toolkit repository](https://github.com/PaulMatasovsky/qa-toolkit)
