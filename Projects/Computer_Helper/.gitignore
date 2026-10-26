@@ -1,0 +1,17 @@
+# Local experiments and private family material (defense in depth, not a security guarantee)
+.env
+.env.*
+private/
+local_data/
+recordings/
+screenshots/private/
+*.kdbx
+*.keyx
+*.sqlite
+*.db
+*passwords*.txt
+*passwords*.csv
+*credentials*.json
+__pycache__/
+.venv/
+.DS_Store
