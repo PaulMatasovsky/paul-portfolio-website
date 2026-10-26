@@ -1,6 +1,6 @@
 # Computer Science 050 — Introductory Teaching Project
 
-**Project status:** Curriculum and lesson preparation underway; teaching evidence is being collected separately and is not yet published here.  
+**Project status:** **In Progress** · **Activity:** Active (curriculum development). Teaching evidence is not yet published here.  
 **Course plan:** 20 weeks, ages 10 and older (including adult beginners), with two hours of core instruction each week and an optional third-hour computer lab.  
 **Scheduled start:** October 25, 2026; session-by-session delivery evidence is pending.
 

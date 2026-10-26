@@ -1,6 +1,10 @@
+# Warehouse ETL Sorting Workbook
+
+**Project status:** **Complete** · **Activity:** Maintenance
+
 **AI Transparency:** I used AI to help review and streamline the documentation. I also used AI to troubleshoot and resolve persistent errors in several parts of the original workbook after multiple unsuccessful revisions.
 
-# Project Overview
+## Project Overview
 Manually sorting warehouse parts reports could take over an hour and was prone to errors. Different part-number formats and inconsistent source layouts made the process more complicated.
 
 I developed an automated spreadsheet workflow that interprets and sorts the data with minimal user interaction. The system produces three print-ready reports, organized by part number, product line, or category, for warehouse planning and operations.

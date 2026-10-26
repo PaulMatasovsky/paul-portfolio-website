@@ -1,5 +1,7 @@
 # Portfolio Website — Website 2.0
 
+**Project status:** **In Progress** · **Activity:** Active
+
 This repository supports my [personal portfolio website](https://paulmatasovsky.com/), which I am developing as part of a career transition. The website introduces my work to recruiters and hiring managers; GitHub holds the more technical details, documentation, and project evidence.
 
 I want the portfolio to show not just what I built, but the problems I worked on, the decisions I made, and what I learned.
@@ -10,11 +12,13 @@ I group projects by who produced most of their substantive work. **Human-led** m
 
 | Area | Approach | Status | Where to look |
 |---|---|---|---|
-| Warehouse ETL sorting workbook | **Human-led** | **Complete and documented.** Used in warehouse operations; an Excel copy and supporting evidence are available. | [ETL project](Projects/ETL/) |
-| Computer Science 050 teaching course | **AI-led** | **Curriculum development and teaching preparation.** AI-assisted lesson planning; delivery evidence not yet published here. | [Teaching project](Projects/Computer_Science_050/) |
-| QA Toolkit | **AI-led** | **AI-generated learning project.** Draft testing resources; the planned hands-on audit has not been completed. | [Separate QA Toolkit repository](https://github.com/PaulMatasovsky/qa-toolkit) |
-| Computer Helper (Windows + macOS) | **Human-directed / AI-drafted planning** | **Discovery and design only.** No working prototype or user tests yet. | [Computer Helper project](Projects/Computer_Helper/) |
-| Portfolio website | **Human-led** | **Active work in progress.** The site and its presentation are being refined. | [Live website](https://paulmatasovsky.com/) and [website decision records](Documentation/ADRs/) |
+| Warehouse ETL sorting workbook | **Human-led** | **Complete · Maintenance.** Operational Google Sheets workbook; the Excel copy has a documented printing limitation. | [ETL project](Projects/ETL/) |
+| Computer Science 050 teaching course | **AI-led** | **In Progress · Active.** Curriculum development; verified teaching evidence not yet published here. | [Teaching project](Projects/Computer_Science_050/) |
+| QA Toolkit | **AI-led** | **In Progress · Paused.** Draft AI-generated resources; hands-on audit and validation pending. | [Separate QA Toolkit repository](https://github.com/PaulMatasovsky/qa-toolkit) |
+| Computer Helper (Windows + macOS) | **Human-directed / AI-drafted planning** | **Not Started (implementation) · Active (planning).** Documentation exists; no working prototype or user tests. | [Computer Helper project](Projects/Computer_Helper/) |
+| Portfolio website | **Human-led** | **In Progress · Active.** The site and its presentation are being refined. | [Live website](https://paulmatasovsky.com/) and [website decision records](Documentation/ADRs/) |
+
+**Workflow stages:** Not Started (implementation has not begun), In Progress (work underway), Testing / Debugging (actively validating), Blocked (cannot proceed), and Complete (usable deliverable finished). **Activity** is a separate optional label: Active, Paused, or Maintenance. The stage describes the work, not a percentage.
 
 The ETL documentation includes [business rules](Projects/ETL/Business_Rules.md), a [technical overview](Projects/ETL/Technical_Overview.md), [architectural decisions](Projects/ETL/ETL_Documentation/ETL_ADR/), a [retrospective journal](Projects/ETL/ETL_Documentation/ETL_Learning_Journal/Retrospective.md), and [screenshots](Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/).
 

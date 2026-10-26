@@ -1,6 +1,6 @@
 # Computer Helper — Cross-Platform Assisted Computing
 
-**Status:** Planning / requirements definition (2026-10-26). No application, prototype, user testing, or production deployment has been completed.
+**Project status:** **Not Started** (implementation) · **Activity:** Active (planning and requirements). No application, prototype, user testing, or production deployment has been completed.
 
 ## Problem
 
