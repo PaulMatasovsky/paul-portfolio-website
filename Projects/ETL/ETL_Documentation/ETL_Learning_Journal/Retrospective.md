@@ -7,15 +7,17 @@
 
 ## Where I Started
 
-This project began with a problem at work. Manually sorting warehouse parts reports could take over an hour, and complicated part-number formats made it difficult to get consistent results.
+We had been using a company website to sort our warehouse parts reports, but one day it stopped working. IT considered the problem a low priority, so my boss started sorting the part numbers by hand. That could take over an hour, and on at least one occasion it took even longer.
 
-I started building the solution in Excel. My goal was to create a workbook that would require very little interaction: paste the report, select a sorted output, and print it.
+I thought I could make a temporary workaround to save him time. I started building a spreadsheet in Excel that would let him paste in the report, select a sorted output, and print it.
 
-## The Decision to Change Platforms
+## Development and the Decision to Change Platforms
 
 Partway through the project, I kept running into blank rows in the printed Excel reports. Excel also was not installed on every company computer, even though all of them had internet access.
 
 I restarted the project in Google Sheets. That gave my manager access from any company computer with the appropriate login and, more importantly, solved the blank-row printing problem for the operational version.
+
+The project took roughly two weeks of work during spare time between my regular duties. Nearly all of that work happened at the warehouse. I spent only about half an hour to an hour at home, mainly working on formatting and troubleshooting. That two-week period included restarting the workbook in Google Sheets.
 
 ## The Most Important Technical Discovery
 
