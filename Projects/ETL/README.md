@@ -23,7 +23,7 @@ I developed an automated spreadsheet workflow that interprets and sorts the data
 - [Excel](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/FINAL_Automated_Sorting_Template.xlsx) version for downloading and viewing.
 - Please note: the Excel version required formula adjustments to preserve the functionality of the original Google Sheets implementation.
 - [Business Rules](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/Business_Rules.md): What the system is required to do.
-- [Technical Overview](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/Technical_Overview): How the system implements those requirements.
+- [Technical Overview](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/Technical_Overview.md): How the system implements those requirements.
 - [ADRs](https://github.com/PaulMatasovsky/paul-portfolio-website/tree/main/Projects/ETL/ETL_Documentation/ETL_ADR) and [Project Journal](https://github.com/PaulMatasovsky/paul-portfolio-website/tree/main/Projects/ETL/ETL_Documentation/ETL_Learning_Journal): Design decisions and lessons learned.
 - [Screenshots](https://github.com/PaulMatasovsky/paul-portfolio-website/tree/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots): Visual evidence of the workflow and results.
 
