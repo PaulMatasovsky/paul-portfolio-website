@@ -47,6 +47,8 @@ Progress checks are planned at several points across the 20 weeks. First exposur
 
 **AI connection:** Each week, relate an idea to AI or responsible AI use—particularly forming clear requests, questioning answers, and testing generated results.
 
+For the central decision to integrate AI while retaining computer-science foundations, including alternatives and sources consulted, see [ADR-000](ADRs/ADR-000.md).
+
 ## Why These Choices?
 
 Scratch offers visible blocks and immediate feedback before students face typed-language syntax. Python then provides a path into conventional programming. Spiral learning reduces the pressure to master an unfamiliar topic on first exposure.
