@@ -34,6 +34,7 @@ The optional lab is for experiments, questions, extra practice, and help for int
 ## Project Documentation
 
 - [Parent Syllabus](Parent_Syllabus.md) — the parent-facing 20-week course outline and expectations.
+- [ADR-000: Computer Science Foundations and AI](ADRs/ADR-000.md) — why the course teaches foundational computer science rather than AI-tool use alone, with supporting research.
 - [Curriculum and Teaching Approach](Curriculum_and_Teaching_Approach.md) — learning goals, sequence, teaching choices, and tradeoffs.
 - [AI Collaboration and Authorship](AI_Collaboration_and_Authorship.md) — which responsibilities are mine, which work AI helps generate, and what requires verification.
 - [Artifacts and Evidence Status](Artifacts_and_Evidence.md) — what has been prepared, what is not yet public, and what is not yet verified as taught.
