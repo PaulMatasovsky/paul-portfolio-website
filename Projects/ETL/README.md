@@ -2,12 +2,10 @@
 
 **Project status:** **Complete** · **Activity:** Maintenance
 
-**AI Transparency:** I used AI to help review and streamline the documentation. I also used AI to troubleshoot and resolve persistent errors in several parts of the original workbook after multiple unsuccessful revisions.
-
 ## Project Overview
 Manually sorting warehouse parts reports could take over an hour and was prone to errors. Different part-number formats and inconsistent source layouts made the process more complicated.
 
-I developed an automated spreadsheet workflow that interprets and sorts the data with minimal user interaction. The system produces three print-ready reports, organized by part number, product line, or category, for warehouse planning and operations.
+I developed an automated spreadsheet workflow that interprets and sorts the data with minimal user interaction. The system produces three print-ready reports, organized by part number, product line, or category, for warehouse planning and operations. In use, it reduced report preparation from more than an hour to roughly 2–5 minutes for reports with up to 2,000 parts.
 
 
 ## How it Works
@@ -42,3 +40,9 @@ The project remains available for maintenance and improvements.
 - Add a database backend, potentially using SQL.
 - Develop a user-friendly dashboard.
 - Automate importing source data, eliminating the manual copy-and-paste process.
+
+## AI Transparency
+
+I designed and developed the spreadsheet workflow. During development, I consulted AI to troubleshoot persistent formula problems that remained after multiple revisions. AI also helped me review and improve the GitHub project documentation.
+
+**The finished workbook uses spreadsheet formulas and logic; it does not invoke AI when processing reports.**
