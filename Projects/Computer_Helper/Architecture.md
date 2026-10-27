@@ -1,91 +1,47 @@
-# Architecture — Proposed, Not Implemented
+# Candidate Architecture
 
-**Status:** Exploration / candidate design, 2026-10-26.
+**Status:** Proposed, not implemented · 2026-10-26
 
-## Architectural approach
+## Design
 
-One shared user interface and conversation flow, with **different OS adapters** for Windows and macOS. A policy gate—not the model—determines which actions exist and whether they are permitted.
-
-```text
-[User: microphone / keyboard / Help button]
-                    |
-              [UI + consent]
-                    |
-          [Request coordinator]
-            /       |        \
-   [Local model] [Policy gate] [Screen context]
-                       |            |
-            [Local action API]  [OS/browser read-only]
-                  /      \
-          [Windows]   [macOS]
-            adapters    adapters
-
-[Separate Norton/password manager] -- not connected to model or action API
-[Optional public-information lookup] -- explicit opt-in, sanitized query only
-```
-
-## Responsibilities
-
-| Component | Responsibility | Security notes |
-| --- | --- | --- |
-| UI | Help button, microphone, text, large-print instructions, consent and stop controls. | No invisible background screen monitoring. |
-| Request coordinator | Receive user request, ask clarifying questions, track “next step.” | No direct shell/browser access. |
-| Local inference | Produce explanations from bounded, permitted context. | Model output is untrusted; never treated as a command. |
-| Policy gate | Map selected, verified intents to fixed operations. | Allowlist must be enforced in code; deny-by-default. |
-| Windows adapter | Open fixed OS-known folders/apps; acquire user-approved screen context. | Use Windows known-folder and accessibility APIs; least privilege. |
-| macOS adapter | Same behavior through Apple APIs with user-granted accessibility/screen permissions. | Use system folder URLs; no arbitrary AppleScript/shell execution. |
-| Browser context | Read current webpage or selected screen *only* on request. | Read-only path; no automation/navigation permissions; no stored sessions. |
-| Optional reference search | Retrieve public documentation/help when user initiates a non-sensitive lookup. | Must never upload page/account content or screenshots. |
-
-## Tool contracts (candidate)
-
-Strict allowlisted local operations could look like:
-
-- open_known_folder: choice from Documents, Pictures, Downloads; OS resolves the path.
-- open_approved_app: app_id from a preconfigured, user-approved catalog.
-- get_selected_screen_context: on-demand snapshot after consent; in-memory only; no unattended capture.
-- explain_active_page: inspect only the user-selected current page, without navigation or input.
-
-No general run_command, open_url, browser_click, send_keys, file_read_anywhere, or vault_query tools will be available to the model.
-
-## Read-only browser guidance: two options to test
-
-1. **Selected screenshot + local vision:** simplest cross-application approach, but may include sensitive data and may be inaccurate.
-2. **Read-only browser context:** a tightly permissioned extension or adapter could expose accessible labels/structure on the current tab, without tabs/navigation/write permissions. Requires explicit browser/security review.
-
-Start with synthetic webpages and non-sensitive sites. Financial/account pages should default to no screen capture; any exception would require a separately designed consent and redaction policy. No webpage text may be treated as trusted instructions to the assistant.
-
-## Cross-platform boundary
-
-Maintain common intent names and consistent UX; keep OS-specific folder, app launch, microphone, screenshot, permissions and accessibility logic behind adapters. Do not assume a Windows UI Automation implementation works on macOS; macOS requires its own Accessibility APIs and Screen Recording permissions.
-
-Potential implementation technologies to evaluate—not chosen:
-- **Local inference:** Ollama with a small language/vision model.
-- **UI/orchestrator:** Python prototype with a simple desktop UI, or another cross-platform toolkit after usability testing.
-- **Speech:** offline ASR/TTS components, conditional on device benchmarks.
-- **Screen understanding:** OS accessibility tree, user-selected screenshots, or both.
-
-## Resource and resilience requirements
-
-- Evaluate RAM, CPU, GPU/accelerator, OS version and latency on *both* devices before selecting models.
-- Clearly indicate when unavailable/offline rather than silently falling back to paid cloud processing.
-- Fail closed: if the model/policy/screen context is uncertain, do not execute a tool.
-- Minimize telemetry and logging; redact or avoid user content. No raw screenshots or account details in source control.
-
-## Planned source layout (not yet created)
+One shared conversation interface; OS-specific Windows and macOS adapters. A code-enforced policy gate decides which local actions are possible. Model responses never execute directly.
 
 ```text
-src/
-  core/             request coordination, policy
-  ui/               simple accessible UI
-  adapters/
-    windows/        OS-specific behavior
-    macos/          OS-specific behavior
-  inference/        local model/voice connectors
-tests/
-  unit/             policy and intent mapping
-  integration/      per-OS adapter tests
-  scenarios/        synthetic UI/browser safety tests
+User (text / optional voice)
+          |
+     UI + consent
+          |
+   Request coordinator ---- Local model
+          |
+      Policy gate --------- On-demand screen context
+          |
+   Approved local actions
+       /        \
+    Windows     macOS
+    adapter    adapter
 ```
 
-These directories should be created when code exists; empty Git directories do not add useful evidence.
+A separate password manager has **no connection** to the model or action layer.
+
+## Component responsibilities
+
+| Component | Role |
+| --- | --- |
+| UI | Large Help and Stop controls; step-by-step dialogue; visible screen-consent state |
+| Local inference | Explain a request or selected screen; ask for clarification |
+| Policy gate | Validate requested actions against a fixed allowlist |
+| OS adapters | Open known folders/apps and obtain permitted screen context through OS-specific interfaces |
+| Browser context | Read-only interpretation of the current user-selected page |
+| Optional public lookup | Search generic public help topics only after an explicit request |
+
+**Candidate local actions:** `open_known_folder` (Documents, Pictures, Downloads) and `open_approved_app` (preconfigured app IDs). The detailed allow/deny policy lives in [Security and Privacy](Security_and_Privacy.md).
+
+## Open technical choices
+
+- **Screen context:** User-selected screenshot processed locally versus read-only accessibility metadata. Compare accuracy, permissions and sensitive-content exposure using synthetic pages.
+- **Windows vs. macOS:** Shared intent names, separate implementations for known folders, application launching, screen permission, and accessibility APIs.
+- **Model and interface:** Ollama with a small vision-capable model and a simple desktop UI are candidates, not selected technologies. Test speed and quality on the actual machines.
+- **Voice:** Offline speech recognition and output only if the devices and users support it.
+- **Failure behavior:** Explain uncertainty, avoid performing actions when checks fail, and never silently switch to cloud processing.
+
+Source folders and framework choices will be defined when implementation starts; see the [Roadmap](Roadmap_and_Test_Plan.md).

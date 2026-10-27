@@ -1,57 +1,45 @@
-# Security and Privacy Boundaries
+# Security and Privacy
 
-**Status:** Planning checklist, not a completed audit (2026-10-26).
+**Status:** Proposed safeguards; not security-tested · 2026-10-26
 
-This project is intended for novice users. Safety must depend on code-enforced permissions, not assumptions that the AI will always follow its prompt.
+This is the **authoritative permission policy** for Computer Helper. Restrictions must be enforced in application code, not only in the model's instructions.
 
-## Fixed boundaries for the first implementation
+## Permissions
 
-| Action | Policy |
+| Operation | Policy |
 | --- | --- |
-| Answer general computing questions | Allow |
-| Observe selected screen | Only on explicit user request and after privacy checks |
-| Open a known local folder | Allow only through named, OS-resolved choices |
-| Open a configured local application | Allow only from explicit allowlist |
-| Explain current website | Allow read-only, on request; avoid sensitive pages |
-| Search public web for generic help | Deferred / optional; sanitized, explicit user request |
-| Open URLs, switch to websites or click web controls | **Deny** |
-| Type into browser forms, upload files or submit transactions | **Deny** |
-| Read password manager, display or log passwords | **Deny** |
-| Execute arbitrary commands, delete/move user files, change security settings | **Deny** |
-| Send screen captures, page text, voice recordings to cloud model/APIs | **Deny** in local-first version |
+| Answer questions; give step-by-step instructions | Allow |
+| Inspect a selected screen or active page | Only after explicit user request; avoid sensitive pages |
+| Open Documents, Pictures, Downloads or approved local apps | Allowlist only; no arbitrary path or command |
+| Look up general public information online | Optional, off by default, sanitized query only |
+| Open or choose websites, click links/buttons, type or submit forms | **Deny** |
+| Make purchases, change accounts, approve transactions | **Deny** |
+| Read, speak, store or export vault passwords | **Deny** |
+| Delete/move files, install software, change security settings, run shell commands | **Deny** |
+| Upload screenshots, page contents, voice recordings or private files to cloud AI | **Deny** |
 
-## Threats and mitigations
+The independent password manager may autofill credentials in the browser; Computer Helper has no vault integration.
 
-1. **Prompt injection from a webpage.** Treat page text, screenshots and model output as untrusted data. Website instructions cannot expand tool permissions. No browser-action tool exists.
-2. **Accidental disclosure of sensitive screens.** Request permission for *each* inspection; avoid login, banking, health and payment screens unless a future separately reviewed privacy mechanism can protect them. Secure-input masking is imperfect; avoid promising perfect redaction.
-3. **Overpowered local assistant.** Run as a normal user, not administrator/root. Offer fixed operations only. Never pass model-produced text directly into terminal commands or operating system scripting.
-4. **File and identity privacy.** Do not retain images, audio, document contents, passwords, account identifiers or folder inventories by default. Do not upload family content to a public repository.
-5. **Incorrect guidance or hallucination.** Use current accessible context when available; ask clarifying questions; explicitly admit uncertainty; one action at a time; do not assume a click succeeded.
-6. **Website phishing or hostile links.** Assistant does not generate/click URLs. Teach users to open websites themselves via known bookmarks or their password manager.
-7. **Cloud and network leakage.** Local inference alone does not prove privacy. Audit dependencies, update traffic, speech providers, model logs and optional web tools; keep external processing off unless explicitly reviewed.
-8. **Model supply chain and local server exposure.** Verify software downloads, pin compatible versions, keep local inference API loopback-only, and avoid exposing ports to other devices.
-9. **Password manager separation.** Maintain a dedicated vault for each person with its own recovery plan. The AI never receives a vault master password or direct extension/API access.
-10. **Remote support abuse.** Human-support button does not initiate unattended control. Establish out-of-band confirmation to prevent scams.
+## Threat controls
 
-## Consent and family privacy
+- **Untrusted webpages / prompt injection:** Page contents are data, never executable instructions. Do not expose browser-action or arbitrary shell tools to the model.
+- **Private screen contents:** Inspect only on demand, show capture state, stop immediately on request, and default to no inspection of banking, health, login or payment screens. Reliable redaction cannot be assumed.
+- **Overbroad access:** Run without administrator privileges; OS adapters resolve allowed destinations rather than accepting model-generated paths or commands.
+- **Hallucinated guidance:** Say when a screen is unfamiliar; give one step at a time and do not assume it succeeded.
+- **Network exposure:** Keep local model services bound to loopback; review dependencies, update traffic and optional web searches. “Local model” does not guarantee every component stays offline.
+- **Data retention:** Do not store screen/audio contents, credentials or account identifiers by default. Keep private family records out of GitHub and debugging logs.
+- **Remote-help scams:** Any human support requires independently confirmed, user-approved access. No unattended remote-control feature.
 
-- Each user decides whether to install the helper, share a screen or use voice features.
-- Screen inspection must show visible status and allow immediate stop.
-- The supporter should not receive hidden screen logs or conversation history.
-- Ask separately before any screenshot is used as development evidence; prefer synthetic screenshots.
-- Never publish account names, health/financial details, real addresses, device identifiers or passwords.
+## Consent and pilot gate
 
-## Technical review checklist before pilot
+Each participant chooses whether to install the application or share a screen. They must be able to revoke access and exit. Only synthetic or separately consented, anonymized evidence may be published.
 
-- [ ] Verify permission allowlist by unit and adversarial tests.
-- [ ] Confirm no route from model output to arbitrary URL, shell, filesystem or browser write actions.
-- [ ] Inspect outbound traffic while processing screens and speech.
-- [ ] Confirm screen/audio contents are not saved in logs or crash reports.
-- [ ] Test untrusted webpage instruction injection against the assistant.
-- [ ] Verify folder/app launch cannot escape allowlist via path tricks.
-- [ ] Verify access revocation, app quit and denied-permission behavior.
-- [ ] Test fallback when the local model or browser adapter fails.
-- [ ] Separate real credentials from tests; use fake accounts and synthetic pages.
-- [ ] Review update/recovery procedures for both Windows and macOS.
+Before a pilot, verify:
+- [ ] Denied actions cannot be reached through model output or prompt injection.
+- [ ] Approved folder/app actions cannot escape their allowlist.
+- [ ] Captures and recordings are not sent to the cloud or retained in logs.
+- [ ] Stop and revoked permissions work on Windows and macOS.
+- [ ] Network access, model-server exposure and failure modes have been checked.
+- [ ] Tests use fake credentials and synthetic webpages.
 
-This document captures intended protections only. Passing a checklist must be backed by test evidence, not a statement of intent.
+Record actual results in the [test plan](Roadmap_and_Test_Plan.md). These controls are **requirements, not claims of verified protection**.
