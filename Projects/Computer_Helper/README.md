@@ -46,9 +46,15 @@ The assistant is a **guide with limited local actions**, not an autonomous compu
 
 ## Current progress
 
-- **2026-10-26:** User needs, cross-platform scope, web safety boundary, and initial documentation were established from conversations. These documents are AI-generated drafts supplied for owner review.
+- **2026-10-26:** User needs, cross-platform scope, web safety boundary, and initial documentation were established. The designs remain proposals rather than implemented or tested functionality.
 - **Next:** Inventory the Windows and Mac hardware; interview the intended users; test whether a local vision model works reliably before committing to a software stack.
 
 ## Portfolio integrity
 
 Planning is not implementation. A model-generated design is not a working feature. Published demonstrations and reliability claims will require dated tests and owner review. See [authorship disclosure](AI_Collaboration_and_Authorship.md).
+
+## AI Transparency
+
+I defined the intended users' needs, the Windows/macOS scope, the limits on computer and website actions, and the separation of passwords from the helper. AI drafted the initial requirements, architecture, and planning documents from those constraints, for my review.
+
+**No application, prototype, or automated computer-control workflow has been built or tested.** The proposed product might use a local AI model if implementation proves feasible; that is a future design possibility, not functionality that exists today. See [AI Collaboration and Authorship](AI_Collaboration_and_Authorship.md).
