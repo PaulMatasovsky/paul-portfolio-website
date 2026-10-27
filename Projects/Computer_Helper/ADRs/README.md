@@ -2,7 +2,7 @@
 
 **No accepted ADRs have been written for this project.**
 
-The parent portfolio's [ADR-000](../../../Documentation/ADRs/ADR-000.md) requires the owner to author final decision-record prose personally, after considering real alternatives. These are research/interview prompts only, drafted by AI.
+The parent portfolio's [ADR-000](../../../Documentation/ADRs/ADR-000.md) requires the owner to author final decision-record prose personally, after considering real alternatives. The notes below are open research and interview questions, not accepted architectural decisions.
 
 ## Decision 000 — Security boundary and agency
 
@@ -36,3 +36,7 @@ The parent portfolio's [ADR-000](../../../Documentation/ADRs/ADR-000.md) require
 - Verify feasibility of separate user vaults/recovery workflows; keep actual credentials outside GitHub and the assistant.
 
 For each accepted ADR, use the established title/date/status/context/decision/alternatives/reasoning format and document only alternatives genuinely evaluated.
+
+## AI Transparency
+
+AI drafted these research and interview prompts from owner-defined project boundaries. The owner will assess actual alternatives and write accepted ADRs personally. No prompt here represents a tested design decision.
