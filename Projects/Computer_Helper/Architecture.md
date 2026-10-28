@@ -1,6 +1,8 @@
 # Architecture — Working Plan
 
-**Status:** Proposed, not built · 2026-10-26
+**Project classification:** **AI-led** · **Documentation updated:** 2026-10-28
+
+**Status:** Proposed design; unvalidated Python starter added · 2026-10-28
 
 I want one interface for both Windows and Mac, but I don't expect the code that interacts with each operating system to be the same. The assistant can share its conversation logic while using a different adapter for each computer.
 
@@ -47,3 +49,31 @@ For example, the permitted operations might be `open_known_folder` (Pictures, Do
 If any part fails or is uncertain, the helper should explain that rather than guess or quietly send information to an online service.
 
 I'll choose the actual code structure once I've tried these options. The [roadmap](Roadmap_and_Test_Plan.md) describes the order I plan to work in.
+
+## Updated modular design (proposed)
+
+```text
+One text/voice interface
+        |
+Python conversation + orchestrator
+        |-- Local LLM via Ollama (initial baseline: Llama 3.2 3B)
+        |-- Permission gateway / fixed allowlist
+        |-- Local knowledge search (RAG)
+        |-- File-finding service (read-only and scoped)
+        |-- Windows/macOS adapters (approved operations only)
+        |-- Screen/context reader (explicit permission)
+        |-- Speech-to-text and text-to-speech (optional)
+```
+
+This uses the **encapsulation** idea: each module has one job and a clear input/output contract. A specialist that can do its work with ordinary code should not need a second language model. A dedicated vision model would be considered only after evaluating built-in multimodal models and accessibility APIs.
+
+### Model and retrieval choices
+
+Ollama runs models locally and exposes an API for Python. Start with a compact 3B model to establish a performance baseline; compare it with suitable 4B and vision-capable alternatives on actual hardware. Don't assume parameter count alone determines usefulness. Aim for one instruction at a time, accurate uncertainty, and restrained tool use. Quantized models and modest context windows are especially relevant for CPU-only operation.
+
+For RAG, use a small curated collection of local Windows help notes at first. A keyword retrieval prototype can establish the boundaries; SQLite full-text search or embeddings are potential later upgrades. Documents, webpages, and any file contents are untrusted data. The model cannot turn retrieved text into an authorization to run commands or browse.
+
+### Starter source
+
+The [prototype](prototype/) isolates conversation-history handling and offline knowledge lookup so those pieces can be unit-tested without installing a model. The current starter deliberately has **no tool calling, browser control, screenshot capture, local file search of personal directories, or operating-system actions**. These require tests and permission rules before implementation.
+
