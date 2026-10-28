@@ -1,26 +1,17 @@
 # AI Collaboration and Authorship
 
-**Project classification:** **AI-led** · **Documentation updated:** 2026-10-28
+**Classification: AI-led** · Updated October 28, 2026
 
-**Status:** Working disclosure · 2026-10-28
+I started this project because I wanted to make it easier for family members to get help with their computers. Organizing passwords wasn't enough; they still needed help finding things and figuring out what to do next.
 
-I started looking into this project because I wanted a better way to help family members who have trouble using their computers.
+I set the goals: one simple interface, one instruction at a time, local processing where possible, and no unnecessary subscription costs. I also set the limits. The assistant may eventually open a few approved folders or programs, but it won't take over a browser, submit forms, or access anyone's password vault.
 
-I set the goal of having one simple place to ask for help. I also decided that the assistant should only open approved local folders and programs. When someone is on a website, it should explain what to do rather than take over the browser. I wanted to keep passwords separate and avoid adding monthly AI fees.
+I suggested using the encapsulation principle from object-oriented programming: one conversational coordinator handing tasks to smaller specialists. I also chose to explore RAG so the assistant can look up Windows and Mac instructions instead of relying entirely on what the model remembers.
 
-I used AI to help work through the design, consider possible tools, organize the repository, and draft the requirements, architecture, security notes, and tests. I also used it to revise the documentation so it reads more like the way I normally explain things.
+**AI has led the drafting and initial implementation work.** It helped research the options, prepare and revise most of the documentation, and generate the first Python source files based on our discussions. I've asked for the writing to sound more like me, but that doesn't change who drafted it.
 
-**The documentation is still AI-drafted and needs my review.** Writing it in my preferred style does not make it independently authored.
+The code is a starting point, not a tested application. I haven't verified it on either family computer, finished the integrations, or tested it with the people who would use it. I'll review the code, run the tests, and document results as the work progresses.
 
-AI has drafted starter source, but I haven't run or tested it on a target computer. At this point I can show requirements, plans, and an initial code scaffold—not a working product or results from users.
+I'll use my [decision record process](../../Documentation/ADRs/ADR-000.md) for major technical choices. The current [decision list](ADRs/README.md) is still planning material; it isn't a collection of accepted ADRs.
 
-For the major design choices, I'll follow my [existing ADR process](../../Documentation/ADRs/ADR-000.md): research the alternatives and write the final accepted decisions myself. The [ADR notes](ADRs/README.md) are preparation for that work.
-
-## Project classification update — AI-led
-
-**Computer Helper is an AI-led project.** I identified the problem and set the user experience, operating limits, and goals. I proposed a modular, encapsulated approach with a conversation coordinator and small specialists, and chose to investigate RAG for Windows and macOS help. AI helped research alternatives, write and revise most of the planning documents, and draft the first Python scaffold.
-
-I will review the design and code, test the work on real machines, and record problems and changes rather than treating AI-generated code as verified. **This classification describes how the project is being created; it does not mean a finished assistant is already running AI behind the scenes.** A future running application *is intended* to use a local AI model; that is separate from the authorship disclosure.
-
-As of 2026-10-28, only planning materials and unvalidated starter source are in this repository. There are no verified target-device runs, user trials, or completed integrations. New decisions have been documented as *proposals*, not accepted ADRs.
-
+One distinction matters here: **AI-led** describes how the project is being developed. The finished assistant is also intended to use a local AI model, but that's a separate technical fact.
