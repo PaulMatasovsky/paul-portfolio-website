@@ -1,27 +1,19 @@
-# Decisions I Still Need to Make
+# Architecture Decisions to Work Through
 
-**Project classification:** **AI-led** · **Documentation updated:** 2026-10-28
+**AI-led planning notes** · No decisions below have been accepted yet · Updated October 28, 2026
 
-I use ADRs to record important choices and why I made them. I'm keeping these as questions for now, because I haven't researched the alternatives or made the technical decisions yet. My [ADR process](../../../Documentation/ADRs/ADR-000.md) explains how I handle accepted records.
+I use Architecture Decision Records (ADRs) to explain important choices and why I made them. These are questions I still need to research and test, not finished decisions. I'll follow the [existing ADR process](../../../Documentation/ADRs/ADR-000.md) when I'm ready to record a decision.
 
-| Decision | What I need to figure out |
+| ID | Decision to make |
 | --- | --- |
-| 000 — Local control | Which folders and programs should the assistant be allowed to open, and how will I test those limits? |
-| 001 — Windows and Mac | Which parts can share code, and which need a separate solution for each system? |
-| 002 — Local AI | Which model works well enough on the computers available, without a monthly subscription? |
-| 003 — Reading the screen | Should I use screenshots, accessibility information, or both? How can I avoid sensitive information? |
-| 004 — Passwords | How will I keep each person's password manager separate from the assistant and plan for account recovery? |
+| 000 — Local control | Which folders and apps can the assistant open, and how do I enforce that list? |
+| 001 — Windows and Mac | What can share Python code, and what needs a separate OS adapter? |
+| 002 — Local AI | Which small model gives clear, reliable help on the computers available? |
+| 003 — Reading the screen | Can accessibility information do the job, or will screenshots or vision models be needed? How do I protect sensitive information? |
+| 004 — Passwords | How do I keep password managers and account recovery entirely outside the assistant? |
+| 005 — Specialists | Which tasks need AI, which need ordinary Python, and how should they communicate? |
+| 006 — Knowledge search | When is simple text search enough, and when would SQLite FTS or embeddings help? How will I maintain the notes? |
+| 007 — Hardware | How does the model perform on the existing i5-8500 and 16 GB RAM before I consider upgrades? |
+| 008 — Packaging | When should the terminal prototype become a GUI and an offline installer? |
 
-These notes were drafted with AI. They aren't accepted ADRs.
-
-## Additional decisions under review (not accepted ADRs)
-
-| Decision | What I need to evaluate |
-| --- | --- |
-| 005 — Orchestrator and specialists | Which requests are handled by Python services versus separate AI models; how do modules communicate and fail safely? |
-| 006 — Knowledge retrieval | Start with local text search; compare with SQLite FTS and embeddings only when needed. How will reference documents be reviewed and updated? |
-| 007 — CPU performance and hardware | Benchmark 3B/4B models with 16 GB RAM and the browser open before approving RAM or low-profile GPU purchases. |
-| 008 — Development and packaging | Begin with Ollama + Python CLI, then introduce GUI and offline installers only after functionality works. |
-
-The approach above emerged from user-directed planning with AI help. It is not an accepted, user-authored ADR. The current source scaffold is not proof of model performance or security.
-
+AI helped draft these questions based on my goals and our discussions. They are not accepted, independently authored ADRs.
