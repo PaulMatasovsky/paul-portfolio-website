@@ -1,0 +1,7 @@
+# Do not commit local environments, cache, or generated files.
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+*.log
