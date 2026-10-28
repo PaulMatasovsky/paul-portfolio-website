@@ -2,47 +2,45 @@
 
 **Project status:** **Complete** · **Activity:** Maintenance
 
-## Project Overview
-Manually sorting warehouse parts reports could take over an hour and was prone to errors. Different part-number formats and inconsistent source layouts made the process more complicated.
+## Why I Built It
 
-I developed an automated spreadsheet workflow that interprets and sorts the data with minimal user interaction. The system produces three print-ready reports, organized by part number, product line, or category, for warehouse planning and operations. In use, it reduced report preparation from more than an hour to roughly 2–5 minutes for reports with up to 2,000 parts.
+Sorting our warehouse parts reports by hand could take more than an hour, and different part-number formats made ordinary alphabetical sorting unreliable.
 
+I built a spreadsheet to handle that work. My manager can paste in the original report, let the formulas process it, and print one of three sorted reports: Part Number First, Line First, or Category First.
 
-## How it Works
-- Input: Obtain the source report, clear the RawData worksheet, and paste the entire report, including its headers.
-- Processing: The workbook automatically processes the data and prepares three sorted reports.
-- Output: Select the desired report (Part Number, Line, or Category) and print it.
+For reports with up to 2,000 parts, preparation went from over an hour to roughly **2–5 minutes**. The Google Sheets version is used in warehouse operations.
 
+## How It Works
 
-## Key Features
-- Part-number sorting: Handles complex part-number structures, including prefixes, numbers, and suffixes.
-- Dynamic header mapping: Accommodates changes in source column positions.
-- Built-in validation: Checks for missing fields, data discrepancies, and template overflow.
+1. **Input:** Clear the RawData worksheet and paste in the new report, including its headers.
+2. **Processing:** The workbook finds the required columns, cleans and sorts the records, and checks the results.
+3. **Output:** Choose the report you need and print it.
 
+## What It Handles
 
-## Project Files and Documentation
-- The [Google Sheets workbook](https://docs.google.com/spreadsheets/d/1-h7BjpiVBTfXUplCqvHsUb9QcV0sLdSG287sO5V9kcM/edit?usp=sharing) is a copy of the version developed for warehouse operations.
-- [Excel](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/FINAL_Automated_Sorting_Template.xlsx) version for downloading and viewing.
-- **Excel limitation:** The Excel version required formula adjustments and still includes unwanted blank rows when printing. The operational Google Sheets version avoids this printing issue.
-- [Business Rules](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/Business_Rules.md): What the system is required to do.
-- [Technical Overview](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/Technical_Overview.md): How the system implements those requirements.
-- [ADRs](https://github.com/PaulMatasovsky/paul-portfolio-website/tree/main/Projects/ETL/ETL_Documentation/ETL_ADR) and [Project Journal](https://github.com/PaulMatasovsky/paul-portfolio-website/tree/main/Projects/ETL/ETL_Documentation/ETL_Learning_Journal): Design decisions and lessons learned.
-- [Screenshots](https://github.com/PaulMatasovsky/paul-portfolio-website/tree/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots): Visual evidence of the workflow and results.
+- **Part-number sorting:** Separates the pieces of complex part numbers so they sort more naturally than plain text.
+- **Changing column order:** Matches columns by their headings rather than assuming every report has the same layout.
+- **Built-in checks:** Looks for missing information, discrepancies, and data that exceeds the template's capacity.
 
+## Workbook and Documentation
 
-## Status & Future Development
-### Current Status
-The spreadsheet workflow is complete and is currently used in actual warehouse operations.
-The project remains available for maintenance and improvements.
+- [Google Sheets workbook](https://docs.google.com/spreadsheets/d/1-h7BjpiVBTfXUplCqvHsUb9QcV0sLdSG287sO5V9kcM/edit?usp=sharing) — a copy of the version I developed for warehouse use.
+- [Excel version](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/FINAL_Automated_Sorting_Template.xlsx) — available to download and inspect. I had to adjust some formulas for Excel, and it still prints extra blank rows. The working Google Sheets version does not have that problem.
+- [Business Rules](Business_Rules.md) — what the workbook needs to do.
+- [Technical Overview](Technical_Overview.md) — how the worksheets carry out those rules.
+- [ADRs](ETL_Documentation/ETL_ADR/) and [Learning Journal](ETL_Documentation/ETL_Learning_Journal/) — the decisions I made and what I learned.
+- [Screenshots](ETL_Documentation/Supporting_Evidence/Screenshots/) — examples of the data flow and finished reports.
 
+## What I Might Add Later
 
-### Future Development
-- Add a database backend, potentially using SQL.
-- Develop a user-friendly dashboard.
-- Automate importing source data, eliminating the manual copy-and-paste process.
+The workbook is finished for its original purpose, but there are a few ways I could expand it:
+
+- Move the data processing into a database, potentially using SQL.
+- Build a more user-friendly dashboard.
+- Import source reports automatically instead of relying on copy and paste.
 
 ## AI Transparency
 
-I designed and developed the spreadsheet workflow. During development, I consulted AI to troubleshoot persistent formula problems that remained after multiple revisions. AI also helped me review and improve the GitHub project documentation.
+I designed and developed the workbook. I used AI to help troubleshoot formula problems that I had already tried to fix through several revisions. AI also helped me prepare, review, and revise the GitHub documentation.
 
-**The finished workbook uses spreadsheet formulas and logic; it does not invoke AI when processing reports.**
+The workbook itself uses spreadsheet formulas and logic. **AI does not run behind the scenes when someone uses the template.**

@@ -1,68 +1,54 @@
 # ETL Technical Overview
 
-**AI Transparency:** AI assisted with reconstructing and drafting this document using previous project discussions and workbook inspection.
+**AI Transparency:** AI helped reconstruct and draft this document from previous discussions and workbook inspection. I also used AI to revise the wording.
 
-## 1. Architecture
+## 1. How the Workbook Is Organized
 
-The project uses a spreadsheet-based ETL pipeline. Each worksheet handles a specific part of the process and passes its results to the next stage.
+I built the workbook as a series of processing steps. Each worksheet has a particular job and passes its results to the next one:
 
 `RawData → HeaderMap → Step1 → Step2 → Step3 → Step4 → Reports`
 
-The QA worksheet checks information from multiple processing stages and determines whether the report sheets display normal results or an error.
+The QA worksheet checks several stages of that process. If something important doesn't match, the report sheets show an error or block the normal results.
 
 ## 2. Processing Stages
 
-### RawData — Input
+### RawData — Original Report
 
-RawData holds the original source report, including its headers.
+RawData holds whatever was in the source report, including its headers. To run the next report, the user replaces the old input. There is no need to edit the processing formulas.
 
-Users replace the previous report with the new one. The workbook processes the data automatically without requiring changes to the processing worksheets.
+### HeaderMap — Finding the Columns
 
-### HeaderMap — Column Identification
+I didn't want to rely on every report having its columns in exactly the same order.
 
-HeaderMap identifies the source columns used by the workbook.
+HeaderMap converts headings to uppercase and removes spaces, underscores, and hyphens. It then looks for the required names or recognized alternatives. The positions it finds are used by the other worksheets.
 
-It normalizes header names by converting them to uppercase and removing spaces, underscores, and hyphens. It then compares them against the recognized header names and alternatives.
+### Step1 — Pulling Out the Needed Data
 
-The resulting column positions allow the workbook to process reports even when the source columns have been rearranged.
-
-### Step1 — Data Extraction
-
-Step1 retrieves the six source fields using the positions identified by HeaderMap.
-
-This creates a consistent data structure for the remaining processing stages, regardless of the original report's column order.
+Step1 uses those column positions to collect the six required fields. This gives the remaining steps a consistent layout even when the original report is arranged differently.
 
 ### Step2 — Cleaning and Parsing
 
-Step2 prepares the extracted data for sorting.
+Step2 removes extra spaces and nonprinting characters, standardizes capitalization, and treats blank On Hand and Product Minimum values as zero.
 
-It removes unnecessary surrounding whitespace and nonprinting characters, standardizes text capitalization, and converts blank On Hand and Product Minimum values to zero.
+It flags zero-quantity records, missing information, and duplicate part numbers.
 
-It flags conditions such as zero quantities, missing row information, and duplicate part numbers.
+A decision tree chooses the parsing rule for each part number. It handles recognized patterns such as leading letters, hyphenated numbers, and special third-character formats, then separates the components needed for sorting.
 
-A decision tree selects the parsing method for each part number. Recognized cases include leading letters, hyphenated numbers, and special third-character formats.
+### Step3 — Building the Sort Keys
 
-The parsing formulas extract the components used to construct the sorting keys.
+Step3 creates three different sort keys from the parsed part-number pieces, Product Line, and Category.
 
-### Step3 — Sorting Keys
+It uses zero-padding so the pieces can be compared consistently, and the original source-row number is the last tie-breaker. It then ranks each record for its position in each output.
 
-Step3 creates three sorting keys using the parsed part-number components and the product line and category fields.
+### Step4 — Putting the Reports Together
 
-It standardizes components through zero-padding so their values can be compared consistently. The original source-row position serves as a final tie-breaker.
+Step4 uses those ranks to assemble the three sorted tables. Each contains the original part number, line, category, description, quantities, and sequential row numbers.
 
-The keys are ranked to determine each record's position in its output.
+The report worksheets use these tables for printing.
 
-### Step4 — Output Assembly
+## 3. Sorting Versus Display Order
 
-Step4 uses the calculated ranks to retrieve records in the correct order for each report.
-
-It assembles three output tables containing the original part number, product line, category, description, quantities, and sequential row numbers.
-
-These tables feed the print-ready report worksheets.
-
-## 3. Sort Order and Report Layout
-
-Step3 controls **sorting priority**. Step4 controls the **displayed column order**. These are intentionally different for two reports.
+The order used for **sorting** is not always the order of the **columns on the printed report**. Step3 handles the sort; Step4 determines what the user sees.
 
 | Report | Sorting priority | Displayed fields after row number |
 |---|---|---|
@@ -70,50 +56,47 @@ Step3 controls **sorting priority**. Step4 controls the **displayed column order
 | Category First | Category → Line → Part Number | Category, Part Number, Line |
 | Line First | Line → Category → Part Number | Line, Part Number, Category |
 
-All three displays then include Description, On Hand, and Product Minimum.
+Each report also includes Description, On Hand, and Product Minimum.
 
-The Category First and Line First sort keys prioritize product grouping before part number. This reflects the shelving requirement to keep different lines or brands separated rather than arranging every part solely by part number.
+The Category First and Line First versions group parts by category or product line before considering part number. That makes more sense for shelves that need different brands or lines kept together.
 
-## 4. Quality Assurance
+## 4. Quality Checks
 
-The QA worksheet identifies conditions that could produce incorrect reports, including:
+I added QA checks because a sorted report isn't useful if records are missing or the quantities don't match.
 
-- Missing required source headers.
+The QA worksheet checks:
+
+- Missing required headers.
 - Duplicate part numbers.
-- Source data exceeding the supported row or column capacity.
-- On Hand and Product Minimum checksum differences between Step2 and each Step4 output.
-- Part-number parsing and reconstruction problems.
+- Input beyond the supported row or column limits.
+- Differences in On Hand or Product Minimum totals between Step2 and each Step4 output.
+- Problems parsing a part number or rebuilding its original structure.
 
-It also tracks excluded zero-quantity records and rows missing expected data.
+It also keeps track of excluded zero-quantity records and rows with missing information. Formula-based regression checks cover the three sort orders and selected parsing cases.
 
-The QA worksheet includes formula-based regression checks for the three sorting orders and selected parsing cases.
+Blocking problems add to the QA error total. If that total is greater than zero, the reports show an error or suppress their normal output instead of presenting questionable data.
 
-Blocking conditions contribute to the QA error total. When that total is greater than zero, the report worksheets show an error or suppress the normal output instead of presenting the results as valid.
+## 5. Printed Reports
 
-## 5. Report Worksheets
+PartNoFirstReport, CategoryFirstReport, and LineFirstReport display the matching Step4 tables in a print-ready format.
 
-PartNoFirstReport, CategoryFirstReport, and LineFirstReport display Step4's corresponding output tables in print-ready formats.
-
-These are the primary worksheets intended for normal use. The intermediate processing worksheets handle the extraction, sorting, and validation without requiring user interaction.
+These are the sheets my manager needs to use. The intermediate sheets do the work in the background without requiring user interaction.
 
 ## 6. Excel Compatibility
 
-The project began in LibreOffice, but I restarted the implementation in Google Sheets partway through development. Google Sheets resolved blank-row printing problems and allowed the workbook to be accessed from any company computer with internet access and appropriate sign-in permissions.
+I first started in LibreOffice, but I restarted the project in Google Sheets after running into blank rows on printed reports. Google Sheets solved that printing issue for the working version and let the workbook be opened from different company computers with internet access and the proper login.
 
-After the Google Sheets version was completed, I adapted the workflow for Excel as a downloadable version.
+After completing that version, I adapted it for Excel so I could provide a downloadable copy.
 
-The Excel header-mapping formulas were rewritten without `FILTER` so reordered source columns could be located. Formula changes also addressed implicit-intersection (`@`) operators that affected range-based calculations.
+That required some changes. I rewrote the header mapping without `FILTER` so it could still find rearranged columns, and I corrected formulas affected by Excel's implicit-intersection (`@`) operators. I also adjusted overflow checks for extra populated rows and columns, and made sure a blank optional Description would not appear as `0`.
 
-The overflow check was adjusted to detect excess populated rows and columns. Blank optional Description values were handled so Excel would not display an unintended `0`.
+The processing approach stayed the same, but **the Excel version still prints unwanted blank rows**. The operational Google Sheets workbook does not. I documented the platform decision in [ADR-001](ETL_Documentation/ETL_ADR/ADR-001.md).
 
-The underlying data-processing workflow was preserved, but **the Excel version still prints blank rows**. The operational Google Sheets version does not have that printing problem. See [ADR-001](ETL_Documentation/ETL_ADR/ADR-001.md) for the platform decision and its tradeoffs.
+## 7. Other Sheets and Limits
 
-## 7. Supporting Worksheets and Limitations
+- **Test Data:** Sample part numbers and records used to check different parsing and processing cases.
+- **Comments:** Notes about the workbook.
 
-**Test Data:** Contains sample records used to examine part-number patterns and processing scenarios.
+The workbook supports **2,000 source records**. New part-number formats may require changes to the parsing rules.
 
-**Comments:** Provides supporting notes about the workbook.
-
-The supported input limit is 2,000 source records. Parsing rules cover known part-number patterns and may need to be extended for unfamiliar formats.
-
-For expected behavior, see [Business Rules](Business_Rules.md). For visual examples, see [Screenshots](ETL_Documentation/Supporting_Evidence/Screenshots/README.md).
+The [Business Rules](Business_Rules.md) describe the expected behavior, and the [Screenshots](ETL_Documentation/Supporting_Evidence/Screenshots/README.md) show examples of the worksheets and reports.

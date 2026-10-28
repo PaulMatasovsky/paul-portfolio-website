@@ -3,40 +3,40 @@
 **Date Recorded:** October 26, 2026  
 **Entry Type:** Retrospective
 
-**AI Transparency:** AI assisted with reconstructing and drafting this journal entry from earlier project discussions. AI also helped me troubleshoot and resolve persistent errors during workbook development.
+**AI Transparency:** AI helped me reconstruct and draft this retrospective from earlier project discussions. I also used it to troubleshoot difficult formulas during development and to revise this wording later. This is not an original journal entry written at the time.
 
-## Where I Started
+## How It Started
 
-We had been using a company website to sort our warehouse parts reports, but one day it stopped working. IT considered the problem a low priority, so my boss started sorting the part numbers by hand. That could take over an hour, and on at least one occasion it took even longer.
+We had been using a company website to sort our warehouse parts reports. When that website stopped working, IT considered the issue a low priority, so my boss started sorting the part numbers manually. It could take more than an hour, and at least once it took longer.
 
-I thought I could make a temporary workaround to save him time. I started building a spreadsheet in LibreOffice that would let him paste in the report, select a sorted output, and print it.
+I thought I could put together a temporary workaround that would save him some time. I started with LibreOffice and worked on a spreadsheet where he could paste in the report, choose the order he wanted, and print it.
 
-## Development and the Decision to Change Platforms
+## Why I Switched to Google Sheets
 
-Partway through the project, I kept running into blank rows in the printed LibreOffice reports. I also wanted the workbook to be accessible from different company computers, not all of which had Excel installed, even though they all had internet access.
+Partway through, I kept getting unwanted blank rows in the printed LibreOffice reports. There was another practical issue: not every company computer had Excel installed, although they did have internet access.
 
-I restarted the project in Google Sheets. That gave my manager access from any company computer with the appropriate login and, more importantly, solved the blank-row printing problem for the operational version.
+I decided to restart the workbook in Google Sheets. That meant my manager could open it from different company computers with the appropriate account. More importantly, it solved the printing problem for the version we actually use.
 
-The project took roughly two weeks of work during spare time between my regular duties. Nearly all of that work happened at the warehouse. I spent only about half an hour to an hour at home, mainly working on formatting and troubleshooting. That two-week period included restarting the workbook in Google Sheets.
+The whole project took roughly two weeks, working during spare time between my regular warehouse duties. Almost all the work happened there. I spent only about half an hour to an hour at home on formatting and troubleshooting. That two-week period includes the time I spent restarting it in Google Sheets.
 
-## The Most Important Technical Discovery
+## Something I Learned Along the Way
 
-While looking for a way around the printing problem, I learned how to use Google Sheets formulas that populate an entire row or column from a single starting cell.
+While working on the printing issue, I found out that a formula in one Google Sheets cell could populate an entire row or column.
 
-I had not known that capability existed. I used it to bring the header row from RawData into HeaderMap, and it was central to avoiding the unwanted blank rows when printing.
+I hadn't known about that feature before. I used it to bring the headers from RawData into HeaderMap, and it turned out to be important in avoiding the extra blank printed rows.
 
-That discovery changed how I approached the workbook. Instead of filling large areas with individual formulas, I could let a formula produce the range of results needed.
+It changed how I thought about the workbook. Rather than fill a large area with individual formulas, I could have a single formula produce the range I needed.
 
-## The Hardest Challenge
+## The Hardest Part
 
-Troubleshooting has always been one of my strengths, but several persistent formula errors continued to cause problems even after multiple revisions.
+I generally enjoy troubleshooting, but a few formula problems kept coming back even after I had revised them several times.
 
-I used AI as an additional troubleshooting resource to identify and resolve those issues. That allowed me to move past problems I had repeatedly worked on without getting the results I needed.
+I eventually brought AI into the process as another troubleshooting resource. It helped me identify and resolve problems I hadn't been able to get past on my own.
 
 ## What I Took Away
 
-This project reinforced the importance of choosing a tool based on the actual work environment, not just the tool I started with.
+This was a reminder that I need to choose tools based on where and how they'll actually be used, not just stick with the first one I picked.
 
-It also taught me a new way to work with spreadsheet formulas and reinforced the importance of checking the finished output instead of assuming that a working formula always produces a reliable report.
+I also learned a new approach to spreadsheet formulas and reinforced something I've found important in other work: a formula running without errors doesn't automatically mean the finished report is correct. I still need to check the output.
 
-The Google Sheets version is used for warehouse operations. I later made an Excel version available for downloading and viewing as part of my portfolio, although it still has the blank-row printing limitation.
+The Google Sheets workbook is used in warehouse operations. I later made an Excel copy for my portfolio, although that version still has the blank-row printing limitation.
