@@ -1,0 +1,2 @@
+# AI-led Computer Helper prototype. Runtime dependency only.
+ollama>=0.5,<1
