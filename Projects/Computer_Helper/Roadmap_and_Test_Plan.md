@@ -1,6 +1,8 @@
 # Roadmap and Test Plan
 
-**Status:** Planning · 2026-10-26
+**Project classification:** **AI-led** · **Documentation updated:** 2026-10-28
+
+**Status:** Planning with unvalidated starter source · 2026-10-28
 
 I want to start with something small and prove that it works before adding more features. Windows and Mac may need different amounts of work.
 
@@ -44,3 +46,29 @@ I'll need to find out whether this actually makes things easier, not just whethe
 For each test I'll record the date, system and app version, task, result, help needed, and anything I need to change. I'll use sample data and keep personal information out of GitHub.
 
 The [security document](Security_and_Privacy.md) is the source for the permission rules these tests need to enforce.
+
+## Updated build order and evidence checklist
+
+| Milestone | Goal | Status as of 2026-10-28 |
+| --- | --- | --- |
+| A. Source scaffold | Python CLI, swappable model name, short conversation history, basic local knowledge retrieval | **Code drafted in GitHub; not run on target hardware** |
+| B. Baseline model test | Install Ollama, pull a compact model, measure response quality, CPU latency, and peak RAM while browser is open | Not started |
+| C. RAG validation | Expand curated Windows notes; test retrieval and answer accuracy; decide if FTS/embeddings are needed | Not started |
+| D. Specialist routing | Add a read-only, approved-location file finder behind an explicit permission gateway | Not started |
+| E. Screen/browser guidance | Test accessibility-first page reading and opt-in screenshots; never automate websites | Not started |
+| F. Voice and GUI | Local speech input/output and a single accessible window | Not started |
+| G. macOS adapters and family testing | Verify Mac hardware, port approved helpers, run supervised usability/security trials | Not started |
+| H. Packaging | Repeatable offline setup, versioned installer, recovery and user instructions | Not started |
+
+### New test cases to add when features exist
+
+- **T15:** With Ollama unavailable, the CLI gives a clear error and does not access a cloud model.
+- **T16:** A retrieved document that says “ignore your instructions” is treated as reference text only.
+- **T17:** The assistant can identify recent image files only within an explicitly approved folder; no deletion or moving.
+- **T18:** Requests for unsupported tool names, filesystem paths, and shell commands are denied by application code.
+- **T19:** Compare 3B and 4B models on actual Windows help questions, time-to-first-response, token speed, and working memory.
+- **T20:** Run Windows, browser, RAG, and optional voice together on 16 GB before considering 32 GB or a GPU.
+- **T21:** An opt-in screen inspection never proceeds after permission is declined or withdrawn.
+
+Document failures and measurements before changing model size or buying hardware. No user or performance results have been collected yet.
+
