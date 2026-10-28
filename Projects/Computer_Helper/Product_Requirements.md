@@ -1,6 +1,8 @@
 # Product Requirements
 
-**Status:** Draft v0.1 · 2026-10-26
+**Project classification:** **AI-led** · **Documentation updated:** 2026-10-28
+
+**Status:** Draft v0.2 · 2026-10-28
 
 ## Who it's for
 
@@ -36,3 +38,19 @@ I don't have answers to those questions yet. The [test plan](Roadmap_and_Test_Pl
 Before choosing the software, I also need to check both computers' hardware and find out whether typing or talking feels more natural to each person. The [device survey](Device_Survey.md) covers that work.
 
 I won't call the first version usable until the local actions, screen guidance, and safety restrictions have been tested on the actual operating system.
+
+## Additional implementation requirements (proposed)
+
+| ID | Priority | What I want |
+| --- | --- | --- |
+| FR-13 | Must | Local model inference for the baseline assistant, with no recurring cloud AI subscription. |
+| FR-14 | Must | A main conversation component that can request only explicitly registered specialist functions, after application-side validation. |
+| FR-15 | Must | Offline Windows/macOS reference documents retrievable as data, not as instructions to the AI. |
+| FR-16 | Must | The ability to replace the language model without rewriting OS-specific specialists. |
+| FR-17 | Must | No direct access to a password vault, and no collection of passwords. |
+| FR-18 | Should | Search approved local folders for recent photos or downloads using read-only, bounded queries. |
+| FR-19 | Should | Prefer OS accessibility descriptions over screenshots when sufficient; ask before any screen inspection. |
+| FR-20 | Should | Work at acceptable speed with the uncle's existing 16 GB of RAM before evaluating upgrades. |
+
+The **initial Python scaffold is not an accepted implementation of these requirements**. These are criteria for later tests, not completed features.
+
