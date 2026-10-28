@@ -1,22 +1,11 @@
-# Portfolio Description — Draft
+# Computer Helper — Portfolio Draft
 
-**Project classification:** **AI-led** · **Documentation updated:** 2026-10-28
+**AI-led project** · In progress; starter code has not been tested · Updated October 28, 2026
 
-**Status:** In Progress (starter source, not validated) · Active
+I started this project after realizing that organizing someone's passwords didn't solve the bigger problem: he still needed help using his computer.
 
-## Computer Helper — Windows and macOS
+I'm working toward one simple assistant for Windows and macOS that can answer questions and walk someone through a task one step at a time. The plan is to use a small local AI model with specialized Python services and an offline help library (RAG). It would be allowed to open a few approved local folders and applications. On websites, it would explain what the person is looking at, not click or navigate for them. Passwords would stay in a separate manager.
 
-I started this project after realizing that helping someone keep track of passwords didn't address all the other problems they were having with their computer.
+I've defined the requirements and limits with AI's help, and AI generated most of the documentation and initial Python code. **This is AI-led work.** The source is in GitHub, but I haven't run or validated the application on the intended computers yet. I'm starting with the hardware we have before considering upgrades.
 
-I'm planning a simple assistant that can guide people through Windows, macOS, and websites one step at a time. It would be allowed to open a few familiar folders and applications, but on websites it would only explain what to do. I want to keep passwords in a separate manager and avoid additional monthly AI costs.
-
-So far I've worked out the initial requirements and safety boundaries, with AI helping to prepare the technical documentation. **I have added starter Python source, but have not run or validated it on the intended computers.**
-
-See the [project documentation](README.md) for the plan and current work.
-
-## Current update — 2026-10-28
-
-**Project classification: AI-led.** I'm working toward a local Windows/macOS assistant with one simple interface and a small model coordinating focused services. The proposed services cover local Windows help documents (RAG), safe file finding, limited approved OS shortcuts, and opt-in screen/browser guidance. AI has drafted most of the documentation and initial Python source based on the goals and limits I set.
-
-The first Python source files are now in the repository, but I have **not verified that they work on either family computer**. I'm starting with the hardware already available rather than buying RAM or a graphics card.
-
+See the [project documentation](README.md) for the current plan and work.
