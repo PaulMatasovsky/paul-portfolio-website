@@ -10,6 +10,7 @@ I want my GitHub documentation to sound like me, not like a corporate report or 
 - **Keep the details that matter.** Requirements, safety boundaries, reproducible setup instructions, test evidence, and limitations should not be lost just to make a document shorter.
 - **Be clear about AI.** Label work accurately as AI-led or human-led, and explain AI's actual role without making a bigger production out of it than necessary. Human-sounding prose is not proof that I wrote it without AI. Also distinguish AI used *to develop* something from AI that actually runs *inside* the finished product.
 - **Don't claim work I haven't done.** A plan is a plan. Draft code is not a tested application. Keep status and results current, with evidence when something is complete.
+- **Show where each project stands.** Each project README should open with a consistent **Project status** and **Activity** line. The status should match the portfolio overview and only change when there's evidence that the work has moved forward. Keep the separate AI authorship label clear, too.
 
 When editing, I'd rather revise the original explanation than append another section saying the same thing.
 
