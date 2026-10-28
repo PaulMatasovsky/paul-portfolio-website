@@ -1,5 +1,7 @@
 # Security and Privacy
 
+**Project classification:** **AI-led** · **Documentation updated:** 2026-10-28
+
 **Status:** Planned rules, not yet tested · 2026-10-26
 
 I want this to be a helper, not a program that takes over someone's computer or online accounts. These are the rules I intend to build into the application itself. Telling an AI not to do something is not enough.
@@ -45,3 +47,17 @@ I'll test these safeguards on both operating systems:
 Each user will decide whether to install the helper and when to share a screen. Only test results or screenshots that are synthetic or separately approved and anonymized should be published.
 
 These are design requirements. They are not claims that the application is already secure. I'll record the results in the [test plan](Roadmap_and_Test_Plan.md).
+
+## Architecture safeguards to implement
+
+- Use a **deterministic permission gateway** between AI output and every possible action. Do not treat tool calls or model responses as authorization.
+- Keep an explicit list of local folder shortcuts and allowed operations. Never execute AI-authored shell commands, arbitrary paths, or file mutations.
+- Keep browser guidance read-only. Website content and retrieved documents may contain prompt-injection text; none of it can override user/system permissions.
+- Only search user files inside specifically approved folders, with user-visible intent and constrained results. General Windows RAG searches *public help notes*, not private files.
+- Prefer platform accessibility information when feasible; screen capture requires fresh permission and must be off by default.
+- Bind the local model API to localhost only; do not silently fall back to cloud services.
+- Avoid storing transcripts, screenshots, recordings, tokens, device identifiers, or private family data in logs or the GitHub repo.
+- Test that an error or missing specialist fails closed, with a plain-language explanation.
+
+The new Python scaffold does not yet implement action permissions because it contains **no executable computer-control tools**. These rules are commitments to implement and verify, not evidence of security testing.
+
