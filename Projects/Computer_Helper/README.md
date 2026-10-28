@@ -1,6 +1,7 @@
 # Computer Helper — Windows and macOS
 
-**AI-led project** · **In progress:** planning and untested Python starter · Updated October 28, 2026
+**Project status:** **In Progress** · **Activity:** Active (planning and untested Python starter)
+**AI classification:** **AI-led** · Updated October 28, 2026
 
 ## Why I'm building it
 
