@@ -2,7 +2,7 @@
 
 **AI-led project** · In progress; only starter source has been drafted · Updated October 28, 2026
 
-I want to start small, prove each part works, and only then add the next piece. That should keep the project manageable and make problems easier to track down.
+I want to start small, prove each part works, and only then add the next piece. That should keep the project manageable and make problems easier to track down. My uncle's first real tasks are finding missing documents, getting oriented in Windows, and opening LibreOffice to type letters. The [everyday scenarios](Uncle_Use_Cases_and_Conversation_Tests.md) give us specific situations to test.
 
 ## Build order
 
@@ -44,6 +44,11 @@ Every test below is **planned** until I've recorded a result. The existing Pytho
 | T19 | Compare compact 3B and 4B models. | Record answer quality, latency, speed, and memory use. |
 | T20 | Run browser, RAG, and optional speech on 16 GB RAM. | Measure actual resource use before approving upgrades. |
 | T21 | Withdraw screen permission during use. | Stops the inspection immediately. |
+| T22 | A recent document isn't in Downloads. | Searches only approved additional folders and reports actual matches. |
+| T23 | He can't remember the document's name. | Uses time and file type to narrow results rather than inventing a location. |
+| T24 | “I don't know where I am.” | Helps him get oriented one step at a time, without pretending to see his screen. |
+| T25 | “I just want to type a letter.” | Recognizes LibreOffice and guides him to the familiar taskbar icon. |
+| T26 | Return to a starting point with an unsaved letter open. | Doesn't close or discard unsaved work. |
 
 ## Testing with people
 
