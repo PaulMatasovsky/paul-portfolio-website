@@ -2,36 +2,39 @@
 
 **Project status:** **Not Started** (implementation) · **Activity:** Active (planning)
 
-## The problem
+## Why I'm doing this
 
-Remembering passwords is only one challenge for people unfamiliar with computers. Finding files, using applications, and navigating websites can also require help.
+I started thinking about this project while helping a family member who kept losing track of passwords. I put the passwords into one document, but that did not solve the problem. He still had trouble knowing where to find things and what to do on the computer.
 
-## Proposed solution
+I began looking at a more useful solution: one place to ask for help with the computer itself. I also want it to work on a Mac, since another family member could use similar help.
 
-A single, accessible assistant for Windows and macOS that explains tasks **one step at a time** through text or, if feasible, voice.
+## What I want to build
 
-- **Local tasks:** May open a small set of approved folders and applications.
-- **Websites:** Gives guidance about a page the user has already opened; does not navigate, click, or submit anything.
-- **Privacy:** Requests permission to inspect the screen. Passwords remain in a separate manager.
-- **Cost:** Target $0 in additional recurring AI subscriptions; local-model feasibility depends on both computers' hardware.
+A simple assistant that can explain what someone is looking at and guide them **one step at a time**. I want it to work by typing, with voice as an option if the computers can handle it.
 
-**Example:** “Open my pictures” could open the Pictures folder. “Where are my bank statements?” would receive guidance—not an automated banking action.
+There is an important limit to what I want the assistant doing:
+
+- **On the computer:** It could open familiar folders, such as Pictures or Documents, or a few approved applications.
+- **On websites:** It could explain the page someone is already viewing, but it would not click links, fill out forms, or navigate for them.
+- **With passwords:** A separate password manager would handle them. The assistant would not see or retrieve passwords.
+
+I also want to keep screen information on the computer and avoid adding a monthly AI subscription. Whether a local model can do the job well enough is something I still need to test.
 
 ## Documentation
 
-| Document | Purpose |
+| Document | What's in it |
 | --- | --- |
-| [Requirements](Product_Requirements.md) | User needs and desired capabilities |
-| [Architecture](Architecture.md) | Candidate design and platform integration |
-| [Security and Privacy](Security_and_Privacy.md) | **Authoritative permissions and privacy rules** |
-| [Roadmap and Tests](Roadmap_and_Test_Plan.md) | Milestones, test cases and evidence |
-| [Device Survey](Device_Survey.md) | Hardware and user-interview template |
-| [ADR Preparation](ADRs/README.md) | Open decisions, not accepted ADRs |
-| [AI Collaboration](AI_Collaboration_and_Authorship.md) | Roles, authorship and claim boundaries |
-| [Portfolio Draft](Portfolio_Summary.md) | Concise copy for a future site entry |
+| [Requirements](Product_Requirements.md) | What the helper needs to do |
+| [Architecture](Architecture.md) | How I might put it together |
+| [Security and Privacy](Security_and_Privacy.md) | What the helper is and isn't allowed to do |
+| [Roadmap and Tests](Roadmap_and_Test_Plan.md) | The steps and tests I plan to use |
+| [Device Survey](Device_Survey.md) | What I need to learn about both computers and their users |
+| [ADR Preparation](ADRs/README.md) | Design decisions I still need to make |
+| [AI Collaboration](AI_Collaboration_and_Authorship.md) | My contributions and AI's involvement |
+| [Portfolio Draft](Portfolio_Summary.md) | Draft description for my portfolio site |
 
-**Next:** Collect Windows and Mac specifications, speak with the intended users, and benchmark local models before choosing a stack.
+**Next step:** Check both computers' specifications, find out which tasks are most frustrating for the intended users, and test local AI options.
 
 ## AI transparency
 
-I defined the users, scope and safety boundaries. AI drafted these initial documents; no application has been implemented or tested. [Contribution details](AI_Collaboration_and_Authorship.md).
+I set the goals and boundaries for this project. AI helped turn our discussions into these documents and revise the wording. I have not built or tested the application. [More on AI's involvement](AI_Collaboration_and_Authorship.md).

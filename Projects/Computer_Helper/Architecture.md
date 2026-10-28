@@ -1,47 +1,49 @@
-# Candidate Architecture
+# Architecture — Working Plan
 
-**Status:** Proposed, not implemented · 2026-10-26
+**Status:** Proposed, not built · 2026-10-26
 
-## Design
-
-One shared conversation interface; OS-specific Windows and macOS adapters. A code-enforced policy gate decides which local actions are possible. Model responses never execute directly.
+I want one interface for both Windows and Mac, but I don't expect the code that interacts with each operating system to be the same. The assistant can share its conversation logic while using a different adapter for each computer.
 
 ```text
 User (text / optional voice)
           |
-     UI + consent
+     Help window
           |
-   Request coordinator ---- Local model
+   Request coordinator ---- Local AI model
           |
-      Policy gate --------- On-demand screen context
+      Permission check ---- Screen information (when approved)
           |
-   Approved local actions
+     Allowed local actions
        /        \
     Windows     macOS
     adapter    adapter
 ```
 
-A separate password manager has **no connection** to the model or action layer.
+The AI can suggest an action, but the application must check whether that action is allowed before doing anything. A password manager stays separate.
 
-## Component responsibilities
+## Main parts
 
-| Component | Role |
+| Part | Job |
 | --- | --- |
-| UI | Large Help and Stop controls; step-by-step dialogue; visible screen-consent state |
-| Local inference | Explain a request or selected screen; ask for clarification |
-| Policy gate | Validate requested actions against a fixed allowlist |
-| OS adapters | Open known folders/apps and obtain permitted screen context through OS-specific interfaces |
-| Browser context | Read-only interpretation of the current user-selected page |
-| Optional public lookup | Search generic public help topics only after an explicit request |
+| Help window | Accept questions, show or speak one step, and provide clear Stop and screen-access controls. |
+| Local AI | Understand the question and explain the screen or task. |
+| Permission check | Accept only actions from an approved list. |
+| Windows/Mac adapters | Open known folders or programs and get screen information with permission. |
+| Website reader | Help explain the current page without controlling the browser. |
+| Optional web search | Look up general help information when asked, without sending private screen content. |
 
-**Candidate local actions:** `open_known_folder` (Documents, Pictures, Downloads) and `open_approved_app` (preconfigured app IDs). The detailed allow/deny policy lives in [Security and Privacy](Security_and_Privacy.md).
+For example, the permitted operations might be `open_known_folder` (Pictures, Documents, Downloads) and `open_approved_app` (a program from a list I set up). [Security and Privacy](Security_and_Privacy.md) holds the rules.
 
-## Open technical choices
+## What I still need to decide
 
-- **Screen context:** User-selected screenshot processed locally versus read-only accessibility metadata. Compare accuracy, permissions and sensitive-content exposure using synthetic pages.
-- **Windows vs. macOS:** Shared intent names, separate implementations for known folders, application launching, screen permission, and accessibility APIs.
-- **Model and interface:** Ollama with a small vision-capable model and a simple desktop UI are candidates, not selected technologies. Test speed and quality on the actual machines.
-- **Voice:** Offline speech recognition and output only if the devices and users support it.
-- **Failure behavior:** Explain uncertainty, avoid performing actions when checks fail, and never silently switch to cloud processing.
+**How to understand the screen:** A screenshot analyzed locally may be the simplest approach, but it could capture information the assistant does not need. Reading an application's accessible controls may be better in some situations. I'll compare both with test screens.
 
-Source folders and framework choices will be defined when implementation starts; see the [Roadmap](Roadmap_and_Test_Plan.md).
+**Which model and interface to use:** Ollama and a small vision-capable model are possibilities, not decisions. I need to see how well they work on the actual computers before choosing them.
+
+**Windows and Mac support:** I want the same user experience, but each operating system has its own ways of opening folders, inspecting screens, and granting permissions.
+
+**Voice:** I'd like the option to talk to the helper, but it has to be understandable and responsive enough to be useful.
+
+If any part fails or is uncertain, the helper should explain that rather than guess or quietly send information to an online service.
+
+I'll choose the actual code structure once I've tried these options. The [roadmap](Roadmap_and_Test_Plan.md) describes the order I plan to work in.

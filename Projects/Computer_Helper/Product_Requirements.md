@@ -2,43 +2,37 @@
 
 **Status:** Draft v0.1 · 2026-10-26
 
-## Audience and goal
+## Who it's for
 
-Two prospective family users—one on Windows and one on macOS—may benefit from help with everyday computer tasks. Their exact needs and hardware are not yet verified.
+I'm planning this for two family members: one uses Windows, and the other uses a Mac. Both could benefit from a simpler way to get computer help, although I still need to find out exactly what each person struggles with.
 
-**Goal:** Make assistance available through one predictable, approachable interface, without adding a recurring AI subscription.
+My goal is to give them **one place to ask questions** without requiring another monthly subscription.
 
-## Functional requirements
+## Requirements
 
-| ID | Priority | Requirement |
+| ID | Priority | What I want |
 | --- | --- | --- |
-| FR-01 | Must | One easy-to-find Help interface with large controls and readable text. |
-| FR-02 | Must | Plain-language guidance: one actionable step, then wait for the user. |
-| FR-03 | Must | Inspect the current screen only when requested and permitted. |
-| FR-04 | Must | Open only approved local folders or applications. |
-| FR-05 | Must | Explain the current user-opened webpage without interacting with it. |
-| FR-06 | Must | Consistent experience across Windows and macOS with separate OS adapters. |
-| FR-07 | Must | Keep credentials and password management outside the assistant. |
-| FR-08 | Must | Make Stop, Exit, and permission withdrawal obvious. |
-| FR-09 | Should | Offline voice input and spoken output if usable on the hardware. |
-| FR-10 | Should | Explicit public-information search without sharing private screen content. |
-| FR-11 | Should | Say when uncertain and offer a human-support fallback. |
-| FR-12 | Should | Adjustable text size, contrast and speech speed. |
+| FR-01 | Must | A Help window that's easy to find, with large buttons and readable text. |
+| FR-02 | Must | One clear instruction at a time, then wait for the person's response. |
+| FR-03 | Must | Screen help only when the person asks for it and gives permission. |
+| FR-04 | Must | The ability to open a short list of approved local folders and programs. |
+| FR-05 | Must | Guidance for the website already open, without controlling the browser. |
+| FR-06 | Must | The same basic experience on Windows and macOS, using separate OS-specific code where necessary. |
+| FR-07 | Must | Passwords and sign-ins handled outside the assistant. |
+| FR-08 | Must | An obvious way to stop, close, or withdraw screen access. |
+| FR-09 | Should | Spoken questions and answers, preferably offline, if the hardware supports it. |
+| FR-10 | Should | Optional searches for general public information, without sharing private screen content. |
+| FR-11 | Should | An honest “I don't know” and a way to get human help. |
+| FR-12 | Should | Options for larger text, stronger contrast, and slower speech. |
 
-The exact allowed and prohibited operations are defined in [Security and Privacy](Security_and_Privacy.md), rather than repeated here.
+[Security and Privacy](Security_and_Privacy.md) defines which actions are allowed and which are blocked.
 
-## Usability acceptance criteria
+## How I'll judge whether it helps
 
-In tests with consent, check that each participant can:
-1. Open the helper and ask a question with minimal coaching.
-2. Follow a single instruction without being overwhelmed.
-3. Stop the assistant and understand when screen access is active.
-4. Find a local folder or complete a low-risk task with guidance.
+I'll need to watch each person try a few everyday tasks, with their permission. Can they find Help, ask a question, follow the instructions, and stop the assistant when they want to? Do they know when it can see their screen?
 
-Record the observed outcome and any assistance needed; do not presume success. The [Roadmap and Test Plan](Roadmap_and_Test_Plan.md) contains the functional and adversarial cases.
+I don't have answers to those questions yet. The [test plan](Roadmap_and_Test_Plan.md) is where I'll record the results.
 
-## Questions before implementation
+Before choosing the software, I also need to check both computers' hardware and find out whether typing or talking feels more natural to each person. The [device survey](Device_Survey.md) covers that work.
 
-Which tasks actually cause difficulty? Do users prefer voice or text? Can their devices run a suitable local model? What screen and accessibility permissions will each OS require? Use the [Device Survey](Device_Survey.md) to collect answers privately.
-
-**V1 is usable** only after the approved local actions, screen guidance, refusal behavior, and fallback have been demonstrated on a named operating-system version.
+I won't call the first version usable until the local actions, screen guidance, and safety restrictions have been tested on the actual operating system.

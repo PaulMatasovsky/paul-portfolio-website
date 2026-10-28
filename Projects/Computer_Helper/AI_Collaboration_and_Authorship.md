@@ -1,20 +1,15 @@
 # AI Collaboration and Authorship
 
-**Status:** Draft disclosure · 2026-10-26
+**Status:** Working disclosure · 2026-10-27
 
-This project originated with a family need for simpler computer assistance.
+I started looking into this project because I wanted a better way to help family members who have trouble using their computers.
 
-| Contribution | Project owner | AI |
-| --- | --- | --- |
-| Scope | Defined intended users, Windows/macOS support, zero-subscription goal and one simple interface | Helped organize requirements |
-| Safety | Required limited local actions, guidance-only websites and separate password management | Drafted policy and candidate technical controls |
-| Planning | Requested project organization and documentation | Wrote initial requirements, architecture, test cases and GitHub drafts |
-| Implementation / user testing | Not yet performed | No working application or test evidence produced |
+I set the goal of having one simple place to ask for help. I also decided that the assistant should only open approved local folders and programs. When someone is on a website, it should explain what to do rather than take over the browser. I wanted to keep passwords separate and avoid adding monthly AI fees.
 
-**Accurate portfolio claim:** “Defined requirements and safety boundaries for a planned cross-platform computer helper and used AI to develop initial documentation.”
+I used AI to help work through the design, consider possible tools, organize the repository, and draft the requirements, architecture, security notes, and tests. I also used it to revise the documentation so it reads more like the way I normally explain things.
 
-**Not yet supported:** Claims of building, deploying, validating or improving users' success with a functioning application.
+**The documentation is still AI-drafted and needs my review.** Writing it in my preferred style does not make it independently authored.
 
-The existing [portfolio ADR policy](../../Documentation/ADRs/ADR-000.md) reserves final accepted ADR prose for the owner. [Decision notes](ADRs/README.md) are AI-drafted research prompts, not accepted records.
+I haven't built or tested the application, so at this point I can show my requirements and planning process, not a working product or results from users.
 
-Update this disclosure only as substantive work or testing is actually performed. Do not invent contribution percentages or outcomes.
+For the major design choices, I'll follow my [existing ADR process](../../Documentation/ADRs/ADR-000.md): research the alternatives and write the final accepted decisions myself. The [ADR notes](ADRs/README.md) are preparation for that work.

@@ -1,13 +1,13 @@
-# Portfolio Copy — Draft
+# Portfolio Description — Draft
 
 **Status:** Not Started (implementation) · Active (planning)
 
 ## Computer Helper — Windows and macOS
 
-A family-inspired project exploring a simple, privacy-conscious assistant for people who need help using desktop applications and websites. The proposed tool would give one-step guidance, open only approved local folders and apps, and explain user-opened websites without clicking or submitting anything. The goal is a consistent interface on Windows and macOS with no additional recurring AI subscription.
+I started this project after realizing that helping someone keep track of passwords didn't address all the other problems they were having with their computer.
 
-**Current evidence:** Requirements, proposed architecture and test plan. No prototype, deployment or user results yet.
+I'm planning a simple assistant that can guide people through Windows, macOS, and websites one step at a time. It would be allowed to open a few familiar folders and applications, but on websites it would only explain what to do. I want to keep passwords in a separate manager and avoid additional monthly AI costs.
 
-**AI transparency:** I defined the user needs and boundaries; AI drafted the initial technical and planning documents.
+So far I've worked out the initial requirements and safety boundaries, with AI helping to prepare the technical documentation. **I haven't built or tested the application yet.**
 
-For the full record, see the [project README](README.md).
+See the [project documentation](README.md) for the plan and current work.
