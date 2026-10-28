@@ -10,6 +10,8 @@ I want to build one place where he can ask for help without having to learn a ne
 
 The assistant should explain things in plain English, one step at a time. Typing comes first, with voice as an option if the computers can handle it well.
 
+For my uncle, the first priorities are finding documents that didn't land in Downloads, helping him get oriented when Windows gets confusing, and working with the LibreOffice program he uses to type letters. I've put the actual situations into [everyday task examples](Uncle_Use_Cases_and_Conversation_Tests.md).
+
 ## The plan
 
 I'll start with a small local AI model through Ollama and use Python to connect it to specialists that each do one job. That follows the encapsulation approach I wanted: the conversational AI coordinates things, while ordinary code handles tasks that don't need another AI model.
@@ -35,6 +37,7 @@ The next step is to run the prototype with Ollama, test its answers and memory u
 | Document | What it's for |
 | --- | --- |
 | [Requirements](Product_Requirements.md) | What the helper needs to do |
+| [Uncle's everyday tasks](Uncle_Use_Cases_and_Conversation_Tests.md) | Real problems and proposed conversation tests |
 | [Architecture](Architecture.md) | How the parts fit together |
 | [Security and privacy](Security_and_Privacy.md) | What it can and cannot do |
 | [Roadmap and tests](Roadmap_and_Test_Plan.md) | Build order and evidence |
