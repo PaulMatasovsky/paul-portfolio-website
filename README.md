@@ -15,7 +15,7 @@ This is where the projects stand right now. Each project has its own documentati
 | Warehouse ETL sorting workbook | Google Sheets workbook used to organize and print warehouse parts reports. The Excel copy has a printing limitation. | **Complete · Maintenance** | [ETL project](Projects/ETL/) |
 | Computer Science 050 teaching course | Introductory computer science curriculum and lab preparation. I have not yet published dated classroom evidence here. | **In Progress · Active** | [Teaching project](Projects/Computer_Science_050/) |
 | QA Toolkit | Draft website QA checklists, test cases, and templates. I have not completed a verified hands-on audit yet. | **In Progress · Paused** | [QA Toolkit repository](https://github.com/PaulMatasovsky/qa-toolkit) |
-| Computer Helper (Windows + macOS) — **AI-led** | Local assistant planning, RAG architecture, security boundaries, and an unvalidated Python starter. No target-device or user testing yet. | **In Progress · Active** | [Computer Helper project](Projects/Computer_Helper/) |
+| Computer Helper (Windows + macOS) — **AI-led** | Local help assistant with a modular design, offline reference notes, and untested Python starter code. | **In Progress · Active** | [Computer Helper project](Projects/Computer_Helper/) |
 | Portfolio website | Live WordPress/Divi site that I am continuing to refine. | **In Progress · Active** | [Live website](https://paulmatasovsky.com/) and [decision records](Documentation/ADRs/) |
 
 I use five workflow stages: **Not Started**, **In Progress**, **Testing / Debugging**, **Blocked**, and **Complete**. An optional activity label—**Active**, **Paused**, or **Maintenance**—shows whether I'm currently working on the project. These are descriptions of the work, not percentages.
@@ -35,14 +35,14 @@ I decided to rebuild the presentation of my work with a clearer boundary. One of
 - **Website:** WordPress and Divi 5.
 - **ETL workbook:** Google Sheets for the operational version, with an Excel copy available for download.
 - **Computer Science 050:** Scratch, Python, pseudocode, and preparation for an optional lab.
-- **Computer Helper (AI-led prototype):** Python, Ollama-compatible local model interface, and example offline Markdown knowledge lookup; target-device setup and tests remain to be done.
+- **Computer Helper (AI-led):** Python, Ollama, and an early offline help-note search; not yet tested on the family computers.
 - **Documentation:** GitHub and Markdown, with Google Docs used for planning and drafting.
 
 ## How I Document the Work
 
-I use [Architecture Decision Records (ADRs)](Documentation/ADRs/) to explain significant website decisions and a [project journal](Documentation/Journal/) to record what I learned or changed my mind about. Documentation for an individual project stays with that project.
+I keep [decision records](Documentation/ADRs/) for important choices and a [project journal](Documentation/Journal/) for what I learned. Each project has its own technical notes and evidence.
 
-My original decision records show how that process developed. I have also used AI to help prepare some later retrospective documentation, which I identify below.
+I follow these [GitHub writing principles](Documentation/GitHub_Writing_Principles.md): use plain language, practice Shibumi, and keep the AI disclosure and project status accurate. AI helped draft some retrospective documentation, and I've identified that work where it appears.
 
 ## AI Transparency
 
@@ -51,7 +51,7 @@ AI has had a different role in each project. When I say **human-led**, I mean I 
 - **ETL (human-led):** I identified the warehouse problem, chose the approach and platform, and built the workbook. AI helped troubleshoot persistent formula errors and later helped with the GitHub documentation. The finished workbook uses spreadsheet formulas; it does not use AI to process reports.
 - **QA Toolkit (AI-led):** AI generated the resources as part of a learning exercise. I have not yet completed the hands-on audit or validated results.
 - **Computer Science 050 (AI-led drafting):** I set the learning goals, course structure, examples, and teaching approach. AI helps with research, lesson drafts, exercises, and review. I am responsible for the teaching. See the [contribution breakdown](Projects/Computer_Science_050/AI_Collaboration_and_Authorship.md).
-- **Computer Helper (AI-led):** I defined the family support problem, safe operating boundaries, and modular specialist approach. AI drafted most planning documents and the first Python source scaffold. No working end-to-end assistant or user testing has been verified. See the [authorship notes](Projects/Computer_Helper/AI_Collaboration_and_Authorship.md).
+- **Computer Helper (AI-led):** I set the goals, limits, and modular approach. AI drafted most of the documentation and first Python source files. I haven't tested the assistant on the family computers. See the [authorship notes](Projects/Computer_Helper/AI_Collaboration_and_Authorship.md).
 - **Portfolio website (human-led):** I use AI to learn, plan, critique, troubleshoot, and improve documentation. I still want to be able to explain which work and decisions are mine.
 
 ## Next Steps
