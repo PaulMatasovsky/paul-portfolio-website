@@ -1,51 +1,40 @@
-# Device and User Survey
+# Computer Helper — Device and User Notes
 
-**Project classification:** **AI-led** · **Documentation updated:** 2026-10-28
+**AI-led project** · Hardware details reported so far; not verified in person · Updated October 28, 2026
 
-**Status:** Not yet collected. This is a blank template; I'll keep completed personal notes private.
+## What I know
 
-## Computer details
-
-| What I need to know | Windows computer | Mac |
+| Item | Uncle's Windows PC | Mom's Mac |
 | --- | --- | --- |
-| Operating system and version | To check | To check |
-| Processor / chip | To check | To check (Intel or Apple silicon) |
-| Memory (RAM) | To check | To check |
-| Graphics / video memory | To check | To check |
-| Free storage | To check | To check |
-| Browser and main programs | To check | To check |
-| Microphone, speakers and any display needs | To check | To check |
-| Screen-sharing / accessibility permissions | To test | To test |
+| Computer | Dell OptiPlex 5070, probably Small Form Factor; case still needs checking | Mac mini, reportedly bought new around 2025 |
+| Operating system | Windows 11 | macOS; version unknown |
+| Processor | Intel Core i5-8500, 3.0 GHz | Chip not checked |
+| Memory | 16 GB; module count and slots unknown | Not checked |
+| Graphics | Intel UHD 630 integrated graphics; 128 MB reported as reserved graphics memory | Not checked |
+| SSD and available storage | Not checked | Not checked |
+| Browser, speakers, microphone | Not checked | Not checked |
+| Screen/accessibility permissions | Not tested | Not tested |
 
-## Questions I'll ask
+I'm not buying RAM or a graphics card yet. We talked about 32 GB as a possible comfortable target, but it isn't a requirement until we've measured the assistant on the existing 16 GB system. If we consider a graphics card, I'll first confirm the SFF case, slots, power supply, and clearance.
 
-1. What do you most often need help doing on the computer?
-2. Would you rather type, talk, or press a button to ask for help?
-3. Is it easier if someone gives you one instruction at a time?
-4. Would you be comfortable letting the helper look at your screen when you ask it to?
-5. What should the helper do when it cannot help?
-6. How do you currently sign in to websites or keep track of passwords?
+## What I'll check next
 
-I'll ask permission before collecting information. Passwords, account details, recovery keys, device identifiers, and private screenshots will not go into GitHub.
-
-## What we currently know (reported, not verified on site)
-
-| Item | Windows machine | Mac |
-| --- | --- | --- |
-| Model | Dell OptiPlex 5070; **SFF believed, not confirmed** | Mac mini, reportedly purchased new around 2025 |
-| Processor | Intel Core i5-8500, 3.0 GHz | Chip not yet checked |
-| RAM | 16 GB installed; slot use unknown | Not checked |
-| Graphics | Integrated Intel UHD 630; Windows reports 128 MB reserved graphics memory | Not checked |
-| OS | Windows 11 | macOS version not checked |
-| SSD, browser, microphone | Not checked | Not checked |
-| Upgrade plans | RAM/GPU purchases postponed until prototype performance is measured | None decided |
-
-**Budget decision:** Keep the existing Windows hardware for the first tests. We have discussed 32 GB as a possible comfortable target for a complete system, **not a current requirement**. The SFF chassis and power supply must be verified before considering a low-profile GPU. Do not buy parts from this survey alone.
-
-When the Windows PC is accessible, check Task Manager's Memory page and run the read-only PowerShell query below. Do not post the computer's Service Tag, Device ID, or other unique identifiers publicly.
+On Windows, Task Manager → Performance → Memory should show installed memory and may show how many slots are in use. I can also run this **read-only** PowerShell command to list the installed modules:
 
 ```powershell
 Get-CimInstance Win32_PhysicalMemory |
   Select-Object DeviceLocator, @{Name='GB';Expression={$_.Capacity / 1GB}}, Speed, PartNumber
 ```
 
+On the Mac, About This Mac should show the chip and memory. I'll also check both systems' storage, browser, microphone, speakers, and accessibility permissions.
+
+## What I'll ask each person
+
+1. What do you most often need help with?
+2. Would you rather type, speak, or press a Help button?
+3. Is it easier to get one instruction at a time?
+4. Would you be comfortable letting the helper inspect the screen when you ask?
+5. What should happen if the assistant doesn't know the answer?
+6. How do you currently manage sign-ins and passwords?
+
+I'll keep their answers private. Passwords, recovery information, service tags, device IDs, and personal screenshots don't belong in GitHub.
