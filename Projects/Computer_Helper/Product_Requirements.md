@@ -29,14 +29,16 @@ These are the things I want the finished helper to do. None of them should be tr
 | FR-15 | Must | Search offline Windows/Mac help notes as reference material, never as commands. |
 | FR-16 | Must | Let me change language models without rewriting every specialist. |
 | FR-17 | Must | Never connect to a password vault or collect passwords. |
-| FR-18 | Should | Find recent photos or downloads in explicitly approved folders using read-only searches. |
+| FR-18 | Should | Find recent documents, photos, or downloads in approved folders using read-only searches—even when they aren't in Downloads. |
 | FR-19 | Should | Prefer OS accessibility information when it can answer a screen question; use screenshots only with permission. |
 | FR-20 | Should | Test useful performance on the existing 16 GB Windows computer before spending money on upgrades. |
+| FR-21 | Must | Help someone who is lost in Windows get oriented or return to a familiar starting point without risking unsaved work. |
+| FR-22 | Should | Recognize everyday language such as “type a letter” and guide the person to a familiar tool such as taskbar-pinned LibreOffice. |
 
 ## How I'll tell whether it works
 
 It isn't enough for the program to respond. I need to see whether someone can find Help, ask a question, follow the next step, and stop or deny screen access without confusion.
 
-I'll test actual tasks with each person's permission. I'll record what works, what causes trouble, and what needs to change—without uploading private information to GitHub. See the [test plan](Roadmap_and_Test_Plan.md) and [security limits](Security_and_Privacy.md).
+I'll test actual tasks with each person's permission. I'll record what works, what causes trouble, and what needs to change—without uploading private information to GitHub. See the [test plan](Roadmap_and_Test_Plan.md), [uncle's everyday examples](Uncle_Use_Cases_and_Conversation_Tests.md), and [security limits](Security_and_Privacy.md).
 
 The current [Python starter](prototype/) does not meet these requirements yet. It's a starting point for testing the conversation and local knowledge search, not a finished assistant.
