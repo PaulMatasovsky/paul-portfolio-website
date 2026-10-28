@@ -1,45 +1,45 @@
-# Artifacts and Evidence Status
+# Artifacts and Evidence
 
-**As documented:** October 26, 2026  
-**AI transparency:** This status inventory was drafted with AI from the course-planning discussions and available working documents. It is not a teaching observation log.
+**Recorded:** October 26, 2026  
+**AI Transparency:** AI drafted this inventory from our course-planning discussions and working documents. It isn't a classroom observation log. AI also helped revise the wording.
 
-This page separates *work prepared* from *instruction delivered*, so the project can be updated with real evidence without rewriting its history.
+I want to keep a clear distinction between something I have **prepared** and something I have actually **taught**. This page is where I track that distinction.
 
-| Artifact or activity | Current evidence level | Notes |
+| Material or activity | Current status | What I can show |
 |---|---|---|
-| Course scope and 20-week progression | **Designed** | Ages 10+, two-hour core and optional third-hour lab; Scratch → Python |
-| Parent-facing course syllabus | **Prepared / distributed; public Markdown copy added** | [Parent syllabus](Parent_Syllabus.md); weekly themes and course expectations are stable |
-| Lesson 1 instructor materials | **Prepared** | Instructor-led introduction, unplugged activities, demonstrations, AI/human verification; no student coding required |
-| Lesson 2 instructor materials | **Prepared** | Sequences, events, repetition, and introductory variables using Scratch |
-| Recurring examples and class activities | **Designed / drafted** | Adventure World, Sven Swingsword, and Bitbucket; many activity variations AI-drafted |
-| 20-week circular training tracker | **Prepared; private working source of truth** | Planned and Delivered Coverage, Lesson Register, and topic encounters remain in Google Sheets; not mirrored into GitHub |
-| Offline Linux lab laptops | **Preparation discussed / underway** | A completed lab build or inventory is not documented here |
-| Classroom sessions and student feedback | **Not yet documented here** | Course start was scheduled for October 25, 2026; do not infer attendance or completion |
-| Student code and final projects | **Not yet documented** | Do not claim student projects exist before evidence is supplied |
-| Instructor reflections / learning journal | **Not yet written here** | Add the instructor's real reflections, not AI-invented experiences |
+| Course structure and 20-week sequence | **Designed** | Ages 10+, two-hour class, optional lab hour, Scratch → Python |
+| Parent syllabus | **Prepared / distributed; public Markdown copy added** | [Parent syllabus](Parent_Syllabus.md) and course expectations |
+| Lesson 1 materials | **Prepared** | Introduction, unplugged activities, demonstrations, and discussion of checking AI; no student coding required |
+| Lesson 2 materials | **Prepared** | Scratch sequences, events, repetition, and introductory variables |
+| Recurring examples | **Designed / drafted** | Adventure World, Sven Swingsword, Bitbucket; many AI-drafted activity variations |
+| 20-week circular-training tracker | **Prepared; private** | Planned Coverage, Delivered Coverage, Lesson Register, and topic encounters kept in Google Sheets |
+| Offline Linux lab laptops | **Preparation discussed / underway** | No finished lab setup or inventory documented here |
+| Classroom sessions and feedback | **Not yet documented here** | The course was scheduled to start October 25, 2026; that doesn't prove a session was held |
+| Student code and final projects | **Not yet documented** | No student project claims until I have evidence |
+| Instructor reflections | **Not yet written here** | I'll add observations from actual classes, not invented reflections |
 
-## Evidence to Add After Actual Delivery
+## Evidence I'll Add After Teaching
 
-A short dated teaching entry can record the lesson presented, which exercises were used, what learners understood or struggled with, changes made during instruction, and which material AI helped prepare. Add only observations that occurred.
+When I have actual class notes, I'll record what I taught, which activities I used, what students understood or struggled with, and what I changed during the class. I'll also note when AI helped me prepare something.
 
-If classroom photos, student work, or screenshots are added, obtain appropriate permission and remove names or other identifying details. Public source materials should be reviewed for ownership and sharing permissions before upload.
+Photos, student work, or screenshots will only be shared with the appropriate permission and with identifying details removed. I'll check that I have permission to publish the source material itself, too.
 
 ## Low-Maintenance Weekly Update Process
 
-The parent syllabus and GitHub README are **stable reference documents**, not weekly checklists. The private Google Sheets circular-training tracker is the working source of truth for detailed lesson coverage.
+The syllabus and GitHub README are reference documents. I don't need to rewrite them every week. The private Google Sheets tracker is where I keep detailed course coverage.
 
-1. **Before class:** Prepare the instructor lesson in Google Docs. Record its intended concept encounters in the tracker's **Planned Coverage** only when the lesson is designed.
-2. **After class:** Give a brief factual recap of what was taught and any changes, questions, or significant observations. Update the tracker's **Delivered Coverage** and **Lesson Register** from that recap. Do not mark a lesson delivered merely because it was drafted.
-3. **GitHub:** Publish one concise, dated teaching summary when the instructor has actual notes to support it. Routine course-tracking codes stay in Google Sheets. Update the public progress/evidence summary at meaningful checkpoints (approximately Weeks 5, 10, 15, and 20), or when there is a significant change worth documenting.
+1. **Before class:** Prepare the lesson in Google Docs and record planned topic encounters under **Planned Coverage** when the lesson is ready.
+2. **After class:** Record what was actually covered, any changes, and important questions or observations. Update **Delivered Coverage** and the **Lesson Register** from those notes. A drafted lesson is not a delivered lesson.
+3. **For GitHub:** Add a short dated teaching summary when I have real notes to support it. Keep routine coverage codes in Sheets. Update the public evidence summary around Weeks 5, 10, 15, and 20, or when something significant changes.
 
-**A single message can drive the update:** “Week N: we actually covered ___; changed ___; students struggled with or asked about ___; AI helped prepare ___.” An assistant with access to the connected accounts can then update the private tracker and relevant GitHub evidence, without requiring a manual copy-and-paste into multiple documents.
+A short recap should be enough: “Week N: we covered ___; changed ___; students asked about or struggled with ___; AI helped prepare ___.” When an assistant has the right connected-account access, it could update the tracker and relevant GitHub records without my entering the same information several times.
 
-**Codes used in the private tracker:** I = Introduced, R = Revisited, P = Practiced, D = Deep dive, E = Exposure only. The planned and delivered columns must remain distinct. Do not publish student names, photos, private notes, or identifiable student work without permission.
+The tracker uses **I** (Introduced), **R** (Revisited), **P** (Practiced), **D** (Deep dive), and **E** (Exposure only). Planned and delivered coverage must remain separate. I'll keep student names and other private information out of the public repository.
 
-The current tracker still labels Weeks 1–2 as drafted and no lessons as delivered. That is the tracker’s **recorded status**, not a claim that the course has not begun. Historical teaching notes can be recorded accurately when available.
+Right now, the tracker lists Weeks 1–2 as drafted and has no lessons marked delivered. That describes the **recorded status of the tracker**, not proof that class has not started. I can add accurate teaching records if they become available.
 
-## Working Files
+## Where the Working Files Live
 
-The current instructor lesson plans and planning tracker remain in the working Google Drive environment; this public GitHub repository does not automatically contain or grant access to them. Copies or excerpts should be published only when reviewed and intentionally selected.
+The detailed lesson plans and tracker are in my working Google Drive environment. They aren't automatically included in this public repository. I'll publish selected copies only after reviewing them.
 
-See [AI Collaboration and Authorship](AI_Collaboration_and_Authorship.md) for attribution rules.
+See [AI Collaboration and Authorship](AI_Collaboration_and_Authorship.md) for how I distinguish AI work from my own.

@@ -2,64 +2,62 @@
 
 **Project status:** **In Progress** · **Activity:** Active
 
-This repository supports my [personal portfolio website](https://paulmatasovsky.com/), which I am developing as part of a career transition. The website introduces my work to recruiters and hiring managers; GitHub holds the more technical details, documentation, and project evidence.
+I started building [my portfolio website](https://paulmatasovsky.com/) as part of my career transition. The website is where recruiters and hiring managers can get an overview of my work. I use GitHub for the technical details, supporting documents, and evidence behind each project.
 
-I want the portfolio to show not just what I built, but the problems I worked on, the decisions I made, and what I learned.
+I want people to see more than the finished result. I want them to understand the problem I was working on, the decisions I made, and what I learned along the way.
 
 ## Current Work
 
-The projects below show what is available today, what each deliverable does, and what remains to be completed. Authorship and AI contributions are described separately in [AI Transparency](#ai-transparency).
+This is where the projects stand right now. Each project has its own documentation, including a more detailed explanation of my work and any AI involvement.
 
-| Area | Deliverable or current scope | Status | Where to look |
+| Area | What it includes | Status | Where to look |
 |---|---|---|---|
 | Warehouse ETL sorting workbook | Google Sheets workbook used to organize and print warehouse parts reports. The Excel copy has a printing limitation. | **Complete · Maintenance** | [ETL project](Projects/ETL/) |
-| Computer Science 050 teaching course | Introductory computer science curriculum and lab preparation; dated classroom evidence has not yet been published here. | **In Progress · Active** | [Teaching project](Projects/Computer_Science_050/) |
-| QA Toolkit | Draft website QA checklists, test cases, and templates; no verified hands-on audit yet. | **In Progress · Paused** | [QA Toolkit repository](https://github.com/PaulMatasovsky/qa-toolkit) |
-| Computer Helper (Windows + macOS) | User requirements, design proposals, and safety boundaries; no working prototype or user tests. | **Not Started (implementation) · Active (planning)** | [Computer Helper project](Projects/Computer_Helper/) |
-| Portfolio website | Live WordPress/Divi site being refined to present completed work and clear project limitations. | **In Progress · Active** | [Live website](https://paulmatasovsky.com/) and [decision records](Documentation/ADRs/) |
+| Computer Science 050 teaching course | Introductory computer science curriculum and lab preparation. I have not yet published dated classroom evidence here. | **In Progress · Active** | [Teaching project](Projects/Computer_Science_050/) |
+| QA Toolkit | Draft website QA checklists, test cases, and templates. I have not completed a verified hands-on audit yet. | **In Progress · Paused** | [QA Toolkit repository](https://github.com/PaulMatasovsky/qa-toolkit) |
+| Computer Helper (Windows + macOS) | Requirements, possible designs, and security boundaries. No working prototype or user tests yet. | **Not Started (implementation) · Active (planning)** | [Computer Helper project](Projects/Computer_Helper/) |
+| Portfolio website | Live WordPress/Divi site that I am continuing to refine. | **In Progress · Active** | [Live website](https://paulmatasovsky.com/) and [decision records](Documentation/ADRs/) |
 
-**Workflow stages:** Not Started (implementation has not begun), In Progress (work underway), Testing / Debugging (actively validating), Blocked (cannot proceed), and Complete (usable deliverable finished). **Activity** is a separate optional label: Active, Paused, or Maintenance. The stage describes the work, not a percentage.
+I use five workflow stages: **Not Started**, **In Progress**, **Testing / Debugging**, **Blocked**, and **Complete**. An optional activity label—**Active**, **Paused**, or **Maintenance**—shows whether I'm currently working on the project. These are descriptions of the work, not percentages.
 
-The ETL documentation includes [business rules](Projects/ETL/Business_Rules.md), a [technical overview](Projects/ETL/Technical_Overview.md), [architectural decisions](Projects/ETL/ETL_Documentation/ETL_ADR/), a [retrospective journal](Projects/ETL/ETL_Documentation/ETL_Learning_Journal/Retrospective.md), and [screenshots](Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/).
+The [ETL project](Projects/ETL/) includes business rules, a technical overview, decision records, a learning journal, and screenshots of the process.
 
-This repository is primarily a place for portfolio and project documentation; it is **not a full export of the WordPress website's source code**.
+This repository is mainly for project and portfolio documentation, not a complete copy of my WordPress website's source code.
 
 ## Why Website 2.0?
 
-My first portfolio grew more complex and more AI-driven than I intended. I had trouble separating my own decisions and contributions from AI-generated work.
+My first portfolio grew more complicated, and more dependent on AI-generated work, than I intended. Eventually I had trouble separating my own decisions and contributions from what AI had generated.
 
-I started Website 2.0 to simplify the presentation and make that distinction clearer. I use *Shibumi*—purposeful simplicity—as a guide: keep what helps the reader understand the work, and avoid adding features or documentation simply to make the site look more elaborate.
+I decided to rebuild the presentation of my work with a clearer boundary. One of the ideas guiding that decision was *Shibumi*, or understated simplicity. I want to keep what helps someone understand the work and leave out what is just there to look impressive.
 
 ## Technology
 
 - **Website:** WordPress and Divi 5.
-- **ETL project:** Google Sheets for the operational workbook; a downloadable Microsoft Excel version is also available.
-- **Teaching project:** Scratch, Python, pseudocode, and preparation for an optional computer lab.
-- **Project documentation:** GitHub and Markdown, with Google Docs used for planning and drafting.
+- **ETL workbook:** Google Sheets for the operational version, with an Excel copy available for download.
+- **Computer Science 050:** Scratch, Python, pseudocode, and preparation for an optional lab.
+- **Documentation:** GitHub and Markdown, with Google Docs used for planning and drafting.
 
-## Documentation Approach
+## How I Document the Work
 
-I use [Architecture Decision Records (ADRs)](Documentation/ADRs/) for meaningful website-level decisions and a [project journal](Documentation/Journal/) for learning and changes in perspective. Project-specific documentation stays with the project it describes.
+I use [Architecture Decision Records (ADRs)](Documentation/ADRs/) to explain significant website decisions and a [project journal](Documentation/Journal/) to record what I learned or changed my mind about. Documentation for an individual project stays with that project.
 
-Dated original decision records preserve how the documentation process developed over time. The distinct use of AI in later retrospective documentation is disclosed below.
+My original decision records show how that process developed. I have also used AI to help prepare some later retrospective documentation, which I identify below.
 
 ## AI Transparency
 
-AI has contributed in different ways across my projects. These are descriptions of who created or reviewed the material, **not claims that AI operates the finished tools**.
+AI has had a different role in each project. When I say **human-led**, I mean I did most of the development or creation and used AI in a supporting role. **AI-led** means AI generated most of the implementation or instructional materials based on goals and requirements I provided. These aren't measured percentages, and they do **not** mean AI is running inside a finished tool.
 
-For authorship, **human-led** means I performed most of the development or creation while using AI in a limited supporting role. **AI-led** means AI generated most of the implementation or instructional materials under requirements and direction I provided. These are qualitative descriptions, not measured percentages; each project explains the actual contributions.
-
-- **ETL (human-led):** I identified the warehouse problem, made the operational and platform decisions, and developed the spreadsheet. AI helped me troubleshoot specific persistent formula errors during development and later helped write and streamline GitHub documentation. The finished ETL workbook runs through spreadsheet formulas; **no AI runs behind the scenes when it processes a report**.
-- **QA Toolkit (AI-led):** The resources were generated by AI as a learning exercise. I have not yet completed or validated the planned hands-on QA audit.
-- **Computer Science 050 (AI-led drafting):** I direct the learning goals, course structure, examples, and teaching; AI has a substantial role in curriculum research, lesson drafting, exercise generation, and review. See the [contribution breakdown](Projects/Computer_Science_050/AI_Collaboration_and_Authorship.md).
-- **Computer Helper (human-directed, AI-drafted planning):** I set the intended user's needs, platform scope, and limits on navigation and password access. AI generated the initial project documents and candidate architecture. No application has been built or tested; see the [authorship breakdown](Projects/Computer_Helper/AI_Collaboration_and_Authorship.md).
-- **Portfolio website (human-led):** I use AI for learning, planning, critique, troubleshooting, and editorial support. The goal is to keep my own decisions and contributions distinguishable from AI's work.
+- **ETL (human-led):** I identified the warehouse problem, chose the approach and platform, and built the workbook. AI helped troubleshoot persistent formula errors and later helped with the GitHub documentation. The finished workbook uses spreadsheet formulas; it does not use AI to process reports.
+- **QA Toolkit (AI-led):** AI generated the resources as part of a learning exercise. I have not yet completed the hands-on audit or validated results.
+- **Computer Science 050 (AI-led drafting):** I set the learning goals, course structure, examples, and teaching approach. AI helps with research, lesson drafts, exercises, and review. I am responsible for the teaching. See the [contribution breakdown](Projects/Computer_Science_050/AI_Collaboration_and_Authorship.md).
+- **Computer Helper (human-directed, AI-drafted planning):** I set the intended users' needs, platform scope, and limits on computer and website actions. AI helped draft the documents and possible design. There is no working application yet. See the [authorship notes](Projects/Computer_Helper/AI_Collaboration_and_Authorship.md).
+- **Portfolio website (human-led):** I use AI to learn, plan, critique, troubleshoot, and improve documentation. I still want to be able to explain which work and decisions are mine.
 
 ## Next Steps
 
-- Keep the portfolio website's project descriptions and links aligned with the evidence on GitHub.
+- Keep the website's project descriptions and GitHub evidence consistent.
 - Carry out and document a hands-on QA audit when the site is ready.
-- Publish selected teaching artifacts and dated delivery evidence as they become available.
+- Publish selected teaching materials and dated classroom evidence when I have it.
 
 ## Links
 

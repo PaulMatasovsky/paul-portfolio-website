@@ -1,62 +1,58 @@
 # Curriculum and Teaching Approach
 
-**Status:** Current design description; the actual delivered sequence may change.  
-**AI transparency:** This document was drafted with AI from the instructor's course decisions and planning materials. AI contributed to lesson structure, examples, research assistance, and refinement; the instructor determines what to teach.
+**Status:** Planned approach; what I actually teach may change as the course progresses.  
+**AI Transparency:** AI drafted this document from my course decisions and working materials, and helped revise it. AI also contributed research, examples, and lesson ideas; I decide what belongs in the course.
 
-## Audience and Format
+## Who I'm Teaching
 
-Computer Science 050 is designed for learners age 10 and up, including teenagers and adults who are new to programming. It uses one common instructional presentation with clear language and familiar examples; more experienced students can ask deeper questions or explore during the optional lab.
+Computer Science 050 is for beginners ages 10 and up, including teenagers and adults. I want the explanations to be simple enough for a ten-year-old to follow, but I also want older students to have room to ask more involved questions.
 
-The planned course is 20 weekly meetings of **two required instructional hours**, with an **optional third hour** for computer-lab practice, questions, or exploration. The parent syllabus is an established course document and should not be silently changed when lesson plans evolve.
+The plan is **20 weekly meetings**, each with **two hours of required instruction** and an **optional third-hour lab**. The syllabus that went to parents is a stable reference; I won't change it quietly every time I revise a lesson.
 
-## Instructional Goals
+## What I Want Students to Learn
 
-Students are introduced to:
-
-- The difference between computer science, programming, hardware, and software.
-- Algorithms and precise, ordered instructions.
+- The differences between computer science, programming, hardware, and software.
+- Algorithms and the importance of giving clear instructions in the right order.
 - Input, processing, output, variables, expressions, decisions, and loops.
-- Reading, predicting, testing, and debugging a program.
-- Problem decomposition and explaining solutions before coding them.
-- Python fundamentals, then using what they know in a final project.
-- AI as a helpful but fallible tool whose output needs human judgment and verification.
+- How to read code, predict what it will do, test it, and debug mistakes.
+- How to break a larger problem into manageable steps and explain a solution before writing code.
+- Basic Python skills that students can use in a final project.
+- How to use AI as a tool while still checking its work and making their own decisions.
 
-## Progression
+## Planned Progression
 
-**Weeks 1–3 — Build the mental model.** Unplugged activities, Scratch demonstrations, simple sequences, and recurring robot/game scenarios. Lesson 1 focuses on understanding; it does **not** require students to write code. Later Scratch lessons progressively introduce events, repetition, variables, and decisions.
+**Weeks 1–3: Foundations.** Start with unplugged activities and Scratch demonstrations involving robots and games. Lesson 1 is about understanding ideas; students aren't expected to write code yet. Later Scratch lessons introduce events, repetition, variables, and decisions.
 
-**Week 4 — Bridge to Python.** Compare familiar Scratch ideas with written pseudocode and Python.
+**Week 4: Moving from Scratch to Python.** Compare ideas students already know with pseudocode and written Python.
 
-**Weeks 5–17 — Revisit concepts in Python.** Teach and reinforce variables, operators, conditions, repetition, functions, and related fundamentals. Broader subjects such as how computers communicate are introduced at an appropriate level rather than becoming advanced specialist lessons.
+**Weeks 5–17: Building Python skills.** Return to variables, operators, conditions, loops, functions, and related ideas in different ways. I also want students to get age-appropriate introductions to topics such as how computers communicate, without turning those into advanced technical lessons.
 
-**Weeks 18–20 — Apply and explain.** Planned final-project work and a showcase/reflection instead of a traditional final exam.
+**Weeks 18–20: Putting it together.** Students plan and build a final project, then explain what they made and reflect on what they learned. This takes the place of a traditional final exam.
 
-Progress checks are planned at several points across the 20 weeks. First exposure is not treated as mastery.
+I'll check understanding at several points. Hearing an idea once isn't the same as knowing how to use it.
 
-## Teaching Methods
+## How I Plan to Teach
 
-**Spiral learning:** Introduce a concept simply, revisit it in a different example, teach it more deeply when students are ready, then reinforce it.
+**Revisit ideas:** I use spiral learning. Students get a simple introduction, encounter the idea again, and work with it in greater depth when they're ready.
 
-**Predict → run → observe → explain:** Ask students what instructions should do, try them, compare with the result, and locate errors.
+**Predict, run, observe, explain:** Before we run a program, I want students to tell me what they think will happen. Then we'll compare their prediction with what actually happened and work out why.
 
-**Shared examples:** Use Adventure World (a simplified fictional online game), Sven Swingsword, and Bitbucket the robot as recurring teaching anchors. These are invented learning scenarios, not a playable online game or a completed robotics project.
+**Use familiar examples:** Adventure World (an imaginary online game), Sven Swingsword, and Bitbucket the robot will give us recurring situations to refer back to. These are teaching examples, not a finished game or robotics project.
 
-**Scaffolded representations:** Move between plain-language instructions, pseudocode, Scratch blocks, and Python syntax, as appropriate to the lesson. Use physical or discussion activities before code when they make an abstract idea concrete.
+**Move between ways of expressing an idea:** We can start with plain-language directions, turn them into pseudocode, try Scratch blocks, and eventually write Python. Physical activities or discussion can help make an idea clearer before we start coding.
 
-**Instructor-led demonstrations:** Use a projector to show small programs and invite predictions. A lesson may introduce more vocabulary than students are expected to master immediately.
+**Demonstrate together:** I'll use a projector to show short programs and ask students to predict the results. I may mention ideas that we won't study in depth until later; that doesn't mean students are expected to master them immediately.
 
-**AI connection:** Each week, relate an idea to AI or responsible AI use—particularly forming clear requests, questioning answers, and testing generated results.
+**Connect it to AI:** Each week I'll relate the subject to AI where it makes sense, especially how to ask clear questions, recognize bad answers, and check generated results.
 
-For the central decision to integrate AI while retaining computer-science foundations, including alternatives and sources consulted, see [ADR-000](ADRs/ADR-000.md).
+The reason for teaching computer-science foundations alongside AI, including alternatives and sources considered, is recorded in [ADR-000](ADRs/ADR-000.md).
 
-## Why These Choices?
+## Why I Chose This Approach
 
-Scratch offers visible blocks and immediate feedback before students face typed-language syntax. Python then provides a path into conventional programming. Spiral learning reduces the pressure to master an unfamiliar topic on first exposure.
+Scratch lets students see instructions as blocks before they have to worry about typed syntax. Python gives them a way to build on that knowledge in a more conventional programming language.
 
-The mixed-age classroom calls for plain explanations without assuming that every student learns at the same speed. An optional lab creates room for extension and extra help without making a third hour necessary for completing the course.
+I chose to keep revisiting concepts because students in a mixed-age class won't all be ready for the same thing at the same time. The optional lab gives students who want more practice or have deeper questions a place to do that without making it part of the required two hours.
 
-Robotics is an analogy only; no physical robot kits or robot programming are required.
+Robotics is used for examples only; no physical robot or robotics programming is required.
 
-## Scope Boundaries
-
-This document records **planned instructional design**, not an independent assessment that the course is pedagogically effective. Lesson plans, delivered sessions, and student progress must be reviewed separately. It is also not a claim that a working Adventure World game or Python final project has already been built.
+These are my **teaching plans**, not proof that the approach has been independently validated or that students have completed a working Adventure World game or Python project. I still need to document what happens during actual classes.

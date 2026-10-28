@@ -1,48 +1,43 @@
 # AI Collaboration and Authorship
 
-**Project type:** Human-directed education project with substantial AI-assisted content development.  
-**Documentation provenance:** This document was drafted by AI from prior discussions, working lesson plans, and the instructor's described decisions. It should not be presented as independently authored prose.
+**Project type:** I direct the course and teach it; AI has a substantial role in preparing the materials.  
+**Documentation:** AI drafted this document from our planning discussions, working lessons, and my decisions. I also used AI to revise the wording. It is not independently authored prose.
 
-## Why AI Has a Larger Role Here
+## How I'm Using AI
 
-My ETL project began as a direct operational problem that I worked to solve in a spreadsheet, using AI to troubleshoot difficult sections. Computer Science 050 uses AI more extensively as a curriculum research and production collaborator.
+My ETL project was something I built to solve a problem at work, with AI helping me troubleshoot a few difficult formula problems. I'm using AI much more heavily for Computer Science 050 because lesson preparation and curriculum research are part of what I'm exploring with this project.
 
-That difference is deliberate. I am using the project to develop and teach a course while exploring how AI can help prepare and refine educational material. The meaningful distinction is between **deciding what and why to teach**, **generating preparatory materials**, and **actually teaching and evaluating learning**.
+I think there is an important difference between deciding **what and why to teach**, using AI to **prepare material**, and actually **teaching and finding out whether students understand**.
 
-## Contribution and Responsibility Matrix
+## Who Did What
 
-| Area | Instructor's role | AI's role | What can honestly be claimed now |
+| Area | My role | AI's role | What the current evidence shows |
 |---|---|---|---|
-| Course purpose and audience | Chose a mixed-age beginner course, accessible from age 10 | Helped clarify goals and scope | Instructor-directed course requirements |
-| Course structure | Set 20 weeks, two core hours, optional third-hour lab | Organized and evaluated scheduling approaches | Instructor-chosen format, AI-assisted planning |
-| Learning sequence | Chose Scratch first, a bridge to Python, and revisiting concepts | Proposed lesson breakdowns and refinements | Collaborative curriculum development |
-| Teaching examples | Chose recurring Adventure World, Sven Swingsword, Bitbucket, and real-world analogies | Helped produce exercises, prompts, and variations | Instructor-selected examples with AI-written materials |
-| Curriculum research | Set the learning priorities and judged relevance | Assisted with comparing other curriculum approaches and identifying possible gaps | AI-assisted research; no independent claim of academic validation |
-| Teaching materials | Reviewed, adapted, and selected material for planned instruction | Generated substantial draft outlines, explanations, demonstrations, and activities | AI-assisted / AI-drafted preparatory resources |
-| Classroom delivery | Responsible for instruction, explanations, pacing, and answering questions | May provide optional demonstration examples; not the teacher | Delivery and outcomes require dated teaching evidence |
-| Assessment and refinement | Determines whether learners understood and what to change | Can suggest questions, rubrics, or revisions | No verified student results published here |
-| Computer lab | Planned an accessible optional lab and began preparation for repurposed laptops | Helped with setup and learning-plan questions | Lab preparation, not a documented completed deployment |
+| Purpose and audience | Chose a beginner course for ages 10 and up | Helped clarify the goals | I set the course requirements |
+| Format | Chose 20 weeks, two main hours, and an optional lab hour | Helped organize and evaluate the schedule | My course structure, with AI planning support |
+| Sequence | Chose Scratch first, then Python, while revisiting important ideas | Suggested lesson breakdowns and refinements | Curriculum developed collaboratively |
+| Examples | Chose Adventure World, Sven Swingsword, Bitbucket, and everyday comparisons | Drafted exercises and variations | My chosen examples, with AI-generated materials |
+| Research | Decided what was relevant to teach | Helped compare approaches and identify possible gaps | AI-assisted research, not independent academic validation |
+| Lesson materials | Review, adapt, and select what I intend to use | Drafted outlines, explanations, demonstrations, and activities | Preparatory materials, not evidence of lessons delivered |
+| Teaching | Explain concepts, adjust the pace, and answer students' questions | May supply examples for demonstrations | Teaching requires dated evidence |
+| Assessment | Decide whether students understood and what to adjust | Can suggest questions or ways to assess learning | No verified student results published here |
+| Computer lab | Planned an optional lab and started preparing older laptops | Helped with setup questions and planning | Lab preparation, not a documented completed deployment |
 
-There is no defensible percentage split of human versus AI contribution, so this project does not assign one.
+I can't honestly put a percentage on who contributed what, so I'm not going to.
 
-## Boundaries for Portfolio Claims
+## What I Can Claim
 
-- A drafted lesson is not a lesson delivered.
-- A generated activity is not a proven teaching method.
-- AI-produced explanations are not evidence that I can explain them without preparation.
-- Lesson notes and examples are not a completed student project.
-- AI comparisons are inputs to my decisions, not proof that an external curriculum was fully audited.
-- Demonstrated classroom results should be described only after I record what occurred.
+A lesson plan isn't proof that I taught the lesson. An AI-generated activity isn't proof that it worked with students. Prepared notes and examples aren't finished student projects, and AI research isn't the same as personally auditing an entire curriculum.
 
-My value in this project is not that I manually typed every worksheet or paragraph. It is the combination of choosing the goals and constraints, shaping materials for real learners, taking responsibility for accuracy, and teaching the concepts clearly.
+When I publish results, I need to base them on actual instruction and observations.
 
-## Documentation Process
+I think my contribution is in choosing what students need to learn, deciding how to explain it, reviewing the materials, and being responsible for the class—not in whether I personally typed every paragraph of a worksheet.
 
-Use a clear origin label when publishing new materials:
+## How I'll Label Materials
 
-- **Instructor-authored:** Substantive writing, code, or artifacts I created myself.
-- **AI-assisted:** Materials I substantially developed or revised with AI support.
-- **AI-generated draft:** AI produced the initial content from requirements I supplied.
-- **Delivered / verified:** Instruction or outcomes supported by a dated teaching record or other evidence.
+- **Instructor-authored:** I wrote or built the substantive material.
+- **AI-assisted:** I did significant work on it while using AI for support.
+- **AI-generated draft:** AI produced the initial material from my requirements.
+- **Delivered / verified:** There is a dated record or other evidence that it was actually taught or tested.
 
-This project README and supporting documentation are **AI-generated drafts based on instructor direction**. They should remain clearly attributed while I review and refine the presentation.
+The README and supporting documents began as **AI-generated drafts based on my direction**. I will keep that disclosure as I review and revise them.
