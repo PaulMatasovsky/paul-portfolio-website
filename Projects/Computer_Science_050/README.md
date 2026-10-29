@@ -32,7 +32,7 @@ The optional third hour is for practice, experiments, questions, and extra help.
 ## Documentation
 
 - [Parent Syllabus](Parent_Syllabus.md) — the 20-week plan shared with parents.
-- [ADR-000: Computer Science Foundations and AI](ADRs/ADR-000.md) — why I chose to teach the foundations instead of focusing only on AI tools.
+- [Decision Records](ADRs/) — why I chose to teach the foundations instead of focusing only on AI tools.
 - [Curriculum and Teaching Approach](Curriculum_and_Teaching_Approach.md) — the learning sequence, teaching methods, and reasons for those choices.
 - [AI Collaboration and Authorship](AI_Collaboration_and_Authorship.md) — which parts I direct and which materials AI helped develop.
 - [Artifacts and Evidence](Artifacts_and_Evidence.md) — what has been prepared, what is private, and what hasn't been verified as delivered.

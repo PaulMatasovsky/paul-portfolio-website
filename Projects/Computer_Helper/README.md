@@ -43,7 +43,7 @@ The next step is to run the prototype with Ollama, test its answers and memory u
 | [Security and privacy](Security_and_Privacy.md) | What it can and cannot do |
 | [Roadmap and tests](Roadmap_and_Test_Plan.md) | Build order and evidence |
 | [Device survey](Device_Survey.md) | What I know and still need to check |
-| [Decision questions](ADRs/README.md) | Choices that aren't settled yet |
+| [Decision records and open questions](ADRs/) | Design questions to work through; none accepted yet |
 | [Python starter](prototype/) | Initial code and setup instructions |
 | [Portfolio summary](Portfolio_Summary.md) | Short project description |
 | [AI collaboration](AI_Collaboration_and_Authorship.md) | Who did what |

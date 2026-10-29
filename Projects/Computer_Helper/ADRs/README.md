@@ -1,19 +1,19 @@
-# Architecture Decisions to Work Through
+# Computer Helper — Decision Records
 
-**AI-led planning notes** · No decisions below have been accepted yet · Updated October 28, 2026
+**Accepted ADRs: None yet.**
 
-I use Architecture Decision Records (ADRs) to explain important choices and why I made them. These are questions I still need to research and test, not finished decisions. I'll follow the [existing ADR process](../../../Documentation/ADRs/ADR-000.md) when I'm ready to record a decision.
+I have a proposed design and an untested Python starter, but I haven't finished evaluating the major choices. I don't want to turn every feature idea into a formal ADR.
 
-| ID | Decision to make |
-| --- | --- |
-| 000 — Local control | Which folders and apps can the assistant open, and how do I enforce that list? |
-| 001 — Windows and Mac | What can share Python code, and what needs a separate OS adapter? |
-| 002 — Local AI | Which small model gives clear, reliable help on the computers available? |
-| 003 — Reading the screen | Can accessibility information do the job, or will screenshots or vision models be needed? How do I protect sensitive information? |
-| 004 — Passwords | How do I keep password managers and account recovery entirely outside the assistant? |
-| 005 — Specialists | Which tasks need AI, which need ordinary Python, and how should they communicate? |
-| 006 — Knowledge search | When is simple text search enough, and when would SQLite FTS or embeddings help? How will I maintain the notes? |
-| 007 — Hardware | How does the model perform on the existing i5-8500 and 16 GB RAM before I consider upgrades? |
-| 008 — Packaging | When should the terminal prototype become a GUI and an offline installer? |
+## Open Questions
 
-AI helped draft these questions based on my goals and our discussions. They are not accepted, independently authored ADRs.
+- **Local permissions and passwords:** How will I enforce the allowed actions and keep the password manager completely outside the assistant?
+- **Windows and macOS:** Which parts of the Python code can be shared, and which need separate OS adapters?
+- **Model and hardware:** Which local model works reliably on the computers available, without unnecessary upgrades?
+- **Screen assistance:** Can accessibility information provide enough context, or will permission-based screenshots be needed?
+- **Knowledge search:** When is basic text matching enough, and when would SQLite search or embeddings be worthwhile?
+- **Specialist design:** Which jobs should use the language model and which should use ordinary Python?
+- **Interface and installation:** When is the prototype ready for a simple Help window and repeatable local setup?
+
+These are planning questions, **not accepted decisions or tested results**. When I settle a significant choice, I'll give it its own `ADR-000.md`, `ADR-001.md`, and so on, following the [portfolio ADR process](../../../Documentation/ADRs/ADR-000.md). I'll keep the reasons and alternatives in that record rather than repeating them here.
+
+**AI transparency:** AI helped reorganize these questions from the earlier planning list. No accepted ADR was created.
