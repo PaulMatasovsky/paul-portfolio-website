@@ -31,6 +31,19 @@ Inventory will connect a part to a warehouse and hold both the **quantity on han
 
 The combination of product and warehouse is a candidate for a composite key, since one part can have inventory in several warehouses but should normally have one current quantity record per warehouse. The exact SQLite schema and constraints are not yet written.
 
+### Warehouses — columns I've chosen
+
+My first draft of the `Warehouses` table has four columns:
+
+- `Warehouse_ID` — identifies the location.
+- `Warehouse_Name` — the location's name.
+- `Warehouse_Address` — its address (whether to split this into address components is not yet decided).
+- `Warehouse_Type` — identifies the location as a hub or spoke.
+
+I deliberately left stock on hand and minimum stock out of this table; those belong in `Inventory` for each part-and-warehouse combination.
+
+**Still open:** These four columns do not identify **which hub** automatically replenishes a particular spoke. Earlier we considered an optional fifth column, `Primary_Hub_ID`, referencing another record in `Warehouses`. I have not decided whether to include it yet. I also have not written SQL or selected constraints and data types.
+
 ### Replenishment rule I described
 
 The operation uses a **hub-and-spoke** distribution model. Hubs receive inventory from suppliers and hold additional stock to replenish spoke warehouses. Spokes avoid unnecessary excess stock and are replenished according to their own minimum-on-hand needs. At my location, a part sold today will typically appear in stock replenishment about **2–3 days later**. The on-hand quantity changes as sales and replenishments occur.
@@ -49,8 +62,8 @@ Any interactive example should use **fictional or verified-public-safe sanitized
 
 ## My Next Step
 
-Decide whether to use a self-referencing `Primary_Hub_ID` on Warehouses to represent each spoke's one automatic-replenishment hub. Then define the SQLite tables and write the first query myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
+Resolve whether to add `Primary_Hub_ID` to my four proposed Warehouses columns, then choose data types and constraints and write the SQLite table definitions myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
 
 ## AI Transparency
 
-I chose the goal and existing inventory dataset, clarified what line codes represent, selected **Parts, Warehouses, and Brands**, and chose **Inventory** as the fourth table with warehouse-specific quantities and minimum stock levels. I also explained the hub-and-spoke replenishment process, confirmed that I wanted the hub/spoke distinction recorded on each warehouse from the beginning, and distinguished each spoke's single automatic-replenishment hub from optional interwarehouse transfers. AI inspected the source workbook, asked about the business rules, and helped update these planning notes. I intend to design the schema and write and verify the SQL myself, using AI for explanations, review, and troubleshooting when needed.
+I chose the goal and existing inventory dataset, clarified what line codes represent, selected **Parts, Warehouses, and Brands**, and chose **Inventory** as the fourth table with warehouse-specific quantities and minimum stock levels. I also explained the hub-and-spoke replenishment process, confirmed that I wanted the hub/spoke distinction recorded on each warehouse from the beginning, and distinguished each spoke's single automatic-replenishment hub from optional interwarehouse transfers. AI inspected the source workbook, asked about the business rules, and helped update these planning notes. I also selected the four initial Warehouses column headings. I intend to design the schema and write and verify the SQL myself, using AI for explanations, review, and troubleshooting when needed.
