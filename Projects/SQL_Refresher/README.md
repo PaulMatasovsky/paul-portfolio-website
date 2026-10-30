@@ -23,6 +23,14 @@ I want to practice writing queries that answer practical questions, including:
 
 I will record the question, the SQL I wrote, the result, and what I found. No query results or tests have been completed yet.
 
+## Table Design Decisions
+
+I have now chosen a fourth table: **Inventory**. The first three are **Parts**, **Warehouses**, and **Brands**.
+
+Inventory will connect a part to a warehouse and hold the **quantity on hand at that location**. My proposed fields are `Product_ID`, `Warehouse_ID`, and `Quantity_On_Hand`. I am also considering putting `Minimum_Quantity` in Inventory for simplicity. Before finalizing that choice, I need to establish whether the minimum is specific to each warehouse or the same across all warehouses.
+
+The combination of product and warehouse is a candidate for a composite key, since one part can have inventory in several warehouses but should normally have one current quantity record per warehouse. The exact SQLite schema and constraints are not yet written.
+
 ## Demonstration
 
 Start with readable SQL files and examples here on GitHub. If the queries work and the project stays manageable, I may make a small interactive demo for my portfolio.
@@ -31,8 +39,8 @@ Any interactive example should use **fictional records only** and should not exp
 
 ## My Next Step
 
-Decide how parts connect to warehouses, including whether this will need an additional table for warehouse-specific inventory. Then I will define my SQLite tables and write the first query myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
+Decide whether minimum stock levels vary by warehouse, then define the SQLite tables and write the first query myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
 
 ## AI Transparency
 
-I chose the goal and existing inventory dataset, clarified what line codes represent, and confirmed **Parts, Warehouses, and Brands** as my three starting tables. AI inspected the source workbook, asked about the business rules, and helped update these planning notes. I intend to design the schema and write and verify the SQL myself, using AI for explanations, review, and troubleshooting when needed.
+I chose the goal and existing inventory dataset, clarified what line codes represent, selected **Parts, Warehouses, and Brands**, and proposed **Inventory** as the fourth table with warehouse-specific quantities and a possible minimum stock field. AI inspected the source workbook, asked about the business rules, and helped update these planning notes. I intend to design the schema and write and verify the SQL myself, using AI for explanations, review, and troubleshooting when needed.
