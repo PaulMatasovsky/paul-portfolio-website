@@ -35,7 +35,11 @@ The combination of product and warehouse is a candidate for a composite key, sin
 
 The operation uses a **hub-and-spoke** distribution model. Hubs receive inventory from suppliers and hold additional stock to replenish spoke warehouses. Spokes avoid unnecessary excess stock and are replenished according to their own minimum-on-hand needs. At my location, a part sold today will typically appear in stock replenishment about **2–3 days later**. The on-hand quantity changes as sales and replenishments occur.
 
-I decided from the outset that each warehouse should be identified as a **hub** or **spoke** in the Warehouses table. I confirmed this is worth including because it adds little complexity and demonstrates understanding of how the operation works. A candidate field name is `Warehouse_Type`; its exact SQL definition is still for me to decide. This is business context for query exercises, not a claim that this project already tracks shipments, orders, or replenishment events.
+I decided from the outset that each warehouse should be identified as a **hub** or **spoke** in the Warehouses table. I confirmed this is worth including because it adds little complexity and demonstrates understanding of how the operation works. A candidate field name is `Warehouse_Type`; its exact SQL definition is still for me to decide.
+
+**Automatic replenishment and transfers are different processes.** Each spoke has exactly **one primary hub responsible for its automatic replenishment**. That hub supplies the spoke **from the hub's own stock**; it does not specially order inventory from another location in order to fulfill the automatic replenishment. A spoke may separately request stock transfers from other hubs or other spokes, but those exceptions do not change which hub is responsible for its automatic replenishment.
+
+For this first version, I can consider a `Primary_Hub_ID` field on Warehouses that points to another warehouse record. This is a **proposed approach for me to evaluate**, not a finalized schema. I do not need a separate transfer-history table just to practice the joins. This is business context, not a claim that this project already tracks shipments, transfers, orders, or replenishment events.
 
 ## Demonstration
 
@@ -45,8 +49,8 @@ Any interactive example should use **fictional or verified-public-safe sanitized
 
 ## My Next Step
 
-Clarify whether each spoke is supplied by one assigned hub or could receive replenishment from multiple hubs. Then define the SQLite tables and write the first query myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
+Decide whether to use a self-referencing `Primary_Hub_ID` on Warehouses to represent each spoke's one automatic-replenishment hub. Then define the SQLite tables and write the first query myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
 
 ## AI Transparency
 
-I chose the goal and existing inventory dataset, clarified what line codes represent, selected **Parts, Warehouses, and Brands**, and chose **Inventory** as the fourth table with warehouse-specific quantities and minimum stock levels. I also explained the hub-and-spoke replenishment process and confirmed that I wanted the hub/spoke distinction recorded on each warehouse from the beginning. AI inspected the source workbook, asked about the business rules, and helped update these planning notes. I intend to design the schema and write and verify the SQL myself, using AI for explanations, review, and troubleshooting when needed.
+I chose the goal and existing inventory dataset, clarified what line codes represent, selected **Parts, Warehouses, and Brands**, and chose **Inventory** as the fourth table with warehouse-specific quantities and minimum stock levels. I also explained the hub-and-spoke replenishment process, confirmed that I wanted the hub/spoke distinction recorded on each warehouse from the beginning, and distinguished each spoke's single automatic-replenishment hub from optional interwarehouse transfers. AI inspected the source workbook, asked about the business rules, and helped update these planning notes. I intend to design the schema and write and verify the SQL myself, using AI for explanations, review, and troubleshooting when needed.
