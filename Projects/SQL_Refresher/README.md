@@ -31,6 +31,14 @@ Inventory will connect a part to a warehouse and hold both the **quantity on han
 
 The combination of product and warehouse is a candidate for a composite key, since one part can have inventory in several warehouses but should normally have one current quantity record per warehouse. The exact SQLite schema and constraints are not yet written.
 
+### Brands — proposed columns and open sourcing questions
+
+I identified **line code** as the field that identifies a brand. I also considered recording **supplier ID** and **supplier name**, either here or in a separate table. If I eventually expand the project, I might want to represent multiple places from which a hub could source parts; this is an idea to evaluate, not a finalized requirement.
+
+Before choosing the Brands columns, I need to clarify whether **one brand can have multiple suppliers** and whether a supplier is determined at the **brand** or **individual part** level. If there can be several suppliers per brand, putting one `Supplier_ID` and `Supplier_Name` directly on each Brands record would not capture the full relationship. Supplier information may belong in a separate `Suppliers` table or future relationship table, rather than being duplicated here. This is a design consideration, not a decision already made.
+
+The existing sanitized workbook has a `LINES` tab and separate `Supplier_ID` information under `Parts`. I have not committed to a Brands schema or added a supplier table in SQLite. I want to keep the first version small and retain the option of adding suppliers and sourcing locations later.
+
 ### Warehouses — columns I've chosen
 
 My current `Warehouses` design has **six confirmed columns**:
@@ -83,8 +91,8 @@ Any interactive example should use **fictional or verified-public-safe sanitized
 
 ## My Next Step
 
-Work out how to validate `Primary_Hub_ID`, including making it present for spokes and empty for hubs, then write the SQLite table definitions and tests myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
+Clarify whether a brand has one supplier or may use multiple suppliers, then decide the columns for `Brands`. After the table-design discussions, write and test the SQLite definitions myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
 
 ## AI Transparency
 
-I chose the goal and existing inventory dataset, clarified what line codes represent, selected **Parts, Warehouses, and Brands**, and chose **Inventory** as the fourth table with warehouse-specific quantities and minimum stock levels. I also explained the hub-and-spoke replenishment process, confirmed that I wanted the hub/spoke distinction recorded on each warehouse from the beginning, and distinguished each spoke's single automatic-replenishment hub from optional interwarehouse transfers. AI inspected the source workbook, asked about the business rules, and helped update these planning notes. I selected the warehouse columns, confirmed `Primary_Hub_ID` as the fifth column, decided to include `Route_ID` as the sixth, and chose `Is_Hub` (0 or 1) instead of the text-based `Warehouse_Type`. I considered multiple-route membership but chose one assigned route per warehouse for this project. I also required `Is_Hub` to be non-null and limited to 0 or 1, and chose to require `Primary_Hub_ID` for spokes while leaving it `NULL` for hubs in the current project model. I intend to design the schema and write and verify the SQL myself, using AI for explanations, review, and troubleshooting when needed.
+I chose the goal and existing inventory dataset, clarified what line codes represent, selected **Parts, Warehouses, and Brands**, and chose **Inventory** as the fourth table with warehouse-specific quantities and minimum stock levels. I also explained the hub-and-spoke replenishment process, confirmed that I wanted the hub/spoke distinction recorded on each warehouse from the beginning, and distinguished each spoke's single automatic-replenishment hub from optional interwarehouse transfers. AI inspected the source workbook, asked about the business rules, and helped update these planning notes. I selected the warehouse columns, confirmed `Primary_Hub_ID` as the fifth column, decided to include `Route_ID` as the sixth, and chose `Is_Hub` (0 or 1) instead of the text-based `Warehouse_Type`. I considered multiple-route membership but chose one assigned route per warehouse for this project. I also required `Is_Hub` to be non-null and limited to 0 or 1, and chose to require `Primary_Hub_ID` for spokes while leaving it `NULL` for hubs in the current project model. I also proposed a line code for Brands and raised the question of recording supplier IDs, names, and possible sourcing locations. AI flagged that supplier relationships may belong in separate tables. I intend to design the schema and write and verify the SQL myself, using AI for explanations, review, and troubleshooting when needed.
