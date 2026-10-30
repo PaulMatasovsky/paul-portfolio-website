@@ -9,7 +9,7 @@ I have used SQL in coursework and in earlier technical work, but I want more pra
 
 ## Starting Idea
 
-Reuse the sanitized test data from my existing inventory workbook instead of building a separate fictional dataset. I initially proposed three tables: **Parts**, **Warehouses**, and **Vendors**. After reviewing the business rule, I clarified that a **line code identifies the brand under which a part is sold**, not necessarily the supplier or actual manufacturer. The final choice of three starting tables is still mine to make.
+Reuse the sanitized test data from my existing inventory workbook instead of building a separate fictional dataset. My starting three tables are **Parts**, **Warehouses**, and **Brands**. I originally said Vendors, but I meant Brands. A **line code identifies the brand under which a part is sold**, not necessarily the supplier or manufacturer. I chose to keep suppliers out of this first version so the SQL refresher stays manageable.
 
 The source workbook is [InventoryDataValidation&ETLPipeline](https://docs.google.com/spreadsheets/d/1uV_BQui4tErYduIn34nPwPPoZCLOXqWDLpxW0HUBWQA/edit). It contains `Parts`, `Warehouses`, `Suppliers`, `LINES`, and `Categories` tabs. These are source data, not yet finished SQLite tables. `Parts` already has separate `Line_ID` and `Supplier_ID` fields. The line code is my sanitized identifier for a resale brand. One brand can have parts produced by multiple manufacturers, so I should not equate the brand with the manufacturer or supplier. Some reference tabs are incomplete or contain duplicates; I need to inspect and clean them before importing anything.
 
@@ -31,8 +31,8 @@ Any interactive example should use **fictional records only** and should not exp
 
 ## My Next Step
 
-Decide whether the first three tables should use **Brands** instead of **Vendors**, now that I've clarified what a line code means. Then I'll decide how parts connect to warehouses, define my SQLite tables, and write the first query myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
+Decide how parts connect to warehouses, including whether this will need an additional table for warehouse-specific inventory. Then I will define my SQLite tables and write the first query myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
 
 ## AI Transparency
 
-I chose the goal, selected the inventory dataset from my existing work, proposed the first three tables, and clarified that line codes identify brands rather than suppliers or manufacturers. AI inspected the source workbook, asked about that distinction, and helped revise these planning notes. I intend to make the schema decisions and write and verify the SQL myself, using AI for explanations, review, and troubleshooting when needed.
+I chose the goal and existing inventory dataset, clarified what line codes represent, and confirmed **Parts, Warehouses, and Brands** as my three starting tables. AI inspected the source workbook, asked about the business rules, and helped update these planning notes. I intend to design the schema and write and verify the SQL myself, using AI for explanations, review, and troubleshooting when needed.
