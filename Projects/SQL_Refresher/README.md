@@ -35,7 +35,7 @@ The combination of product and warehouse is a candidate for a composite key, sin
 
 The operation uses a **hub-and-spoke** distribution model. Hubs receive inventory from suppliers and hold additional stock to replenish spoke warehouses. Spokes avoid unnecessary excess stock and are replenished according to their own minimum-on-hand needs. At my location, a part sold today will typically appear in stock replenishment about **2–3 days later**. The on-hand quantity changes as sales and replenishments occur.
 
-This is business context for query exercises, not a claim that this project already tracks shipments, orders, or replenishment events. I have not yet decided whether the sample Warehouses table should identify locations as hubs or spokes.
+I decided from the outset that each warehouse should be identified as a **hub** or **spoke** in the Warehouses table. I confirmed this is worth including because it adds little complexity and demonstrates understanding of how the operation works. A candidate field name is `Warehouse_Type`; its exact SQL definition is still for me to decide. This is business context for query exercises, not a claim that this project already tracks shipments, orders, or replenishment events.
 
 ## Demonstration
 
@@ -45,8 +45,8 @@ Any interactive example should use **fictional or verified-public-safe sanitized
 
 ## My Next Step
 
-Decide whether the sample Warehouses table needs to mark each site as a hub or spoke, then define the SQLite tables and write the first query myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
+Clarify whether each spoke is supplied by one assigned hub or could receive replenishment from multiple hubs. Then define the SQLite tables and write the first query myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
 
 ## AI Transparency
 
-I chose the goal and existing inventory dataset, clarified what line codes represent, selected **Parts, Warehouses, and Brands**, and chose **Inventory** as the fourth table with warehouse-specific quantities and minimum stock levels. I also explained the hub-and-spoke replenishment process. AI inspected the source workbook, asked about the business rules, and helped update these planning notes. I intend to design the schema and write and verify the SQL myself, using AI for explanations, review, and troubleshooting when needed.
+I chose the goal and existing inventory dataset, clarified what line codes represent, selected **Parts, Warehouses, and Brands**, and chose **Inventory** as the fourth table with warehouse-specific quantities and minimum stock levels. I also explained the hub-and-spoke replenishment process and confirmed that I wanted the hub/spoke distinction recorded on each warehouse from the beginning. AI inspected the source workbook, asked about the business rules, and helped update these planning notes. I intend to design the schema and write and verify the SQL myself, using AI for explanations, review, and troubleshooting when needed.
