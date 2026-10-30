@@ -13,6 +13,7 @@ This is where the projects stand right now. Each project has its own documentati
 | Area | What it includes | Status | Where to look |
 |---|---|---|---|
 | Warehouse ETL sorting workbook | Google Sheets workbook used to organize and print warehouse parts reports. The Excel copy has a printing limitation. | **Complete · Maintenance** | [ETL project](Projects/ETL/) |
+| SQL Refresher — Inventory Data Checks — **human-led (planned)** | Small SQLite practice project using fictional inventory data; no database or queries implemented yet. | **In Progress · Active** | [SQL Refresher](Projects/SQL_Refresher/) |
 | Computer Science 050 teaching course | Introductory computer science curriculum and lab preparation. I have not yet published dated classroom evidence here. | **In Progress · Active** | [Teaching project](Projects/Computer_Science_050/) |
 | QA Toolkit | Draft website QA checklists, test cases, and templates. I have not completed a verified hands-on audit yet. | **In Progress · Paused** | [QA Toolkit repository](https://github.com/PaulMatasovsky/qa-toolkit) |
 | Computer Helper (Windows + macOS) — **AI-led** | Local help assistant with a modular design, offline reference notes, and untested Python starter code. | **In Progress · Active** | [Computer Helper project](Projects/Computer_Helper/) |
@@ -49,6 +50,7 @@ I follow these [GitHub writing principles](Documentation/GitHub_Writing_Principl
 AI has had a different role in each project. When I say **human-led**, I mean I did most of the development or creation and used AI in a supporting role. **AI-led** means AI generated most of the implementation or instructional materials based on goals and requirements I provided. These aren't measured percentages, and they do **not** mean AI is running inside a finished tool.
 
 - **ETL (human-led):** I identified the warehouse problem, chose the approach and platform, and built the workbook. AI helped troubleshoot persistent formula errors and later helped with the GitHub documentation. The finished workbook uses spreadsheet formulas; it does not use AI to process reports.
+- **SQL Refresher (human-led, planned):** I will design the sample database and write and test the queries. AI helped evaluate the demo approach and draft the initial planning notes. No SQL implementation has been completed yet.
 - **QA Toolkit (AI-led):** AI generated the resources as part of a learning exercise. I have not yet completed the hands-on audit or validated results.
 - **Computer Science 050 (AI-led drafting):** I set the learning goals, course structure, examples, and teaching approach. AI helps with research, lesson drafts, exercises, and review. I am responsible for the teaching. See the [contribution breakdown](Projects/Computer_Science_050/AI_Collaboration_and_Authorship.md).
 - **Computer Helper (AI-led):** I set the goals, limits, and modular approach. AI drafted most of the documentation and first Python source files. I haven't tested the assistant on the family computers. See the [authorship notes](Projects/Computer_Helper/AI_Collaboration_and_Authorship.md).
