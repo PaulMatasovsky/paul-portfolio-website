@@ -38,7 +38,7 @@ My current `Warehouses` design has **six confirmed columns**:
 - `Warehouse_ID` — identifies the location.
 - `Warehouse_Name` — the location's name.
 - `Warehouse_Address` — its address (whether to split this into address components is not yet decided).
-- `Warehouse_Type` — identifies the location as a hub or spoke.
+- `Is_Hub` — Boolean-style indicator: `1` for a hub and `0` for a spoke.
 - `Primary_Hub_ID` — identifies the one hub responsible for a spoke's automatic replenishment; this will reference another warehouse.
 - `Route_ID` — identifies the one delivery route assigned to a warehouse.
 
@@ -52,10 +52,10 @@ My first pass at the SQLite types is:
 - `Warehouse_Name`: text (`TEXT`).
 - `Warehouse_Address`: text (`TEXT`).
 - `Route_ID`: text (`TEXT`), assuming route codes may contain letters.
-- `Warehouse_Type`: **not decided yet** — either text (`Hub`/`Spoke`) or a Boolean-style `Is_Hub` field.
+- `Is_Hub`: `INTEGER` used as a Boolean-style flag. I chose `1` for a hub and `0` for a spoke because a single numeric value is straightforward to compare and avoids relying on text labels.
 - `Primary_Hub_ID`: likely `INTEGER`, matching the warehouse identifier it references, rather than a text name or Boolean.
 
-I had momentarily forgotten `Primary_Hub_ID` while listing the types. It answers a different question from `Warehouse_Type`: **which hub supplies this spoke**, rather than **is this warehouse a hub**. SQLite commonly represents Boolean-style fields as integer values 0 and 1. These are planning notes only; no `CREATE TABLE` statement or constraints have been written yet.
+I had momentarily forgotten `Primary_Hub_ID` while listing the types. It answers a different question from `Is_Hub`: **which hub supplies this spoke**, rather than **is this warehouse a hub**. SQLite commonly represents Boolean-style fields as integer values 0 and 1. Using `INTEGER` alone does not restrict values to 0 and 1, so a `CHECK (Is_Hub IN (0, 1))` constraint and `NOT NULL` are safeguards to consider when I write the schema. These are planning notes only; no `CREATE TABLE` statement or constraints have been written yet.
 
 ### Design consideration — warehouse routes
 
@@ -67,7 +67,7 @@ The exact SQLite types, constraints, and whether to create a separate `Routes` l
 
 The operation uses a **hub-and-spoke** distribution model. Hubs receive inventory from suppliers and hold additional stock to replenish spoke warehouses. Spokes avoid unnecessary excess stock and are replenished according to their own minimum-on-hand needs. At my location, a part sold today will typically appear in stock replenishment about **2–3 days later**. The on-hand quantity changes as sales and replenishments occur.
 
-I decided from the outset that each warehouse should be identified as a **hub** or **spoke** in the Warehouses table. I confirmed this is worth including because it adds little complexity and demonstrates understanding of how the operation works. A candidate field name is `Warehouse_Type`; its exact SQL definition is still for me to decide.
+I decided from the outset that each warehouse should be identified as a **hub** or **spoke** in the Warehouses table. I confirmed this is worth including because it adds little complexity and demonstrates understanding of how the operation works. I chose `Is_Hub` as a Boolean-style integer flag instead of storing the words `Hub` and `Spoke`; the SQL constraints are not yet finalized.
 
 **Automatic replenishment, customer-specific orders, and stock transfers are different processes.** Each spoke has exactly **one primary hub responsible for its automatic replenishment**. That hub supplies the spoke **from the hub's own stock**; it does not specially order inventory from another location in order to fulfill the automatic replenishment. A location may receive stock through separately authorized transfers from other warehouses, but those transfers are not an unrestricted way for spoke locations to replenish themselves. Customer-specific orders follow a different workflow from routine stock transfers. The public project describes these as generalized business rules, without publishing internal company permission details.
 
@@ -81,8 +81,8 @@ Any interactive example should use **fictional or verified-public-safe sanitized
 
 ## My Next Step
 
-Choose whether `Warehouse_Type` should be text or a Boolean-style `Is_Hub` flag, confirm the proposed types, then work out keys and constraints and write the SQLite table definitions myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
+Decide which constraints should protect `Is_Hub` from invalid or missing values, then work out primary and foreign keys and write the SQLite table definitions myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
 
 ## AI Transparency
 
-I chose the goal and existing inventory dataset, clarified what line codes represent, selected **Parts, Warehouses, and Brands**, and chose **Inventory** as the fourth table with warehouse-specific quantities and minimum stock levels. I also explained the hub-and-spoke replenishment process, confirmed that I wanted the hub/spoke distinction recorded on each warehouse from the beginning, and distinguished each spoke's single automatic-replenishment hub from optional interwarehouse transfers. AI inspected the source workbook, asked about the business rules, and helped update these planning notes. I selected the warehouse columns, confirmed `Primary_Hub_ID` as the fifth column, and decided to include `Route_ID` as the sixth. I considered multiple-route membership but chose one assigned route per warehouse for this project. I intend to design the schema and write and verify the SQL myself, using AI for explanations, review, and troubleshooting when needed.
+I chose the goal and existing inventory dataset, clarified what line codes represent, selected **Parts, Warehouses, and Brands**, and chose **Inventory** as the fourth table with warehouse-specific quantities and minimum stock levels. I also explained the hub-and-spoke replenishment process, confirmed that I wanted the hub/spoke distinction recorded on each warehouse from the beginning, and distinguished each spoke's single automatic-replenishment hub from optional interwarehouse transfers. AI inspected the source workbook, asked about the business rules, and helped update these planning notes. I selected the warehouse columns, confirmed `Primary_Hub_ID` as the fifth column, decided to include `Route_ID` as the sixth, and chose `Is_Hub` (0 or 1) instead of the text-based `Warehouse_Type`. I considered multiple-route membership but chose one assigned route per warehouse for this project. I intend to design the schema and write and verify the SQL myself, using AI for explanations, review, and troubleshooting when needed.
