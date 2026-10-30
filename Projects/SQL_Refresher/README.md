@@ -44,6 +44,19 @@ My current `Warehouses` design has **six confirmed columns**:
 
 I deliberately left stock on hand and minimum stock out of this table; those belong in `Inventory` for each part-and-warehouse combination.
 
+### Warehouses — initial data type ideas
+
+My first pass at the SQLite types is:
+
+- `Warehouse_ID`: an integer identifier (`INTEGER`).
+- `Warehouse_Name`: text (`TEXT`).
+- `Warehouse_Address`: text (`TEXT`).
+- `Route_ID`: text (`TEXT`), assuming route codes may contain letters.
+- `Warehouse_Type`: **not decided yet** — either text (`Hub`/`Spoke`) or a Boolean-style `Is_Hub` field.
+- `Primary_Hub_ID`: likely `INTEGER`, matching the warehouse identifier it references, rather than a text name or Boolean.
+
+I had momentarily forgotten `Primary_Hub_ID` while listing the types. It answers a different question from `Warehouse_Type`: **which hub supplies this spoke**, rather than **is this warehouse a hub**. SQLite commonly represents Boolean-style fields as integer values 0 and 1. These are planning notes only; no `CREATE TABLE` statement or constraints have been written yet.
+
 ### Design consideration — warehouse routes
 
 I considered whether a warehouse might belong to several delivery routes. If that were necessary, a separate junction table could represent a many-to-many relationship. **I decided instead that each warehouse will belong to only one route in this project**, and several warehouses can share the same route. This is technically a **one-to-many relationship from routes to warehouses**, rather than a strict one-to-one relationship. Storing `Route_ID` directly in `Warehouses` is sufficient for the chosen rule; I am not introducing a route-membership junction table.
@@ -68,7 +81,7 @@ Any interactive example should use **fictional or verified-public-safe sanitized
 
 ## My Next Step
 
-Choose data types and constraints for the six Warehouses columns and write the SQLite table definitions myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
+Choose whether `Warehouse_Type` should be text or a Boolean-style `Is_Hub` flag, confirm the proposed types, then work out keys and constraints and write the SQLite table definitions myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
 
 ## AI Transparency
 
