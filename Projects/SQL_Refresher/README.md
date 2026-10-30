@@ -33,16 +33,19 @@ The combination of product and warehouse is a candidate for a composite key, sin
 
 ### Warehouses — columns I've chosen
 
-My first draft of the `Warehouses` table has four columns:
+My current `Warehouses` design has **five confirmed columns**, with a possible sixth for future route grouping:
 
 - `Warehouse_ID` — identifies the location.
 - `Warehouse_Name` — the location's name.
 - `Warehouse_Address` — its address (whether to split this into address components is not yet decided).
 - `Warehouse_Type` — identifies the location as a hub or spoke.
+- `Primary_Hub_ID` — identifies the one hub responsible for a spoke's automatic replenishment; this will reference another warehouse.
+
+**Possible sixth column:** `Route_ID` — group warehouses on a delivery route if a location only needs one assigned route. I want the option to expand the sample beyond the four existing locations, but have not decided exactly how routes should work. If a location can belong to several routes, a separate relationship table may make more sense later.
 
 I deliberately left stock on hand and minimum stock out of this table; those belong in `Inventory` for each part-and-warehouse combination.
 
-**Still open:** These four columns do not identify **which hub** automatically replenishes a particular spoke. Earlier we considered an optional fifth column, `Primary_Hub_ID`, referencing another record in `Warehouses`. I have not decided whether to include it yet. I also have not written SQL or selected constraints and data types.
+**Still open:** Should one warehouse be assigned to just one delivery route, or can it participate in multiple routes? I also have not written SQL or selected constraints and data types.
 
 ### Replenishment rule I described
 
@@ -52,7 +55,7 @@ I decided from the outset that each warehouse should be identified as a **hub** 
 
 **Automatic replenishment, customer-specific orders, and stock transfers are different processes.** Each spoke has exactly **one primary hub responsible for its automatic replenishment**. That hub supplies the spoke **from the hub's own stock**; it does not specially order inventory from another location in order to fulfill the automatic replenishment. A location may receive stock through separately authorized transfers from other warehouses, but those transfers are not an unrestricted way for spoke locations to replenish themselves. Customer-specific orders follow a different workflow from routine stock transfers. The public project describes these as generalized business rules, without publishing internal company permission details.
 
-For this first version, I can consider a `Primary_Hub_ID` field on Warehouses that points to another warehouse record. This is a **proposed approach for me to evaluate**, not a finalized schema. I do not need a separate transfer-history table just to practice the joins. This is business context, not a claim that this project already tracks shipments, transfers, orders, user permissions, or replenishment events.
+I chose `Primary_Hub_ID` as a fifth Warehouses field so a spoke can point to its one assigned automatic-replenishment hub. I still need to write and validate that self-referencing relationship in SQLite. I do not need a separate transfer-history table just to practice the joins. This is business context, not a claim that this project already tracks shipments, transfers, orders, user permissions, or replenishment events.
 
 ## Demonstration
 
@@ -62,8 +65,8 @@ Any interactive example should use **fictional or verified-public-safe sanitized
 
 ## My Next Step
 
-Resolve whether to add `Primary_Hub_ID` to my four proposed Warehouses columns, then choose data types and constraints and write the SQLite table definitions myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
+Decide whether `Route_ID` belongs directly in Warehouses or requires a separate relationship, then choose data types and constraints and write the SQLite table definitions myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
 
 ## AI Transparency
 
-I chose the goal and existing inventory dataset, clarified what line codes represent, selected **Parts, Warehouses, and Brands**, and chose **Inventory** as the fourth table with warehouse-specific quantities and minimum stock levels. I also explained the hub-and-spoke replenishment process, confirmed that I wanted the hub/spoke distinction recorded on each warehouse from the beginning, and distinguished each spoke's single automatic-replenishment hub from optional interwarehouse transfers. AI inspected the source workbook, asked about the business rules, and helped update these planning notes. I also selected the four initial Warehouses column headings. I intend to design the schema and write and verify the SQL myself, using AI for explanations, review, and troubleshooting when needed.
+I chose the goal and existing inventory dataset, clarified what line codes represent, selected **Parts, Warehouses, and Brands**, and chose **Inventory** as the fourth table with warehouse-specific quantities and minimum stock levels. I also explained the hub-and-spoke replenishment process, confirmed that I wanted the hub/spoke distinction recorded on each warehouse from the beginning, and distinguished each spoke's single automatic-replenishment hub from optional interwarehouse transfers. AI inspected the source workbook, asked about the business rules, and helped update these planning notes. I selected the warehouse columns, confirmed `Primary_Hub_ID` as the fifth column, and proposed `Route_ID` as an optional sixth for future route grouping. I intend to design the schema and write and verify the SQL myself, using AI for explanations, review, and troubleshooting when needed.
