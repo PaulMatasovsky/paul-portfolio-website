@@ -27,20 +27,26 @@ I will record the question, the SQL I wrote, the result, and what I found. No qu
 
 I have now chosen a fourth table: **Inventory**. The first three are **Parts**, **Warehouses**, and **Brands**.
 
-Inventory will connect a part to a warehouse and hold the **quantity on hand at that location**. My proposed fields are `Product_ID`, `Warehouse_ID`, and `Quantity_On_Hand`. I am also considering putting `Minimum_Quantity` in Inventory for simplicity. Before finalizing that choice, I need to establish whether the minimum is specific to each warehouse or the same across all warehouses.
+Inventory will connect a part to a warehouse and hold both the **quantity on hand** and the **minimum quantity for that specific warehouse**. My selected starting fields are `Product_ID`, `Warehouse_ID`, `Quantity_On_Hand`, and `Minimum_Quantity`. The minimum belongs here because each warehouse sets stock levels according to its own demand, rather than sharing one minimum for the part everywhere.
 
 The combination of product and warehouse is a candidate for a composite key, since one part can have inventory in several warehouses but should normally have one current quantity record per warehouse. The exact SQLite schema and constraints are not yet written.
+
+### Replenishment rule I described
+
+The operation uses a **hub-and-spoke** distribution model. Hubs receive inventory from suppliers and hold additional stock to replenish spoke warehouses. Spokes avoid unnecessary excess stock and are replenished according to their own minimum-on-hand needs. At my location, a part sold today will typically appear in stock replenishment about **2–3 days later**. The on-hand quantity changes as sales and replenishments occur.
+
+This is business context for query exercises, not a claim that this project already tracks shipments, orders, or replenishment events. I have not yet decided whether the sample Warehouses table should identify locations as hubs or spokes.
 
 ## Demonstration
 
 Start with readable SQL files and examples here on GitHub. If the queries work and the project stays manageable, I may make a small interactive demo for my portfolio.
 
-Any interactive example should use **fictional records only** and should not expose the WordPress site's database or accept arbitrary SQL on the server. One option to evaluate later is a disposable SQLite database running entirely in a visitor's browser.
+Any interactive example should use **fictional or verified-public-safe sanitized records only** and should not expose the WordPress site's database or accept arbitrary SQL on the server. One option to evaluate later is a disposable SQLite database running entirely in a visitor's browser.
 
 ## My Next Step
 
-Decide whether minimum stock levels vary by warehouse, then define the SQLite tables and write the first query myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
+Decide whether the sample Warehouses table needs to mark each site as a hub or spoke, then define the SQLite tables and write the first query myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
 
 ## AI Transparency
 
-I chose the goal and existing inventory dataset, clarified what line codes represent, selected **Parts, Warehouses, and Brands**, and proposed **Inventory** as the fourth table with warehouse-specific quantities and a possible minimum stock field. AI inspected the source workbook, asked about the business rules, and helped update these planning notes. I intend to design the schema and write and verify the SQL myself, using AI for explanations, review, and troubleshooting when needed.
+I chose the goal and existing inventory dataset, clarified what line codes represent, selected **Parts, Warehouses, and Brands**, and chose **Inventory** as the fourth table with warehouse-specific quantities and minimum stock levels. I also explained the hub-and-spoke replenishment process. AI inspected the source workbook, asked about the business rules, and helped update these planning notes. I intend to design the schema and write and verify the SQL myself, using AI for explanations, review, and troubleshooting when needed.
