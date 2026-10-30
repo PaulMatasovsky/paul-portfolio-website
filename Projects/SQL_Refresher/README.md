@@ -52,10 +52,10 @@ My first pass at the SQLite types is:
 - `Warehouse_Name`: text (`TEXT`).
 - `Warehouse_Address`: text (`TEXT`).
 - `Route_ID`: text (`TEXT`), assuming route codes may contain letters.
-- `Is_Hub`: `INTEGER` used as a Boolean-style flag. I chose `1` for a hub and `0` for a spoke because a single numeric value is straightforward to compare and avoids relying on text labels.
+- `Is_Hub`: **required `INTEGER`, limited to `0` or `1`**. I chose `1` for a hub and `0` for a spoke because each warehouse must be one or the other; leaving the status blank or allowing another value would undermine the business rule.
 - `Primary_Hub_ID`: likely `INTEGER`, matching the warehouse identifier it references, rather than a text name or Boolean.
 
-I had momentarily forgotten `Primary_Hub_ID` while listing the types. It answers a different question from `Is_Hub`: **which hub supplies this spoke**, rather than **is this warehouse a hub**. SQLite commonly represents Boolean-style fields as integer values 0 and 1. Using `INTEGER` alone does not restrict values to 0 and 1, so a `CHECK (Is_Hub IN (0, 1))` constraint and `NOT NULL` are safeguards to consider when I write the schema. These are planning notes only; no `CREATE TABLE` statement or constraints have been written yet.
+I had momentarily forgotten `Primary_Hub_ID` while listing the types. It answers a different question from `Is_Hub`: **which hub supplies this spoke**, rather than **is this warehouse a hub**. SQLite commonly represents Boolean-style fields as integer values 0 and 1. I decided that the schema **must use both `NOT NULL` and `CHECK (Is_Hub IN (0, 1))`**: the first requires a value, and the second rejects values other than 0 and 1. These are planning notes only; no `CREATE TABLE` statement or constraints have been written yet.
 
 ### Design consideration — warehouse routes
 
@@ -81,8 +81,8 @@ Any interactive example should use **fictional or verified-public-safe sanitized
 
 ## My Next Step
 
-Decide which constraints should protect `Is_Hub` from invalid or missing values, then work out primary and foreign keys and write the SQLite table definitions myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
+Confirm the `Primary_Hub_ID` rules for hubs and spokes, then work out primary and foreign keys and write the SQLite table definitions myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
 
 ## AI Transparency
 
-I chose the goal and existing inventory dataset, clarified what line codes represent, selected **Parts, Warehouses, and Brands**, and chose **Inventory** as the fourth table with warehouse-specific quantities and minimum stock levels. I also explained the hub-and-spoke replenishment process, confirmed that I wanted the hub/spoke distinction recorded on each warehouse from the beginning, and distinguished each spoke's single automatic-replenishment hub from optional interwarehouse transfers. AI inspected the source workbook, asked about the business rules, and helped update these planning notes. I selected the warehouse columns, confirmed `Primary_Hub_ID` as the fifth column, decided to include `Route_ID` as the sixth, and chose `Is_Hub` (0 or 1) instead of the text-based `Warehouse_Type`. I considered multiple-route membership but chose one assigned route per warehouse for this project. I intend to design the schema and write and verify the SQL myself, using AI for explanations, review, and troubleshooting when needed.
+I chose the goal and existing inventory dataset, clarified what line codes represent, selected **Parts, Warehouses, and Brands**, and chose **Inventory** as the fourth table with warehouse-specific quantities and minimum stock levels. I also explained the hub-and-spoke replenishment process, confirmed that I wanted the hub/spoke distinction recorded on each warehouse from the beginning, and distinguished each spoke's single automatic-replenishment hub from optional interwarehouse transfers. AI inspected the source workbook, asked about the business rules, and helped update these planning notes. I selected the warehouse columns, confirmed `Primary_Hub_ID` as the fifth column, decided to include `Route_ID` as the sixth, and chose `Is_Hub` (0 or 1) instead of the text-based `Warehouse_Type`. I considered multiple-route membership but chose one assigned route per warehouse for this project. I also required `Is_Hub` to be non-null and limited to 0 or 1. I intend to design the schema and write and verify the SQL myself, using AI for explanations, review, and troubleshooting when needed.
