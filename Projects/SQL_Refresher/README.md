@@ -33,19 +33,22 @@ The combination of product and warehouse is a candidate for a composite key, sin
 
 ### Warehouses — columns I've chosen
 
-My current `Warehouses` design has **five confirmed columns**, with a possible sixth for future route grouping:
+My current `Warehouses` design has **six confirmed columns**:
 
 - `Warehouse_ID` — identifies the location.
 - `Warehouse_Name` — the location's name.
 - `Warehouse_Address` — its address (whether to split this into address components is not yet decided).
 - `Warehouse_Type` — identifies the location as a hub or spoke.
 - `Primary_Hub_ID` — identifies the one hub responsible for a spoke's automatic replenishment; this will reference another warehouse.
-
-**Possible sixth column:** `Route_ID` — group warehouses on a delivery route if a location only needs one assigned route. I want the option to expand the sample beyond the four existing locations, but have not decided exactly how routes should work. If a location can belong to several routes, a separate relationship table may make more sense later.
+- `Route_ID` — identifies the one delivery route assigned to a warehouse.
 
 I deliberately left stock on hand and minimum stock out of this table; those belong in `Inventory` for each part-and-warehouse combination.
 
-**Still open:** Should one warehouse be assigned to just one delivery route, or can it participate in multiple routes? I also have not written SQL or selected constraints and data types.
+### Design consideration — warehouse routes
+
+I considered whether a warehouse might belong to several delivery routes. If that were necessary, a separate junction table could represent a many-to-many relationship. **I decided instead that each warehouse will belong to only one route in this project**, and several warehouses can share the same route. This is technically a **one-to-many relationship from routes to warehouses**, rather than a strict one-to-one relationship. Storing `Route_ID` directly in `Warehouses` is sufficient for the chosen rule; I am not introducing a route-membership junction table.
+
+The exact SQLite types, constraints, and whether to create a separate `Routes` lookup table are still to be decided. I also plan to add more sanitized or fictional locations so route groupings can be demonstrated.
 
 ### Replenishment rule I described
 
@@ -65,8 +68,8 @@ Any interactive example should use **fictional or verified-public-safe sanitized
 
 ## My Next Step
 
-Decide whether `Route_ID` belongs directly in Warehouses or requires a separate relationship, then choose data types and constraints and write the SQLite table definitions myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
+Choose data types and constraints for the six Warehouses columns and write the SQLite table definitions myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
 
 ## AI Transparency
 
-I chose the goal and existing inventory dataset, clarified what line codes represent, selected **Parts, Warehouses, and Brands**, and chose **Inventory** as the fourth table with warehouse-specific quantities and minimum stock levels. I also explained the hub-and-spoke replenishment process, confirmed that I wanted the hub/spoke distinction recorded on each warehouse from the beginning, and distinguished each spoke's single automatic-replenishment hub from optional interwarehouse transfers. AI inspected the source workbook, asked about the business rules, and helped update these planning notes. I selected the warehouse columns, confirmed `Primary_Hub_ID` as the fifth column, and proposed `Route_ID` as an optional sixth for future route grouping. I intend to design the schema and write and verify the SQL myself, using AI for explanations, review, and troubleshooting when needed.
+I chose the goal and existing inventory dataset, clarified what line codes represent, selected **Parts, Warehouses, and Brands**, and chose **Inventory** as the fourth table with warehouse-specific quantities and minimum stock levels. I also explained the hub-and-spoke replenishment process, confirmed that I wanted the hub/spoke distinction recorded on each warehouse from the beginning, and distinguished each spoke's single automatic-replenishment hub from optional interwarehouse transfers. AI inspected the source workbook, asked about the business rules, and helped update these planning notes. I selected the warehouse columns, confirmed `Primary_Hub_ID` as the fifth column, and decided to include `Route_ID` as the sixth. I considered multiple-route membership but chose one assigned route per warehouse for this project. I intend to design the schema and write and verify the SQL myself, using AI for explanations, review, and troubleshooting when needed.
