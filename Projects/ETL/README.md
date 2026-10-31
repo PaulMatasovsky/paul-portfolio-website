@@ -28,7 +28,8 @@ For reports with up to 2,000 parts, preparation went from over an hour to roughl
 - [Excel version](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/FINAL_Automated_Sorting_Template.xlsx) — available to download and inspect. I had to adjust some formulas for Excel, and it still prints extra blank rows. The working Google Sheets version does not have that problem.
 - [Business Rules](Business_Rules.md) — what the workbook needs to do.
 - [Technical Overview](Technical_Overview.md) — how the worksheets carry out those rules.
-- [ADRs](ETL_Documentation/ETL_ADR/) and [Learning Journal](ETL_Documentation/ETL_Learning_Journal/) — the decisions I made and what I learned.
+- [ADRs](ETL_Documentation/ETL_ADR/) — the main decisions behind the workbook.
+- [Development History and Retrospective](ETL_Documentation/ETL_Learning_Journal/Retrospective.md) — how I built, tested, and refined it.
 - [Screenshots](ETL_Documentation/Supporting_Evidence/Screenshots/) — examples of the data flow and finished reports.
 
 ## What I Might Add Later
