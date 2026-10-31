@@ -1,4 +1,4 @@
-# ETL Project — Development History and Retrospective
+# Automated Sorting Template — Development History and Retrospective
 
 **Recorded:** October 26, 2026 (retrospective)  
 **Expanded:** October 30, 2026
