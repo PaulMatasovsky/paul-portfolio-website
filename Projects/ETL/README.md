@@ -10,7 +10,7 @@ Sorting our warehouse parts reports by hand could take more than an hour, and di
 
 I built a spreadsheet to handle that work. My manager can paste in the original report, let the formulas process it, and print one of three sorted reports: Part Number First, Line First, or Category First.
 
-For reports with up to 2,000 parts, preparation went from over an hour to roughly **2–5 minutes**. The Google Sheets version is used in warehouse operations.
+For reports with up to 2,000 source rows, preparation went from over an hour to **less than five minutes**. The Google Sheets version is used in warehouse operations.
 
 ## How It Works
 
