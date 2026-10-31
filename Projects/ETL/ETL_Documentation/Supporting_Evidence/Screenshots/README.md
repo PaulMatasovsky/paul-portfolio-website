@@ -1,4 +1,6 @@
-These screenshots document the ETL workbook's workflow, from the original input through processing, generated reports, and QA validation.
+# Automated Sorting Template — Screenshots
+
+These screenshots document the template's ETL workflow, from the original input through processing, generated reports, and QA validation.
 The screenshots contain sanitized example data. The screenshots are listed below in the order in which they appear in the workbook.
 
 - [RawData_1.png](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/ETL_Documentation/Supporting_Evidence/Screenshots/RawData_1.png)
