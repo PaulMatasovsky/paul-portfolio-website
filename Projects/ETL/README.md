@@ -44,6 +44,4 @@ The workbook is finished for its original purpose, but there are a few ways I co
 
 ## AI Transparency
 
-I designed and developed the workbook. I used AI to help troubleshoot formula problems that I had already tried to fix through several revisions. AI also helped me prepare, review, and revise the GitHub documentation.
-
-The workbook itself uses spreadsheet formulas and logic. **AI does not run behind the scenes when someone uses the template.**
+This is a human-led project. I used AI for troubleshooting and documentation.
