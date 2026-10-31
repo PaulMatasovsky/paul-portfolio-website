@@ -47,14 +47,7 @@ I follow these [GitHub writing principles](Documentation/GitHub_Writing_Principl
 
 ## AI Transparency
 
-AI has had a different role in each project. When I say **human-led**, I mean I did most of the development or creation and used AI in a supporting role. **AI-led** means AI generated most of the implementation or instructional materials based on goals and requirements I provided. These aren't measured percentages, and they do **not** mean AI is running inside a finished tool.
-
-- **ETL (human-led):** I identified the warehouse problem, chose the approach and platform, and built the workbook. AI helped troubleshoot persistent formula errors and later helped with the GitHub documentation. The finished workbook uses spreadsheet formulas; it does not use AI to process reports.
-- **SQL Refresher (AI-led):** I'm using AI to guide my SQL refresher.
-- **QA Toolkit (AI-led):** AI generated the resources as part of a learning exercise. I have not yet completed the hands-on audit or validated results.
-- **Computer Science 050 (AI-led drafting):** I set the learning goals, course structure, examples, and teaching approach. AI helps with research, lesson drafts, exercises, and review. I am responsible for the teaching. See the [contribution breakdown](Projects/Computer_Science_050/AI_Collaboration_and_Authorship.md).
-- **Computer Helper (AI-led):** I set the goals, limits, and modular approach. AI drafted most of the documentation and first Python source files. I haven't tested the assistant on the family computers. See the [authorship notes](Projects/Computer_Helper/AI_Collaboration_and_Authorship.md).
-- **Portfolio website (human-led):** I use AI to learn, plan, critique, troubleshoot, and improve documentation. I still want to be able to explain which work and decisions are mine.
+I use AI across my portfolio projects. The ETL workbook and portfolio website are human-led; the SQL refresher, QA Toolkit, Computer Science 050 curriculum, and Computer Helper are AI-led.
 
 ## Next Steps
 
