@@ -1,4 +1,6 @@
-# Warehouse ETL Sorting Workbook
+# Automated Sorting Template
+
+*Spreadsheet-Based ETL Workflow for Inventory Reports*
 
 **Project status:** **Complete** · **Activity:** Maintenance
 
