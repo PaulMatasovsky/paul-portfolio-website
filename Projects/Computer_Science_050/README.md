@@ -53,6 +53,4 @@ Robotics provides examples, but I'm not teaching physical robotics or using robo
 
 ## AI Transparency
 
-AI has helped substantially with curriculum research, comparisons, lesson drafts, exercises, and revisions. I made the decisions about the audience, progression, examples, and teaching requirements, and I'm responsible for what I actually teach.
-
-AI also drafted these GitHub documents from my direction, and I have used it to help revise their wording. This project involves much more AI-generated preparatory material than my [warehouse ETL workbook](../ETL/README.md). The [authorship document](AI_Collaboration_and_Authorship.md) explains the difference.
+This is an AI-led curriculum project. I use AI to help prepare the course materials.
