@@ -12,7 +12,7 @@ This is where the projects stand right now. Each project has its own documentati
 
 | Area | What it includes | Status | Where to look |
 |---|---|---|---|
-| Warehouse ETL sorting workbook | Google Sheets workbook used to organize and print warehouse parts reports. The Excel copy has a printing limitation. | **Complete · Maintenance** | [ETL project](Projects/ETL/) |
+| Automated Sorting Template | Google Sheets workbook used to organize and print warehouse parts reports. The Excel copy has a printing limitation. | **Complete · Maintenance** | [ETL project](Projects/ETL/) |
 | SQL Refresher — Inventory Data Checks — **human-led (planned)** | Small SQLite practice project using fictional inventory data; no database or queries implemented yet. | **In Progress · Active** | [SQL Refresher](Projects/SQL_Refresher/) |
 | Computer Science 050 teaching course | Introductory computer science curriculum and lab preparation. I have not yet published dated classroom evidence here. | **In Progress · Active** | [Teaching project](Projects/Computer_Science_050/) |
 | QA Toolkit | Draft website QA checklists, test cases, and templates. I have not completed a verified hands-on audit yet. | **In Progress · Paused** | [QA Toolkit repository](https://github.com/PaulMatasovsky/qa-toolkit) |
