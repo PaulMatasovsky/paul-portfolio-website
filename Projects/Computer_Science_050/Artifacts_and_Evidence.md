@@ -1,6 +1,6 @@
 # Artifacts and Evidence
 
-**Recorded:** October 26, 2026  
+**Originally recorded:** October 26, 2026 · **Updated:** October 30, 2026  
 **AI Transparency:** AI drafted this inventory from our course-planning discussions and working documents. It isn't a classroom observation log. AI also helped revise the wording.
 
 I want to keep a clear distinction between something I have **prepared** and something I have actually **taught**. This page is where I track that distinction.
@@ -9,14 +9,18 @@ I want to keep a clear distinction between something I have **prepared** and som
 |---|---|---|
 | Course structure and 20-week sequence | **Designed** | Ages 10+, two-hour class, optional lab hour, Scratch → Python |
 | Parent syllabus | **Prepared / distributed; public Markdown copy added** | [Parent syllabus](Parent_Syllabus.md) and course expectations |
-| Lesson 1 materials | **Prepared** | Introduction, unplugged activities, demonstrations, and discussion of checking AI; no student coding required |
+| Lesson 1 materials and delivery | **Delivered (instructor-reported)** | [Week 1 teaching record](Week_1_Teaching_Record.md): index cards, Adventure World IPOS quiz, Scratch/Python robot demonstration, supervised AI art lab |
 | Lesson 2 materials | **Prepared** | Scratch sequences, events, repetition, and introductory variables |
 | Recurring examples | **Designed / drafted** | Adventure World, Sven Swingsword, Bitbucket; many AI-drafted activity variations |
 | 20-week circular-training tracker | **Prepared; private** | Planned Coverage, Delivered Coverage, Lesson Register, and topic encounters kept in Google Sheets |
 | Offline Linux lab laptops | **Preparation discussed / underway** | No finished lab setup or inventory documented here |
-| Classroom sessions and feedback | **Not yet documented here** | The course was scheduled to start October 25, 2026; that doesn't prove a session was held |
+| Classroom sessions and feedback | **Week 1 documented** | [Instructor account of Week 1](Week_1_Teaching_Record.md); two students, full planned coverage, activities adapted for a small group |
 | Student code and final projects | **Not yet documented** | No student project claims until I have evidence |
-| Instructor reflections | **Not yet written here** | I'll add observations from actual classes, not invented reflections |
+| Instructor reflections | **Week 1 documented** | Adapted activities for two students; projector unnecessary; index-card exercise useful; Week 2 recap planned |
+
+## Delivered Teaching Evidence
+
+- [Week 1 — Classroom Teaching Record](Week_1_Teaching_Record.md) documents what I taught, how I adapted the activities, and my next-step plan. This is my retrospective instructor account, not an independent assessment of student learning.
 
 ## Evidence I'll Add After Teaching
 
@@ -36,7 +40,7 @@ A short recap should be enough: “Week N: we covered ___; changed ___; students
 
 The tracker uses **I** (Introduced), **R** (Revisited), **P** (Practiced), **D** (Deep dive), and **E** (Exposure only). Planned and delivered coverage must remain separate. I'll keep student names and other private information out of the public repository.
 
-Right now, the tracker lists Weeks 1–2 as drafted and has no lessons marked delivered. That describes the **recorded status of the tracker**, not proof that class has not started. I can add accurate teaching records if they become available.
+The private tracker previously listed Weeks 1–2 as drafted with no delivery marked. This public Week 1 record now documents actual instruction from my account; it does **not** establish that the private tracker has been updated. Week 2 delivery remains undocumented.
 
 ## Where the Working Files Live
 
