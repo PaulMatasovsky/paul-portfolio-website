@@ -1,8 +1,8 @@
 # Computer Science 050 — Introductory Teaching Project
 
-**Project status:** **In Progress** · **Activity:** Active (teaching and curriculum development). Week 1 teaching record published.  
+**Project status:** **In Progress** · **Activity:** Active (teaching and curriculum development). Weeks 1 and 2 teaching records published.  
 **Course plan:** 20 weeks, ages 10 and up (including adults), with two hours of instruction and an optional third-hour computer lab.  
-**Teaching began:** October 2026. Week 1 is documented from my instructor account; later sessions are not yet documented.
+**Teaching began:** October 2026. Weeks 1 and 2 are documented from my instructor accounts.
 
 ## Why I'm Teaching This
 
@@ -33,21 +33,24 @@ The optional third hour is for practice, experiments, questions, and extra help.
 
 I taught Week 1 to two students and covered the planned material. I adapted larger-group activities for a small class, used index cards to illustrate instruction order, ran an Adventure World input/process/output quiz, compared a robot-square sequence in Scratch and Python, and supervised AI art experiments during the optional lab. See the [Week 1 teaching record](Week_1_Teaching_Record.md) for the details and reflections. This is an instructor account, not evidence of assessed student mastery.
 
+I also completed the Lesson 2 core session, reused the word cards, and referred back to Adventure World. We did not hold the optional third hour. See the [Week 2 teaching record](Week_2_Teaching_Record.md). This records coverage, not assessed student mastery.
+
 ## Documentation
 
 - [Week 1 Teaching Record](Week_1_Teaching_Record.md) — actual activities, adaptations, AI lab, and instructor reflections.
 
+- [Week 2 Teaching Record](Week_2_Teaching_Record.md) — completed core lesson, repeated examples, and optional lab not held.
 - [Parent Syllabus](Parent_Syllabus.md) — the 20-week plan shared with parents.
 - [Decision Records](ADRs/) — why I chose to teach the foundations instead of focusing only on AI tools.
 - [Curriculum and Teaching Approach](Curriculum_and_Teaching_Approach.md) — the learning sequence, teaching methods, and reasons for those choices.
 - [AI Collaboration and Authorship](AI_Collaboration_and_Authorship.md) — which parts I direct and which materials AI helped develop.
-- [Artifacts and Evidence](Artifacts_and_Evidence.md) — what has been prepared, what Week 1 delivery is documented, and what remains private or unverified.
+- [Artifacts and Evidence](Artifacts_and_Evidence.md) — what has been prepared, what teaching delivery is documented, and what remains private or unverified.
 
 ## What Is and Isn't Documented Yet
 
 I use a private Google Sheets tracker for planned and delivered topics. GitHub holds the syllabus and meaningful teaching evidence, not a second copy of the day-to-day tracker. The [weekly update process](Artifacts_and_Evidence.md#low-maintenance-weekly-update-process) explains how I'll keep those records.
 
-Detailed instructor lesson plans are still in my working documents. The public material includes a Week 1 instructor teaching record as well as plans and preparation; it does not establish that later lessons were delivered or that students completed projects.
+Detailed instructor lesson plans are still in my working documents. The public material includes instructor teaching records for Weeks 1 and 2 as well as plans and preparation. It does not establish assessed student mastery or completed student projects.
 
 Robotics provides examples, but I'm not teaching physical robotics or using robot hardware in this course. I'm also preparing older laptops for an offline Scratch/Python lab; a completed lab setup has not yet been documented here.
 
