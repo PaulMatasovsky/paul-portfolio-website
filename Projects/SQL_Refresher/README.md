@@ -31,6 +31,25 @@ Inventory will connect a part to a warehouse and hold both the **quantity on han
 
 The combination of product and warehouse is a candidate for a composite key, since one part can have inventory in several warehouses but should normally have one current quantity record per warehouse. The exact SQLite schema and constraints are not yet written.
 
+### Parts — columns I've proposed
+
+My first draft of the `Parts` table contains eight proposed columns:
+
+- `Part_ID` — internal identifier for a part; a possible primary key, not finalized.
+- `PartNo` — the part number used in the business.
+- `Part_Description` — description of the part.
+- `Line_ID` — the line or brand identifier as named in the existing workbook.
+- `Category_ID` — category identifier.
+- `Supplier_OD` — the name I gave while dictating; likely intended as `Supplier_ID`, but I have not confirmed the spelling or whether this field belongs in Parts.
+- `Unit_Cost` — cost of one unit.
+- `IsActive` — whether the part is active or discontinued.
+
+**Normalization question to resolve:** I previously decided each brand has exactly one supplier **for this example**, with `Brands.Supplier_ID` recording that supplier. If a part's supplier is always determined by its brand, repeating `Supplier_ID` on Parts could create inconsistent records. I have not yet decided whether to keep that field.
+
+**Naming question to resolve:** My new Brands design has `Brand_ID` as its primary key and `Line_Code` as the business code. I need to decide whether `Parts.Line_ID` should instead be `Brand_ID` (a foreign key to Brands), retaining the line code only in Brands.
+
+The type and constraints of `PartNo`, `Unit_Cost`, `IsActive`, and `Category_ID` are not decided; likewise, I have not decided whether categories need a separate lookup table. These are proposals, not yet implemented or tested SQL.
+
 ### Brands and Suppliers — design decisions
 
 I identified **line code** as the business code for a brand, but chose a separate numeric **`Brand_ID`** as its database primary key. I initially considered storing both supplier ID and supplier name directly in Brands, but chose to **separate suppliers into their own table**. This avoids repeating a supplier's details if the same supplier serves several brands, and gives me another straightforward relationship to test with a JOIN.
@@ -103,7 +122,7 @@ Any interactive example should use **fictional or verified-public-safe sanitized
 
 ## My Next Step
 
-The initial Brands and Suppliers columns and required fields are now chosen. Move on to designing the Parts table, then finish Inventory and write and test the SQLite definitions myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
+Review the proposed Parts columns, especially whether Supplier ID is redundant under the brand-to-supplier rule and how Line ID should map to Brand ID. Then choose Parts types and constraints, finish Inventory, and write and test the SQLite definitions myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
 
 ## AI Transparency
 
