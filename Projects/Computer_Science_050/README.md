@@ -27,7 +27,7 @@ I'm responsible for reviewing the lessons and teaching the class. AI helps me pr
 
 Students will meet ideas more than once, with time to practice and build on what they already know. We'll also connect each week's topic to AI, including why its answers should be checked rather than accepted automatically.
 
-The optional third hour is for practice, experiments, questions, and extra help. Adults who want more programming practice can join that lab. All required instruction stays in the first two hours.
+The optional third hour is for practice, experiments, questions, and extra help. Adults who want more programming practice can join. All required instruction stays in the first two hours; I use the extra time when it fits the group rather than treating it as mandatory. In Week 1, we used some optional time, mainly for AI art exploration. In Week 2, we skipped the extra hour after nearly two hours of Scratch because the students were getting tired.
 
 ## Teaching in Practice
 
