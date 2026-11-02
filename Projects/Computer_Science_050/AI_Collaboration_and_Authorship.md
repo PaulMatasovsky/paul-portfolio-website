@@ -21,7 +21,7 @@ I think there is an important difference between deciding **what and why to teac
 | Lesson materials | Review, adapt, and select what I intend to use | Drafted outlines, explanations, demonstrations, and activities | Preparatory materials, not evidence of lessons delivered |
 | Teaching | Explain concepts, adjust the pace, and answer students' questions | May supply examples for demonstrations | Teaching requires dated evidence |
 | Assessment | Decide whether students understood and what to adjust | Can suggest questions or ways to assess learning | No verified student results published here |
-| Computer lab | Planned an optional lab and started preparing older laptops | Helped with setup questions and planning | Lab preparation, not a documented completed deployment |
+| Computer lab | Set an optional third hour and adapt it to student energy; started preparing older laptops | Helped with setup questions and planning | Some optional time used for AI art in Week 1; not held in Week 2; offline laptop lab still in preparation |
 
 I can't honestly put a percentage on who contributed what, so I'm not going to.
 
