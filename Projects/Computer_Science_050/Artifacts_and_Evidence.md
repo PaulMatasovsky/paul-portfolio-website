@@ -9,8 +9,8 @@ I want to keep a clear distinction between something I have **prepared** and som
 |---|---|---|
 | Course structure and 20-week sequence | **Designed** | Ages 10+, two-hour class, optional lab hour, Scratch → Python |
 | Parent syllabus | **Prepared / distributed; public Markdown copy added** | [Parent syllabus](Parent_Syllabus.md) and course expectations |
-| Lesson 1 materials and delivery | **Delivered (instructor-reported)** | [Week 1 teaching record](Week_1_Teaching_Record.md): index cards, Adventure World IPOS quiz, Scratch/Python robot demonstration, supervised AI art lab |
-| Lesson 2 materials and delivery | **Delivered (instructor-reported)** | [Week 2 teaching record](Week_2_Teaching_Record.md): core plan completed, word cards and Adventure World revisited; optional lab not held |
+| Lesson 1 materials and delivery | **Delivered (instructor-reported)** | [Week 1 teaching record](Week_1_Teaching_Record.md): index cards, Adventure World IPOS quiz, Scratch/Python robot demonstration; some optional lab time used primarily for AI art |
+| Lesson 2 materials and delivery | **Delivered (instructor-reported)** | [Week 2 teaching record](Week_2_Teaching_Record.md): core plan completed, word cards and Adventure World revisited; no optional lab because students were tired after extended Scratch practice |
 | Recurring examples | **Designed / drafted** | Adventure World, Sven Swingsword, Bitbucket; many AI-drafted activity variations |
 | 20-week circular-training tracker | **Prepared; private** | Planned Coverage, Delivered Coverage, Lesson Register, and topic encounters kept in Google Sheets |
 | Offline Linux lab laptops | **Preparation discussed / underway** | No finished lab setup or inventory documented here |
@@ -22,7 +22,7 @@ I want to keep a clear distinction between something I have **prepared** and som
 
 - [Week 1 — Classroom Teaching Record](Week_1_Teaching_Record.md) documents what I taught, how I adapted the activities, and my next-step plan. This is my retrospective instructor account, not an independent assessment of student learning.
 
-- [Week 2 — Classroom Teaching Record](Week_2_Teaching_Record.md) documents completion of the core lesson, reuse of the cards and Adventure World, and the optional lab not being held.
+- [Week 2 — Classroom Teaching Record](Week_2_Teaching_Record.md) documents completion of the core lesson, reuse of the cards and Adventure World, and the decision to skip the optional hour because students were tired after nearly two hours of Scratch.
 
 ## Evidence I'll Add After Teaching
 
