@@ -17,7 +17,7 @@ I used the word cards again and referred back to the Adventure World demonstrati
 
 ## What Was Different
 
-We did not do the optional third hour. The required lesson was covered during the core session; this record does not claim that students completed the optional lab project.
+We did not use the optional third hour. The students had already spent most of the two-hour core session exploring Scratch and were getting tired, so I ended after covering the planned lesson instead of adding more computer time. This was a pacing decision, not an unfinished core lesson.
 
 ## What This Record Establishes
 
