@@ -3,7 +3,7 @@
 **Session:** Week 1, October 2026 (exact class date not independently verified)  
 **Status:** Delivered, based on my instructor account  
 **Attendance:** Two students  
-**Format:** Two-hour core lesson and optional third-hour AI lab
+**Format:** Two-hour core lesson; optional lab time used briefly for AI art exploration
 
 ## What I Covered
 
@@ -22,7 +22,7 @@ There were few student questions. I don't want to read too much into that: it wa
 
 ## Optional Lab: AI Art
 
-During the optional third hour, we experimented with **supervised AI image generation**. I used the prompt “make it better” to discuss ambiguity: better in what way? More detail, different colors, or something else? AI can interpret vague requests differently from what the person intended. This connected the AI activity to our earlier lesson on giving clear instructions.
+We used some of the optional lab time, mainly to experiment with **supervised AI image generation**, rather than holding a full structured programming lab. I used the prompt “make it better” to discuss ambiguity: better in what way? More detail, different colors, or something else? AI can interpret vague requests differently from what the person intended. This connected the AI activity to our earlier lesson on giving clear instructions.
 
 ## Reflection and Next Step
 
