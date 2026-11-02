@@ -14,7 +14,7 @@ This is where the projects stand right now. Each project has its own documentati
 |---|---|---|---|
 | Automated Sorting Template | Google Sheets workbook used to organize and print warehouse parts reports. The Excel copy has a printing issue that prints extra white space at the end of the document. | **Complete · Maintenance** | [ETL project](Projects/ETL/) |
 | SQL Refresher — Inventory Data Checks — **AI-led** | Small SQLite practice project using fictional inventory data; no database or queries implemented yet. | **In Progress · Active** | [SQL Refresher](Projects/SQL_Refresher/) |
-| Computer Science 050 teaching course | Introductory computer science curriculum and lab preparation. I have not yet published dated classroom evidence here. | **In Progress · Active** | [Teaching project](Projects/Computer_Science_050/) |
+| Computer Science 050 teaching course | Introductory computer science curriculum and teaching, with instructor records for Weeks 1 and 2. AI-led curriculum; human-led classroom instruction. | **In Progress · Active** | [Teaching project](Projects/Computer_Science_050/) |
 | QA Toolkit | Draft website QA checklists, test cases, and templates. I have not completed a verified hands-on audit yet. | **In Progress · Paused** | [QA Toolkit repository](https://github.com/PaulMatasovsky/qa-toolkit) |
 | Computer Helper (Windows + macOS) — **AI-led** | Local help assistant with a modular design, offline reference notes, and untested Python starter code. | **In Progress · Active** | [Computer Helper project](Projects/Computer_Helper/) |
 | Portfolio website | Live WordPress/Divi site that I am continuing to refine. | **In Progress · Active** | [Live website](https://paulmatasovsky.com/) and [decision records](Documentation/ADRs/) |
