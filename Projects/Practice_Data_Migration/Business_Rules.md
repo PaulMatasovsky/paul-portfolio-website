@@ -168,3 +168,13 @@ Every flagged, held, rejected or removed row appears in QA with a reason in plai
 **BR-30 — Hold List Order**
 
 Held clients aren't in the new system yet, so the front desk won't see them at check-in unless someone works the hold list first. The hold list shows each held client's next appointment date and is sorted soonest first, so the most urgent fixes come to the top.
+
+**BR-31 — When a Client Is Rejected**
+
+A client is rejected only when the record doesn't belong in the new system. A record that belongs but has a problem is held (BR-05). A client is rejected when the record is:
+
+1. **Out of scope:** outside what the practice chose to migrate, such as clients not seen within a set number of years, or a departed clinician's caseload. *Confirm with client.*
+2. **Not allowed to move:** past the practice's retention period, or covered by a client's request to delete their data. *Confirm with client.*
+3. **Impossible to identify:** no client ID, name or birth date, so there's nothing to fix and no one to ask.
+
+Test records and duplicates are removed instead (BR-21, BR-24). Unpaid balances and missed appointments are never a reason to reject; whether to keep serving a client is the practice's decision. None of these cases occur in this export.
