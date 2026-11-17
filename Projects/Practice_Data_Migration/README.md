@@ -17,7 +17,7 @@ A fictional therapy practice is leaving an old practice-management system, "OldC
 ## How It Works
 
 1. **Extract:** Two CSV exports from OldChart: [clients.csv](Data/Raw/clients.csv) (198 rows) and [appointments.csv](Data/Raw/appointments.csv) (580 rows).
-2. **Transform:** Two Google Sheets workbooks, one per file, built from the pattern in my [Automated Sorting Template](../ETL/): match columns by header, pull them into a fixed order, clean them, flag problems, and output only the rows that pass.
+2. **Transform:** Two LibreOffice Calc workbooks, one per file, built from the pattern in my [Automated Sorting Template](../ETL/): match columns by header, pull them into a fixed order, clean them, flag problems, and output only the rows that pass. The cleaning happens offline, the way health data would be handled under HIPAA. I'll publish the templates as Excel files, using only formulas that work in both.
 3. **Load:** Import the clean CSVs into PostgreSQL on Supabase, clients first, then appointments.
 4. **Validate:** SQL checks that compare counts and relationships between the source, the workbooks and the database.
 
@@ -27,8 +27,8 @@ A fictional therapy practice is leaving an old practice-management system, "OldC
 
 ## Workbooks
 
-- *(to add: link to the Clients workbook)*
-- *(to add: link to the Appointments workbook)*
+- *(to add: Clients template, .xlsx)*
+- *(to add: Appointments template, .xlsx)*
 
 *(to write: a short tour of the tabs: RawData, HeaderMap, Step1, cleaning, flags, Final, QA)*
 

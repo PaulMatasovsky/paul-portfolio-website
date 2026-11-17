@@ -15,7 +15,7 @@ These rules say what happens to every row in the OldChart export. Each row ends 
 
 **BR-01 — Source Files**
 
-The source is two CSV exports from OldChart EHR: `clients.csv` and `appointments.csv`. Each is imported into its own workbook as plain text, without letting Sheets convert numbers and dates.
+The source is two CSV exports from OldChart EHR: `clients.csv` and `appointments.csv`. Each is opened in its own LibreOffice Calc workbook as plain text, without letting Calc convert numbers and dates. Cleaning happens offline; the data isn't put in a cloud spreadsheet.
 
 **BR-02 — Header Recognition**
 
@@ -66,7 +66,7 @@ Known limitation: proper case would change names like McDonald or O'Brien. None 
 
 **BR-10 — Dates**
 
-All dates are converted to one format, YYYY-MM-DD. Two-digit years follow Google Sheets: 00–29 means 2000s, 30–99 means 1900s.
+All dates are converted to one format, YYYY-MM-DD. Two-digit years follow LibreOffice's default setting: 00–29 means 2000s, 30–99 means 1900s.
 
 **BR-11 — Phone Numbers**
 

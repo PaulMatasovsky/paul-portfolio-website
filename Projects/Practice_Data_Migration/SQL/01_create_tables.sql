@@ -44,5 +44,5 @@ create table appointments (
 -- * FLAG rows with a bad phone or email still load, but with that field left blank;
 --   the checks above would reject the bad value itself.
 -- * duration_minutes allows null for the same reason (missing durations are FLAG rows).
--- * The constraints are a second safety net. The Sheets pipeline should catch problems first;
+-- * The constraints are a second safety net. The spreadsheet pipeline should catch problems first;
 --   if an import fails here, that's a bug in the pipeline worth writing up.
