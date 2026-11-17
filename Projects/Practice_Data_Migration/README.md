@@ -23,7 +23,7 @@ A fictional therapy practice is leaving an old practice-management system, "OldC
 
 ## Business Rules
 
-*(to write: my rules for what gets fixed, flagged, rejected or removed, and why)*
+[Business Rules](Business_Rules.md) — what gets fixed, flagged, rejected or removed, and why. A few decisions are still open.
 
 ## Workbooks
 
