@@ -1,0 +1,581 @@
+Appt ID,ClientID,Appointment Date,Start Time,Duration (min),Service Code,Rendering Provider,Location,Appt Status,Copay,Booked By
+A00001,C0036,01/05/2026,10:30 AM,45,90834,"Bell, Marcus",In Person,complete,140.00,
+A00002,C-88,01/05/2026,11:00,60,90837,sarah lindqvist,Telehealth,Kept,140.00,front desk
+A00003,C0109,2026-01-05,1330,45,90834,D. Okafor,Video,Kept,35.00,clinician
+A00004,C0180,01/05/2026,1430,60,90791,M. Bell,Video,complete,20.00,front desk
+A00005,C0149,2026-01-05,3:00 PM,60,90837,D. Okafor,office,complete,30.00,clinician
+A00006,C0060,01/06/2026,2:00 PM,60,90837,"Marcus Bell, LICSW",office,complete,140.00,front desk
+A00007,C0130,2026-01-06,5:30 PM,50,90847,Elena Ruiz,office,Kept,0.00,
+A00008,C0097,01/07/2026,5:00 PM,60,90837,Marcus Bell,In Person,complete,0.00,clinician
+A00009,C0101,01/08/2026,1:30pm,30,90832,Elena Ruiz,Office,Completed,35.00,
+A00010,C0048,2026-01-09,11:30 AM,60,90837,"Ruiz, Elena",Office,complete,0.00,front desk
+A00011,C0093,01/13/2026,3:00pm,60,90837,"Bell, Marcus",In Person,Late Cancel,0.00,clinician
+A00012,C0078,01/14/2026,9:00 AM,45,90834,Marcus Bell,Video,complete,20.00,front desk
+A00013,C0174,01/14/2026,11:30,45,90834,elena ruiz,Office,cancelled,40.00,clinician
+A00014,C0049,01/14/2026,14:00,50,90847,sarah lindqvist,Office,Completed,30.00,clinician
+A00015,C0125,01/15/2026,9:00 AM,45,90834,Dr. Sarah Lindqvist,In Person,complete,35.00,
+A00015,C0125,01/15/2026,9:00 AM,45,90834,Dr. Sarah Lindqvist,In Person,complete,35.00,
+A00016,C0058,"January 15, 2026",10:30 AM,60,,"Okafor, Daniel",office,Kept,0.00,
+A00017,C0073,"January 16, 2026",5:00 PM,30,90832,Dr. Daniel Okafor,office,Completed,25.00,online
+A00018,C0065,"January 19, 2026",10:30 AM,30,90832,sarah lindqvist,Video,Completed,140.00,online
+A00019,C0086,1-19-2026,1:30 PM,45,90834,Dr. Sarah Lindqvist,office,Kept,30.00,front desk
+A00020,C0115,01/19/2026,14:00,60,90791,E. Ruiz,Office,cancelled,35.00,front desk
+A00021,C0105,2026-01-20,1:30 PM,60,90837,E. Ruiz,office,complete,,online
+A00022,C0150,01/20/2026,14:30,30,90832,Elena Ruiz,telehealth,COMPLETED,35.00,clinician
+A00023,C0153,"January 21, 2026",3:30 PM,60,90791,Marcus Bell,In Person,complete,40.00,front desk
+A00024,C0063,01/21/2026,16:30,60,90837,D. Okafor,Office,Completed,140.00,front desk
+A00568,C0700,08/03/2026,1400,60,90837,MARCUS BELL,telehealth,Completed,30.00,
+A00025,C0186,01/22/2026,4:30 PM,60,90837,Daniel  Okafor,telehealth,Completed,20.00,clinician
+A00026,C0129,2026-01-23,09:00,45,90834,Marcus Bell,In Person,Kept,20.00,clinician
+A00027,C0136,01/23/2026,10:00,60,90837,MARCUS BELL,Office,COMPLETED,25.00,front desk
+A00028,C0047,1-23-2026,14:00,45,90834,Daniel  Okafor,office,Kept,40.00,clinician
+A00029,C0183,01/26/2026,0930,60,90837,"Ruiz, Elena",office,complete,30.00,online
+A00030,C0097,1/27/26,10:30 AM,60,90837,MARCUS BELL,Office,COMPLETED,30.00,front desk
+A00031,C0092,2026-01-27,12:00 PM,60,90837,"Marcus Bell, LICSW",Office,Late Cancel,35.00,front desk
+A00032,C0002,01/27/2026,13:30,30,90832,"Ruiz, Elena",office,Completed,35.00,front desk
+A00033,C0121,01/28/2026,10:30 AM,60,90837,"Lindqvist, Sarah",telehealth,Completed,25.00,online
+A00034,C0016,01/28/2026,4:00 PM,45,90834,Elena Ruiz,office,COMPLETED,,
+A00035,162,01/29/2026,10:00 AM,50,90847,elena ruiz,Telehealth,Completed,140.00,
+A00036,C0012,01/29/2026,11:00,45,90834,"Ruiz, Elena",Office,no-show,25.00,clinician
+A00037,C0149,2026-01-29,4:00 PM,60,90837,Daniel  Okafor,Video,Canceled,0.00,clinician
+A00038,C0061,01/30/2026,1030,60,90837,Daniel  Okafor,In Person,COMPLETED,140.00,clinician
+A00039,C0183,01/30/2026,16:00,45,90834,E. Ruiz,In Person,complete,25.00,
+A00040,C0185,2026-01-30,5:30 PM,60,90837,Marcus Bell,In Person,late cancel,0.00,online
+A00041,C0036,02/03/2026,12:00,60,90791,"Bell, Marcus",In Person,LC,140.00,clinician
+A00042,C0105,02/03/2026,3:30pm,45,90834,Elena Ruiz LPCC,Office,complete,0.00,
+A00043,C0046,02/03/2026,15:30,45,90834,S. Lindqvist,Video,complete,0.00,online
+A00044,C0138,02/03/2026,1700,60,90837,elena ruiz,Office,Completed,35.00,
+A00045,c0160,02/04/2026,1000,60,90837,D. Okafor,telehealth,Completed,35.00,clinician
+A00046,C0179,02/05/2026,12:00 PM,50,90847,Dr. Daniel Okafor,In Person,complete,0.00,online
+A00047,C0104,02/05/2026,12:00 PM,45,90834,S. Lindqvist,office,Kept,35.00,front desk
+A00048,C0179,02/06/2026,08:30,30,90832,D. Okafor,office,complete,20.00,front desk
+A00049,C0036,"February 6, 2026",12:00 PM,45,90834,"Marcus Bell, LICSW",telehealth,Kept,140.00,online
+A00050,C0043,2026-02-06,13:00,45,90834,Elena Ruiz LPCC,Office,COMPLETED,0.00,
+A00051,C0059,2026-02-09,10:00,30,90832,Daniel  Okafor,office,Canceled,140.00,clinician
+A00052,C-43,02/09/2026,12:00 PM,50,90847,elena ruiz,telehealth,late cancel,0.00,front desk
+A00053,C0154,02/09/2026,2:00 PM,60,90837,elena ruiz,office,Completed,35.00,clinician
+A00054,C0179,2/10/26,10:30,60,90837,Dr. Daniel Okafor,office,complete,20.00,clinician
+A00055,C0070,02/11/2026,10:00 AM,50,90847,"Ruiz, Elena",office,COMPLETED,25.00,front desk
+A00056,C0028,2026-02-11,10:30,45,90834,D. Okafor,telehealth,COMPLETED,0.00,clinician
+A00057,C0097,2-12-2026,12:30 PM,30,90832,Marcus Bell,Office,scheduled,35.00,front desk
+A00058,C0157,02/12/2026,3:00 PM,50,90847,D. Okafor,In Person,complete,25.00,clinician
+A00059,C0074,2026-02-13,15:30,45,90834,"Bell, Marcus",Video,Kept,35.00,clinician
+A00059,C0074,2026-02-13,15:30,45,90834,"Bell, Marcus",Video,Kept,35.00,clinician
+A00060,C0028,2-16-2026,1300,60,90837,Daniel  Okafor,Office,complete,0.00,online
+A00061,C0131,2-17-2026,5:30 PM,60,90791,"Bell, Marcus",office,no-show,25.00,online
+A00062,C0033,02/18/2026,11:00 AM,60,90837,Elena Ruiz,telehealth,complete,N/A,
+A00063,C0030,2-18-2026,2:30 PM,60,90837,Dr. Sarah Lindqvist,Video,Kept,20.00,clinician
+A00064,C0105,02/19/2026,12:00 PM,50,90847,elena ruiz,Office,complete,40.00,front desk
+A00065,C0188,02/19/2026,1:00pm,45,90834,Marcus Bell,In Person,Kept,40.00,clinician
+A00066,C0105,02/20/2026,08:00,60,90837,elena ruiz,In Person,COMPLETED,30.00,front desk
+A00067,C0143,02/20/2026,12:00 PM,45,90834,Elena Ruiz LPCC,Office,CX,35.00,
+A00068,C0112,2/20/26,13:00,45,90834,M. Bell,Office,complete,20.00,clinician
+A00069,C0161,02/20/2026,5:00 PM,60,90837,Dr. Sarah Lindqvist,telehealth,complete,20.00,online
+A00070,C0160,2-24-2026,8:30am,60,90837,"Okafor, Daniel",Telehealth,Completed,35.00,
+A00071,C0070,2026-02-24,10:00 AM,60,90837,Elena Ruiz LPCC,Video,complete,30.00,clinician
+A00072,C0054,02/25/2026,1300,60,90837,Marcus Bell,office,complete,25.00,
+A00073,C0161,2026-02-26,10:30 AM,60,90837,S. Lindqvist,In Person,complete,0.00,
+A00074,C0162,2026-03-02,9:30am,60,90837,elena ruiz,Video,complete,140.00,front desk
+A00075,C0048,03/02/2026,1200,60,90837,elena ruiz,Telehealth,Canceled,20.00,front desk
+A00076,C0035,03/02/2026,3:00 PM,45,90834,Elena Ruiz LPCC,telehealth,complete,0.00,clinician
+A00077,C0153,03/02/2026,3:30 PM,60,90837,Marcus Bell,office,COMPLETED,0.00,front desk
+A00078,C0123,03/03/2026,4:30pm,60,90837,D. Okafor,Video,complete,30.00,front desk
+A00559,C0190,11/03/2025,4:00pm,45,90834,Elena Ruiz,office,Kept,25.00,front desk
+A00079,C0075,03/04/2026,12:30,60,90837,elena ruiz,In Person,complete,25.00,
+A00080,C0166,2026-03-05,17:00,45,90834,Marcus Bell,Video,Completed,40.00,clinician
+A00081,C0039,03/06/2026,11:30 AM,45,TBD,"Ruiz, Elena",Office,complete,0.00,clinician
+A00082,C0061,03/09/2026,,60,90837,D. Okafor,Telehealth,Completed,140.00,
+A00083,C0030,03/09/2026,10:30 AM,45,90834,"Lindqvist, Sarah",telehealth,Canceled,20.00,
+A00084,C0163,03/09/2026,11:30 AM,45,90834,MARCUS BELL,office,Kept,0.00,clinician
+A00085,C0124,03/09/2026,12:30 PM,60,90837,Sarah Lindqvist,Telehealth,Completed,20.00,front desk
+A00086,C0117,3/10/26,12:00 PM,60,90837,"Bell, Marcus",In Person,Completed,0.00,
+A00087,c0043,03/11/2026,08:30,50,90847,E. Ruiz,Office,COMPLETED,40.00,front desk
+A00088,C0007,2026-03-11,4:30pm,60,90837,"Marcus Bell, LICSW",In Person,COMPLETED,0.00,clinician
+A00088,C0007,2026-03-11,4:30pm,60,90837,"Marcus Bell, LICSW",In Person,COMPLETED,0.00,clinician
+A00089,C0172,06/17/2026,8:00 AM,60,90837,E. Ruiz,Telehealth,Completed,140.00,
+A00090,C0070,2026-03-16,12:00pm,60,90791,E. Ruiz,telehealth,No Show,0.00,front desk
+A00091,C0163,03/16/2026,17:00,45,90834,"Marcus Bell, LICSW",Office,Completed,0.00,clinician
+A00092,C0117,03/17/2026,12:00,60,90837,Marcus Bell,Office,Cancelled,25.00,online
+A00093,C0129,2026-03-17,12:30 PM,60,90791,Marcus Bell,telehealth,COMPLETED,40.00,online
+A00094,C0153,03/18/2026,9:00 AM,30,90832,Marcus Bell,telehealth,Completed,0.00,
+A00095,C0023,2026-03-18,9:00 AM,60,90837,"Lindqvist, Sarah",In Person,CX,0.00,front desk
+A00096,C0103,03/19/2026,12:30 PM,60,90837,Elena Ruiz,In Person,COMPLETED,25.00,online
+A00097,C0174,2026-03-19,1630,45,90834,E. Ruiz,telehealth,complete,25.00,online
+A00098,C0163,03/19/2026,5:30 PM,30,90832,"Bell, Marcus",Office,complete,0.00,front desk
+A00099,C0097,"March 23, 2026",10:30am,45,90834,M. Bell,office,COMPLETED,25.00,online
+A00100,C0145,03/24/2026,13:30,45,90834,"Bell, Marcus",Office,complete,20.00,clinician
+A00557,C0189,11/02/2026,12:30 PM,45,90834,Daniel  Okafor,office,Kept,25.00,
+A00101,C0183,03/24/2026,5:00pm,60,90837,Elena Ruiz LPCC,Office,NS,0.00,
+A00102,C0139,2026-03-25,9:30 AM,60,90837,S. Lindqvist,telehealth,No Show,25.00,online
+A00103,C0125,2026-03-25,10:30,45,90834,"Lindqvist, Sarah",telehealth,Kept,0.00,clinician
+A00104,C0078,03/26/2026,4:30 PM,60,TBD,"Bell, Marcus",Telehealth,complete,0.00,
+A00105,C0062,03/27/2026,1000,60,90837,S. Lindqvist,office,COMPLETED,0.00,online
+A00106,C0137,03/27/2026,10:30am,45,90834,Daniel Okafor,office,late cancel,$0.00,online
+A00563,C0880,02/10/2026,1500,60,90837,"Okafor, Daniel",telehealth,Completed,30.00,front desk
+A00107,C0186,3-27-2026,1:30 PM,30,90832,Daniel  Okafor,Telehealth,Canceled,35.00,front desk
+A00108,C0134,03/30/2026,1:30 PM,30,90832,D. Okafor,In Person,complete,35.00,online
+A00109,C-74,3/30/26,2:00 PM,60,90837,"Marcus Bell, LICSW",Video,COMPLETED,20.00,clinician
+A00110,C0159,03/30/2026,1530,30,90832,"Okafor, Daniel",office,Completed,0.00,
+A00111,C0061,03/30/2026,4:30 PM,60,90837,D. Okafor,In Person,complete,140.00,online
+A00112,C0036,03/31/2026,9:00 AM,60,90837,M. Bell,office,COMPLETED,140.00,online
+A00113,C0133,2026-04-01,3:00 PM,60,90837,E. Ruiz,Video,complete,0.00,online
+A00114,C0067,04/02/2026,11:00 AM,30,90832,Sarah Lindqvist,Office,scheduled,30.00,
+A00115,C0093,4-2-2026,11:30 AM,60,90837,Marcus Bell,In Person,Completed,0.00,front desk
+A00116,C0013,2026-04-02,16:00,45,90834,Marcus Bell,telehealth,Kept,20.00,
+A00117,C105,2026-04-03,8:00 AM,50,90847,Elena Ruiz,office,Completed,40.00,online
+A00118,C0168,04/06/2026,12:30 PM,60,90837,S. Lindqvist,Telehealth,COMPLETED,30.00,clinician
+A00119,C0179,04/06/2026,1430,60,90837,D. Okafor,Video,Kept,20.00,front desk
+A00120,C0118,04/07/2026,08:00,60,90837,Daniel  Okafor,office,Canceled,40.00,clinician
+A00121,C0022,4/7/26,8:30 AM,50 min,90847,Elena Ruiz LPCC,telehealth,Completed,0.00,clinician
+A00122,C0048,4-7-2026,12:00,60,90837,Elena Ruiz,Office,no-show,40.00,online
+A00123,87,"April 7, 2026",3:30 PM,60,90837,E. Ruiz,telehealth,complete,35.00,
+A00124,C0031,04/08/2026,10:00,45,90834,elena ruiz,Video,Completed,35.00,clinician
+A00125,C0072,04/08/2026,10:30,50,90847,"Lindqvist, Sarah",In Person,NS,20.00,
+A00126,C0097,4-9-2026,4:30 PM,45,90834,MARCUS BELL,office,No-Show,40.00,clinician
+A00127,C0057,4/13/26,9:00 AM,45,90834,S. Lindqvist,office,complete,25.00,
+A00128,C0165,4-13-2026,16:00,45,90834,Dr. Daniel Okafor,Office,Completed,25.00,online
+A00129,C0043,04/14/2026,8:30 AM,45,90834,"Ruiz, Elena",Telehealth,Completed,30.00,online
+A00130,C0100,2026-04-14,1:30 PM,60,90837,M. Bell,In Person,CX,35.00,front desk
+A00131,C0077,04/15/2026,9:30 AM,60,90791,MARCUS BELL,office,Kept,35.00,clinician
+A00132,C0011,04/15/2026,13:30,30,90832,Daniel  Okafor,Office,Completed,25.00,online
+A00133,C0066,"April 15, 2026",2:30 PM,50,90847,M. Bell,Telehealth,no-show,0.00,clinician
+A00134,C0048,2026-04-15,3:00 PM,60,90837,Elena Ruiz,Video,Completed,40.00,online
+A00135,C0129,4-16-2026,9:30 AM,60,90837,"Bell, Marcus",office,Completed,40.00,online
+A00567,C0613,4/20/26,9:30am,60,90837,S. Lindqvist,telehealth,COMPLETED,30.00,front desk
+A00136,C0050,04/16/2026,10:00 AM,50,90847,"Lindqvist, Sarah",Video,Completed,25.00,online
+A00137,C0131,04/16/2026,14:30,45,90834,"Bell, Marcus",Telehealth,COMPLETED,0.00,clinician
+A00138,C0087,2026-04-17,13:30,50,90847,Elena Ruiz,office,No Show,0.00,
+A00139,C0170,04/17/2026,2:30 PM,30,90832,sarah lindqvist,Office,COMPLETED,35.00,front desk
+A00140,C0077,04/17/2026,3:30 PM,60,90837,Marcus Bell,office,complete,20.00,clinician
+A00141,C0119,2026-09-01,11:00 AM,30,90832,Sarah Lindqvist,office,no-show,140.00,clinician
+A00142,C0104,4-21-2026,1100,45,90834,Dr. Sarah Lindqvist,Telehealth,Kept,40.00,online
+A00143,C0130,04/21/2026,15:30,60,90791,elena ruiz,telehealth,Kept,0.00,front desk
+A00144,C0003,04/23/2026,11:00,45,90834,Elena Ruiz LPCC,Video,complete,35.00,
+A00145,C0137,04/23/2026,1330,50,90847,"Okafor, Daniel",Video,Late Cancel,0.00,clinician
+A00146,C0124,04/23/2026,1630,60,90837,Sarah Lindqvist,Video,COMPLETED,20.00,online
+A00147,C0072,04/24/2026,10:00,45,90834,Dr. Sarah Lindqvist,Office,Canceled,40.00,
+A00148,C0171,04/24/2026,2:00 PM,45,90834,Daniel  Okafor,Office,COMPLETED,35.00,online
+A00149,C105,04/24/2026,17:00,45,90834,E. Ruiz,In Person,COMPLETED,25.00,front desk
+A00150,C0087,04/28/2026,11:00 AM,50,90847,elena ruiz,office,Completed,25.00,clinician
+A00151,C0137,04/28/2026,11:00 AM,50,90847,Daniel Okafor,Office,Kept,20.00,front desk
+A00152,C0077,"April 29, 2026",9:30 AM,30,90832,MARCUS BELL,Telehealth,COMPLETED,0.00,front desk
+A00153,109,2026-04-29,10:00 AM,30,90832,"Okafor, Daniel",In Person,complete,20.00,front desk
+A00154,C0088,04/29/2026,10:30 AM,30,90832,sarah lindqvist,Video,Canceled,140.00,front desk
+A00155,C0048,04/30/2026,08:30,60,90837,Elena Ruiz,Video,Kept,30.00,clinician
+A00156,C0035,05/01/2026,8:30 AM,30,90832,Elena Ruiz LPCC,office,COMPLETED,0.00,online
+A00157,C0120,5/1/26,10:30 AM,30,90832,M. Bell,Office,COMPLETED,0.00,
+A00158,C0139,2026-05-04,11:00 AM,45,90834,Sarah Lindqvist,Telehealth,complete,40.00,
+A00159,C0142,05/05/2026,10:30 AM,60,90791,elena ruiz,telehealth,Completed,25.00,front desk
+A00160,C0164,"May 5, 2026",1:30 PM,45,90834,Daniel  Okafor,In Person,Kept,40.00,
+A00161,C0142,05/05/2026,1630,45,90834,E. Ruiz,Telehealth,COMPLETED,30.00,front desk
+A00162,C0079,5/6/26,12:00 PM,60,90837,Marcus Bell,In Person,Completed,$30.00,front desk
+A00163,C0077,2026-05-06,12:30,45,90834,MARCUS BELL,Telehealth,complete,25.00,clinician
+A00164,C0018,05/06/2026,2:00 PM,60,90837,Elena Ruiz LPCC,office,Kept,140.00,clinician
+A00165,C0047,"May 7, 2026",10:30 AM,30,90832,Daniel Okafor,office,complete,40.00,online
+A00166,C0158,05/08/2026,9:30am,60,90837,"Okafor, Daniel",Office,Completed,140.00,front desk
+A00167,72,2026-05-08,2:30 PM,60,90837,S. Lindqvist,In Person,complete,0.00,online
+A00168,C0142,05/11/2026,8:00 AM,50,90847,Elena Ruiz LPCC,In Person,complete,30.00,clinician
+A00169,C0067,05/11/2026,10:00 AM,45,90834,sarah lindqvist,Office,Completed,25.00,clinician
+A00170,C0011,2026-05-11,12:00pm,45,90834,Dr. Daniel Okafor,In Person,complete,0.00,online
+A00171,78,05/12/2026,10:00am,30,90832,"Bell, Marcus",In Person,CX,0.00,
+A00172,C0096,2026-05-14,9:30 AM,45,90834,"Lindqvist, Sarah",Office,complete,20.00,online
+A00173,C0011,05/14/2026,11:00 AM,60,90837,"Okafor, Daniel",In Person,No-Show,20.00,
+A00174,C0093,5/14/26,5:00 PM,60,90791,"Marcus Bell, LICSW",office,CX,35.00,clinician
+A00175,C0031,05/15/2026,12:30pm,45,90834,elena ruiz,Office,COMPLETED,30.00,clinician
+A00176,C69,5/19/26,14:30,60,90837,elena ruiz,office,complete,140.00,online
+A00177,C0127,2026-05-20,11:00 AM,60,90837,"Marcus Bell, LICSW",Office,Completed,40.00,
+A00178,C0084,5/21/26,10:00 AM,60,90837,M. Bell,office,COMPLETED,0.00,clinician
+A00179,C0082,05/21/2026,11:00 AM,60,90837,"Lindqvist, Sarah",telehealth,COMPLETED,25.00,
+A00180,C0007,2026-05-22,14:00,60,90837,"Marcus Bell, LICSW",office,Completed,40.00,front desk
+A00181,C0122,05/22/2026,2:00 PM,60 min,90837,"Ruiz, Elena",Telehealth,Completed,40.00,online
+A00182,C0115,,8:30 AM,60,90791,Elena Ruiz,telehealth,complete,40.00,clinician
+A00183,C0088,05/26/2026,11:30 AM,60,90837,Dr. Sarah Lindqvist,office,Completed,140.00,front desk
+A00184,C0123,5-26-2026,13:30,45,90834,Daniel Okafor,telehealth,Canceled,40.00,front desk
+A00185,C0011,5-26-2026,1430,60,90837,Dr. Daniel Okafor,Office,Completed,20.00,clinician
+A00186,C0100,2026-05-27,0930,60,90837,"Bell, Marcus",Office,COMPLETED,0.00,
+A00187,C0138,05/27/2026,5:30pm,45,90834,"Ruiz, Elena",In Person,Completed,40.00,online
+A00188,C0141,05/28/2026,08:00,60,90837,MARCUS BELL,In Person,complete,20.00,clinician
+A00189,C0092,"May 29, 2026",15:30,45,90834,M. Bell,In Person,COMPLETED,25.00,online
+A00190,C0058,06/01/2026,08:30,60,90837,"Okafor, Daniel",In Person,Kept,0.00,front desk
+A00191,C0178,06/01/2026,10:00,50,90847,S. Lindqvist,office,CX,30.00,online
+A00192,13,06/02/2026,11:00,30,90832,"Bell, Marcus",In Person,COMPLETED,0.00,front desk
+A00193,C0073,2026-06-02,11:30 AM,45,90834,Daniel Okafor,Telehealth,Kept,20.00,clinician
+A00194,C0187,"June 3, 2026",12:30 PM,45,90834,Elena Ruiz,office,COMPLETED,0.00,
+A00195,C0034,6/3/26,4:00 PM,60,90837,Dr. Sarah Lindqvist,Office,COMPLETED,0.00,front desk
+A00196,C0104,06/03/2026,17:30,30,90832,sarah lindqvist,office,Completed,0.00,
+A00197,C0008,06/04/2026,9:30 AM,30,90832,Elena Ruiz LPCC,office,complete,$25,clinician
+A00198,C0013,06/04/2026,10:30 AM,30,90832,M. Bell,telehealth,Kept,,online
+A00199,C0136,06/04/2026,1500,60,90837,"Bell, Marcus",telehealth,complete,25.00,front desk
+A00200,C0123,06/05/2026,9:30 AM,60,90837,Dr. Daniel Okafor,Office,complete,40.00,front desk
+A00201,C0162,6-5-2026,10:00,60,90837,elena ruiz,office,NS,140.00,
+A00202,C0165,06/05/2026,13:00,60,90837,Dr. Daniel Okafor,telehealth,Completed,0.00,online
+A00203,C0123,06/05/2026,1:30pm,60,90837,"Okafor, Daniel",telehealth,COMPLETED,40.00,online
+A00204,C0007,6-5-2026,4:30 PM,60,90837,"Bell, Marcus",Telehealth,Kept,30.00,front desk
+A00205,C0061,"June 8, 2026",2:30 PM,60,90837,Daniel Okafor,telehealth,complete,140.00,
+A00206,C0117,6/11/26,08:30,45,90834,"Marcus Bell, LICSW",In Person,COMPLETED,0.00,front desk
+A00564,C0806,1/30/26,8:30 AM,60,90837,Elena Ruiz LPCC,telehealth,complete,30.00,front desk
+A00207,C0029,2026-06-11,11:00 AM,45,90834,Sarah Lindqvist,In Person,Completed,20.00,
+A00208,C0074,06/11/2026,12:30pm,30,90832,"Bell, Marcus",Video,Completed,35.00,online
+A00209,C0023,2026-06-11,17:30,60,90837,Dr. Sarah Lindqvist,In Person,COMPLETED,30.00,front desk
+A00210,C0061,06/15/2026,8:30 AM,60,90837,Dr. Daniel Okafor,In Person,Kept,140.00,front desk
+A00211,C-163,6/16/26,08:30,50,90847,Marcus Bell,In Person,Kept,30.00,front desk
+A00212,C0038,06/16/2026,11:30,60,90837,E. Ruiz,office,complete,20.00,clinician
+A00212,C0038,06/16/2026,11:30,60,90837,E. Ruiz,office,complete,20.00,clinician
+A00213,C0138,2026-06-16,12:30 PM,50,90847,Elena Ruiz,Video,Completed,40.00,
+A00214,C0138,06/16/2026,13:30,45,90834,Elena Ruiz,In Person,Kept,25.00,online
+A00215,C0066,06/16/2026,1:30 PM,60,90791,Marcus Bell,Telehealth,Canceled,40.00,online
+A00216,C0022,6/17/26,8:00 AM,60,90837,Elena Ruiz LPCC,office,Late Cancel,0.00,online
+A00217,C0042,06/17/2026,9:30 AM,45,90834,"Bell, Marcus",Office,Kept,20.00,front desk
+A00218,C0048,6/17/26,0930,45,90834,elena ruiz,Video,complete,20.00,front desk
+A00219,C0166,06/17/2026,3:00 PM,30,90832,MARCUS BELL,In Person,Kept,0.00,front desk
+A00220,C0153,06/18/2026,1100,60,90837,Marcus Bell,office,Kept,N/A,online
+A00221,C0016,2026-06-19,2:00 PM,30,90832,"Ruiz, Elena",Video,Kept,0.00,front desk
+A00566,C0436,2026-10-23,5:00 PM,60,90837,Daniel Okafor,Telehealth,Kept,30.00,clinician
+A00222,C0161,06/19/2026,15:00,60,90837,Sarah Lindqvist,office,no-show,25.00,clinician
+A00223,C0178,,1530,30,90832,S. Lindqvist,office,LC,0.00,
+A00224,C0133,06/22/2026,8:00 AM,50,90847,Elena Ruiz,Office,COMPLETED,35.00,
+A00225,C0052,2026-06-22,1130,45,90834,Daniel Okafor,telehealth,complete,30.00,
+A00226,C40,06/22/2026,13:00,50,90847,E. Ruiz,Office,complete,0.00,clinician
+A00227,c0125,06/23/2026,0900,60,90837,Dr. Sarah Lindqvist,Telehealth,Completed,20.00,front desk
+A00228,C0104,2026-06-23,1200,50,90847,S. Lindqvist,Office,Kept,35.00,online
+A00229,C0052,6/23/26,12:30pm,60,90837,D. Okafor,Telehealth,Kept,20.00,front desk
+A00230,C0061,06/23/2026,1400,60,90837,Dr. Daniel Okafor,In Person,COMPLETED,140.00,front desk
+A00231,C0077,06/24/2026,9:00 AM,60,90837,Marcus Bell,telehealth,Cancelled,N/A,front desk
+A00232,C0157,2026-06-24,5:30pm,60,90837,"Okafor, Daniel",Video,Kept,25.00,online
+A00233,C0066,6/25/26,9:30 AM,60,90791,M. Bell,In Person,No Show,,online
+A00234,C0173,06/25/2026,14:00,60,90791,Sarah Lindqvist,In Person,Kept,30.00,
+A00235,C0036,06/25/2026,5:30pm,60,90837,"Bell, Marcus",Video,Completed,140.00,
+A00236,C0002,"June 26, 2026",12:00,50,90847,elena ruiz,office,late cancel,0.00,clinician
+A00237,C0161,06/26/2026,12:00,45,90834,Dr. Sarah Lindqvist,Video,No-Show,0.00,online
+A00238,C0020,6/29/26,1030,30,90832,sarah lindqvist,office,Kept,0.00,clinician
+A00239,C0002,06/30/2026,0900,60,90837,elena ruiz,office,no-show,40.00,
+A00240,C0106,06/30/2026,09:00,50,90847,Dr. Daniel Okafor,Office,Completed,140.00,front desk
+A00241,C0061,06/30/2026,12:00 PM,45,90834,Daniel  Okafor,Office,cancelled,140.00,
+A00242,C0126,2026-06-30,3:30 PM,45,90834,Dr. Sarah Lindqvist,Video,Kept,30.00,online
+A00243,C0033,"July 1, 2026",0900,60,90837,elena ruiz,office,COMPLETED,0.00,
+A00244,C-186,07/01/2026,11:30 AM,30,90832,Daniel  Okafor,In Person,Completed,30.00,front desk
+A00245,C0088,"July 1, 2026",2:00 PM,60,90791,sarah lindqvist,In Person,COMPLETED,140.00,online
+A00246,C-118,7/1/26,4:00 PM,45,90834,Daniel  Okafor,office,Cancelled,0.00,front desk
+A00247,C0122,07/02/2026,12:30 PM,45,90834,Elena Ruiz,In Person,COMPLETED,35.00,front desk
+A00248,C0084,7/3/26,8:00 AM,45,90834,M. Bell,telehealth,Kept,40.00,
+A00249,C0106,2026-07-06,1700,60,90837,"Okafor, Daniel",In Person,No Show,140.00,
+A00565,C0945,04/09/2026,2:30 PM,60,90837,MARCUS BELL,Video,COMPLETED,30.00,online
+A00250,C0152,2026-07-07,11:00am,60,90837,Dr. Sarah Lindqvist,In Person,Sched,0.00,online
+A00251,C0129,7-8-2026,12:30,50,90847,M. Bell,office,complete,0.00,online
+A00252,C0111,"July 10, 2026",12:30 PM,60,90791,"Bell, Marcus",Video,NS,30.00,online
+A00253,C0066,7/10/26,2:30 PM,60 min,90791,M. Bell,In Person,complete,0.00,clinician
+A00254,C0091,7-10-2026,17:00,60,90837,E. Ruiz,Video,COMPLETED,35.00,online
+A00255,C0003,07/13/2026,09:00,45,90834,E. Ruiz,Video,Completed,30.00,
+A00256,C0081,07/13/2026,11:00,30,90832,sarah lindqvist,Office,complete,0.00,clinician
+A00257,c0070,7/13/26,2:30 PM,30,90832,elena ruiz,Video,COMPLETED,40.00,front desk
+A00258,C0120,07/14/2026,8:00 AM,30,90832,"Bell, Marcus",office,Kept,25.00,
+A00259,C0092,7-14-2026,10:30 AM,60,90837,Marcus Bell,Office,complete,25.00,online
+A00260,C0179,07/14/2026,5:30 PM,60,90837,Dr. Daniel Okafor,office,Completed,30.00,front desk
+A00560,C0190,02/28/2025,1:00pm,45,90834,Elena Ruiz LPCC,Office,Completed,25.00,front desk
+A00261,C0034,2026-07-15,3:00 PM,60,90837,S. Lindqvist,Office,complete,0.00,online
+A00262,C60,2026-07-15,4:00 PM,60,90837,M. Bell,Office,Canceled,140.00,front desk
+A00263,C0031,07/16/2026,8:30 AM,45,90834,Elena Ruiz,office,Kept,40.00,online
+A00264,C0096,07/16/2026,11:30,60,90837,sarah lindqvist,In Person,complete,20.00,online
+A00265,C0118,07/17/2026,11:30,45,90834,Dr. Daniel Okafor,In Person,Kept,-40,front desk
+A00266,C0174,07/17/2026,1330,60,90837,"Ruiz, Elena",office,COMPLETED,0.00,
+A00267,C0121,07/17/2026,15:30,60,90791,Dr. Sarah Lindqvist,telehealth,complete,,
+A00570,C0569,03/06/2026,4:30 PM,60,90837,"Okafor, Daniel",Telehealth,complete,30.00,clinician
+A00268,C0109,07/20/2026,0900,45,90834,"Okafor, Daniel",Video,complete,25.00,online
+A00269,C0071,07/20/2026,12:00,45,90834,Daniel Okafor,In Person,complete,20.00,
+A00270,C0133,07/20/2026,1:00 PM,60,90837,Elena Ruiz LPCC,Office,Kept,$30,front desk
+A00271,C0150,07/20/2026,16:00,60,90837,E. Ruiz,telehealth,Cancelled,30.00,front desk
+A00272,C0124,2026-07-21,08:30,30,90832,S. Lindqvist,Telehealth,complete,40.00,online
+A00273,C0059,2026-07-21,3:00 PM,45,90834,"Okafor, Daniel",Video,COMPLETED,140.00,clinician
+A00274,C0040,07/23/2026,2:00 PM,45,90834,"Ruiz, Elena",Video,COMPLETED,0.00,front desk
+A00275,C0072,07/24/2026,12:00pm,45,90834,Sarah Lindqvist,office,Kept,25.00,online
+A00276,C0124,7/24/26,1730,60,90791,"Lindqvist, Sarah",Telehealth,CX,0.00,clinician
+A00277,C0124,07/28/2026,10:00 AM,60,90837,sarah lindqvist,telehealth,COMPLETED,$0.00,
+A00278,C0145,07/28/2026,1400,30,90832,MARCUS BELL,Video,complete,40.00,clinician
+A00279,C0071,07/28/2026,3:00 PM,60,90837,D. Okafor,Video,Kept,$0.00,front desk
+A00280,C0117,"July 28, 2026",4:30 PM,50,90847,M. Bell,office,Cancelled,40.00,
+A00281,C0080,07/28/2026,4:30 PM,60,90837,Dr. Sarah Lindqvist,In Person,COMPLETED,40.00,online
+A00282,C0044,7-29-2026,09:30,45,90834,"Marcus Bell, LICSW",Video,COMPLETED,20.00,front desk
+A00283,C0028,07/29/2026,13:30,60,90837,Dr. Daniel Okafor,Video,Kept,0.00,front desk
+A00284,C0028,"July 29, 2026",14:30,60,90837,Daniel Okafor,Video,Kept,35.00,front desk
+A00285,C0047,7/29/26,15:00,50,90847,Dr. Daniel Okafor,In Person,Kept,0.00,clinician
+A00286,C0137,"July 31, 2026",11:00 AM,60,90837,Daniel  Okafor,Office,Cancelled,25.00,online
+A00287,C0187,07/31/2026,12:00 PM,45,90834,elena ruiz,Telehealth,Completed,20.00,online
+A00288,C0100,07/31/2026,3:30 PM,60,90837,M. Bell,office,complete,,front desk
+A00289,C0068,08/03/2026,0930,30 min,90832,elena ruiz,office,No Show,35.00,online
+A00290,C-180,8-3-2026,10:00 AM,45,90834,M. Bell,Video,NS,0.00,online
+A00291,C0069,2026-08-03,12:30 PM,45,90834,Elena Ruiz LPCC,Video,COMPLETED,140.00,online
+A00292,C0028,08/03/2026,15:00,45,90834,"Okafor, Daniel",Video,No-Show,30.00,
+A00293,C0184,8-4-2026,2:00 PM,45,90834,Daniel Okafor,telehealth,COMPLETED,140.00,
+A00294,C0093,2026-08-05,1:30 PM,60,90837,MARCUS BELL,Office,COMPLETED,$0.00,clinician
+A00295,C0163,08/05/2026,5:00 PM,30,90832,MARCUS BELL,In Person,Completed,25.00,
+A00296,C0172,08/06/2026,08:30,45,90834,elena ruiz,In Person,Kept,140.00,clinician
+A00296,C0172,08/06/2026,08:30,45,90834,elena ruiz,In Person,Kept,140.00,clinician
+A00297,C0121,08/06/2026,9:00 AM,45,90834,Dr. Sarah Lindqvist,telehealth,Canceled,20.00,
+A00298,C0103,"August 6, 2026",9:30am,30,90832,"Ruiz, Elena",office,Kept,35.00,front desk
+A00299,C0114,2026-08-07,8:00 AM,60,90837,Elena Ruiz LPCC,office,Completed,20.00,
+A00300,C0023,08/07/2026,14:00,50,90847,S. Lindqvist,Office,COMPLETED,40.00,online
+A00301,C0176,08/10/2026,9:00 AM,60,90837,"Okafor, Daniel",office,Completed,140.00,front desk
+A00302,C0170,08/10/2026,11:30am,45,90834,S. Lindqvist,office,complete,20.00,clinician
+A00303,C0090,08/11/2026,8:30am,30,90832,Daniel  Okafor,office,Sched,140.00,online
+A00304,C0016,08/11/2026,09:30,60,90837,elena ruiz,Office,COMPLETED,35.00,front desk
+A00304,C0016,08/11/2026,09:30,60,90837,elena ruiz,Office,COMPLETED,35.00,front desk
+A00305,C0055,08/11/2026,1100,30,90832,"Lindqvist, Sarah",In Person,Canceled,40.00,front desk
+A00306,C0055,2026-08-12,9:00 AM,60,90837,"Lindqvist, Sarah",Office,no-show,30.00,
+A00307,C0184,08/12/2026,10:30 AM,50,90847,D. Okafor,Video,COMPLETED,140.00,clinician
+A00308,C0060,"August 12, 2026",12:30 PM,60,90837,Marcus Bell,Office,Kept,140.00,clinician
+A00309,C0052,08/13/2026,11:30 AM,60,90837,"Okafor, Daniel",Video,Completed,20.00,
+A00310,C0058,08/14/2026,0800,50,90847,Dr. Daniel Okafor,In Person,Kept,25.00,clinician
+A00311,C0176,06/26/2026,0900,45,90834,Daniel  Okafor,In Person,Kept,140.00,
+A00312,C0086,8-14-2026,8:30 AM,,90837,Dr. Sarah Lindqvist,telehealth,Kept,30.00,
+A00313,C0150,06/31/2026,11:30,60,90837,elena ruiz,Video,Completed,35.00,front desk
+A00314,C0171,08/18/2026,2:30 PM,60,90837,Daniel  Okafor,office,Completed,25.00,front desk
+A00315,C0133,2026-08-18,4:30pm,60,90837,"Ruiz, Elena",Video,cancelled,40.00,front desk
+A00316,C0071,08/19/2026,9:30 AM,60,90837,D. Okafor,Office,Kept,30.00,clinician
+A00317,75,2026-08-19,11:00,60,90837,E. Ruiz,Telehealth,LC,0.00,
+A00318,C0123,2026-08-19,2:30 PM,60,90791,Daniel Okafor,Video,complete,25.00,front desk
+A00319,C0046,08/19/2026,16:00,50,90847,S. Lindqvist,telehealth,Canceled,40.00,
+A00320,C0003,2026-08-20,11:30 AM,45,90834,Elena Ruiz,office,complete,0.00,front desk
+A00321,C0039,08/20/2026,2:30 PM,45,90834,"Ruiz, Elena",office,Completed,30.00,front desk
+A00322,C0020,"August 20, 2026",16:00,60,90837,Sarah Lindqvist,office,Completed,0.00,clinician
+A00323,C0129,2026-08-20,5:00 PM,45,90834,M. Bell,telehealth,Completed,20.00,front desk
+A00324,C0056,8-21-2026,09:30,60,90837,"Okafor, Daniel",Office,cancelled,140.00,online
+A00325,C0060,08/25/2026,09:00,45,90834,Marcus Bell,telehealth,Completed,140.00,online
+A00326,188,08/25/2026,4:00pm,45,90834,Marcus Bell,In Person,Completed,30.00,online
+A00327,C0045,8-26-2026,17:30,60,90791,S. Lindqvist,office,Cancelled,0.00,online
+A00328,C0021,2026-08-27,5:00 PM,45,90834,"Marcus Bell, LICSW",office,no-show,0.00,clinician
+A00329,C0017,08/31/2026,11:30,30,90832,"Marcus Bell, LICSW",In Person,Kept,0.00,
+A00330,C0008,"September 1, 2026",10:00 AM,45,90834,E. Ruiz,Telehealth,Kept,0.00,online
+A00331,C0088,9/1/26,11:00 AM,50,90847,S. Lindqvist,telehealth,complete,140.00,online
+A00332,C0039,"September 1, 2026",3:30 PM,30,90832,"Ruiz, Elena",telehealth,COMPLETED,35.00,clinician
+A00333,C0170,9/2/26,08:00,30,90832,"Lindqvist, Sarah",Video,Kept,0.00,
+A00334,C0180,2026-09-02,12:00,60,90837,M. Bell,In Person,Kept,0.00,online
+A00335,C0028,9/2/26,5:30 PM,60,90791,D. Okafor,office,COMPLETED,,front desk
+A00336,C0090,09/03/2026,09:30,45,90834,"Okafor, Daniel",Telehealth,COMPLETED,140.00,online
+A00337,C-87,2026-09-03,10:00,60,90837,"Ruiz, Elena",In Person,COMPLETED,0.00,
+A00338,C0133,"September 3, 2026",10:30 AM,45,90834,Elena Ruiz,Telehealth,Kept,40.00,online
+A00339,C0163,9/3/26,10:30,60,90837,"Bell, Marcus",telehealth,COMPLETED,20.00,online
+A00340,C0123,09/03/2026,13:00,45,90834,Dr. Daniel Okafor,Video,Completed,25.00,
+A00341,C0142,09/04/2026,11:30,60,90837,Elena Ruiz LPCC,Video,Completed,35.00,front desk
+A00342,C0101,09/07/2026,1:30 PM,45,90834,elena ruiz,office,Completed,25.00,
+A00343,C0067,09/07/2026,1330,45,90834,Dr. Sarah Lindqvist,office,Completed,0.00,online
+A00344,C0099,2026-09-07,1:30 PM,30,90832,Dr. Daniel Okafor,office,COMPLETED,20.00,
+A00345,C0092,09/07/2026,3:30 PM,45,90834,MARCUS BELL,Office,complete,25.00,online
+A00345,C0092,09/07/2026,3:30 PM,45,90834,MARCUS BELL,Office,complete,25.00,online
+A00346,C0148,09/07/2026,5:00pm,60,90837,E. Ruiz,In Person,cancelled,25.00,online
+A00347,C0093,09/08/2026,08:00,60,90791,M. Bell,Office,complete,$30,front desk
+A00348,C0093,9-8-2026,9:00 AM,0,90837,"Bell, Marcus",In Person,complete,0.00,clinician
+A00349,C0027,9/8/26,10:30am,60,90837,Elena Ruiz LPCC,Office,complete,25.00,front desk
+A00350,C0167,09/08/2026,3:00 PM,60,90837,E. Ruiz,office,No Show,0.00,
+A00351,C0064,09/08/2026,16:00,45,90834,Marcus Bell,In Person,Kept,0.00,front desk
+A00352,C0118,9-8-2026,4:30 PM,50,90847,"Okafor, Daniel",In Person,COMPLETED,20.00,clinician
+A00353,50,2026-09-10,13:00,60,90837,"Lindqvist, Sarah",In Person,Cancelled,$25.00,
+A00354,C0069,2026-09-10,4:00 PM,45,90834,elena ruiz,Office,Completed,140.00,online
+A00355,C0166,09/11/2026,8:00 AM,45,90834,MARCUS BELL,Video,late cancel,25.00,front desk
+A00356,C0128,2026-09-11,0830,60,90837,M. Bell,Video,Kept,25.00,front desk
+A00357,C0042,09/11/2026,12:30 PM,60,90791,Marcus Bell,Telehealth,NS,20.00,
+A00358,C0155,09/16/2026,08:00,30,90832,Dr. Sarah Lindqvist,Telehealth,Completed,0.00,
+A00358,C0155,09/16/2026,08:00,30,90832,Dr. Sarah Lindqvist,Telehealth,Completed,0.00,
+A00359,C0078,2026-09-16,4:30 PM,30,90832,MARCUS BELL,Office,COMPLETED,-35,front desk
+A00360,C0056,09/17/2026,8:00 AM,50,90847,"Okafor, Daniel",telehealth,Cancelled,140.00,online
+A00361,C0092,02/29/2026,11:30,45,90834,M. Bell,In Person,complete,0.00,front desk
+A00362,C-101,09/17/2026,14:30,60,90837,"Ruiz, Elena",office,complete,35.00,
+A00363,C0073,2026-09-18,9:00 AM,45,90834,Daniel  Okafor,office,Completed,40.00,
+A00364,C0071,09/18/2026,11:30am,60,90837,Daniel Okafor,In Person,Canceled,0.00,
+A00365,C0118,2026-09-18,12:30 PM,60,90791,Dr. Daniel Okafor,Telehealth,COMPLETED,30.00,online
+A00366,C0135,09/21/2026,11:00,50,90847,Daniel  Okafor,office,complete,30.00,
+A00367,C0040,2026-09-21,12:30pm,60,90837,elena ruiz,Video,complete,40.00,clinician
+A00368,C0018,09/22/2026,1130,45,90834,elena ruiz,office,cancelled,140.00,
+A00369,C0183,09/22/2026,12:00,60,90837,elena ruiz,Office,NS,20.00,clinician
+A00370,c0176,09/22/2026,12:00 PM,,90837,Dr. Daniel Okafor,Telehealth,complete,140.00,
+A00371,C0129,2026-09-22,1:00 PM,60,90837,MARCUS BELL,Video,COMPLETED,35.00,online
+A00372,C0049,09/23/2026,9:00 AM,60,90837,"Lindqvist, Sarah",telehealth,Kept,35.00,clinician
+A00373,C0115,2026-09-23,3:30 PM,60,90837,E. Ruiz,Telehealth,COMPLETED,0.00,
+A00374,C0083,09/23/2026,5:00 PM,60,90837,Daniel  Okafor,In Person,Completed,40.00,online
+A00375,C0087,09/24/2026,08:00,60,90837,Elena Ruiz LPCC,Video,Kept,0.00,online
+A00376,C0073,09/24/2026,3:00pm,50,90847,Dr. Daniel Okafor,In Person,Kept,20.00,
+A00376,C0073,09/24/2026,3:00pm,50,90847,Dr. Daniel Okafor,In Person,Kept,20.00,
+A00377,C0176,09/03/2026,9:30 AM,60,90837,Daniel  Okafor,Office,complete,140.00,
+A00378,C0083,2026-09-25,12:00 PM,60,90791,"Okafor, Daniel",office,No-Show,0.00,online
+A00379,C0090,09/25/2026,4:30 PM,45,90834,D. Okafor,telehealth,Canceled,140.00,clinician
+A00380,C0110,9/28/26,1000,60,90837,Dr. Sarah Lindqvist,In Person,COMPLETED,0.00,clinician
+A00381,C0087,09/28/2026,13:00,45,90834,Elena Ruiz LPCC,In Person,COMPLETED,25.00,
+A00382,C0150,2026-09-30,11:30,45,90834,Elena Ruiz,Video,complete,40.00,front desk
+A00383,c0138,09/30/2026,12:00,45,90834,Elena Ruiz,Office,cancelled,20.00,online
+A00384,C0070,9/30/26,12:30 PM,45,90834,E. Ruiz,telehealth,No Show,30.00,online
+A00385,C0003,10/01/2026,1:30 PM,600,90832,E. Ruiz,office,complete,30.00,front desk
+A00386,C0102,"October 2, 2026",9:30 AM,60,90837,S. Lindqvist,In Person,Cancelled,40.00,online
+A00387,C0070,10/02/2026,2:30 PM,60,90791,Elena Ruiz,office,COMPLETED,30.00,front desk
+A00388,C0177,2026-10-02,2:30 PM,60,90837,"Lindqvist, Sarah",Office,Kept,20.00,clinician
+A00389,C0112,2026-10-02,1700,45,90834,MARCUS BELL,telehealth,COMPLETED,20.00,clinician
+A00390,C0094,10/05/2026,8:30 AM,60,90837,Elena Ruiz,telehealth,complete,35.00,clinician
+A00391,C0109,10/5/26,2:30 PM,60,90791,Daniel Okafor,office,No-Show,40.00,clinician
+A00392,C0083,10/06/2026,16:30,60,90837,Daniel Okafor,Video,Kept,30.00,front desk
+A00393,C0043,10/6/26,5:00 PM,50,90847,Elena Ruiz,office,Completed,0.00,
+A00394,C0023,10/07/2026,2:30 PM,60,90837,sarah lindqvist,telehealth,LC,0.00,front desk
+A00395,C0107,2026-10-08,0900,45,90834,"Ruiz, Elena",telehealth,Completed,30.00,online
+A00396,C0040,10/09/2026,12:30 PM,60,90837,"Ruiz, Elena",office,complete,0.00,front desk
+A00397,C0116,10/09/2026,12:30 PM,45,90834,M. Bell,Office,Kept,30.00,online
+A00398,C0104,10/09/2026,1:00 PM,60,90837,"Lindqvist, Sarah",office,Completed,35.00,online
+A00399,C0048,2026-10-09,3:00 PM,30,90832,E. Ruiz,Telehealth,complete,20.00,
+A00400,C-15,10/12/2026,1000,45,90834,Dr. Daniel Okafor,office,COMPLETED,20.00,online
+A00401,C0030,10/12/2026,4:00 PM,30,90832,sarah lindqvist,Video,NS,35.00,
+A00402,C0052,10/12/2026,16:30,60,90791,Daniel Okafor,telehealth,Completed,25.00,front desk
+A00403,C0148,10/13/2026,17:00,45,90834,Elena Ruiz LPCC,Video,complete,40.00,front desk
+A00404,C0048,10/13/2026,5:30pm,50,90847,Elena Ruiz LPCC,In Person,COMPLETED,0.00,
+A00405,C0103,2026-10-14,11:00 AM,45,90834,elena ruiz,Office,COMPLETED,0.00,
+A00406,C0121,10/14/2026,1:30 PM,60,90837,"Lindqvist, Sarah",telehealth,COMPLETED,25.00,clinician
+A00407,C0180,10/15/2026,10:30 AM,60,90837,"Marcus Bell, LICSW",In Person,Kept,25.00,clinician
+A00408,C0089,2026-10-16,8:00 AM,60,90791,Dr. Sarah Lindqvist,office,Completed,25.00,
+A00569,C0701,6/12/26,14:30,60,90837,Elena Ruiz LPCC,telehealth,COMPLETED,30.00,front desk
+A00409,C0141,2026-10-16,3:30 PM,45,90834,M. Bell,Video,Kept,40.00,
+A00410,C0057,2026-10-19,9:30 AM,60,90791,Sarah Lindqvist,Video,complete,30.00,
+A00411,C0124,2026-10-19,16:30,60,90837,Sarah Lindqvist,office,complete,0.00,clinician
+A00412,C0118,10/20/2026,9:30 AM,45,90834,"Okafor, Daniel",office,Kept,25.00,front desk
+A00413,C0152,10/20/2026,12:30 PM,60,90837,Dr. Sarah Lindqvist,telehealth,Completed,25.00,front desk
+A00414,C0129,"October 20, 2026",1:30 PM,45,90834,"Marcus Bell, LICSW",Video,COMPLETED,35.00,
+A00415,C0139,10/22/2026,9:00 AM,60,90837,Dr. Sarah Lindqvist,office,COMPLETED,30.00,front desk
+A00416,C0183,10/22/2026,11:30 AM,60,90791,E. Ruiz,office,COMPLETED,20.00,
+A00417,C0084,10/22/2026,3:00 PM,45,90834,"Bell, Marcus",In Person,cancelled,25.00,online
+A00418,C124,10/22/26,16:00,50,90847,Sarah Lindqvist,Video,COMPLETED,35.00,online
+A00419,C0165,"October 22, 2026",4:00 PM,60,90837,Daniel Okafor,telehealth,complete,0.00,clinician
+A00420,C0185,"October 23, 2026",0800,45,90834,M. Bell,In Person,Completed,35.00,clinician
+A00421,C0148,10/23/26,1230,60,90791,E. Ruiz,Video,complete,0.00,online
+A00422,C0164,2026-10-23,13:30,60,90837,Dr. Daniel Okafor,Office,COMPLETED,30.00,clinician
+A00423,C0121,10/23/26,15:00,60,90837,Dr. Sarah Lindqvist,Office,CX,30.00,online
+A00424,C0104,2026-10-28,15:30,60,90791,Dr. Sarah Lindqvist,telehealth,Kept,0.00,online
+A00425,C0084,2026-10-28,,60,90837,"Bell, Marcus",Video,No Show,25.00,
+A00426,C0058,10/29/26,11:00,60,90791,Daniel  Okafor,Video,COMPLETED,20.00,online
+A00427,C0070,10/29/2026,3:30 PM,45,90834,E. Ruiz,office,Kept,35.00,front desk
+A00428,C0090,10/30/2026,10:00,45,90834,D. Okafor,In Person,complete,140.00,front desk
+A00429,180,10/30/26,1:00 PM,60,90837,MARCUS BELL,telehealth,Kept,0.00,online
+A00430,C0133,2026-10-30,1300,60,90837,Elena Ruiz LPCC,Video,COMPLETED,20.00,clinician
+A00431,C0011,10/30/2026,1:30 PM,30,90832,Daniel Okafor,Video,CX,25.00,online
+A00432,C0095,11/02/2026,9:00 AM,60,90837,MARCUS BELL,office,No Show,0.00,front desk
+A00433,C0125,2026-11-02,9:30am,45,90834,Dr. Sarah Lindqvist,Office,Cancelled,35.00,clinician
+A00434,C0068,11/03/2026,1:30 PM,30,90832,"Ruiz, Elena",telehealth,cancelled,30.00,online
+A00435,C0090,2026-11-04,09:00,60,90837,Dr. Daniel Okafor,Video,COMPLETED,140.00,clinician
+A00436,C0027,11/04/2026,11:30 AM,45,90834,"Ruiz, Elena",Office,cancelled,35.00,clinician
+A00437,C0013,2026-11-05,15:00,45,90834,M. Bell,telehealth,Kept,20.00,online
+A00438,C0096,2026-11-05,15:30,50,90847,"Lindqvist, Sarah",In Person,complete,0.00,
+A00439,C0148,2026-11-05,3:30 PM,60,90837,E. Ruiz,office,COMPLETED,40.00,front desk
+A00440,72,2026-11-06,08:30,60,90791,Sarah Lindqvist,office,CX,25.00,clinician
+A00441,C0088,11/06/2026,11:00 AM,60,90791,S. Lindqvist,telehealth,Kept,140.00,online
+A00442,C-172,11/06/2026,3:00 PM,50,90847,E. Ruiz,Office,Kept,140.00,online
+A00443,C0121,2026-11-06,15:30,45,90834,sarah lindqvist,Telehealth,complete,30.00,clinician
+A00444,C0141,2026-11-09,,50,90847,MARCUS BELL,office,Completed,30.00,online
+A00445,C0085,2026-11-09,1:00 PM,45,90834,elena ruiz,office,Cancelled,30.00,online
+A00446,C0082,"November 10, 2026",9:00 AM,30,90832,"Lindqvist, Sarah",office,late cancel,40.00,front desk
+A00447,c0085,08/17/2026,10:00,60,90837,Elena Ruiz,office,complete,35.00,clinician
+A00448,C0041,"November 11, 2026",09:00,60,90837,"Bell, Marcus",telehealth,COMPLETED,25.00,
+A00449,C15,2026-11-11,09:30,60,90837,Daniel Okafor,telehealth,NS,0.00,online
+A00450,C0015,11/11/2026,11:00 AM,60,90837,Dr. Daniel Okafor,Telehealth,COMPLETED,0.00,front desk
+A00451,C0155,11/11/2026,11:30 AM,60,90837,Sarah Lindqvist,office,Kept,25.00,front desk
+A00562,C0191,"November 22, 2024",8:00 AM,45,90834,"Ruiz, Elena",office,Kept,25.00,front desk
+A00452,C0173,11/11/2026,17:30,60,90837,Sarah Lindqvist,office,No-Show,35.00,front desk
+A00453,C0032,11/12/26,2:00 PM,60,90837,"Bell, Marcus",In Person,Kept,140.00,clinician
+A00454,C0123,11/12/2026,5:30 PM,45,90834,Daniel  Okafor,Telehealth,Completed,20.00,
+A00455,C0048,11/13/26,10:30,30,90832,E. Ruiz,Office,Kept,0.00,clinician
+A00456,C0006,11/13/2026,1:30 PM,45,90834,Elena Ruiz,telehealth,late cancel,0.00,front desk
+A00457,C0099,11/16/2026,11:00 AM,45,90834,Daniel Okafor,Video,Kept,0.00,online
+A00458,C14,11-16-2026,4:30 PM,45,90834,M. Bell,Video,complete,20.00,online
+A00459,C0159,2026-11-17,8:30 AM,,90847,D. Okafor,telehealth,Sched,35.00,clinician
+A00561,C0191,05/12/2025,3:00 PM,45,90834,elena ruiz,Office,Kept,25.00,
+A00460,C0012,11/17/2026,9:00 AM,30,90832,elena ruiz,telehealth,cancelled,$40,front desk
+A00461,C0176,11/17/2026,11:30 AM,60,90837,"Okafor, Daniel",office,Scheduled,140.00,clinician
+A00462,C0117,11/17/2026,13:00,60,90837,"Marcus Bell, LICSW",telehealth,scheduled,0.00,
+A00463,C0056,11/17/2026,16:00,45,90834,D. Okafor,office,Scheduled,140.00,front desk
+A00464,C0173,11/18/2026,8:30 AM,45,90834,Dr. Sarah Lindqvist,office,Sched,40.00,front desk
+A00465,C0125,11/18/2026,11:30am,50,90847,Sarah Lindqvist,Video,scheduled,35.00,front desk
+A00466,C0110,11/19/2026,10:30 AM,60,90837,Sarah Lindqvist,In Person,scheduled,25.00,clinician
+A00467,C0085,2026-11-19,13:30,45,90834,elena ruiz,telehealth,Scheduled,25.00,clinician
+A00468,C31,11/20/26,10:30am,30,90832,elena ruiz,Office,Scheduled,40.00,front desk
+A00469,C0186,11/23/2026,1:00 PM,45,90834,"Okafor, Daniel",telehealth,Sched,0.00,
+A00470,C0071,11/23/2026,3:30 PM,60,TBD,D. Okafor,office,Sched,40.00,
+A00471,C0007,11/23/2026,5:30pm,60,90837,"Marcus Bell, LICSW",In Person,scheduled,20.00,front desk
+A00472,C0034,2026-11-24,9:30 AM,60,90837,S. Lindqvist,Office,Scheduled,35.00,online
+A00473,C0085,11/24/26,10:30,60,90837,Elena Ruiz LPCC,office,Scheduled,25.00,front desk
+A00474,C0007,11/24/2026,11:00,60,90837,"Bell, Marcus",office,cancelled,30.00,online
+A00475,C0009,2026-11-24,11:30 AM,45,90834,Sarah Lindqvist,Office,Sched,0.00,online
+A00476,C0180,11-24-2026,3:00 PM,60,90837,Marcus Bell,Video,scheduled,0.00,online
+A00476,C0180,11-24-2026,3:00 PM,60,90837,Marcus Bell,Video,scheduled,0.00,online
+A00477,C0125,2026-11-25,9:00 AM,30 min,90832,Sarah Lindqvist,office,scheduled,$0.00,online
+A00478,C0094,11-25-2026,11:30am,30,90832,Elena Ruiz,office,Scheduled,0.00,
+A00479,C0014,11/26/2026,11:30 AM,60,90837,"Marcus Bell, LICSW",Video,scheduled,0.00,front desk
+A00480,C0161,11-26-2026,12:30pm,60,90791,"Lindqvist, Sarah",In Person,COMPLETED,0.00,
+A00481,C0100,11/26/2026,17:00,50,90847,Marcus Bell,Telehealth,Scheduled,30.00,front desk
+A00482,C0089,11/27/2026,11:00 AM,60,90837,Sarah Lindqvist,In Person,Sched,,
+A00483,C0078,11/27/2026,12:00 PM,45,90834,MARCUS BELL,In Person,Sched,0.00,front desk
+A00484,C0118,2026-11-27,12:00pm,45,90834,"Okafor, Daniel",Office,scheduled,20.00,online
+A00485,c0085,11/30/26,8:00 AM,60,90837,E. Ruiz,Telehealth,scheduled,35.00,clinician
+A00486,C0015,11/30/2026,10:00 AM,45,90834,"Okafor, Daniel",In Person,complete,25.00,front desk
+A00487,C0081,2026-11-30,10:00,30,90832,sarah lindqvist,telehealth,Scheduled,0.00,clinician
+A00488,C0047,11/30/2026,11:30 AM,60,90791,"Okafor, Daniel",Telehealth,scheduled,20.00,clinician
+A00489,C0033,"November 30, 2026",14:00,45,90834,elena ruiz,Telehealth,scheduled,0.00,clinician
+A00490,C0097,12/01/2026,12:00 PM,60,90837,"Bell, Marcus",Video,scheduled,0.00,clinician
+A00491,C133,12/01/2026,5:00 PM,45,90834,Elena Ruiz,office,Sched,35.00,
+A00492,C0039,"December 2, 2026",09:30,60,90837,Elena Ruiz LPCC,In Person,scheduled,35.00,front desk
+A00493,C0069,12-2-2026,11:00 AM,60,90837,Elena Ruiz LPCC,In Person,Scheduled,140.00,clinician
+A00494,C0069,2026-12-02,1:30 PM,45,90834,"Ruiz, Elena",Office,Sched,140.00,front desk
+A00495,C0050,12/02/2026,2:30 PM,30,90832,S. Lindqvist,In Person,Cancelled,20.00,online
+A00496,C0052,12/02/2026,4:30 PM,50,90847,Daniel  Okafor,In Person,Scheduled,20.00,
+A00497,C0034,12-3-2026,1600,60,90837,Sarah Lindqvist,office,Scheduled,20.00,front desk
+A00498,C0179,12/03/2026,4:00 PM,45,90834,Daniel Okafor,In Person,Scheduled,25.00,front desk
+A00499,C0024,12/04/2026,2:00 PM,60,90837,"Bell, Marcus",Telehealth,scheduled,35.00,clinician
+A00500,C0188,12/07/2026,8:30am,45,90834,"Marcus Bell, LICSW",telehealth,scheduled,0.00,clinician
+A00501,C0022,"December 7, 2026",14:00,45,90834,Elena Ruiz LPCC,Video,Sched,25.00,clinician
+A00502,C0138,2026-12-08,11:00 AM,60,90837,"Ruiz, Elena",Telehealth,Sched,0.00,online
+A00503,C-111,12/08/2026,11:30am,45,90834,M. Bell,In Person,Scheduled,35.00,front desk
+A00504,C0133,12-9-2026,10:00am,45,90834,Elena Ruiz LPCC,Telehealth,scheduled,25.00,online
+A00505,C0050,2026-12-09,10:00 AM,60,90791,sarah lindqvist,office,Sched,30.00,front desk
+A00506,C0106,2026-12-09,16:00,45,90834,D. Okafor,In Person,Sched,140.00,front desk
+A00507,C0021,"December 9, 2026",5:00pm,50,90847,Marcus Bell,telehealth,Scheduled,40.00,
+A00508,C0018,12/10/26,09:30,60,90837,"Ruiz, Elena",Office,Scheduled,140.00,front desk
+A00509,C0089,12/10/2026,11:00 AM,60,90837,Sarah Lindqvist,office,scheduled,0.00,
+A00510,C0187,12/10/2026,12:30 PM,60,90791,"Ruiz, Elena",Video,Sched,20.00,front desk
+A00511,C0062,12/10/2026,1:30 PM,45,90834,Sarah Lindqvist,Video,Scheduled,25.00,
+A00512,C0166,2026-12-10,2:00 PM,60,90837,Marcus Bell,office,Sched,35.00,online
+A00513,C0069,12/11/2026,8:30 AM,45,90834,Elena Ruiz LPCC,telehealth,Scheduled,140.00,
+A00514,C0188,12/11/2026,9:00am,30,90832,MARCUS BELL,Telehealth,Scheduled,20.00,clinician
+A00515,C0093,2026-12-11,4:30 PM,45,90834,M. Bell,office,scheduled,20.00,clinician
+A00516,C0166,2026-12-14,08:00,45,90834,Marcus Bell,In Person,scheduled,0.00,
+A00517,C0179,12/14/2026,9:30 AM,60,90837,D. Okafor,Video,Scheduled,30.00,
+A00518,C0113,2026-12-14,3:00 PM,60,90837,Daniel  Okafor,Office,scheduled,20.00,
+A00519,C0070,2026-12-14,4:30 PM,60,90837,Elena Ruiz,In Person,scheduled,40.00,online
+A00520,C0143,12-15-2026,9:00 AM,60,90837,elena ruiz,Office,Scheduled,N/A,front desk
+A00521,C0045,12/15/2026,1:00 PM,60,90791,"Lindqvist, Sarah",Office,Scheduled,0.00,
+A00522,C0052,12/15/2026,3:00 PM,60,90791,"Okafor, Daniel",In Person,Scheduled,0.00,online
+A00523,C0064,2026-12-16,11:00 AM,60,90837,"Marcus Bell, LICSW",Office,Scheduled,25.00,
+A00524,C0157,12/16/2026,11:00,60,90791,"Okafor, Daniel",Office,Sched,0.00,
+A00525,2,12/17/2026,1:00 PM,30,90832,elena ruiz,Office,scheduled,20.00,online
+A00526,C0061,2026-12-17,5:30 PM,50,90847,"Okafor, Daniel",Office,Sched,140.00,clinician
+A00527,C0034,2026-05-15,3:30 PM,60,90837,Sarah Lindqvist,office,Scheduled,20.00,clinician
+A00528,C0021,12/18/2026,1230,60,90837,Marcus Bell,Video,Sched,25.00,
+A00558,C0189,"September 18, 2026",2:00 PM,45,90834,Daniel  Okafor,Office,COMPLETED,25.00,front desk
+A00529,C0143,2026-12-18,1430,60,90837,elena ruiz,telehealth,scheduled,30.00,clinician
+A00530,C0034,12/18/2026,3:30 PM,60,90837,S. Lindqvist,telehealth,Sched,20.00,
+A00531,C0183,12/21/2026,10:00,60,90837,elena ruiz,Office,Sched,25.00,online
+A00532,C0078,12/21/2026,1:00 PM,50,90847,"Marcus Bell, LICSW",Office,cancelled,20.00,online
+A00533,C0157,12/21/2026,15:00,60,90837,Daniel Okafor,office,Sched,0.00,clinician
+A00534,C0128,12/21/2026,3:00 PM,45,90834,"Marcus Bell, LICSW",office,scheduled,40.00,online
+A00535,C0064,12/21/26,3:30 PM,45,90834,"Marcus Bell, LICSW",Office,Scheduled,20.00,
+A00536,C0148,12/22/26,8:30 AM,45,90834,Elena Ruiz LPCC,telehealth,scheduled,20.00,online
+A00537,C0132,12/23/2026,10:00,50,90847,E. Ruiz,office,Scheduled,35.00,online
+A00538,C0032,12/23/2026,17:00,45,90834,"Marcus Bell, LICSW",Video,scheduled,140.00,front desk
+A00539,C0137,12/24/2026,8:00am,50,90847,Dr. Daniel Okafor,office,Scheduled,30.00,
+A00540,C0174,12/24/2026,08:00,30,90832,elena ruiz,Video,scheduled,0.00,
+A00541,C0055,12/24/26,9:30 AM,30,90832,"Lindqvist, Sarah",In Person,Sched,20.00,clinician
+A00542,C0103,12/24/2026,11:00 AM,45,90834,Elena Ruiz LPCC,Video,complete,20.00,clinician
+A00543,C99,12/24/2026,11:30,45 min,90834,D. Okafor,telehealth,Sched,0.00,online
+A00544,C0085,2026-12-25,11:00am,60,90837,elena ruiz,Telehealth,Scheduled,40.00,clinician
+A00545,43,"December 28, 2026",1200,50,90847,Elena Ruiz,Office,Sched,0.00,clinician
+A00546,C0150,12/28/2026,3:30 PM,45,90834,"Ruiz, Elena",In Person,cancelled,20.00,
+A00547,C0032,12/29/2026,14:30,60,90837,"Marcus Bell, LICSW",In Person,Sched,140.00,front desk
+A00548,C0158,12/29/2026,5:30 PM,30,90832,Dr. Daniel Okafor,In Person,Scheduled,140.00,
+A00549,C0094,"December 30, 2026",11:00,60,90837,"Ruiz, Elena",Office,Scheduled,$25,online
+A00550,C0111,12/30/2026,11:30 AM,60,90837,"Marcus Bell, LICSW",telehealth,Scheduled,30.00,
+A00551,C0055,12-30-2026,3:00 PM,60,90837,S. Lindqvist,office,Scheduled,40.00,online
+A00552,C0071,12/30/2026,16:30,50,90847,D. Okafor,In Person,Sched,,front desk
+A00553,C0180,12/31/2026,08:30,60,90837,"Marcus Bell, LICSW",office,Scheduled,20.00,clinician
+A00554,c0163,12/31/2026,9:30 AM,30,90832,MARCUS BELL,Video,Scheduled,30.00,
+A00555,C0015,2026-12-31,10:30 AM,60,90837,Dr. Daniel Okafor,Office,scheduled,25.00,online
+A00556,C0186,12/31/2026,13:30,0,90832,Daniel Okafor,telehealth,Scheduled,25.00,clinician
