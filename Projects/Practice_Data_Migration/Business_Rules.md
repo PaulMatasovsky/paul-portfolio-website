@@ -38,7 +38,8 @@ Referral Source is kept because it shows the practice where its clients come fro
 - **Clients:** Client ID, first name, last name, date of birth, primary clinician and status.
 - **Appointments:** appointment ID, client ID, date, start time, service code, clinician and status.
 
-A row missing any required field is rejected, with the missing field as the reason.
+- **A client** missing a required field, or with a birth date that's impossible or in the future, is **held**, not rejected. It's most likely a clerical error, and the client shouldn't miss an appointment because of it. The reason tells the front desk what to collect, for example "Birth date missing: get it at check-in before the appointment." The record should be fixed right away.
+- **An appointment** missing a required field is rejected, with the missing field as the reason.
 
 ## 2. Sources of Truth
 
@@ -96,7 +97,7 @@ States become two-letter codes. ZIP codes become five digits: the +4 part is dro
 
 **BR-16 — Dates That Can't Be Right**
 
-A date that doesn't exist (such as June 31) or a birth date in the future is rejected.
+An appointment date that doesn't exist (such as June 31) is rejected. A client's birth date that doesn't exist or is in the future is held (BR-05).
 
 **BR-17 — Durations**
 

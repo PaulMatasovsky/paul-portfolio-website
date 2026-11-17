@@ -54,14 +54,14 @@ None of these have been run yet. Results go in the execution log, not here.
 
 ## TC-005: Values at the limits
 
-- **Requirement or reason:** BR-16, BR-17.
+- **Requirement or reason:** BR-05, BR-16, BR-17.
 - **Preconditions and test data:** Appointments and clients templates; add test rows, then remove them afterward.
 
 | Step | Action | Expected result |
 |---|---|---|
 | 1 | Enter durations of 14, 15, 180 and 181 minutes. | 15 and 180 pass; 14 and 181 are rejected. |
-| 2 | Enter a birth date of today, then tomorrow. | Today passes; tomorrow is rejected. |
-| 3 | Enter a date that doesn't exist, such as 06/31/2026. | Rejected. |
+| 2 | Enter a birth date of today, then tomorrow. | Today passes; tomorrow is held with a reason to collect the correct birth date. |
+| 3 | Enter an appointment date that doesn't exist, such as 06/31/2026. | Rejected. |
 
 ## TC-006: Same input, same output
 
