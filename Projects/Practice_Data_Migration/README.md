@@ -50,7 +50,9 @@ A fictional therapy practice is leaving an old practice-management system, "OldC
 
 ## Testing
 
-*(to write: test plan and test cases, using templates from my [QA Toolkit](https://github.com/PaulMatasovsky/qa-toolkit))*
+[Test cases](Testing/Test-Cases.md) (TC-001 to TC-010, not run yet), written with the templates from my [QA Toolkit](https://github.com/PaulMatasovsky/qa-toolkit).
+
+*(to write: test plan, results and what the tests found)*
 
 ## Screenshots
 
