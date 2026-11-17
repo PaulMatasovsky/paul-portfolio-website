@@ -22,7 +22,8 @@ create table clients (
     member_id          text,
     primary_clinician  text not null,
     status             text not null check (status in ('Active', 'Inactive', 'Discharged')),
-    intake_date        date
+    intake_date        date,
+    referral_source    text                                         -- optional; kept for marketing (BR-04)
 );
 
 create table appointments (
@@ -39,10 +40,9 @@ create table appointments (
 );
 
 -- Notes for your decisions:
--- * A copay has no ">= 0" check on purpose: negative copays are FLAG rows in the answer key, not rejects.
---   Add the check if your business rules reject them instead.
+-- * A copay has no ">= 0" check on purpose: negative copays load as flagged rows (BR-20).
+-- * Blank durations load as 60 minutes and blank copays as 0, both flagged (BR-17, BR-20).
 -- * FLAG rows with a bad phone or email still load, but with that field left blank;
 --   the checks above would reject the bad value itself.
--- * duration_minutes allows null for the same reason (missing durations are FLAG rows).
 -- * The constraints are a second safety net. The spreadsheet pipeline should catch problems first;
 --   if an import fails here, that's a bug in the pipeline worth writing up.

@@ -10,13 +10,13 @@ None of these have been run yet. Results go in the execution log, not here.
 
 ## TC-001: Every row is accounted for
 
-- **Requirement or reason:** BR-25. Rows in = loaded + rejected + removed, for each file.
+- **Requirement or reason:** BR-28. Rows in = loaded + held + rejected + removed, for each file.
 - **Preconditions and test data:** `clients.csv` and `appointments.csv` imported into their templates.
 
 | Step | Action | Expected result |
 |---|---|---|
 | 1 | Note the RawData row count for each file (not counting the header). | Clients 198, appointments 580. |
-| 2 | Read the counts on the QA tab. | Final + rejected + removed equals the RawData count for each file. |
+| 2 | Read the counts on the QA tab. | Final + held + rejected + removed equals the RawData count for each file. |
 | 3 | Make the counts disagree on purpose by deleting one row from Final's source range, then undo. | The QA tab shows a mismatch while the row is missing, and matches again after undo. |
 
 ## TC-002: Columns are found by heading, not position
@@ -32,28 +32,29 @@ None of these have been run yet. Results go in the execution log, not here.
 
 ## TC-003: Duplicates are removed or flagged
 
-- **Requirement or reason:** BR-20, BR-21.
+- **Requirement or reason:** BR-21, BR-22.
 - **Preconditions and test data:** Clients template with `clients.csv` loaded.
 
 | Step | Action | Expected result |
 |---|---|---|
 | 1 | Check the exact duplicate rows. | One copy stays; the extras are removed and counted. |
 | 2 | Check clients with the same name and birth date under different IDs. | Both rows are flagged; neither is merged or dropped. |
-| 3 | Check the client ID that belongs to two different people. | Handled by the rule chosen for open decision 3, with a reason in QA. |
+| 3 | Check the client ID that belongs to two different people. | The first row loads; the later row is held with a reason asking for a new ID (BR-23). |
 
 ## TC-004: Orphan appointments are rejected
 
-- **Requirement or reason:** BR-23.
+- **Requirement or reason:** BR-25.
 - **Preconditions and test data:** Appointments template loaded; client-ID tab filled from the clients Final.
 
 | Step | Action | Expected result |
 |---|---|---|
 | 1 | Check appointments whose client ID isn't on the client-ID tab. | Each is rejected with an orphan reason. |
 | 2 | Check client IDs written differently (`42`, `C-42`, `c0042`). | They match the right client after cleaning, not counted as orphans. |
+| 3 | Check appointments for clients who were rejected or held. | Each is held, not rejected, with a reason naming the client to fix (BR-26). |
 
 ## TC-005: Values at the limits
 
-- **Requirement or reason:** BR-15, BR-16.
+- **Requirement or reason:** BR-16, BR-17.
 - **Preconditions and test data:** Appointments and clients templates; add test rows, then remove them afterward.
 
 | Step | Action | Expected result |
