@@ -164,3 +164,7 @@ For each file, rows in must equal rows loaded plus rows held plus rows rejected 
 **BR-29 — Every Exception Has a Reason**
 
 Every flagged, held, rejected or removed row appears in QA with a reason in plain language that says what's wrong and what someone needs to do. The person reading the list shouldn't need to know how the data was cleaned or loaded. It's the same idea as commenting code.
+
+**BR-30 — Hold List Order**
+
+Held clients aren't in the new system yet, so the front desk won't see them at check-in unless someone works the hold list first. The hold list shows each held client's next appointment date and is sorted soonest first, so the most urgent fixes come to the top.
