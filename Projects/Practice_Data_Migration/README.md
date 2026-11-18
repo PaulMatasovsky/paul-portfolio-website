@@ -4,66 +4,39 @@
 
 **Project status:** **In Progress** · **Activity:** Active
 
-> **Outline.** AI drafted this README's structure. Sections marked *(to write)* are mine to fill in once the work is done. Nothing below claims a result I haven't produced yet.
+A fictional therapy practice is moving from "OldChart EHR" to a new system. The export is messy: mixed date and phone formats, duplicate clients, appointments for clients who don't exist, and a leftover test record. My job is to clean it, load it, and prove nothing was lost.
 
-## Why I'm Building It
-
-A fictional therapy practice is leaving an old practice-management system, "OldChart EHR," for a new one. The export is messy: mixed date and phone formats, duplicate clients, appointments pointing to clients who don't exist, and test records left behind. Nothing can be loaded until it's cleaned and checked.
-
-*(to write: a sentence or two in my own words about why this project, e.g. how it relates to the client imports I did at Creditor Advocates)*
-
-**All data is synthetic.** Every name, ID, phone number (555-01xx), email (example.com) and address is made up. No real client information is used.
+**All data is synthetic.** Names, IDs, phones (555-01xx), emails (example.com) and addresses are made up.
 
 ## How It Works
 
-1. **Extract:** Two CSV exports from OldChart: [clients.csv](Data/Raw/clients.csv) (198 rows) and [appointments.csv](Data/Raw/appointments.csv) (580 rows).
-2. **Transform:** Two LibreOffice Calc workbooks, one per file, built from the pattern in my [Automated Sorting Template](../ETL/): match columns by header, pull them into a fixed order, clean them, flag problems, and output only the rows that pass. The cleaning happens offline, the way health data would be handled under HIPAA. I'll publish the templates as Excel files, using only formulas that work in both.
-3. **Load:** Import the clean CSVs into PostgreSQL on Supabase, clients first, then appointments.
-4. **Validate:** SQL checks that compare counts and relationships between the source, the workbooks and the database.
-
-## Business Rules
-
-[Business Rules](Business_Rules.md) — what gets fixed, flagged, held, rejected or removed, and why.
-
-## Workbooks
-
-- *(to add: Clients template, .xlsx)*
-- *(to add: Appointments template, .xlsx)*
-
-*(to write: a short tour of the tabs: RawData, HeaderMap, Step1, cleaning, flags, Final, QA)*
-
-## Database
-
-- [01_create_tables.sql](SQL/01_create_tables.sql) creates the `clients` and `appointments` tables with keys and checks.
-- *(to add: my validation queries and their results)*
+1. **Extract:** [clients.csv](Data/Raw/clients.csv) (198 rows) and [appointments.csv](Data/Raw/appointments.csv) (580 rows).
+2. **Transform:** Two LibreOffice Calc workbooks built on the pattern from my [Automated Sorting Template](../ETL/). Each row is fixed, flagged, held, rejected or removed under the [business rules](Business_Rules.md). The cleaning happens offline, as health data would be handled under HIPAA.
+3. **Load:** Into PostgreSQL on Supabase, clients first ([table setup](SQL/01_create_tables.sql)).
+4. **Validate:** Row counts must reconcile, and SQL checks look for duplicates, orphans and broken rules ([test cases](Testing/Test-Cases.md)).
 
 ## Results
 
-*(to write once tested: rows in, rows loaded, rows rejected and why, and whether the SQL checks matched the QA tab)*
+*(to fill in once tested)*
 
 | | Clients | Appointments |
 |---|---|---|
 | Rows in export | 198 | 580 |
-| Rows loaded | | |
-| Rows rejected or removed | | |
-| Rows flagged for follow-up | | |
+| Loaded | | |
+| Held | | |
+| Rejected | | |
+| Removed | | |
+| Flagged for follow-up | | |
 
-## Testing
+## Still to Come
 
-[Test cases](Testing/Test-Cases.md) (TC-001 to TC-010, not run yet), written with the templates from my [QA Toolkit](https://github.com/PaulMatasovsky/qa-toolkit).
-
-*(to write: test plan, results and what the tests found)*
-
-## Screenshots
-
-*(to add: Documentation/Screenshots/)*
-
-## What I Learned
-
-*(to write)*
+- Clients and Appointments templates (published as `.xlsx`)
+- SQL validation queries and their results
+- Test results and screenshots
+- Why I chose this project, decision records, and what I learned
 
 ## AI Transparency
 
-This is a **human-led** project. I'm designing the pipeline, building the workbooks and writing the SQL validation queries.
+This is a **human-led** project. I'm building the workbooks and writing the SQL validation queries, and the business decisions are mine.
 
-AI generated the synthetic CSV files and an answer key of the problems planted in them, drafted the table setup script, and drafted this README outline. I'll publish the data generator and answer key after I finish, so you can check my results against them.
+AI generated the synthetic data and an answer key of the problems planted in it, and drafted the table setup script, business rules, test cases and this README. I'll publish the generator and answer key once I finish, so my results can be checked against them.

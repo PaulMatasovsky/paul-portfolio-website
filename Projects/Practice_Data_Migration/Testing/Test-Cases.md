@@ -1,39 +1,36 @@
 # Test Cases
 
-- **Feature / area:** Practice Data Migration: LibreOffice Calc templates, Supabase load
-- **Author / date:** Paul Matasovsky, 2026-11-17. AI drafted these cases from our discussion; I reviewed them.
-- **Environment:** LibreOffice Calc (offline), Excel-format copies of the templates, Supabase (PostgreSQL)
+- **Area:** LibreOffice Calc templates (and their `.xlsx` copies), Supabase load
+- **Author / date:** Paul Matasovsky, 2026-11-17. AI drafted these from our discussion; I reviewed them.
 
-None of these have been run yet. Results go in the execution log, not here.
-
----
+Not run yet. Results go in the execution log.
 
 ## TC-001: Every row is accounted for
 
-- **Requirement or reason:** BR-28. Rows in = loaded + held + rejected + removed, for each file.
-- **Preconditions and test data:** `clients.csv` and `appointments.csv` imported into their templates.
+- **Why:** BR-28.
+- **Setup:** `clients.csv` and `appointments.csv` imported into their templates.
 
 | Step | Action | Expected result |
 |---|---|---|
-| 1 | Note the RawData row count for each file (not counting the header). | Clients 198, appointments 580. |
-| 2 | Read the counts on the QA tab. | Final + held + rejected + removed equals the RawData count for each file. |
-| 3 | Make the counts disagree on purpose by deleting one row from Final's source range, then undo. | The QA tab shows a mismatch while the row is missing, and matches again after undo. |
+| 1 | Count RawData rows, without the header. | Clients 198, appointments 580. |
+| 2 | Read the QA tab. | Loaded + held + rejected + removed equals the RawData count. |
+| 3 | Blank out one row's outcome so it's counted nowhere, then undo. | The QA tab shows a mismatch, then matches again. |
 
 ## TC-002: Columns are found by heading, not position
 
-- **Requirement or reason:** BR-02. The export can change column order or heading style.
-- **Preconditions and test data:** Clients template with `clients.csv` loaded; Final saved as a reference copy.
+- **Why:** BR-02.
+- **Setup:** Clients template with `clients.csv` loaded; Final saved as a reference copy.
 
 | Step | Action | Expected result |
 |---|---|---|
 | 1 | Move two columns in RawData to new positions. | Final is unchanged. |
 | 2 | Rename a heading to a style variant (for example `Last Name` to `last_name`). | Final is unchanged. |
-| 3 | Rename a required heading to something unrecognized. | An error shows; Final does not quietly output incomplete data. |
+| 3 | Rename a required heading to something unrecognized. | An error shows; Final doesn't quietly output incomplete data. |
 
 ## TC-003: Duplicates are removed or flagged
 
-- **Requirement or reason:** BR-21, BR-22.
-- **Preconditions and test data:** Clients template with `clients.csv` loaded.
+- **Why:** BR-21, BR-22.
+- **Setup:** Clients template with `clients.csv` loaded.
 
 | Step | Action | Expected result |
 |---|---|---|
@@ -43,8 +40,8 @@ None of these have been run yet. Results go in the execution log, not here.
 
 ## TC-004: Orphan appointments are rejected
 
-- **Requirement or reason:** BR-25.
-- **Preconditions and test data:** Appointments template loaded; client-ID tab filled from the clients Final.
+- **Why:** BR-25.
+- **Setup:** Appointments template loaded; client-ID tab filled from the clients Final.
 
 | Step | Action | Expected result |
 |---|---|---|
@@ -54,8 +51,8 @@ None of these have been run yet. Results go in the execution log, not here.
 
 ## TC-005: Values at the limits
 
-- **Requirement or reason:** BR-05, BR-16, BR-17.
-- **Preconditions and test data:** Appointments and clients templates; add test rows, then remove them afterward.
+- **Why:** BR-05, BR-16, BR-17.
+- **Setup:** Appointments and clients templates; add test rows, then remove them afterward.
 
 | Step | Action | Expected result |
 |---|---|---|
@@ -65,8 +62,8 @@ None of these have been run yet. Results go in the execution log, not here.
 
 ## TC-006: Same input, same output
 
-- **Requirement or reason:** The template should give identical results every time.
-- **Preconditions and test data:** Clients template with `clients.csv` loaded; Final saved as a reference copy.
+- **Why:** Same input should always give the same output.
+- **Setup:** Clients template with `clients.csv` loaded; Final saved as a reference copy.
 
 | Step | Action | Expected result |
 |---|---|---|
@@ -74,8 +71,8 @@ None of these have been run yet. Results go in the execution log, not here.
 
 ## TC-007: The database refuses bad data
 
-- **Requirement or reason:** The database checks are a second safety net.
-- **Preconditions and test data:** Supabase tables created with `01_create_tables.sql`.
+- **Why:** The database checks are a second safety net.
+- **Setup:** Supabase tables created with `01_create_tables.sql`.
 
 | Step | Action | Expected result |
 |---|---|---|
@@ -84,8 +81,8 @@ None of these have been run yet. Results go in the execution log, not here.
 
 ## TC-008: Records match field by field
 
-- **Requirement or reason:** Counts can match while values are wrong.
-- **Preconditions and test data:** Both tables loaded in Supabase.
+- **Why:** Counts can match while values are wrong.
+- **Setup:** Both tables loaded in Supabase.
 
 | Step | Action | Expected result |
 |---|---|---|
@@ -93,8 +90,8 @@ None of these have been run yet. Results go in the execution log, not here.
 
 ## TC-009: SQL counts match the QA tab
 
-- **Requirement or reason:** The database and the spreadsheet should agree.
-- **Preconditions and test data:** Both tables loaded; validation queries written.
+- **Why:** The database and the spreadsheet should agree.
+- **Setup:** Both tables loaded; validation queries written.
 
 | Step | Action | Expected result |
 |---|---|---|
@@ -103,11 +100,11 @@ None of these have been run yet. Results go in the execution log, not here.
 
 ## TC-010: Templates survive saving as Excel files
 
-- **Requirement or reason:** The templates are published to GitHub as `.xlsx`, so every formula must still work after converting from LibreOffice.
-- **Preconditions and test data:** Both finished templates, cleared of data.
+- **Why:** The templates are published as `.xlsx`, so every formula must survive the conversion.
+- **Setup:** Both finished templates, cleared of data.
 
 | Step | Action | Expected result |
 |---|---|---|
-| 1 | Save each template as `.xlsx` and close it. | Saves without a warning about lost features, or the warning is noted. |
+| 1 | Save each template as `.xlsx` and close it. | No warning about lost features, or the warning is noted. |
 | 2 | Reopen each `.xlsx` and import its CSV again. | No error values (#NAME?, #VALUE!, Err:); Final and QA match the LibreOffice results. |
 | 3 | If Excel is available, open the `.xlsx` there too. | Same results as step 2. |
