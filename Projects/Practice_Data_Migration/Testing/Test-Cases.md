@@ -36,7 +36,7 @@ Not run yet. Results go in the execution log.
 |---|---|---|
 | 1 | Check the exact duplicate rows. | One copy stays; the extras are removed and counted. |
 | 2 | Check clients with the same name and birth date under different IDs. | Both rows are flagged; neither is merged or dropped. |
-| 3 | Check the client ID that belongs to two different people. | The first row loads; the later row is held with a reason asking for a new ID (BR-23). |
+| 3 | Check the client ID that belongs to two different people. | The client with the earlier intake date loads; the other is held with a reason asking for a new ID (BR-23). |
 
 ## TC-004: Orphan appointments are held
 
@@ -48,6 +48,7 @@ Not run yet. Results go in the execution log.
 | 1 | Check appointments whose client ID isn't on the client-ID tab. | Each is held with a reason to check the client ID or add the client. |
 | 2 | Check client IDs written differently (`42`, `C-42`, `c0042`). | They match the right client after cleaning, not counted as orphans. |
 | 3 | Check appointments for clients who were rejected or held. | Each is held, not rejected, with a reason naming the client to fix (BR-26). |
+| 4 | Check appointments under the client ID that belongs to two people. | Each loads with the client who loaded, flagged to confirm whose visit it was (BR-23). |
 
 ## TC-005: Values at the limits
 
@@ -108,3 +109,14 @@ Not run yet. Results go in the execution log.
 | 1 | Save each template as `.xlsx` and close it. | No warning about lost features, or the warning is noted. |
 | 2 | Reopen each `.xlsx` and import its CSV again. | No error values (#NAME?, #VALUE!, Err:); Final and QA match the LibreOffice results. |
 | 3 | If Excel is available, open the `.xlsx` there too. | Same results as step 2. |
+
+## TC-011: Every exception has a record
+
+- **Why:** BR-29, BR-32.
+- **Setup:** Both templates loaded.
+
+| Step | Action | Expected result |
+|---|---|---|
+| 1 | Compare each Exceptions tab with the QA counts. | Held + rejected + removed + flagged rows on Exceptions match the QA tab. |
+| 2 | Pick 5 exception rows and find each one in RawData by source row number. | Each matches its source row, and its reason says what to do. |
+| 3 | Check an appointment with status "Kept". | It shows as Completed in Final (BR-09). |
