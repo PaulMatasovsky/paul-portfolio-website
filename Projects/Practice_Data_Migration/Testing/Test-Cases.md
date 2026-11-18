@@ -38,14 +38,14 @@ Not run yet. Results go in the execution log.
 | 2 | Check clients with the same name and birth date under different IDs. | Both rows are flagged; neither is merged or dropped. |
 | 3 | Check the client ID that belongs to two different people. | The first row loads; the later row is held with a reason asking for a new ID (BR-23). |
 
-## TC-004: Orphan appointments are rejected
+## TC-004: Orphan appointments are held
 
 - **Why:** BR-25.
 - **Setup:** Appointments template loaded; client-ID tab filled from the clients Final.
 
 | Step | Action | Expected result |
 |---|---|---|
-| 1 | Check appointments whose client ID isn't on the client-ID tab. | Each is rejected with an orphan reason. |
+| 1 | Check appointments whose client ID isn't on the client-ID tab. | Each is held with a reason to check the client ID or add the client. |
 | 2 | Check client IDs written differently (`42`, `C-42`, `c0042`). | They match the right client after cleaning, not counted as orphans. |
 | 3 | Check appointments for clients who were rejected or held. | Each is held, not rejected, with a reason naming the client to fix (BR-26). |
 
@@ -56,9 +56,9 @@ Not run yet. Results go in the execution log.
 
 | Step | Action | Expected result |
 |---|---|---|
-| 1 | Enter durations of 14, 15, 180 and 181 minutes. | 15 and 180 pass; 14 and 181 are rejected. |
+| 1 | Enter durations of 14, 15, 180 and 181 minutes. | 15 and 180 pass; 14 and 181 are held with a reason to correct the duration. |
 | 2 | Enter a birth date of today, then tomorrow. | Today passes; tomorrow is held with a reason to collect the correct birth date. |
-| 3 | Enter an appointment date that doesn't exist, such as 06/31/2026. | Rejected. |
+| 3 | Enter an appointment date that doesn't exist, such as 06/31/2026. | Held with a reason to correct the date. |
 
 ## TC-006: Same input, same output
 

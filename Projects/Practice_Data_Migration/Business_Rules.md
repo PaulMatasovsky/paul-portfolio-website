@@ -1,16 +1,22 @@
 # Practice Data Migration — Business Rules
 
-Every row in the OldChart export gets one of five outcomes:
+Every row in the OldChart export ends in exactly one outcome. If a row meets more than one, the first in this order wins: Remove, Reject, Hold, Load.
 
 | Outcome | Meaning |
 |---|---|
-| **Fix** | Cleaned automatically; formatting only. |
-| **Flag** | Loaded, and listed for follow-up. |
-| **Hold** | Not loaded yet; listed so someone can fix and release it. |
-| **Reject** | Doesn't belong in the new system; listed and kept out. |
 | **Remove** | Dropped and counted: duplicates, blank rows, test records. |
+| **Reject** | Doesn't belong in the new system, and no fix would make it belong (BR-31). Listed and kept out. |
+| **Hold** | Belongs, but someone has to supply or correct something first. Listed for the practice to fix and release. |
+| **Load** | Goes into the new system. |
 
-My guiding rule: **hold what belongs, reject only what doesn't.** These are real people with real appointments, so a clerical error shouldn't cost anyone a visit.
+Two markers sit on top of the outcome and don't change it:
+
+| Marker | Meaning |
+|---|---|
+| **Fix** | Formatting was cleaned automatically. Not counted. |
+| **Flag** | Loaded, and listed for follow-up. Only loaded rows are flagged. |
+
+My guiding rule: **hold what belongs, reject only what doesn't.** These are real people with real appointments, so a clerical error shouldn't cost anyone a visit. If someone could look up or correct the problem, it's a Hold.
 
 Rules marked *(confirm with client)* are my call for this project; on a real job I'd check them first.
 
@@ -22,7 +28,7 @@ Rules marked *(confirm with client)* are my call for this project; on a real job
 | BR-02 | Columns are found by heading, not position. Case, spaces, dashes and underscores don't matter. |
 | BR-03 | Dropped: Last Modified (the old system's timestamp) and Booked By (inconsistent free text). Everything else is kept. |
 | BR-04 | Referral Source is kept, optional, because it shows the practice where to spend on marketing. |
-| BR-05 | Required for clients: ID, first and last name, birth date, primary clinician, status. Missing or impossible → **Hold**, with a reason telling the front desk what to collect. Required for appointments: ID, client ID, date, start time, service code, clinician, status. Missing → **Reject**. |
+| BR-05 | Required for clients: ID, first and last name, birth date, primary clinician, status. Missing or impossible → **Hold**, with a reason telling the front desk what to collect. Required for appointments: ID, client ID, date, start time, service code, clinician, status. Missing → **Hold**, with a reason saying what to look up. |
 
 ## Sources of Truth
 
@@ -48,9 +54,9 @@ Rules marked *(confirm with client)* are my call for this project; on a real job
 
 | ID | Rule |
 |---|---|
-| BR-16 | An appointment date that doesn't exist → **Reject**. An impossible or future birth date → **Hold** (BR-05). |
-| BR-17 | Durations of 15–180 minutes are valid; outside → **Reject**. Blank → 60 minutes, so nothing gets double-booked → **Flag** for billing. |
-| BR-18 | Service code must be 90791, 90832, 90834, 90837 or 90847; anything else → **Reject**. |
+| BR-16 | An appointment date that doesn't exist (such as 06/31) or an impossible or future birth date → **Hold** with a reason to correct it (BR-05). |
+| BR-17 | Durations of 15–180 minutes are valid; outside → **Hold** to correct the duration. Blank → 60 minutes, so nothing gets double-booked → **Flag** for billing. |
+| BR-18 | Service code must be 90791, 90832, 90834, 90837 or 90847; missing, TBD or anything else → **Hold** for billing to supply the code. |
 | BR-19 | A future appointment marked Completed, or a past one still Scheduled → **Flag**. |
 | BR-20 | Also **Flag**: an appointment before intake, a double-booked clinician, a negative copay, a missing intake date, and a blank or "N/A" copay (stored as 0 so the client keeps the visit) *(confirm with client)*. |
 
@@ -67,7 +73,7 @@ Rules marked *(confirm with client)* are my call for this project; on a real job
 
 | ID | Rule |
 |---|---|
-| BR-25 | An appointment whose client doesn't exist → **Reject**. |
+| BR-25 | An appointment whose client ID isn't in the clients file → **Hold**, with a reason to check the ID or add the client. |
 | BR-26 | An appointment whose client was held or rejected → **Hold**. It's still a real visit; the practice decides. |
 | BR-27 | Clients load before appointments, so the database can confirm every link. |
 
@@ -78,6 +84,6 @@ Rules marked *(confirm with client)* are my call for this project; on a real job
 | BR-28 | Rows in = loaded + held + rejected + removed, for each file. If not, nothing loads. |
 | BR-29 | Every exception has a plain-language reason saying what to do. The reader shouldn't need to know how the pipeline works, the same idea as commenting code. |
 | BR-30 | The hold list shows each client's next appointment, soonest first, so urgent fixes happen before check-in. |
-| BR-31 | A client is rejected only if the record is out of scope, not allowed to move (retention period or deletion request), or impossible to identify *(confirm with client)*. Never for unpaid balances or missed visits. None occur in this export. |
+| BR-31 | A row is rejected only if the record is out of scope, not allowed to move (retention period or deletion request), or impossible to identify *(confirm with client)*. Never for unpaid balances or missed visits. None occur in this export. |
 
 **AI transparency:** AI drafted these rules from my conversation with it; the decisions are mine.
