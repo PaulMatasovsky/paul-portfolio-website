@@ -1,8 +1,6 @@
--- Practice Data Migration: target tables for Supabase (PostgreSQL)
--- Run in the Supabase SQL Editor before importing the cleaned CSVs.
--- Import order matters: clients first, then appointments (appointments must point to an existing client).
--- Column names match the headers your Final tabs should export.
--- AI-drafted scaffolding; review before running.
+-- Practice Data Migration: target tables for Supabase (PostgreSQL). AI-drafted.
+-- Run in the Supabase SQL Editor, then import clients before appointments.
+-- Column names match the Final tabs' headers.
 
 drop table if exists appointments;
 drop table if exists clients;
@@ -39,10 +37,7 @@ create table appointments (
     copay            numeric(7, 2)
 );
 
--- Notes for your decisions:
--- * A copay has no ">= 0" check on purpose: negative copays load as flagged rows (BR-20).
--- * Blank durations load as 60 minutes and blank copays as 0, both flagged (BR-17, BR-20).
--- * FLAG rows with a bad phone or email still load, but with that field left blank;
---   the checks above would reject the bad value itself.
--- * The constraints are a second safety net. The spreadsheet pipeline should catch problems first;
---   if an import fails here, that's a bug in the pipeline worth writing up.
+-- Notes:
+-- * The spreadsheet catches problems first; these checks are a safety net. A failed import is a pipeline bug.
+-- * Flagged rows load: bad phones and emails as blanks, blank durations as 60, blank copays as 0 (BR-12, BR-13, BR-17, BR-20).
+-- * No ">= 0" check on copay, because negative copays load as flagged rows (BR-20).
