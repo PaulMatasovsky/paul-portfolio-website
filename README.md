@@ -13,6 +13,7 @@ This is where the projects stand right now. Each project has its own documentati
 | Area | What it includes | Status | Where to look |
 |---|---|---|---|
 | Automated Sorting Template | Google Sheets workbook used to organize and print warehouse parts reports. The Excel copy has a printing issue that prints extra white space at the end of the document. | **Complete · Maintenance** | [ETL project](Projects/ETL/) |
+| Practice Data Migration | Cleaning a fictional therapy practice's client and appointment export offline in LibreOffice Calc and loading it into PostgreSQL on Supabase. Synthetic data; AI generated the test files and setup script. | **In Progress · Active** | [Practice Data Migration](Projects/Practice_Data_Migration/) |
 | SQL Refresher — Inventory Data Checks — **AI-led** | Small SQLite practice project using fictional inventory data; no database or queries implemented yet. | **In Progress · Active** | [SQL Refresher](Projects/SQL_Refresher/) |
 | Computer Science 050 teaching course | Introductory computer science curriculum and teaching, with weekly instructor teaching records. AI-led curriculum; human-led classroom instruction. | **In Progress · Active** | [Teaching project](Projects/Computer_Science_050/) |
 | QA Toolkit | Draft website QA checklists, test cases, and templates. I have not completed a verified hands-on audit yet. | **In Progress · Active** | [QA Toolkit repository](https://github.com/PaulMatasovsky/qa-toolkit) and [QA audit results](Projects/QA_Audits/) |
@@ -53,7 +54,7 @@ I follow these [GitHub writing principles](Documentation/GitHub_Writing_Principl
 
 ## AI Transparency
 
-I use AI across my portfolio projects. The ETL workbook is human-led. The SQL refresher, QA Toolkit, Computer Science 050 curriculum, and Computer Helper are AI-led. The portfolio website was human-led in version 2.0 and is AI-led from version 2.5: AI did the visual design and drafted most of the documentation, while the content and structure are mine.
+I use AI across my portfolio projects. The ETL workbook and the Practice Data Migration are human-led. The SQL refresher, QA Toolkit, Computer Science 050 curriculum, and Computer Helper are AI-led. The portfolio website was human-led in version 2.0 and is AI-led from version 2.5: AI did the visual design and drafted most of the documentation, while the content and structure are mine.
 
 ## Next Steps
 
