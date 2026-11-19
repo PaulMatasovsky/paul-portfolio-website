@@ -1,0 +1,129 @@
+# SQL Refresher — Inventory Data Checks
+
+**Project status:** **In Progress** · **Activity:** Active (planning; implementation not started)  
+**Approach:** **AI-led**
+
+## Why I'm Doing This
+
+I have used SQL in coursework and in earlier technical work, but I want more practice writing queries without relying on notes. I'm keeping this project small so I can focus on the SQL and on checking whether the results make business sense.
+
+## Starting Idea
+
+Reuse the sanitized test data from my existing inventory workbook instead of building a separate fictional dataset. I started with **Parts**, **Warehouses**, and **Brands**, later adding **Inventory** and **Suppliers**. I originally said Vendors, but I meant Brands. A **line code identifies the brand under which a part is sold**, not necessarily the supplier or manufacturer. I first considered excluding suppliers to keep this small, but decided a separate Suppliers table makes more sense for normalization and useful JOIN practice.
+
+The source workbook is [InventoryDataValidation&ETLPipeline](https://docs.google.com/spreadsheets/d/1uV_BQui4tErYduIn34nPwPPoZCLOXqWDLpxW0HUBWQA/edit). It contains `Parts`, `Warehouses`, `Suppliers`, `LINES`, and `Categories` tabs. These are source data, not yet finished SQLite tables. `Parts` already has separate `Line_ID` and `Supplier_ID` fields. The line code is my sanitized identifier for a resale brand. One brand can have parts produced by multiple manufacturers, so I should not equate the brand with the manufacturer or supplier. Some reference tabs are incomplete or contain duplicates; I need to inspect and clean them before importing anything.
+
+I want to practice writing queries that answer practical questions, including:
+
+- Finding items with missing or mismatched records.
+- Checking counts and totals after joins.
+- Investigating duplicates without hiding data problems.
+- Filtering, grouping, and explaining query results.
+- Using parameterized queries when an application accepts a value such as a part number.
+
+I will record the question, the SQL I wrote, the result, and what I found. No query results or tests have been completed yet.
+
+## Table Design Decisions
+
+I chose **Inventory** as the fourth table and **Suppliers** as the fifth. The current planned tables are **Parts**, **Warehouses**, **Brands**, **Inventory**, and **Suppliers**.
+
+Inventory will connect a part to a warehouse and hold both the **quantity on hand** and the **minimum quantity for that specific warehouse**. My selected starting fields are `Product_ID`, `Warehouse_ID`, `Quantity_On_Hand`, and `Minimum_Quantity`. The minimum belongs here because each warehouse sets stock levels according to its own demand, rather than sharing one minimum for the part everywhere.
+
+The combination of product and warehouse is a candidate for a composite key, since one part can have inventory in several warehouses but should normally have one current quantity record per warehouse. The exact SQLite schema and constraints are not yet written.
+
+### Parts — columns I've proposed
+
+My first draft of the `Parts` table contains eight proposed columns:
+
+- `Part_ID` — internal identifier for a part; a possible primary key, not finalized.
+- `PartNo` — the part number used in the business.
+- `Part_Description` — description of the part.
+- `Line_ID` — the line or brand identifier as named in the existing workbook.
+- `Category_ID` — category identifier.
+- `Supplier_OD` — the name I gave while dictating; likely intended as `Supplier_ID`, but I have not confirmed the spelling or whether this field belongs in Parts.
+- `Unit_Cost` — cost of one unit.
+- `IsActive` — whether the part is active or discontinued.
+
+**Normalization question to resolve:** I previously decided each brand has exactly one supplier **for this example**, with `Brands.Supplier_ID` recording that supplier. If a part's supplier is always determined by its brand, repeating `Supplier_ID` on Parts could create inconsistent records. I have not yet decided whether to keep that field.
+
+**Naming question to resolve:** My new Brands design has `Brand_ID` as its primary key and `Line_Code` as the business code. I need to decide whether `Parts.Line_ID` should instead be `Brand_ID` (a foreign key to Brands), retaining the line code only in Brands.
+
+The type and constraints of `PartNo`, `Unit_Cost`, `IsActive`, and `Category_ID` are not decided; likewise, I have not decided whether categories need a separate lookup table. These are proposals, not yet implemented or tested SQL.
+
+### Brands and Suppliers — design decisions
+
+I identified **line code** as the business code for a brand, but chose a separate numeric **`Brand_ID`** as its database primary key. I initially considered storing both supplier ID and supplier name directly in Brands, but chose to **separate suppliers into their own table**. This avoids repeating a supplier's details if the same supplier serves several brands, and gives me another straightforward relationship to test with a JOIN.
+
+**Sample-data assumption I chose:** Each brand has **one designated supplier** in this SQL refresher; a supplier may serve **multiple brands**. I don't have information about my employer's actual supplier arrangements, so this is a simplifying assumption, not a verified fact about the business. The intended relationship is one supplier to many brands. `Brands.Supplier_ID` will refer to the supplier's identifier in `Suppliers`, while the supplier name belongs in `Suppliers` rather than being duplicated in Brands.
+
+I may eventually explore multiple sourcing locations for hubs, but that is outside the initial project. The existing workbook has `LINES` and `Suppliers` tabs and also includes `Supplier_ID` under `Parts`. I'll have to reconcile those source fields with my chosen test model when preparing the dataset; I have not created or tested SQLite tables yet.
+
+I chose to add a readable **`Brand_Name`** alongside the shorter **`Line_Code`**, and then decided to introduce an integer **`Brand_ID`** primary key. The current Brands design has four fields: `Brand_ID` (`INTEGER PRIMARY KEY`), `Line_Code` (alphanumeric business code), `Brand_Name` (readable name), and `Supplier_ID` (foreign key referencing Suppliers). A separate stable ID means a future change to a brand's line code would not change its internal identity or require updating references that use `Brand_ID`. I decided that `Line_Code` is `TEXT NOT NULL UNIQUE`: every brand must have a line code, and two brands should not share one. The primary key remains the independent integer `Brand_ID`. I decided that **`Brand_Name` must be `TEXT NOT NULL`**, and **`Supplier_ID` must be `INTEGER NOT NULL`** referencing `Suppliers.Supplier_ID`. Each brand must have a recognizable name and an assigned supplier under this project's simplified business rule. Other refinements, such as blank-text checks, will be considered when I write and test the schema. The source workbook uses `Line_ID`, so I will need to reconcile naming and references when importing data. No Brands table has been created.
+
+### Suppliers — proposed fields and carrier question
+
+My chosen starting fields for `Suppliers` are **`Supplier_ID`, `Supplier_Name`, `Supplier_Address`, and `Preferred_Carrier`**. I considered allowing several shipping methods per supplier but decided to keep **one preferred carrier** for this version so the SQL refresher stays small. I'll use fictional carrier names in the demonstration instead of real company names. This field describes the preferred option, not necessarily the carrier used for every individual shipment.
+
+The list of brands provided by a supplier is important information, but it does **not** need to be stored as a list inside the Suppliers table. Under my one-supplier-per-brand assumption, `Brands.Supplier_ID` already records the connection. A JOIN can retrieve all of a supplier's brands without duplicating that list.
+
+**Design consideration:** I could have added a `Carriers` table and a supplier-to-carrier junction table if tracking multiple carriers were required, but I decided **not** to add them now. The four Suppliers columns are chosen. For `Supplier_ID`, I decided to use **`INTEGER`** with simple single-digit IDs (such as 1, 2, and 3) in the practice dataset. In real operations the identifier might instead have three digits, but that is an assumption rather than verified company data, and `INTEGER` works for either length. If leading zeros become meaningful, their formatting or storage would need reconsideration. I chose **`Supplier_ID` as the primary key**, using a simple integer rather than a GUID because this is a small local practice database. In SQLite, `INTEGER PRIMARY KEY` can provide a unique row identifier without a GUID; whether to assign IDs myself or let SQLite assign them is still undecided. The remaining three types are confirmed as `TEXT`. I chose `NOT NULL` for `Supplier_Name` and `Supplier_Address`, while `Preferred_Carrier` is nullable because the preferred carrier might not be known.
+
+**Confirmed Suppliers columns and basic constraints:** `Supplier_ID` is `INTEGER PRIMARY KEY`; `Supplier_Name` and `Supplier_Address` are `TEXT NOT NULL`; and `Preferred_Carrier` is `TEXT`, allowing `NULL`. I chose a single preferred carrier rather than modeling all available shipping methods. A `NOT NULL` constraint would not reject an empty string; stricter blank-value checks can be considered during testing. I have not written the table definition or tested it yet.
+
+### Warehouses — columns I've chosen
+
+My current `Warehouses` design has **six confirmed columns**:
+
+- `Warehouse_ID` — identifies the location.
+- `Warehouse_Name` — the location's name.
+- `Warehouse_Address` — its address (whether to split this into address components is not yet decided).
+- `Is_Hub` — Boolean-style indicator: `1` for a hub and `0` for a spoke.
+- `Primary_Hub_ID` — identifies the one hub responsible for a spoke's automatic replenishment; this will reference another warehouse.
+- `Route_ID` — identifies the one delivery route assigned to a warehouse.
+
+I deliberately left stock on hand and minimum stock out of this table; those belong in `Inventory` for each part-and-warehouse combination.
+
+### Warehouses — initial data type ideas
+
+My first pass at the SQLite types is:
+
+- `Warehouse_ID`: an integer identifier (`INTEGER`).
+- `Warehouse_Name`: text (`TEXT`).
+- `Warehouse_Address`: text (`TEXT`).
+- `Route_ID`: text (`TEXT`), assuming route codes may contain letters.
+- `Is_Hub`: **required `INTEGER`, limited to `0` or `1`**. I chose `1` for a hub and `0` for a spoke because each warehouse must be one or the other; leaving the status blank or allowing another value would undermine the business rule.
+- `Primary_Hub_ID`: `INTEGER` referencing a warehouse ID. I decided that it **must be present for spokes** and **must be `NULL` for hubs** in this version.
+
+I had momentarily forgotten `Primary_Hub_ID` while listing the types. It answers a different question from `Is_Hub`: **which hub supplies this spoke**, rather than **is this warehouse a hub**. SQLite commonly represents Boolean-style fields as integer values 0 and 1. I decided that the schema **must use both `NOT NULL` and `CHECK (Is_Hub IN (0, 1))`**: the first requires a value, and the second rejects values other than 0 and 1. These are planning notes only; no `CREATE TABLE` statement or constraints have been written yet.
+
+### Design consideration — warehouse routes
+
+I considered whether a warehouse might belong to several delivery routes. If that were necessary, a separate junction table could represent a many-to-many relationship. **I decided instead that each warehouse will belong to only one route in this project**, and several warehouses can share the same route. This is technically a **one-to-many relationship from routes to warehouses**, rather than a strict one-to-one relationship. Storing `Route_ID` directly in `Warehouses` is sufficient for the chosen rule; I am not introducing a route-membership junction table.
+
+The exact SQLite types, constraints, and whether to create a separate `Routes` lookup table are still to be decided. I also plan to add more sanitized or fictional locations so route groupings can be demonstrated.
+
+### Replenishment rule I described
+
+The operation uses a **hub-and-spoke** distribution model. Hubs receive inventory from suppliers and hold additional stock to replenish spoke warehouses. Spokes avoid unnecessary excess stock and are replenished according to their own minimum-on-hand needs. At my location, a part sold today will typically appear in stock replenishment about **2–3 days later**. The on-hand quantity changes as sales and replenishments occur.
+
+I decided from the outset that each warehouse should be identified as a **hub** or **spoke** in the Warehouses table. I confirmed this is worth including because it adds little complexity and demonstrates understanding of how the operation works. I chose `Is_Hub` as a Boolean-style integer flag instead of storing the words `Hub` and `Spoke`; the SQL constraints are not yet finalized.
+
+**Automatic replenishment, customer-specific orders, and stock transfers are different processes.** Each spoke has exactly **one primary hub responsible for its automatic replenishment**. That hub supplies the spoke **from the hub's own stock**; it does not specially order inventory from another location in order to fulfill the automatic replenishment. A location may receive stock through separately authorized transfers from other warehouses, but those transfers are not an unrestricted way for spoke locations to replenish themselves. Customer-specific orders follow a different workflow from routine stock transfers. The public project describes these as generalized business rules, without publishing internal company permission details.
+
+I chose `Primary_Hub_ID` as a fifth Warehouses field so a spoke can point to its one assigned automatic-replenishment hub. **I decided that a spoke (`Is_Hub = 0`) requires a primary hub ID, while a hub (`Is_Hub = 1`) leaves that column `NULL`.** This models the replenishment relationships I know about; I have not assumed any additional upstream warehouse tier. My current understanding is that hubs receive supplies from external suppliers, but the supplier structure is outside this small project's scope. If I later modeled supplier sourcing, that would be a different relationship and would need its own business rules.
+
+When writing the schema, I can enforce the missing-versus-present rule with a conditional table-level `CHECK`, and use a self-referencing foreign key to require an existing warehouse ID. An ordinary foreign key **does not by itself guarantee that the referenced warehouse is actually a hub**; enforcing that would require another validation approach. I still need to write and test the constraints myself. I do not need a separate transfer-history table just to practice the joins. This is business context, not a claim that this project already tracks shipments, transfers, orders, user permissions, or replenishment events.
+
+## Demonstration
+
+Start with readable SQL files and examples here on GitHub. If the queries work and the project stays manageable, I may make a small interactive demo for my portfolio.
+
+Any interactive example should use **fictional or verified-public-safe sanitized records only** and should not expose the WordPress site's database or accept arbitrary SQL on the server. One option to evaluate later is a disposable SQLite database running entirely in a visitor's browser.
+
+## My Next Step
+
+Review the proposed Parts columns, especially whether Supplier ID is redundant under the brand-to-supplier rule and how Line ID should map to Brand ID. Then choose Parts types and constraints, finish Inventory, and write and test the SQLite definitions myself. Before publishing source data, verify that all part numbers, addresses, and other details are suitable for public release.
+
+## AI Transparency
+
+This is an AI-led project. I'm using AI to guide my SQL refresher.

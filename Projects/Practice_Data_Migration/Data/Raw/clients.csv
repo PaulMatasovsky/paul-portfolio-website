@@ -1,0 +1,199 @@
+Client ID,first_name,Last Name,DOB,Phone #,E-mail,Street Address,City,ST,Zip Code,Insurance Provider,Member ID,Primary Clinician,Status,Intake Date,Referral Source,Last Modified
+C0001,Jessica,Nguyen,01/31/1995,651-555-0176 ext 2,jessica.nguyen54@example.com,4790 Rice St,Minneapolis,MN,55427,Blue Cross Blue Shield of MN,W88721495,"Okafor, Daniel",D/C,2026-08-18,,2026-07-06
+C0002,Andrew,Anderson,2005-02-07,612-555-0101,andrew.anderson88@example.com,4116 Fernwood St,Saint Paul,MN,55140,Blue Cross Blue Shield of MN,Y63313617,"Ruiz, Elena",active,8-15-2023,Insurance,2026-11-05
+C0003,Tyler,Murphy,12-30-1981,612.555.0111,TYLER.MURPHY38@EXAMPLE.COM,2456 Hamline Ave,Maplewood,MN,55118,Aetna,Z13320452,Elena Ruiz,ACTIVE,11/17/2025,Self,2026-07-02
+C0004,Ethan,Hassan,11/18/1987,612-555-0114,ethan.hassan97@example.com,4122 Victoria St,Saint Paul,MN ,55167,Self-Pay,,elena ruiz,Discharged,3/27/25,PCP,2026-10-06
+C0005,Sophia,Thomas,12/28/1992,+1 651 555 0198,sophia.thomas7@example.com,4386 Woodhill Dr,Minneapolis,MN,55422,Self-Pay,,Dr. Sarah Lindqvist,I,2025-11-26,Insurance,2026-05-04
+C0006,Lucas,Brown,10/11/1962,(763) 555-0189,lucas.brown61@example.com,4569 County Rd B,New Brighton,MN,55171,Blue Cross Blue Shield of MN,W99892850,Elena Ruiz LPCC,Inactive,04/13/2024,Self,2026-07-07
+C0007,Mai,Walker,12/18/1992,(612) 555-0101,mai.walker84@example.com,4992 Hamline Ave,Maplewood,MN,55166,Cigna,W58309773,"Bell, Marcus",A,6/5/25,Insurance,2026-03-18
+C0008,Michelle,Walker,07/25/1993,(612) 555-0171,MICHELLE.WALKER5@EXAMPLE.COM,2476 Larpenteur Ave,New Brighton,MN,55158,UCare,X68847902,Elena Ruiz,inactive,11/13/2025,,2026-03-11
+C0009,Chloe,Murphy,6/4/66,612-555-0163 ext 2,chloe.murphy25@example.com,3469 Lexington Ave,Maplewood,MN,55157,Aetna,X22370664,S. Lindqvist,discharged,09/08/2025,Friend/Family,2026-02-18
+C0010,Chloe,Jackson,01/14/1999,(651) 555-0179,chloe.jackson70@example.com,2299 Fernwood St,Saint Paul,Mn,55196,HealthPartners,Z30771657,Sarah Lindqvist,I,06/03/2026,Friend/Family,2026-09-27
+C0011,Jacob,Clark,04/23/2002,763-555-0128,jacob.clark17@example.com,4999 Woodhill Dr,White Bear Lake,MN,55188,HealthPartners,Z21332433,"Okafor, Daniel",Active,2025-10-04,,2026-08-04
+C0012,Daniel,Murphy,02/22/1962,651.555.0166, Daniel.murphy49@example.com,215 Oak Ave,White Bear Lake,MN ,55149,UCare,X16895485,Elena Ruiz LPCC,ACTIVE,09/18/2024,PCP,2026-03-08
+C0013,Hannah,Murphy,4/25/52,612-555-0157,hannah.murphy16@example.com,4176 Hamline Ave,Roseville,MN,55173,Aetna,Y30654844,MARCUS BELL,ACTIVE,11/11/25,PCP,2026-10-30
+C0014,Grace,Harris,1980-03-07,651.555.0170,grace.harris26@example.com,1520 Maple St,New Brighton,MN,55182,Aetna,X70642368,"Bell, Marcus",active,,Self,2026-04-26
+C0015,Jose,Hall,11/02/1951,+1 763 555 0117,jose.hall24@example.com,3294 County Rd B,Shoreview,MN,55154,Cigna,W20557407,Daniel Okafor,A,8/15/26,Insurance,2026-08-08
+C0016, Stephanie,Berg  ,11/13/1980,6125550136,stephanie.berg42@example.com,4354 Hamline Ave,Shoreview,MN,55156,Cigna,X80766545,Elena Ruiz,Active,6-23-2024,PCP,2026-10-06
+C0017,Richard,Mitchell,03/25/1969,763-555-0142 ext 2,richard.mitchell86@example.com,1594 Maple St,Falcon Heights,MN,55145,UCare,Y57204606,Marcus Bell,D/C,01/11/2023,Web,2026-09-20
+C0018,Joseph,Harris,03/01/1975,(612) 555-0172,joseph.harris72@example.com,1186 Oak Ave,Minneapolis,MN,55426,Self-Pay,,E. Ruiz,inactive,"March 9, 2026",,2026-07-21
+C0019,richard,shah,1965-05-14,+1 651 555 0182,richard.shah65@example.com,2668 County Rd B,Saint Paul,MN,55175,Aetna,X49062210,"Ruiz, Elena",inactive,5-4-2023,Self,2026-03-10
+C0020,Daniel,Garcia,1972-12-23,(612) 555-0153,,569 Oak Ave,Saint Paul,MN,55130,Cigna,X51596580,Sarah Lindqvist,A,01/29/2023,Web,2026-04-18
+C0021,Richard,Lewis,05/06/2000,7635550180,richard.lewis79@example.com,411 Woodhill Dr,White Bear Lake,MN,55151,UCare,Z91575609,M. Bell,active,12/18/2024,Self,2026-08-06
+C0022,Zoe,Shah,1960-09-18,+1 612 555 0137,,3018 Maple St,Newark,NJ,7102,Medica,W13176036,Elena Ruiz,Active,10/23/2025,,2026-05-05
+C0023,Nicholas,Lopez,,763-555-0143 ext 2,nicholas.lopez8@example.com,1022 Lexington Ave,Arden Hills,MN,55179,Blue Cross Blue Shield of MN,X25875669,Dr. Sarah Lindqvist,Active,05/03/2025,Insurance,2026-03-03
+C0024,Thomas,Wilson,10/6/81,651-555-0154,thomas.wilson46@example.com,3502 Victoria St,White Bear Lake,MN,55148,Medica,Y66503709,"Bell, Marcus",discharged,08/19/2026,,2026-08-13
+C0025,Thomas,Berg,09/16/1998,+1 763 555 0171,thomas.berg33@example.com,1309 Snelling Ave,Roseville,MN,55102,Self-Pay,,Dr. Sarah Lindqvist,I,09/16/2026,Self,2026-10-24
+C0026,Amanda,Moore,12/16/1992,763.555.0175,amanda.moore23@example.com,4630 Maple St,Maplewood,MN,55183,HealthPartners,Z55729726,elena ruiz,Discharged,,Insurance,2026-06-16
+C0027,Linda,Clark,01/09/1951,(763) 555-0165,,3369 Cleveland Ave,Falcon Heights,MN ,55146,HealthPartners,Y85375365,E. Ruiz,active,08/21/2025,PCP,2026-06-08
+C0028,Laura,Roberts,1-12-1968,763-555-0160 ext 2,,4856 County Rd B,Little Canada,MN,55124,UCare,Y94290960,Dr. Daniel Okafor,active,01/05/2025,Friend/Family,2026-07-16
+C0029,Karen,Davis,"June 24, 1950",651.555.0181,karen.davis39@example.com,3153 Rice St,Little Canada,MN,55193,Cigna,Z28516756,S. Lindqvist,I,12/7/25,Friend/Family,2026-04-28
+C-0030,Robert,Moore,06/24/1969,+1 612 555 0168,,4331 Fairview Ave,White Bear Lake,MN,55182,UCare,Y78284809,"Lindqvist, Sarah",active,09/20/2024,Insurance,2026-05-16
+C0031,William,Erickson,12/01/1984,(763) 555-0175,william.erickson25@example.com,1428 Woodhill Dr,Little Canada,MN,55137,Blue Cross Blue Shield of MN,Z82633979,Elena Ruiz,Active,1/26/26,Web,2026-03-02
+C0032,Hannah,Carlson,11/12/1984,763-555-0161,,3013 Fairview Ave,Falcon Heights,MN,55198,Self-Pay,,MARCUS BELL,A,07/13/2026,Self,2026-06-06
+C0033,Priya,Johnson,"February 11, 1966",6515550165,priya.johnson91@example.com,116 Lydia Ave,Little Canada,MN,55147,Blue Cross Blue Shield of MN,X59391658,"Ruiz, Elena",Active,"January 9, 2026",Self,2026-10-11
+C0034,Sandra,Moore,"November 2, 1963",612-555-0162 ext 2,sandra.moore94@example.com,699 Victoria St,White Bear Lake,MN,55133,Blue Cross Blue Shield of MN,Z96912096,Sarah Lindqvist,Active,"June 3, 2026",Web,2026-02-09
+C-0035,Tyler,Brown,09/30/1994,612.555.0187,tyler.brown75@example.com,2927 Oak Ave,Saint Paul,MN,55108,Cigna,X76412650,E. Ruiz,A,2026-02-11,Friend/Family,2026-06-01
+C0036, Michelle,Wright  ,04/13/1970,+1 612 555 0141,,4140 Victoria St,Shoreview,MN,55140,Self-Pay,,"Bell, Marcus",A,10/27/24,Friend/Family,2026-02-16
+C0037,Betty,Baker,"July 16, 1991",612.555.0175, Betty.baker20example.com,3718 Cleveland Ave,Falcon Heights,MN,55172,Medica,Y67887514,"Ruiz, Elena",I,12-14-2024,Insurance,2026-10-16
+C0038,Nicholas,Campbell,"July 28, 1960",(612) 555-0118,nicholas.campbell35@example.com,2019 Larpenteur Ave,Little Canada,MN,55118,UCare,X45958274,elena ruiz,Inactive,06/29/2024,Self,2026-07-06
+C0039,Caleb,Martin,12/30/1985,763.555.0152,caleb.martin87@example.com,4152 Woodhill Dr,Maplewood,MN,55186,Medica,Y66966881,elena ruiz,active,02/14/2023,Insurance,2026-11-02
+C0040,Nicholas,Nelson,11/12/85,612.555.0116,nicholas.nelson83@example.com,3496 Lydia Ave,Shoreview,Minnesota,55199,Aetna,W74816118,elena ruiz,Active,1-22-2023,Self,2026-05-25
+C0041,Mary,Peterson,1969-09-22,612-555-0102,mary.peterson59@example.com,4318 County Rd B,Saint Paul,MN,55179,Medica,Z20601584,M. Bell,D/C,09/15/2026,Friend/Family,2026-09-25
+C0042,  ,Scott,1/9/51,6125550126,fatima.scott22@example.com,2634 Oak Ave,Saint Paul,MN,55172,HealthPartners,W80034919,M. Bell,active,11/16/2023,PCP,2026-06-20
+C0043,Susan,Johnson,04/21/1974,763.555.0129,,3956 Fernwood St,Maplewood,MN,55184,Aetna,Z56111589,"Ruiz, Elena",Active,"April 2, 2023",Insurance,2026-11-01
+ C0044 ,Jacob,White,1/13/93,6125550104,jacob.white18@example.com,278 Hamline Ave,Arden Hills,MN ,55146,Cigna,Z72561166,M. Bell,Discharged,09/27/2025,Insurance,2026-01-25
+C0045, Olivia,Martinez  ,12/17/1995,6125550108,olivia.martinez83@example.com,4269 Fernwood St,Maplewood,MN,55168,Blue Cross Blue Shield of MN,Z74773101,Sarah Lindqvist,A,09/14/2024,Web,2026-06-02
+C0046,Hao,Wilson,06/16/2003,612-555-0123 ext 2,hao.wilson72@example.com,1528 Fairview Ave,Little Canada,MN,55132,Medica,W94629829,Sarah Lindqvist,Active,09/28/2025,Self,2026-11-07
+ C0047 ,Sandra,Johnson,1991-08-12,7635550116,sandra.johnson35@example.com,4102 Lexington Ave,Falcon Heights,MN,55171,Cigna,Z58821127,D. Okafor,active,03/05/2024,Self,2026-11-11
+C0048, Fatima,Harris  ,,651-555-0193 ext 2,fatima.harris85@example.com,4793 Maple St,Falcon Heights,MN,55185,Aetna,X47630246,Elena Ruiz,A,2023-11-08,Web,2026-09-28
+C0049,Matthew,Carlson,01/02/1974,6515550188,matthew.carlson24@example.com,1360 Victoria St,Minneapolis,MN,55421,HealthPartners,W83292329,Dr. Sarah Lindqvist,ACTIVE,12/31/2024,Web,2026-08-23
+C0050,Ryan,Kowalski,1996-03-01,+1 763 555 0152, Ryan.kowalski42@example.com,1293 Cleveland Ave,Little Canada,MN,55165,Aetna,X73194713,sarah lindqvist,A,2026-01-16,Self,2026-06-28
+C9999,TEST,PATIENT,1-1-1900,+1 555 555 5555,test@test.com,123 Test St,Roseville,MN,55113,Self-Pay,,"Bell, Marcus",A,01/01/2025,Insurance,2026-07-30
+C0051,LINDA,SWANSON,09/02/1981,+1 651 555 0164,linda.swanson12@example.com,3563 Fernwood St,White Bear Lake,MN,55155,Blue Cross Blue Shield of MN,Y32906819,"Bell, Marcus",Active,6/10/24,Self,2026-08-09
+C0052,Steven,Clark,1994-05-15,(612) 555-0192,steven.clark47@example.com,1813 County Rd B,Falcon Heights,MN,55180,Cigna,W85029975,Daniel Okafor,active,02/01/2025,,2026-07-03
+C0053,Barbara,Turner,12/07/1968,+1 763 555 0186,barbara.turner21@example.com,1043 Lexington Ave,Falcon Heights,MN,55126,Medica,W35407316,Daniel Okafor,I,08/26/2023,Insurance,2026-08-04
+C0054, Patricia,Taylor  ,12/31/1962,6515550161,patricia.taylor35@example.com,3001 Hamline Ave,Arden Hills,MN,55117,UCare,X29326305,"Marcus Bell, LICSW",Inactive,08/11/2024,Insurance,2026-05-07
+C0055,Hannah,Hassan,1983-11-10,763-555-0171 ext 2,hannah.hassan33@example.com,745 Hamline Ave,White Bear Lake,MN,55159,Aetna,Z83295957,S. Lindqvist,ACTIVE,2026-07-20,Insurance,2026-09-28
+C0056,Amanda,Lopez,05/04/1953,612.555.0172,amanda.lopez83@example.com,4810 Hamline Ave,Saint Paul,MN,55178,Self-Pay,,Dr. Daniel Okafor,A,04/23/2026,PCP,2026-09-22
+C0057,Kwame,Johnson,1963-09-26,6515550121,kwame.johnson33@example.com,249 Maple St,Little Canada,Mn,55195,UCare,X90793350,S. Lindqvist,active,2023-10-03,Insurance,2026-03-14
+C0058,Nicholas,Hall,10/01/1963,612.555.0188,nicholas.hall31@example.com,4311 Lydia Ave,Arden Hills,MN,55140,Aetna,W15541091,Daniel Okafor,Active,08/22/2025,Friend/Family,2026-07-14
+C0059,Emily,White,07/14/1966,612-555-0175,emily.white68@example.com,233 Hamline Ave,New Brighton,MN,55127,Self-Pay,,D. Okafor,inactive,01/22/2024,PCP,2026-06-02
+C0060,John,Wilson,13/05/1979,612-555-0134,john.wilson95@example.com,4854 Maple St,Shoreview,MN,55145,Self-Pay,,MARCUS BELL,ACTIVE,8-26-2024,Self,2026-03-11
+C0061,Arjun,Hanson,06/27/2000,651-555-0158,arjun.hanson15@example.com,965 Fairview Ave,Little Canada,MN,55153,Self-Pay,,Daniel  Okafor,A,03/20/2024,Self,2026-05-17
+C0062,James,Nowak,08/23/1967,763-555-0134 ext 2,,792 County Rd B,Roseville,MN,55121,HealthPartners,X39333593,Dr. Sarah Lindqvist,I,06/21/2024,Friend/Family,2026-04-25
+C0063,Chloe,Taylor,03/11/1953,763-555-0104 ext 2,,1656 Fernwood St,Little Canada,MN,55183,Self-Pay,,Daniel Okafor,Inactive,08/14/2025,Insurance,2026-10-30
+C0064,Michael,Lopez,03/04/1958,(651) 555-0136,michael.lopez6@example.com,3961 Woodhill Dr,Shoreview,MN,55133,HealthPartners,X83353800,"Bell, Marcus",active,"August 28, 2026",Friend/Family,2026-11-04
+C0065,Priya,Jackson,06/19/1998,612.555.0129,priya.jackson60@example.com,816 Snelling Ave,Falcon Heights,MN,55104,Self-Pay,,S. Lindqvist,I,2025-10-11,Self,2026-07-19
+C0066,Mason,Lee,"November 15, 1999",651-555-0130,mason.lee26@example.com,4235 Fairview Ave,Saint Paul,Minnesota,55143-8994,HealthPartners,W47437083,M. Bell,A,06/22/2025,PCP,2026-04-21
+C0067,Zoe,Olson,09/13/1951,763.555.0166,zoe.olson61@example.com,1320 Fernwood St,Little Canada,MN,55141,HealthPartners,Y76434800,S. Lindqvist,Inactive,06/02/2023,Self,2026-05-10
+C0068,Sarah,Anderson,01/19/1984,763-555-0143 ext 2,sarah.anderson46@example.com,781 Cleveland Ave,Saint Paul,MN,55187,Aetna,X97279915,Elena Ruiz,ACTIVE,10/16/2025,Insurance,2026-11-14
+C0069,Andrew,Hanson,11/05/1983,763-555-0172,andrew.hanson96@example.com,4452 Maple St,Falcon Heights,MN,55103,Self-Pay,,Elena Ruiz LPCC,A,"September 14, 2024",,2026-04-06
+C0070,MATTHEW,HALL,02/08/1991,651-555-0177,,4016 Oak Ave,White Bear Lake,MN,55108,UCare,Y10533783,Elena Ruiz LPCC,ACTIVE,07/18/2023,Friend/Family,2026-04-28
+C0071,Charles,Patel,08/12/1972,612-555-0181,charles.patel57@example.com,4910 Oak Ave,Roseville,MN,55112,HealthPartners,Y53588665,"Okafor, Daniel",ACTIVE,6-28-2025,Friend/Family,2026-06-01
+C0072,David,Mitchell,7/23/84,612-555-0132 ext 2,david.mitchell80@example.com,3462 Hamline Ave,Arden Hills,MN,55137,Aetna,Z32568994,Dr. Sarah Lindqvist,inactive,6/17/25,Web,2026-05-29
+C0073,Patricia,Mueller,2/20/69,763.555.0141,patricia.mueller13@example.com,1982 Victoria St,Arden Hills,MN,55116,Aetna,Z96508635,Dr. Daniel Okafor,Active,4/6/25,PCP,2026-07-11
+C-0074,Mark,Harris,1999-04-06,763-555-0133 ext 2,mark.harris58@example.com,2087 Lexington Ave,Arden Hills,MN,55165,UCare,Z15026180,Marcus Bell,active,01/16/2026,PCP,2026-05-05
+C0075,Ryan,Lindgren,"August 15, 1988",(763) 555-0163,ryan.lindgren79@example.com,2615 Cleveland Ave,White Bear Lake,MN,55104,UCare,Z85399597,"Ruiz, Elena",Active,09/14/2023,Insurance,2026-03-14
+C0076,Mason,Kowalski,12/26/1997,763.555.0164, Mason.kowalski45@example.com,3291 Rice St,Minneapolis,MN,55408,Cigna,X66543041,"Okafor, Daniel",inactive,2024-08-07,Friend/Family,2026-02-28
+C0077,Emma,Harris,09/04/1982,+1 763 555 0103,emma.harris28@example.com,1532 Hamline Ave,Falcon Heights,MN,55179,Medica,W73469278,M. Bell,A,2026-02-19,,2026-09-08
+C0078,Grace,Miller,1/1/67,651.555.0127,grace.miller59@example.com,2942 Fernwood St,Little Canada,Mn,55166,Blue Cross Blue Shield of MN,X65883387,"Bell, Marcus",A,2023-03-05,Friend/Family,2026-08-09
+C0079,Rebecca,Hernandez,"April 23, 1950",651-555-0158,rebecca.hernandez13@example.com,964 Lydia Ave,Saint Paul,mn,55124,Aetna,W55752567,"Bell, Marcus",inactive,2023-05-16,PCP,2026-09-25
+C0080,Jessica,Olson,01/29/1981,651.555.0170,jessica.olson55@example.com,1172 Oak Ave,Falcon Heights,MN,55102,Cigna,W66779946,Sarah Lindqvist,Active,11/02/2023,Self,2026-09-07
+C0081,Owen,Davis,07/04/1955,651.555.0152,owen.davis82@example.com,662 County Rd B,New Brighton,MN,55191,Blue Cross Blue Shield of MN,Y66990323,Dr. Sarah Lindqvist,Active,"August 31, 2025",PCP,2026-10-02
+C0082,Tyler,Lindgren,12/26/1950,612.555.0199,tyler.lindgren14@example.com,1954 Larpenteur Ave,Shoreview,MN,55196,Medica,X65095231,S. Lindqvist,Active,05/18/2026,PCP,2026-01-24
+C0083,Michelle,Nguyen,1988-04-20,+1 763 555 0167,michelle.nguyen54@example.com,2173 Maple St,White Bear Lake,MN,55171,Aetna,Z80778403,D. Okafor,ACTIVE,03/30/2026,Insurance,2026-04-17
+C0084,Melissa,Patel,05/19/1973,(763) 555-0139,,2650 Oak Ave,Falcon Heights,MN,55177,Medica,Y10259811,M. Bell,A,"April 24, 2026",Friend/Family,2026-06-05
+C0085,Laura,Walker,"July 20, 1978",+1 612 555 0178,laura.walker49@example.com,972 Larpenteur Ave,Saint Paul,MN,55155,Aetna,W88430264,Elena Ruiz LPCC,A,2026-09-15,PCP,2026-07-28
+C0086,Noah,Vang,1951-04-19,+1 612 555 0161,noah.vang53@example.com,3917 Maple St,Little Canada,MN,55177,Cigna,X49454811,S. Lindqvist,Inactive,03/02/2025,PCP,2026-06-01
+C0087,Joseph,Scott,09/07/1979,5550132,joseph.scott28@example.com,572 Oak Ave,Maplewood,MN,55129,Cigna,Y16674244,Elena Ruiz LPCC,ACTIVE,"June 19, 2024",,2026-06-09
+C0088,Kwame,Hassan,4/3/59,6515550137,kwame.hassan54@example.com,1979 Oak Ave,White Bear Lake,MN,55188,Self-Pay,,Sarah Lindqvist,active,01/03/2026,,2026-06-12
+C0089,Susan,Green,1956-06-11,763-555-0194,susan.green99@example.com,2451 Victoria St,White Bear Lake,MN,55147,UCare,W35524117,S. Lindqvist,ACTIVE,03/05/2025,,2026-03-29
+C0090,Sophia,Hernandez,06/03/1963,(651) 555-0177,SOPHIA.HERNANDEZ7@EXAMPLE.COM,661 Hamline Ave,Arden Hills,Minn.,55173,Self-Pay,,Daniel Okafor,discharged,08/02/2026,Web,2026-07-18
+C0091,Jose,Ali,04/12/2031,651-555-0155 ext 2,jose.ali95@example.com,3884 Rice St,Roseville,Minn.,55179,Blue Cross Blue Shield of MN,Y37589331,E. Ruiz,I,08/11/2024,Friend/Family,2026-05-18
+C0090,Sophia,Hernandez,06/03/1963,(651) 555-0177,SOPHIA.HERNANDEZ7@EXAMPLE.COM,661 Hamline Ave,Arden Hills,Minn.,55173,Self-Pay,,Daniel Okafor,discharged,08/02/2026,Web,2026-07-18
+C0092,Daniel,Wright,6/23/76,+1 651 555 0146, Daniel.wright10@example.com,182 Larpenteur Ave,Roseville,MN,55173,UCare,X47104462,Marcus Bell,Active,07/31/2023,Web,2026-07-03
+C0093,Anthony,Tran,12/23/1972,7635550109,anthony.tran60@example.com,4673 Larpenteur Ave,Saint Paul,MN ,55117,Blue Cross Blue Shield of MN,Y30088221,Marcus Bell,Active,09/13/2024,Insurance,2026-09-03
+C0094,Joshua,Lewis,"September 26, 1960",612.555.0124,joshua.lewis23@example.com,3046 Hamline Ave,Maplewood,MN,55108,UCare,Y93645923,elena ruiz,Active,05/29/2024,Insurance,2026-09-16
+C0095,Fatima,Nelson,10/30/1999,763555010,,1343 County Rd B,Little Canada,MN,55158,UCare,W23871507,"Bell, Marcus",I,04/08/2024,,2026-02-01
+C0096,Stephanie,Hanson,03/09/1973,612.555.0116,,487 Woodhill Dr,Maplewood,MN,55108,Medica,Z68386179,Sarah Lindqvist,Active,2023-05-28,Insurance,2026-10-24
+C0097,betty,thompson,03/04/1968,651.555.0103,betty.thompson41@example.com,868 County Rd B,Minneapolis,MN,55416,Medica,W54875765,M. Bell,A,1-24-2023,Friend/Family,2026-05-04
+C0098,Jennifer,Vang,08/29/2001,(763) 555-0183,jennifer.vang47@example.com,1753 Rice St,New Brighton,MN,55132,Blue Cross Blue Shield of MN,Z64026658,sarah lindqvist,ACTIVE,09/27/2025,Web,2026-03-02
+C0099,Robert,Shah,10/13/91,(651) 555-0184,robert.shah16@example.com,3015 Oak Ave,Roseville,MN,55133,UCare,X42608523,Daniel  Okafor,A,08/09/2026,,2026-09-29
+ C0100 , Steven,Thompson  ,08/16/1968,651-555-0115,steven.thompson68@example,3988 Larpenteur Ave,Arden Hills,MN,55122,Aetna,W96255253,Marcus Bell,active,03/13/2024,Insurance,2026-10-07
+C0101,BETTY,WALKER,2004-01-09,612555015,betty.walker72@example.com,3643 Snelling Ave,Arden Hills,MN,55111,UCare,W60453096,Elena Ruiz,Active,01/03/2024,Insurance,2026-11-11
+C0102,Sandra,White,10/08/1998,612.555.0198,sandra.white92@example.com,2056 Cleveland Ave,White Bear Lake,MN,55194,UCare,Z83808359,"Lindqvist, Sarah",I,2026-03-19,Self,2026-06-26
+C0103,Anthony,King,01/16/1974,(763) 555-0199,anthony.king40@example.com,3428 Hamline Ave,Shoreview,MN,55158,HealthPartners,X46794239,E. Ruiz,ACTIVE,06/12/2023,Friend/Family,2026-11-10
+C0104,Barbara,Martin,02/24/1954,(651) 555-0197,barbara.martin68@example.com,4286 Victoria St,Arden Hills,MN,55195,Cigna,Z66226916,Dr. Sarah Lindqvist,A,08/09/2025,Insurance,2026-03-18
+C0105,Jessica,Walker,2-18-1975,+1 651 555 0141,jessica.walker41@example.com,1950 County Rd B,Saint Paul,MN,55178,HealthPartners,Z11815285,elena ruiz,ACTIVE,2023-04-23,Friend/Family,2026-07-08
+C0106,Lisa,Thomas,7/25/74,(763) 555-0194,LISA.THOMAS71@EXAMPLE.COM,1155 County Rd B,New Brighton,MN,55134,Self-Pay,,"Okafor, Daniel",ACTIVE,07/24/2024,Friend/Family,2026-04-18
+C0107,Mary,Berg,1-23-1985,763.555.0188,mary.berg72@example.com,103 Oak Ave,Saint Paul,MN,55107,Cigna,X15762104,Elena Ruiz,ACTIVE,"June 19, 2026",Insurance,2026-04-12
+C0108, Thomas,Johnson  ,1951-11-21,651-555-0156 ext 2,thomas.johnson26@example.com,4969 Lexington Ave,New Brighton,MN,55163,Self-Pay,,Marcus Bell,Inactive,04/16/2023,Web,2026-06-27
+C0109,Steven,Peterson,07/01/1983,+1 763 555 0164,steven.peterson89@example.com,4434 Cleveland Ave,New Brighton,MN,55198,Medica,X66439753,Daniel Okafor,ACTIVE,2023-03-09,Self,2026-10-28
+C0110,elizabeth,phillips,06/07/1959,651.555.0100,elizabeth.phillips32@example.com,4291 Snelling Ave,Arden Hills,mn,55104,Blue Cross Blue Shield of MN,X50991638,"Lindqvist, Sarah",ACTIVE,03/31/2025,Friend/Family,2026-04-25
+C0111,Mark,Anderson,"August 17, 1950",+1 612 555 0111,,4134 Oak Ave,Arden Hills,MN,55143,Cigna,Z33929086,M. Bell,ACTIVE,12/08/2023,Insurance,2026-03-07
+C0112,Jennifer,Olson,05/29/1962,651.555.0119,jennifer.olson58@example.com,3987 Maple St,Maplewood,MN,55143,Aetna,W91007281,MARCUS BELL,Active,06/20/2025,Web,2026-02-23
+C0113,Lisa,Mueller,5-8-2003,651-555-0162,lisa.mueller17@example.com,4086 Fernwood St,Minneapolis,Minnesota,55428,HealthPartners,X78746602,Daniel  Okafor,Inactive,5/19/23,Friend/Family,2026-04-24
+C0114, Jessica,Xiong  ,"January 25, 2000",763.555.0176,jessica.xiong38@example.com,4105 Woodhill Dr,Saint Paul,MN,55102,Cigna,W73189995,Elena Ruiz LPCC,inactive,2023-10-05,Friend/Family,2026-05-04
+ C0115 , Jacob,Garcia  ,11/20/1998,(612) 555-0112,jacob.garcia54@example.com,4345 Lexington Ave,Little Canada,MN,55140,HealthPartners,W36299847,Elena Ruiz,A,"April 26, 2023",Friend/Family,2026-04-21
+C0116,Barbara,Carlson,1973-11-19,763-555-0190 ext 2,barbara.carlson34@example.com,1936 Lydia Ave,Saint Paul,MN,55195,Aetna,W63092105,"Bell, Marcus",discharged,7/21/25,Self,2026-05-15
+C0117,Priya,Baker,13/05/1979,7635550122,priya.baker94@example.com,1198 Cleveland Ave,White Bear Lake,MN,55192,Cigna,Z30715403,M. Bell,Discharged,2/20/23,,2026-11-01
+C0118,Patricia,King,05/20/1976,6125550188,,4965 Fernwood St,Shoreview,MN,55189,HealthPartners,Z15929479,Daniel Okafor,ACTIVE,2025-04-06,PCP,2026-07-04
+C0119, Linda,Turner  ,10/9/60,+1 612 555 0101,linda.turner41@example.com,1086 Hamline Ave,Minneapolis,MN,55430,Self-Pay,,Sarah Lindqvist,active,2025-12-02,PCP,2026-03-07
+C0120,Susan,Kowalski,"September 23, 1970",+1 763 555 0146,,3680 Cleveland Ave,Shoreview,MN,55124,UCare,W80594725,"Bell, Marcus",discharged,12/03/2024,Insurance,2026-07-21
+C0121,Zoe,Kim,12/12/52,763-555-0151,zoe.kim23@example.com,868 Snelling Ave,Minneapolis,MN,55417,Cigna,Z63893975,sarah lindqvist,ACTIVE,10/1/23,,2026-02-19
+C0122,Caleb,Peterson,10/14/1951,(763) 555-0174,caleb.peterson43@example.com,1776 County Rd B,Shoreview,MN,55128,UCare,Y75863067,"Ruiz, Elena",ACTIVE,09/20/2023,,2026-03-17
+C0123,Liam,Roberts,07/29/1978,763.555.0146, Liam.roberts94@example.com,532 Victoria St,Little Canada,MN,55124,Cigna,W19535294,D. Okafor,A,03/11/2023,Self,2026-05-28
+C0124,elizabeth,thompson,"February 12, 1961",6125550109,elizabeth.thompson71@example.com,3107 Maple St,Shoreview,Mn,55176,Aetna,W83197813,Dr. Sarah Lindqvist,active,2024-07-07,PCP,2026-07-22
+C0125,Susan,Nguyen,1972-10-05,(651) 555-0180,,1285 Lexington Ave,Falcon Heights,MN,55144,Blue Cross Blue Shield of MN,X31003860,Dr. Sarah Lindqvist,Active,08/10/2023,Self,2026-10-24
+C0126,Hannah,Campbell,3/16/64,651.555.0134,hannah.campbell18@example.com,2153 Lydia Ave,Roseville,MN,55114,Blue Cross Blue Shield of MN,Y48774193,S. Lindqvist,discharged,1/23/25,Web,2026-09-25
+C0127,Robert,Roberts,1997-06-07,763-555-0181 ext 2,robert.roberts30@example.com,3171 Fairview Ave,Shoreview,MN,55116,UCare,X27548491,"Marcus Bell, LICSW",D/C,03/14/2024,Insurance,2026-02-09
+C0054,Jordan,Quist,07/22/1991,+1 651 555 0177,jordan.quist@example.com,812 Hamline Ave,Saint Paul,MN,55104,Medica,Z55012345,"Ruiz, Elena",ACTIVE,02/03/2026,Friend/Family,2026-07-26
+C0128,Matthew,Mueller,11/04/1996,+1 763 555 0159,matthew.mueller6@example.com,2468 Cleveland Ave,Maplewood,Minn.,55101,Cigna,Z50926383,"Bell, Marcus",A,2024-02-24,PCP,2026-11-04
+C0129,Brian,Campbell,10/05/1984,612.555.0117,brian.campbell56@example.com,2303 Lydia Ave,Minneapolis,MN,55429,HealthPartners,X95239113,M. Bell,Active,10/27/2024,,2026-07-25
+C0130,Aisha,Hernandez,11/20/1972,763-555-0159,aisha.hernandez79@example.com,1964 Victoria St,New Brighton,MN,55192,Medica,X98815688,elena ruiz,A,04/07/2025,Self,2026-08-23
+C0131,Laura,Johnson,07/16/1975,651-555-0173,laura.johnson44@example.com,3599 County Rd B,White Bear Lake,MN,55189,UCare,Y40638780,"Marcus Bell, LICSW",ACTIVE,2025-03-18,Web,2026-08-20
+C0132,Hao,Hassan,12/22/2003,(612) 555-0113,hao.hassan97@example.com,3387 County Rd B,Shoreview,MN,55132,UCare,Z63622581,Elena Ruiz,ACTIVE,03/07/2025,,2026-06-29
+C0133,Jennifer,,11/24/71,(763) 555-0131, Jennifer.turner17@example.com,3547 Victoria St,New Brighton,MN,55186,UCare,X74076885,"Ruiz, Elena",active,2024-01-01,Insurance,2026-03-12
+C0134,Emma,Miller,2003-03-05,+1 612 555 0169,emma.miller72@example.com,4392 Lexington Ave,Maplewood,MN,55105,Aetna,Y86859251,Daniel Okafor,ACTIVE,12/25/2024,Web,2026-08-20
+C0135,Lisa,Baker,03/18/1966,612.555.0173,lisa.baker93@example.com,4177 Oak Ave,Roseville,MN,55114,UCare,X13483487,Daniel Okafor,A,4/4/26,Insurance,2026-07-08
+C0136,Mason,Clark,01/04/1952,651-555-0121 ext 2,,4140 Maple St,Roseville,MN,55111,Cigna,W92763488,"Marcus Bell, LICSW",Inactive,2023-12-27,Self,2026-09-02
+C0137,Priya,Garcia,1978-01-13,763-555-0148 ext 2,priya.garcia20@example.com,2365 Lydia Ave,Shoreview,MN,55134,Blue Cross Blue Shield of MN,Y18415278,"Okafor, Daniel",active,10/17/2025,,2026-07-02
+C0138,Owen,Martinez,02/17/1988,6515550114,owen.martinez61@example.com,3700 Hamline Ave,Maplewood,MN,55176,Aetna,Y21365725,E. Ruiz,Active,07/09/2024,PCP,2026-07-06
+C0139,Barbara,Walker,05/29/1983,763.555.0184,barbara.walker18@example.com,2974 Lydia Ave,Falcon Heights,MN,55122,Aetna,X81374769,Dr. Sarah Lindqvist,Active,8/16/24,PCP,2026-11-14
+C0140,Mark,Mueller,02/06/1965,612-555-0165 ext 2,mark.mueller76@example.com,1387 Woodhill Dr,Saint Paul,MN,55121,Aetna,W22032725,M. Bell,I,9-18-2023,PCP,2026-01-22
+C0141,Arjun,Schmidt,08/26/1960,651-555-0147,arjun.schmidt86@@example.com,1140 Fernwood St,Shoreview,MN,55195,UCare,Z30056572,Marcus Bell,A,03/03/2026,Web,2026-05-27
+C0142,Linda,Davis,05/21/1976,612-555-0172 ext 2,linda.davis61@example.com,898 Hamline Ave,Shoreview,MN,55189,Medica,W39146869,"Ruiz, Elena",active,11/19/2024,,2026-08-27
+C0143,Rebecca,Erickson,07/26/1988,612-555-0100,,679 Oak Ave,Roseville,MN,55137,Medica,Z92128181,Elena Ruiz LPCC,discharged,05/24/2025,Friend/Family,2026-05-10
+C0144,Mason,Peterson,05/19/2001,(612) 555-0142,mason.peterson6@example.com,329 Hamline Ave,Maplewood,MN,55180,Self-Pay,,"Ruiz, Elena",Inactive,01/08/2025,PCP,2026-08-24
+C0145,Priya,Nguyen,"May 4, 1960",651.555.0126,priya.nguyen9@example.com,3154 Victoria St,Arden Hills,MN,55105,Blue Cross Blue Shield of MN,Z13906032,MARCUS BELL,Active,01/17/2026,,2026-08-01
+C-0146,Zoe,Miller,06/06/1956,7635550179,zoe.miller2@example.com,676 Maple St,White Bear Lake,MN,55114,Cigna,Z48347255,E. Ruiz,Inactive,11/10/2024,Self,2026-08-12
+C0147,Stephanie,Lee,10/18/1955,(612) 555-0195,stephanie.lee80@example.com,1197 Fairview Ave,Little Canada,Minnesota,55108,UCare,X99734224,MARCUS BELL,discharged,07/28/2023,Insurance,2026-04-05
+C0148,Tyler,Lopez,4/11/01,651.555.0183,TYLER.LOPEZ71@EXAMPLE.COM,4229 Dale St,Roseville,MN,55194,Cigna,X48042962,E. Ruiz,A,07/09/2026,Friend/Family,2026-07-19
+C0149,Emily,Turner,1956-10-16,(651) 555-0127,emily.turner83@example.com,4738 Fairview Ave,Arden Hills,MN,55156,Aetna,Z22897913,Daniel  Okafor,A,01/02/2024,Web,2026-06-11
+C0141,Arjun,Schmidt,08/26/1960,651-555-0147,arjun.schmidt86@@example.com,1140 Fernwood St,Shoreview,MN,55195,UCare,Z30056572,Marcus Bell,A,03/03/2026,Web,2026-05-27
+C0150,Arjun,Nguyen,"November 20, 1975",763.555.0165,arjun.nguyen75@example.com,2287 Dale St,Shoreview,MN,55164,Medica,X60804598,Elena Ruiz,active,7-4-2024,Self,2026-04-04
+C0151,Ethan,Wilson,09/27/1981,763-555-0134 ext 2,ethan.wilson99@example.com,3663 Oak Ave,Maplewood,MN,55166,HealthPartners,W38770344,"Ruiz, Elena",inactive,10/10/2023,Self,2026-06-19
+C0140,Mark,Mueller,02/06/1965,612-555-0165 ext 2,mark.mueller76@example.com,1387 Woodhill Dr,Saint Paul,MN,55121,Aetna,W22032725,M. Bell,I,9-18-2023,PCP,2026-01-22
+C0152,patricia,thompson,11/17/1980,+1 612 555 0102,patricia.thompson90@example.com,2448 Lexington Ave,Maplewood,MN,55153,UCare,W96590643,S. Lindqvist,Active,06/16/2023,Friend/Family,2026-07-05
+C0153, Stephanie,Clark  ,10/03/1968,612.555.0128,stephanie.clark63@example.com,2343 Hamline Ave,Falcon Heights,MN,55157,Blue Cross Blue Shield of MN,W61791986,Marcus Bell,A,06/02/2023,Web,2026-05-12
+C0154,Priya,Thompson,04/06/1986,7635550189,priya.thompson67@example.com,3630 Lydia Ave,White Bear Lake,Minnesota,55108,Medica,Y97410707,elena ruiz,Active,2023-05-29,PCP,2026-05-23
+C0155,Jennifer,Evans,03/22/1988,6515550134,jennifer.evans75@example.com,3059 County Rd B,White Bear Lake,MN,55193-2738,HealthPartners,W24857172,Sarah Lindqvist,ACTIVE,"July 23, 2026",Friend/Family,2026-09-17
+C0156,Tyler,Lee,04/27/1989,763.555.0135,tyler.lee52@example.com,2525 Oak Ave,Minneapolis,mn,55406,HealthPartners,Y11707553,Marcus Bell,D/C,8/20/23,Self,2026-08-23
+C0157,MAI,CAMPBELL,01/28/1974,763-555-0102,mai.campbell87example.com,3108 Woodhill Dr,Minneapolis,MN,55421,Medica,W92545808,"Okafor, Daniel",Active,11/21/2024,Insurance,2026-05-21
+C0158,Fatima,Larson,08/18/1993,612.555.0173,fatima.larson52@example.com,1083 Hamline Ave,Maplewood,MN,55176,Self-Pay,,D. Okafor,ACTIVE,11/24/2025,Self,2026-04-09
+C0159,Kwame,Roberts,12/13/1980,651-555-0195,kwame.roberts98@example.com,2488 Fernwood St,Little Canada,MN,55167,UCare,Y99196761,"Okafor, Daniel",Active,10/1/25,Web,2026-07-11
+C0160,Aisha,Nelson,07/05/1998,+1 651 555 0150,,2240 Fairview Ave,Minneapolis,MN,55410,HealthPartners,W19062807,Daniel  Okafor,A,10/08/2025,Web,2026-05-30
+C0161,Chloe,Garcia,1996-09-20,651-555-0117,chloe.garcia73@example.com,805 Hamline Ave,Falcon Heights,MN,55121,Blue Cross Blue Shield of MN,Y92821969,S. Lindqvist,Active,04/13/2025,Self,2026-05-06
+C0162,Mark,Scott,4-23-1979,(651) 555-0160, Mark.scott60@example.com,4250 Fairview Ave,New Brighton,MN,55143,Self-Pay,,"Ruiz, Elena",Active,11/28/2024,PCP,2026-07-17
+C0163,Hannah,Brown,08/24/2002,612.555.0174,,1567 Woodhill Dr,Saint Paul,MN,55178,Cigna,Y81248287,Marcus Bell,Active,2023-03-02,Web,2026-02-25
+,,,,,,,,,,,,,,,,
+C0164,Sarah,Ali,12/24/1957,7635550135, Sarah.ali16@example.com,1071 Larpenteur Ave,New Brighton,MN,55173,Blue Cross Blue Shield of MN,Y76964736,"Okafor, Daniel",active,7-28-2024,,2026-04-24
+C0165,Anthony,Kim,1986-04-19,6125550125,anthony.kim12@example.com,1454 Fairview Ave,New Brighton,MN,55134,Medica,Z28240439,Dr. Daniel Okafor,A,9/18/24,Self,2026-03-21
+C0166,Jose,Hanson,4/23/70,651-555-0137 ext 2,jose.hanson6@example.com,4780 Fairview Ave,Boston,MA,2134,Cigna,Z33215696,Marcus Bell,active,"July 5, 2025",PCP,2026-11-06
+C0167,Stephanie,Murphy,06/04/1968,6125550173,stephanie.murphy66@example.com,1793 Woodhill Dr,Saint Paul,MN,55165,HealthPartners,X95555490,elena ruiz,inactive,09/06/2024,Web,2026-05-22
+C0168,Nicholas,Baker,07/29/1992,612-555-0168,nicholas.baker22@example.com,3961 Oak Ave,Arden Hills,MN,55117,Cigna,Z30089243,sarah lindqvist,A,8-21-2024,Web,2026-04-30
+C0169, RYAN,MARTIN  ,"October 22, 1962",5550187,ryan.martin92@example.com,3276 Lexington Ave,Maplewood,MN,55150,Blue Cross Blue Shield of MN,Z82634138,"Marcus Bell, LICSW",D/C,01/25/2025,Web,2026-07-21
+c0170,Hannah,Phillips,12/02/2004,651.555.0191,hannah.phillips70@example.com,3359 Larpenteur Ave,Roseville,MN,55194,Blue Cross Blue Shield of MN,Z67647674,sarah lindqvist,Active,12/29/2023,,2026-08-05
+C0171,Rebecca,Vang,1958-05-16,763-555-0104,rebecca.vang40@example.com,3253 Larpenteur Ave,Minneapolis,MN,55428,Cigna,Z54042113,D. Okafor,Active,2024-03-31,,2026-04-16
+C0172,Matthew,Walker,03/18/1965,651.555.0106,,1492 Lexington Ave,Falcon Heights,MN,55151,Self-Pay,,E. Ruiz,A,07/01/2024,Insurance,2026-08-09
+C0173,Joshua,Harris,12/27/1952,651-555-0164,joshua.harris27@example.com,103 Fairview Ave,Minneapolis,MN,55411,HealthPartners,X67003040,sarah lindqvist,A,2026-04-20,,2026-11-03
+C0174,Thomas,Erickson,07/31/1989,612.555.0171,thomas.erickson34@example.com,2421 Hamline Ave,Little Canada,MN,55134-7505,Medica,Z98754769,elena ruiz,A,"October 27, 2024",Web,2026-07-16
+C0175,William,White,8-27-2000,763.555.0177,,4987 Woodhill Dr,Little Canada,MN,55169,HealthPartners,X72270256,S. Lindqvist,active,01/08/2025,Web,2026-09-15
+C0176,Anthony,Hall,07/02/1986,612-555-0127 ext 2,anthony.hall32@example.com,3767 Larpenteur Ave,Saint Paul,MN,55118,Self-Pay,,"Okafor, Daniel",ACTIVE,7-18-2026,PCP,2026-03-12
+C0177,Hao,Anderson,05/05/1978,612-555-0193,hao.anderson88@example.com,4642 Snelling Ave,New Brighton,MN,55199,Blue Cross Blue Shield of MN,W64490608,Sarah Lindqvist,I,"December 4, 2025",Web,2026-10-11
+C0178,Charles,Tran,1971-05-24,651-555-0143 ext 2,charles.tran89@example.com,2037 Hamline Ave,White Bear Lake,MN,55104,Aetna,W35795722,sarah lindqvist,inactive,02/15/2026,Insurance,2026-10-06
+C0179,Mai,Anderson,01/21/2001,612-555-0159,mai.anderson54@example.com,2342 Lydia Ave,Roseville,MN,55135,HealthPartners,Z31331167,Dr. Daniel Okafor,active,01/06/2026,Friend/Family,2026-08-15
+ C0180 ,Melissa,Kowalski,10/16/1987,(651) 555-0137,melissa.kowalski14@example.com,4112 Lexington Ave,Minneapolis,MN,55413,Blue Cross Blue Shield of MN,X46985399,MARCUS BELL,ACTIVE,01/23/2023,Self,2026-06-10
+C0181,Lisa,,3/12/59,7635550143,lisa.tran58@example.com,3038 Fernwood St,Little Canada,MN,55119,UCare,W12826792,Elena Ruiz LPCC,D/C,11/04/2023,PCP,2026-03-09
+C0182,Barbara,Wilson,1995-08-09,651.555.0166,barbara.wilson21@example.com,4914 Dale St,Little Canada,MN,55194,Cigna,X69978789,Dr. Daniel Okafor,Inactive,01/09/2026,Self,2026-10-31
+C0183,John,White,08/01/1958,651-555-0149,john.white51@example.com,4979 Victoria St,Falcon Heights,MN,55161,UCare,W50854133,elena ruiz,A,6-26-2023,Friend/Family,2026-02-14
+C0184,Chloe,White,"August 25, 1990",(763) 555-0185,CHLOE.WHITE16@EXAMPLE.COM,3919 Cleveland Ave,Minneapolis,MN,55415,Self-Pay,,Daniel Okafor,active,05/07/2024,PCP,2026-06-07
+C0185,Linda,Schmidt,12/9/75,763.555.0153,,3203 Maple St,Shoreview,MN,55123,Aetna,W83557403,MARCUS BELL,active,2024-01-27,Insurance,2026-06-20
+C0186,Owen,Tran,1973-12-04,612.555.0160,owen.tran28@example.com,1638 Hamline Ave,New Brighton,MN,55136,Medica,Y66647907,Dr. Daniel Okafor,A,07/23/2024,Friend/Family,2026-08-06
+C0185,Linda,Schmidt,12/9/75,763.555.0153,,3203 Maple St,Shoreview,MN,55123,Aetna,W83557403,MARCUS BELL,active,2024-01-27,Insurance,2026-06-20
+C0187,Anthony,Anderson,05/19/1977,651-555-0164,anthony.anderson31@example.com,1829 Oak Ave,Arden Hills,MN,55160,Blue Cross Blue Shield of MN,Y17016658,Elena Ruiz LPCC,active,03/18/2025,,2026-06-14
+C0188,Stephanie,Anderson,10/20/77,6515550153,stephanie.anderson62@example.com,275 Hamline Ave,White Bear Lake,MN,55164,HealthPartners,Z45187115,"Marcus Bell, LICSW",A,08/18/2023,Friend/Family,2026-10-15
+C0189,Anthony,Hall,1986-07-02,612-555-0128 ext 2,,3767 Larpenteur Ave,Saint Paul,MN,55118,Self-Pay,,Dr. Daniel Okafor,Active,09/18/2026,PCP,2026-06-15
+C0190,Andrew,Anderson,02/07/2005,612.555.0102,,4116 Fernwood St,Saint Paul,MN,55140,Blue Cross Blue Shield of MN,Y63313617,elena ruiz,active,01/26/2024,Insurance,2026-05-24
+C0191,Jessica,Xiong,2000-01-25,7635550177,,4105 Woodhill Dr,Saint Paul,MN,55102,Cigna,W73189995,"Ruiz, Elena",Inactive,7/10/24,Web,2026-08-05

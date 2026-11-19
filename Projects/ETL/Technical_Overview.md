@@ -1,4 +1,4 @@
-# ETL Technical Overview
+# Automated Sorting Template — Technical Overview
 
 **AI Transparency:** AI helped reconstruct and draft this document from previous discussions and workbook inspection. I also used AI to revise the wording.
 

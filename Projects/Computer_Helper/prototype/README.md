@@ -2,7 +2,7 @@
 
 **AI-led project** · Starter code; not yet tested on the family computers · Updated October 28, 2026
 
-This is my first step toward the family computer helper. I set the goals and boundaries; AI drafted the initial Python code for me to review and test.
+This is my first step toward the family computer helper.
 
 For now, it does three things: lets me chat with a local Ollama model in the terminal, remembers a few recent messages, and looks through a small set of example Windows help notes using keyword matching.
 
@@ -72,3 +72,7 @@ I'm keeping the first version small so I can understand and test it before addin
 Don't commit passwords, private documents, screenshots, transcripts, tokens, or device identifiers to this repository.
 
 See the [requirements](../Product_Requirements.md), [architecture](../Architecture.md), and [security rules](../Security_and_Privacy.md).
+
+## AI Transparency
+
+This is an AI-led project. I'm using AI to help develop the computer helper.

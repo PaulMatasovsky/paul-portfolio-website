@@ -1,4 +1,4 @@
-# Portfolio Website — Website 2.0
+# Portfolio Website — Website 2.5
 
 **Project status:** **In Progress** · **Activity:** Active
 
@@ -12,11 +12,13 @@ This is where the projects stand right now. Each project has its own documentati
 
 | Area | What it includes | Status | Where to look |
 |---|---|---|---|
-| Warehouse ETL sorting workbook | Google Sheets workbook used to organize and print warehouse parts reports. The Excel copy has a printing limitation. | **Complete · Maintenance** | [ETL project](Projects/ETL/) |
-| Computer Science 050 teaching course | Introductory computer science curriculum and lab preparation. I have not yet published dated classroom evidence here. | **In Progress · Active** | [Teaching project](Projects/Computer_Science_050/) |
-| QA Toolkit | Draft website QA checklists, test cases, and templates. I have not completed a verified hands-on audit yet. | **In Progress · Paused** | [QA Toolkit repository](https://github.com/PaulMatasovsky/qa-toolkit) |
+| Automated Sorting Template | Google Sheets workbook used to organize and print warehouse parts reports. The Excel copy has a printing issue that prints extra white space at the end of the document. | **Complete · Maintenance** | [ETL project](Projects/ETL/) |
+| Practice Data Migration | Cleaning a fictional therapy practice's client and appointment export offline in LibreOffice Calc and loading it into PostgreSQL on Supabase. Synthetic data; AI generated the test files and setup script. | **In Progress · Active** | [Practice Data Migration](Projects/Practice_Data_Migration/) |
+| SQL Refresher — Inventory Data Checks — **AI-led** | Small SQLite practice project using fictional inventory data; no database or queries implemented yet. | **In Progress · Active** | [SQL Refresher](Projects/SQL_Refresher/) |
+| Computer Science 050 teaching course | Introductory computer science curriculum and teaching, with weekly instructor teaching records. AI-led curriculum; human-led classroom instruction. | **In Progress · Active** | [Teaching project](Projects/Computer_Science_050/) |
+| QA Toolkit | Draft website QA checklists, test cases, and templates. I have not completed a verified hands-on audit yet. | **In Progress · Active** | [QA Toolkit repository](https://github.com/PaulMatasovsky/qa-toolkit) and [QA audit results](Projects/QA_Audits/) |
 | Computer Helper (Windows + macOS) — **AI-led** | Local help assistant with a modular design, offline reference notes, and untested Python starter code. | **In Progress · Active** | [Computer Helper project](Projects/Computer_Helper/) |
-| Portfolio website | Live WordPress/Divi site that I am continuing to refine. | **In Progress · Active** | [Live website](https://paulmatasovsky.com/) and [decision records](Documentation/ADRs/) |
+| Portfolio website — **AI-led** | Live WordPress/Divi site, now Website 2.5 (published November 14, 2026). AI-led visual design and documentation; human-led content and structure. | **In Progress · Active** | [Live website](https://paulmatasovsky.com/), [decision records](Documentation/ADRs/), and [who did what](Documentation/AI_Collaboration_and_Authorship.md) |
 
 I use five workflow stages: **Not Started**, **In Progress**, **Testing / Debugging**, **Blocked**, and **Complete**. An optional activity label—**Active**, **Paused**, or **Maintenance**—shows whether I'm currently working on the project. These are descriptions of the work, not percentages.
 
@@ -29,6 +31,12 @@ This repository is mainly for project and portfolio documentation, not a complet
 My first portfolio grew more complicated, and more dependent on AI-generated work, than I intended. Eventually I had trouble separating my own decisions and contributions from what AI had generated.
 
 I decided to rebuild the presentation of my work with a clearer boundary. One of the ideas guiding that decision was *Shibumi*, or understated simplicity. I want to keep what helps someone understand the work and leave out what is just there to look impressive.
+
+## Website 2.5
+
+Website 2.0 drew that boundary, but I wasn't happy with how the site looked. In November 2026 I had AI redesign the appearance: colors, fonts, spacing, and layout. The pages, the structure, and the text are still mine.
+
+That moves the website back under AI-led. The [authorship breakdown](Documentation/AI_Collaboration_and_Authorship.md) covers the version history and who did what. The redesign went live on November 14, 2026. AI drafted this section.
 
 ## Technology
 
@@ -46,19 +54,14 @@ I follow these [GitHub writing principles](Documentation/GitHub_Writing_Principl
 
 ## AI Transparency
 
-AI has had a different role in each project. When I say **human-led**, I mean I did most of the development or creation and used AI in a supporting role. **AI-led** means AI generated most of the implementation or instructional materials based on goals and requirements I provided. These aren't measured percentages, and they do **not** mean AI is running inside a finished tool.
-
-- **ETL (human-led):** I identified the warehouse problem, chose the approach and platform, and built the workbook. AI helped troubleshoot persistent formula errors and later helped with the GitHub documentation. The finished workbook uses spreadsheet formulas; it does not use AI to process reports.
-- **QA Toolkit (AI-led):** AI generated the resources as part of a learning exercise. I have not yet completed the hands-on audit or validated results.
-- **Computer Science 050 (AI-led drafting):** I set the learning goals, course structure, examples, and teaching approach. AI helps with research, lesson drafts, exercises, and review. I am responsible for the teaching. See the [contribution breakdown](Projects/Computer_Science_050/AI_Collaboration_and_Authorship.md).
-- **Computer Helper (AI-led):** I set the goals, limits, and modular approach. AI drafted most of the documentation and first Python source files. I haven't tested the assistant on the family computers. See the [authorship notes](Projects/Computer_Helper/AI_Collaboration_and_Authorship.md).
-- **Portfolio website (human-led):** I use AI to learn, plan, critique, troubleshoot, and improve documentation. I still want to be able to explain which work and decisions are mine.
+I use AI across my portfolio projects. The ETL workbook and the Practice Data Migration are human-led. The SQL refresher, QA Toolkit, Computer Science 050 curriculum, and Computer Helper are AI-led. The portfolio website was human-led in version 2.0 and is AI-led from version 2.5: AI did the visual design and drafted most of the documentation, while the content and structure are mine.
 
 ## Next Steps
 
+- Write ADR-002 on handing the visual design to AI.
 - Keep the website's project descriptions and GitHub evidence consistent.
-- Carry out and document a hands-on QA audit when the site is ready.
-- Publish selected teaching materials and dated classroom evidence when I have it.
+- Carry out and document a hands-on QA audit of the redesigned site.
+- Continue to publish selected teaching materials and dated classroom evidence as I get time.
 
 ## Links
 

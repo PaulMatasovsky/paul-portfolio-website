@@ -48,8 +48,6 @@ The next step is to run the prototype with Ollama, test its answers and memory u
 | [Portfolio summary](Portfolio_Summary.md) | Short project description |
 | [AI collaboration](AI_Collaboration_and_Authorship.md) | Who did what |
 
-## AI transparency
+## AI Transparency
 
-I set the goals, security boundaries, and modular approach. AI helped research the options and drafted most of the documentation and starter code. I'm reviewing that work and will test it before calling anything functional. This is an **AI-led project**, and I want that distinction to stay clear even when the writing sounds more like me.
-
-I'm using the repository's [writing principles](../../Documentation/GitHub_Writing_Principles.md) to keep the documentation simple without leaving important things out.
+This is an AI-led project. I'm using AI to help develop the computer helper.

@@ -1,4 +1,4 @@
-# Warehouse ETL — Decision Records
+# Automated Sorting Template — Decision Records
 
 These are the main decisions behind the sorting workbook.
 

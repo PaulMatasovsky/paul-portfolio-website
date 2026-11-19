@@ -1,8 +1,8 @@
 # Computer Science 050 — Introductory Teaching Project
 
-**Project status:** **In Progress** · **Activity:** Active (curriculum development). Teaching evidence has not yet been published here.  
+**Project status:** **In Progress** · **Activity:** Active (teaching and curriculum development).  
 **Course plan:** 20 weeks, ages 10 and up (including adults), with two hours of instruction and an optional third-hour computer lab.  
-**Scheduled start:** October 25, 2026. Session-by-session delivery records are still pending.
+**Teaching began:** October 2026.
 
 ## Why I'm Teaching This
 
@@ -27,26 +27,33 @@ I'm responsible for reviewing the lessons and teaching the class. AI helps me pr
 
 Students will meet ideas more than once, with time to practice and build on what they already know. We'll also connect each week's topic to AI, including why its answers should be checked rather than accepted automatically.
 
-The optional third hour is for practice, experiments, questions, and extra help. Adults who want more programming practice can join that lab. All required instruction stays in the first two hours.
+The optional third hour is for practice, experiments, questions, and extra help. Adults who want more programming practice can join. All required instruction stays in the first two hours; I use the extra time when it fits the group rather than treating it as mandatory. In Week 1, we used some optional time, mainly for AI art exploration. In Week 2, we skipped the extra hour after nearly two hours of Scratch because the students were getting tired.
+
+## Teaching in Practice
+
+I use games, familiar examples, and Scratch exploration to talk through computer-science ideas. Questions and discoveries during an activity can become part of the lesson.
+
+The weekly teaching records hold attendance, what we covered, activities that came up naturally, and changes from the plan. Those records are the source for classroom details; I update the relevant record when I have more to add rather than repeating the account here. They describe my instructor observations, not independently assessed student mastery.
 
 ## Documentation
 
+- [Week 1 Teaching Record](Week_1_Teaching_Record.md) — classroom account and reflections.
+
+- [Week 2 Teaching Record](Week_2_Teaching_Record.md) — classroom account and reflections.
 - [Parent Syllabus](Parent_Syllabus.md) — the 20-week plan shared with parents.
 - [Decision Records](ADRs/) — why I chose to teach the foundations instead of focusing only on AI tools.
 - [Curriculum and Teaching Approach](Curriculum_and_Teaching_Approach.md) — the learning sequence, teaching methods, and reasons for those choices.
 - [AI Collaboration and Authorship](AI_Collaboration_and_Authorship.md) — which parts I direct and which materials AI helped develop.
-- [Artifacts and Evidence](Artifacts_and_Evidence.md) — what has been prepared, what is private, and what hasn't been verified as delivered.
+- [Artifacts and Evidence](Artifacts_and_Evidence.md) — what has been prepared, what teaching delivery is documented, and what remains private or unverified.
 
 ## What Is and Isn't Documented Yet
 
 I use a private Google Sheets tracker for planned and delivered topics. GitHub holds the syllabus and meaningful teaching evidence, not a second copy of the day-to-day tracker. The [weekly update process](Artifacts_and_Evidence.md#low-maintenance-weekly-update-process) explains how I'll keep those records.
 
-Detailed instructor lesson plans are still in my working documents. The public material shows the course plan and preparation, not proof that every planned lesson has been taught or that students have completed projects.
+Detailed instructor lesson plans are still in my working documents. The public material includes weekly instructor teaching records as well as plans and preparation. It does not establish assessed student mastery or completed student projects.
 
 Robotics provides examples, but I'm not teaching physical robotics or using robot hardware in this course. I'm also preparing older laptops for an offline Scratch/Python lab; a completed lab setup has not yet been documented here.
 
 ## AI Transparency
 
-AI has helped substantially with curriculum research, comparisons, lesson drafts, exercises, and revisions. I made the decisions about the audience, progression, examples, and teaching requirements, and I'm responsible for what I actually teach.
-
-AI also drafted these GitHub documents from my direction, and I have used it to help revise their wording. This project involves much more AI-generated preparatory material than my [warehouse ETL workbook](../ETL/README.md). The [authorship document](AI_Collaboration_and_Authorship.md) explains the difference.
+This is an AI-led curriculum project. I use AI to help prepare the course materials.

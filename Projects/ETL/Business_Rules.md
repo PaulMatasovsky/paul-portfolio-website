@@ -1,4 +1,4 @@
-# ETL Business Rules
+# Automated Sorting Template — Business Rules
 
 **AI Transparency:** AI helped reconstruct and draft these rules from our earlier discussions and the workbook itself. I also used AI to revise the wording.
 
