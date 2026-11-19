@@ -24,7 +24,7 @@ Rules marked *(confirm with client)* are my call for this project; on a real job
 
 | ID | Rule |
 |---|---|
-| BR-01 | Each CSV is imported into its own LibreOffice Calc template, offline, with every column as text. While I build, the templates live in Google Sheets so my progress is public, so every formula must also work in LibreOffice and Excel. |
+| BR-01 | Each CSV is imported into its own LibreOffice Calc template, offline, with every column as text. While I build, they live in Google Sheets so my progress is public. Every formula has to work in Google Sheets, LibreOffice and Excel. |
 | BR-02 | Columns are found by heading, not position. Case, spaces, dashes and underscores don't matter. |
 | BR-03 | Dropped: Last Modified (the old system's timestamp) and Booked By (inconsistent free text). Everything else is kept. |
 | BR-04 | Referral Source is kept, optional, because it shows the practice where to spend on marketing. |
