@@ -1,4 +1,4 @@
--- Practice Data Migration: target tables for Supabase (PostgreSQL). AI-drafted.
+-- Practice Data Migration: target tables for Supabase (PostgreSQL). AI-drafted from my business rules.
 -- Run in the Supabase SQL Editor, then import clients before appointments.
 -- Column names match the Final tabs' headers.
 

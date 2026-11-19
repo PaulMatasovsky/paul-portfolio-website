@@ -11,7 +11,7 @@ A fictional therapy practice is moving from "OldChart EHR" to a new system. The 
 ## How It Works
 
 1. **Extract:** [clients.csv](Data/Raw/clients.csv) (198 rows) and [appointments.csv](Data/Raw/appointments.csv) (580 rows).
-2. **Transform:** Two Google Sheets templates built on the pattern from my [Automated Sorting Template](../ETL/), one per file. Each row is loaded, held, rejected or removed under the [business rules](Business_Rules.md), and loaded rows that need follow-up are flagged. The data is synthetic, so I'm building in the open. With real health data, I'd run the same templates offline to keep it private under HIPAA.
+2. **Transform:** Two templates, one per file, built on the pattern from my [Automated Sorting Template](../ETL/). Each row is loaded, held, rejected or removed under the [business rules](Business_Rules.md), and loaded rows that need follow-up are flagged. The finished templates run in LibreOffice Calc, offline, the way health data should be handled under HIPAA. I'm building them in Google Sheets only so anyone can watch the build and check my progress.
 3. **Load:** Into PostgreSQL on Supabase, clients first ([table setup](SQL/01_create_tables.sql)).
 4. **Validate:** Row counts must reconcile, and SQL checks look for duplicates, orphans and broken rules ([test cases](Testing/Test-Cases.md)).
 
@@ -39,4 +39,4 @@ A fictional therapy practice is moving from "OldChart EHR" to a new system. The 
 
 This is a **human-led** project. I write every formula in the templates and the SQL validation queries, and the business decisions are mine. AI acts as a guide while I build: hints and which functions to look at, not finished formulas.
 
-AI generated the synthetic data and an answer key of the problems planted in it, and drafted the table setup script, business rules, test cases and this README. I'll publish the generator and answer key once I finish, so my results can be checked against them.
+AI generated the synthetic data and an answer key of the problems planted in it. It also drafted the table setup script, business rules, test cases and this README from my discussions with it; the decisions in them are mine, and I review every change. I'll publish the generator and answer key once I finish, so my results can be checked against them.

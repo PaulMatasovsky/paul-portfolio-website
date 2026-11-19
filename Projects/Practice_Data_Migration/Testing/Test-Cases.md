@@ -1,6 +1,6 @@
 # Test Cases
 
-- **Area:** Google Sheets templates (and their `.xlsx` downloads), Supabase load
+- **Area:** LibreOffice Calc templates (built in Google Sheets), Supabase load
 - **Author / date:** Paul Matasovsky, 2026-11-17. AI drafted these from our discussion; I reviewed them.
 
 Not run yet. Results go in the [execution log](Execution-Log.md).
@@ -99,9 +99,9 @@ Not run yet. Results go in the [execution log](Execution-Log.md).
 | 1 | Count rows in each table. | Matches the Final counts on each QA tab. |
 | 2 | Run each validation query. | Each returns 0 rows. |
 
-## TC-010: Templates work as Excel files
+## TC-010: Templates work outside Google Sheets
 
-- **Why:** The templates can be downloaded as `.xlsx`, so every formula must work outside Google Sheets.
+- **Why:** The finished templates run in LibreOffice Calc and are published as `.xlsx`, so every formula has to survive the move from Google Sheets.
 - **Setup:** Both finished templates, cleared of data.
 
 | Step | Action | Expected result |
