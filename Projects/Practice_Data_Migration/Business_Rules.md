@@ -1,6 +1,6 @@
 # Practice Data Migration — Business Rules
 
-Every row in the OldChart export ends in exactly one outcome. If a row meets more than one, the first in this order wins: Remove, Reject, Hold, Load.
+Every row in the OldChart export ends in exactly one of four outcomes:
 
 | Outcome | Meaning |
 |---|---|
@@ -9,14 +9,14 @@ Every row in the OldChart export ends in exactly one outcome. If a row meets mor
 | **Hold** | Belongs, but someone has to supply or correct something first. Listed for the practice to fix and release. |
 | **Load** | Goes into the new system. |
 
-Two markers sit on top of the outcome and don't change it:
+Two markers sit on top of the outcome:
 
-| Marker | Meaning |
-|---|---|
-| **Fix** | Formatting was cleaned automatically. Not counted. |
-| **Flag** | Loaded, and listed for follow-up. Only loaded rows are flagged. |
+- **Fixed:** formatting was cleaned. Any row can be fixed; it isn't counted.
+- **Flagged:** loaded, but listed for follow-up. Only loaded rows are flagged; a held or rejected row lists all its problems in its reason.
 
-My guiding rule: **hold what belongs, reject only what doesn't.** These are real people with real appointments, so a clerical error shouldn't cost anyone a visit. If someone could look up or correct the problem, it's a Hold.
+If a row meets more than one outcome, the first one in this order wins: Remove, Reject, Hold, Load.
+
+My guiding rule: **hold what belongs, reject only what doesn't.** These are real people with real appointments, so a clerical error shouldn't cost anyone a visit.
 
 Rules marked *(confirm with client)* are my call for this project; on a real job I'd check them first.
 
