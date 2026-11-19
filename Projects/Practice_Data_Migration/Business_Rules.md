@@ -1,14 +1,20 @@
 # Practice Data Migration — Business Rules
 
-Every row in the OldChart export gets one of five outcomes:
+Every row in the OldChart export ends in exactly one of four outcomes:
 
 | Outcome | Meaning |
 |---|---|
-| **Fix** | Cleaned automatically; formatting only. |
-| **Flag** | Loaded, and listed for follow-up. |
+| **Load** | Goes into the new system, cleaned if needed. |
 | **Hold** | Not loaded yet; listed so someone can fix and release it. |
 | **Reject** | Doesn't belong in the new system; listed and kept out. |
 | **Remove** | Dropped and counted: duplicates, blank rows, test records. |
+
+Two markers sit on top of the outcome:
+
+- **Fixed:** formatting was cleaned. Any row can be fixed; it isn't counted.
+- **Flagged:** loaded, but listed for follow-up. Only loaded rows are flagged; a held or rejected row lists all its problems in its reason.
+
+If a row meets more than one outcome, the first one in this order wins: Remove, Reject, Hold, Load.
 
 My guiding rule: **hold what belongs, reject only what doesn't.** These are real people with real appointments, so a clerical error shouldn't cost anyone a visit.
 

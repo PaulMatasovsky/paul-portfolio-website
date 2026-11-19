@@ -11,7 +11,7 @@ A fictional therapy practice is moving from "OldChart EHR" to a new system. The 
 ## How It Works
 
 1. **Extract:** [clients.csv](Data/Raw/clients.csv) (198 rows) and [appointments.csv](Data/Raw/appointments.csv) (580 rows).
-2. **Transform:** Two LibreOffice Calc workbooks built on the pattern from my [Automated Sorting Template](../ETL/). Each row is fixed, flagged, held, rejected or removed under the [business rules](Business_Rules.md). The cleaning happens offline, as health data would be handled under HIPAA.
+2. **Transform:** Two LibreOffice Calc workbooks built on the pattern from my [Automated Sorting Template](../ETL/). Each row is loaded, held, rejected or removed under the [business rules](Business_Rules.md), and loaded rows that need follow-up are flagged. The cleaning happens offline, as health data would be handled under HIPAA.
 3. **Load:** Into PostgreSQL on Supabase, clients first ([table setup](SQL/01_create_tables.sql)).
 4. **Validate:** Row counts must reconcile, and SQL checks look for duplicates, orphans and broken rules ([test cases](Testing/Test-Cases.md)).
 
@@ -26,7 +26,7 @@ A fictional therapy practice is moving from "OldChart EHR" to a new system. The 
 | Held | | |
 | Rejected | | |
 | Removed | | |
-| Flagged for follow-up | | |
+| Flagged (part of Loaded) | | |
 
 ## Still to Come
 
