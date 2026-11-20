@@ -10,6 +10,15 @@ A fictional therapy practice is moving from "OldChart EHR" to a new system. The 
 
 **Out of scope:** couples and family sessions. Each appointment belongs to one client, and records that look shared are held or flagged for review ([BR-33](Business_Rules.md#relationships)).
 
+Supporting them would mean a separate participants table, with one row for each person in each session. Before any session could be assigned, the practice would have to decide:
+
+- **Billing:** which person the claim is billed under, whose insurance and copay apply, and what happens when the partners have different plans.
+- **Clinicians:** what to do when the partners have different primary clinicians.
+- **Records and privacy:** whether a shared note goes in one chart or both, and how to keep one partner from seeing the other's individual records.
+- **Splitting combined records:** which person keeps the original ID and appointment history, and who gets the new one.
+
+Each of these needs the practice's sign-off, so I've left them out rather than guess.
+
 ## How It Works
 
 1. **Extract:** [clients.csv](Data/Raw/clients.csv) (198 rows) and [appointments.csv](Data/Raw/appointments.csv) (580 rows).
