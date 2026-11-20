@@ -8,6 +8,8 @@ A fictional therapy practice is moving from "OldChart EHR" to a new system. The 
 
 **All data is synthetic.** Names, IDs, phones (555-01xx), emails (example.com) and addresses are made up.
 
+**Out of scope:** couples and family sessions. Each appointment belongs to one client, and records that look shared are held or flagged for review ([BR-33](Business_Rules.md#relationships)).
+
 ## How It Works
 
 1. **Extract:** [clients.csv](Data/Raw/clients.csv) (198 rows) and [appointments.csv](Data/Raw/appointments.csv) (580 rows).

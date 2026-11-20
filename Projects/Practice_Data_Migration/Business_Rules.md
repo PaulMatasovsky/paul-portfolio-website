@@ -76,6 +76,7 @@ Rules marked *(confirm with client)* are my call for this project; on a real job
 | BR-25 | An appointment whose client ID isn't in the clients file → **Hold**, with a reason to check the ID or add the client. |
 | BR-26 | An appointment whose client was held or rejected → **Hold**. It's still a real visit; the practice decides. |
 | BR-27 | Clients load before appointments, so the database can confirm every link. |
+| BR-33 | Couples and family sessions are out of scope: each appointment belongs to one client. A 90847 session loads under the client billed for it. A client record that holds two people (a name with "&" or " and ") → **Hold** for the practice to split into two clients. Two clients booked with the same clinician at the same start time are already flagged as a double booking (BR-20); the reason also asks whether it was one shared session *(confirm with client)*. |
 
 ## Checks
 

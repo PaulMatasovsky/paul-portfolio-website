@@ -120,3 +120,15 @@ Not run yet. Results go in the [execution log](Execution-Log.md).
 | 1 | Compare each Exceptions tab with the QA counts. | Held + rejected + removed + flagged rows on Exceptions match the QA tab. |
 | 2 | Pick 5 exception rows and find each one in RawData by source row number. | Each matches its source row, and its reason says what to do. |
 | 3 | Check an appointment with status "Kept". | It shows as Completed in Final (BR-09). |
+
+## TC-012: Shared sessions are caught, not loaded wrong
+
+- **Why:** BR-33.
+- **Setup:** Both templates loaded; add test rows, then remove them afterward.
+
+| Step | Action | Expected result |
+|---|---|---|
+| 1 | Change a client's first name to "John & Jane", then to "John and Jane". | Each time the client is held with a reason to split the record into two clients, and their appointments are held (BR-26). |
+| 2 | Check a client whose name contains "and" inside a word, such as Anderson or Sandra. | Not held. |
+| 3 | Check a 90847 appointment with one client ID. | Loads under that client. |
+| 4 | Book two clients with the same clinician, date and start time. | Both are flagged as a double booking, and the reason asks whether it was one shared session. |
