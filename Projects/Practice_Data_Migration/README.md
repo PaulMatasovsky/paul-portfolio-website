@@ -8,6 +8,19 @@ A fictional therapy practice is moving from "OldChart EHR" to a new system. The 
 
 **All data is synthetic.** Names, IDs, phones (555-01xx), emails (example.com) and addresses are made up.
 
+**Out of scope:** couples and family sessions. Each appointment belongs to one client, and records that look shared are held or flagged for review ([BR-33](Business_Rules.md#hold)).
+
+Supporting them would mean a separate participants table, with one row for each person in each session. Before any session could be assigned, the practice would have to decide:
+
+- **Billing:** which person the claim is billed under, whose insurance and copay apply, and what happens when the partners have different plans.
+- **Clinicians:** what to do when the partners have different primary clinicians.
+- **Records and privacy:** whether a shared note goes in one chart or both, and how to keep one partner from seeing the other's individual records.
+- **Splitting combined records:** which person keeps the original ID and appointment history, and who gets the new one.
+
+Each of these needs the practice's sign-off, so I've left them out rather than guess.
+
+**Not in this export:** clinical notes, diagnoses, treatment plans, uploaded documents, and billing and payment history. A full EHR switch moves these too; this project covers client and appointment records only. Gaps in what the export does have (guardians, policyholders, preferred names and pronouns, recurring series) are handled in [BR-34 to BR-37](Business_Rules.md#missing-from-the-export).
+
 ## How It Works
 
 1. **Extract:** [clients.csv](Data/Raw/clients.csv) (198 rows) and [appointments.csv](Data/Raw/appointments.csv) (580 rows).
