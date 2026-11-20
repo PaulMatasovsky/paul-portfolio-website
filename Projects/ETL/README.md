@@ -26,7 +26,7 @@ For reports with up to 2,000 source rows, preparation went from over an hour to 
 
 ## Workbook and Documentation
 
-- [Google Sheets workbook](https://docs.google.com/spreadsheets/d/1-h7BjpiVBTfXUplCqvHsUb9QcV0sLdSG287sO5V9kcM/edit?usp=sharing) — a copy of the version I developed for warehouse use.
+- [Google Sheets workbook](https://docs.google.com/spreadsheets/d/1QUu1qUqHAy9L7fLOKtwEz0lDb4WdMWFOdk5W_9fmyrg/edit?usp=sharing) — a copy of the version I developed for warehouse use.
 - [Excel version](https://github.com/PaulMatasovsky/paul-portfolio-website/blob/main/Projects/ETL/FINAL_Automated_Sorting_Template.xlsx) — available to download and inspect. I had to adjust some formulas for Excel, and it still prints extra blank rows. The working Google Sheets version does not have that problem.
 - [Business Rules](Business_Rules.md) — what the workbook needs to do.
 - [Technical Overview](Technical_Overview.md) — how the worksheets carry out those rules.
