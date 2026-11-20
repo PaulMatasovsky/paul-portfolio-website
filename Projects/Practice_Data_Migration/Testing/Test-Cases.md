@@ -132,3 +132,14 @@ Not run yet. Results go in the [execution log](Execution-Log.md).
 | 2 | Check a client whose name contains "and" inside a word, such as Anderson or Sandra. | Not held. |
 | 3 | Check a 90847 appointment with one client ID. | Loads under that client. |
 | 4 | Book two clients with the same clinician, date and start time. | Both are flagged as a double booking, and the reason asks whether it was one shared session. |
+
+## TC-013: Minors are held for a guardian
+
+- **Why:** BR-34, BR-26.
+- **Setup:** Both templates loaded; add test rows, then remove them afterward.
+
+| Step | Action | Expected result |
+|---|---|---|
+| 1 | Enter a birth date exactly 18 years before today. | Loads. |
+| 2 | Enter a birth date 18 years before tomorrow. | Held with a reason to add a parent or guardian. |
+| 3 | Check that client's appointments. | Each is held, with a reason naming the client to fix. |

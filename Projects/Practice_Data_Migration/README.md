@@ -19,6 +19,8 @@ Supporting them would mean a separate participants table, with one row for each 
 
 Each of these needs the practice's sign-off, so I've left them out rather than guess.
 
+**Not in this export:** clinical notes, diagnoses, treatment plans, uploaded documents, and billing and payment history. A full EHR switch moves these too; this project covers client and appointment records only. Gaps in what the export does have (guardians, policyholders, preferred names and pronouns, recurring series) are handled in [BR-34 to BR-37](Business_Rules.md#missing-from-the-export).
+
 ## How It Works
 
 1. **Extract:** [clients.csv](Data/Raw/clients.csv) (198 rows) and [appointments.csv](Data/Raw/appointments.csv) (580 rows).

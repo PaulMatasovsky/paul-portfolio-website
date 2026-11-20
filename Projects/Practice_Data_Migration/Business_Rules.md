@@ -78,6 +78,15 @@ Rules marked *(confirm with client)* are my call for this project; on a real job
 | BR-27 | Clients load before appointments, so the database can confirm every link. |
 | BR-33 | Couples and family sessions are out of scope: each appointment belongs to one client. A 90847 session loads under the client billed for it. A client record that holds two people (a name with "&" or " and ") → **Hold** for the practice to split into two clients. Two clients booked with the same clinician at the same start time are already flagged as a double booking (BR-20); the reason also asks whether it was one shared session *(confirm with client)*. |
 
+## Missing From the Export
+
+| ID | Rule |
+|---|---|
+| BR-34 | A client under 18 on the migration date needs a parent or guardian on file, and the export has no guardian fields → **Hold**, with a reason to add the guardian before the next visit. None occur in this export *(confirm with client)*. |
+| BR-35 | The export has the insurance provider and member ID, but not who holds the policy. Both load as they are, and the practice confirms the policyholder (often a spouse or parent) before the first claim. Not flagged row by row, since it applies to every insured client *(confirm with client)*. |
+| BR-36 | The export has legal names only, with no preferred name or pronouns. The legal name loads; preferred name and pronouns stay blank for the practice to ask the client. They are never guessed from a name. |
+| BR-37 | Each appointment loads as a single visit. The export doesn't show which visits belong to a recurring series, so the practice sets up repeating appointments again in the new system *(confirm with client)*. |
+
 ## Checks
 
 | ID | Rule |

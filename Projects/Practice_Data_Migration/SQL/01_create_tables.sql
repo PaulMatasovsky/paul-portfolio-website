@@ -1,6 +1,6 @@
 -- Practice Data Migration: target tables for Supabase (PostgreSQL). AI-drafted from my business rules.
 -- Run in the Supabase SQL Editor, then import clients before appointments.
--- Column names match the Final tabs' headers.
+-- Column names match the Final tabs' headers, except preferred_name and pronouns, which the export doesn't have (BR-36).
 
 drop table if exists appointments;
 drop table if exists clients;
@@ -9,6 +9,8 @@ create table clients (
     client_id          text primary key check (client_id ~ '^C[0-9]{4}$'),
     first_name         text not null check (btrim(first_name) <> ''),
     last_name          text not null check (btrim(last_name) <> ''),
+    preferred_name     text,                                        -- left null; the practice asks the client (BR-36)
+    pronouns           text,                                        -- left null; never guessed from a name (BR-36)
     date_of_birth      date not null check (date_of_birth > '1900-01-01' and date_of_birth <= current_date),
     phone              text check (phone ~ '^[0-9]{10}$'),          -- digits only; null if unknown or invalid
     email              text check (email ~ '^[^@[:space:]]+@[^@[:space:]]+\.[a-z]{2,}$'),
