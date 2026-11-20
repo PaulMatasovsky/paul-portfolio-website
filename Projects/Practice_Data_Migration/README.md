@@ -8,7 +8,7 @@ A fictional therapy practice is moving from "OldChart EHR" to a new system. The 
 
 **All data is synthetic.** Names, IDs, phones (555-01xx), emails (example.com) and addresses are made up.
 
-**Out of scope:** couples and family sessions. Each appointment belongs to one client, and records that look shared are held or flagged for review ([BR-33](Business_Rules.md#relationships)).
+**Out of scope:** couples and family sessions. Each appointment belongs to one client, and records that look shared are held or flagged for review ([BR-33](Business_Rules.md#hold)).
 
 Supporting them would mean a separate participants table, with one row for each person in each session. Before any session could be assigned, the practice would have to decide:
 
