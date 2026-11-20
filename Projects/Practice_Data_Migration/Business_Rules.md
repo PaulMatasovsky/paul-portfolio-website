@@ -24,7 +24,7 @@ Rules marked *(confirm with client)* are my call for this project; on a real job
 
 | ID | Rule |
 |---|---|
-| BR-01 | Each CSV opens in its own LibreOffice Calc workbook, offline, with every column imported as text. |
+| BR-01 | Each CSV is imported into its own LibreOffice Calc template, offline, with every column as text. While I build, they live in Google Sheets so my progress is public. Every formula has to work in Google Sheets, LibreOffice and Excel. |
 | BR-02 | Columns are found by heading, not position. Case, spaces, dashes and underscores don't matter. |
 | BR-03 | Dropped: Last Modified (the old system's timestamp) and Booked By (inconsistent free text). Everything else is kept. |
 | BR-04 | Referral Source is kept, optional, because it shows the practice where to spend on marketing. |
@@ -66,7 +66,7 @@ Rules marked *(confirm with client)* are my call for this project; on a real job
 |---|---|
 | BR-21 | Exact duplicate rows: keep one → **Remove** the rest. |
 | BR-22 | Same name and birth date under two IDs → **Flag** both. Never merge automatically. |
-| BR-23 | One ID on two different people: the client with the earlier intake date loads (if tied or blank, the first row); the other → **Hold** with a reason to assign a new ID. It's not the loaded client's fault, so their appointments under that ID load with them → **Flag** to confirm whose visit it was *(confirm with client)*. |
+| BR-23 | One ID on two different people: the client with the earlier intake date loads (if tied or blank, the first row). The other → **Hold** for a new ID. The loaded client did nothing wrong, so their appointments load too → **Flag** to confirm whose visit it was *(confirm with client)*. |
 | BR-24 | Rows named TEST → **Remove**. |
 
 ## Relationships
@@ -83,8 +83,8 @@ Rules marked *(confirm with client)* are my call for this project; on a real job
 |---|---|
 | BR-28 | Rows in = loaded + held + rejected + removed, for each file. If not, nothing loads. |
 | BR-29 | Every exception has a plain-language reason saying what to do. The reader shouldn't need to know how the pipeline works, the same idea as commenting code. |
-| BR-30 | One hold list for the practice covers held clients and held appointments, built in the appointments template because it has both. It shows each client's next appointment, soonest first, so urgent fixes happen before check-in. |
+| BR-30 | One hold list covers held clients and held appointments. It lives in the appointments template, which has both, and shows each client's next appointment, soonest first, so urgent fixes happen before check-in. |
 | BR-31 | A row is rejected only if the record is out of scope, not allowed to move (retention period or deletion request), or impossible to identify *(confirm with client)*. Never for unpaid balances or missed visits. None occur in this export. |
-| BR-32 | The two files stay separate, since one client has many appointments. Each template outputs a Final tab (loaded rows, flagged ones included) and an Exceptions tab: every held, rejected and removed row, plus the flagged rows, with the file, source row number, record ID, outcome and reason. Exceptions are exported as CSV and can also load into a text-only `migration_exceptions` table with no link to clients, so every source row has a record. |
+| BR-32 | The two files stay separate, since one client has many appointments. Each template has a Final tab of loaded rows and an Exceptions tab listing every held, rejected, removed and flagged row with its source row, record ID, outcome and reason. The Exceptions tabs can also load into a text-only `migration_exceptions` table, so every source row has a record in the database. |
 
 **AI transparency:** AI drafted these rules from my conversation with it; the decisions are mine.

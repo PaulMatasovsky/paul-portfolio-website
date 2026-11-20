@@ -1,9 +1,9 @@
 # Test Cases
 
-- **Area:** LibreOffice Calc templates (and their `.xlsx` copies), Supabase load
+- **Area:** LibreOffice Calc templates (built in Google Sheets), Supabase load
 - **Author / date:** Paul Matasovsky, 2026-11-17. AI drafted these from our discussion; I reviewed them.
 
-Not run yet. Results go in the execution log.
+Not run yet. Results go in the [execution log](Execution-Log.md).
 
 ## TC-001: Every row is accounted for
 
@@ -68,7 +68,7 @@ Not run yet. Results go in the execution log.
 
 | Step | Action | Expected result |
 |---|---|---|
-| 1 | Close the template without saving, reopen it, and import the same file again. | RawData starts empty; Final matches the reference copy exactly. |
+| 1 | Make a fresh copy of the blank template and import the same file. | Final matches the reference copy exactly. |
 
 ## TC-007: The database refuses bad data
 
@@ -99,15 +99,15 @@ Not run yet. Results go in the execution log.
 | 1 | Count rows in each table. | Matches the Final counts on each QA tab. |
 | 2 | Run each validation query. | Each returns 0 rows. |
 
-## TC-010: Templates survive saving as Excel files
+## TC-010: Templates work outside Google Sheets
 
-- **Why:** The templates are published as `.xlsx`, so every formula must survive the conversion.
+- **Why:** The finished templates run in LibreOffice Calc and are published as `.xlsx`, so every formula has to survive the move from Google Sheets.
 - **Setup:** Both finished templates, cleared of data.
 
 | Step | Action | Expected result |
 |---|---|---|
-| 1 | Save each template as `.xlsx` and close it. | No warning about lost features, or the warning is noted. |
-| 2 | Reopen each `.xlsx` and import its CSV again. | No error values (#NAME?, #VALUE!, Err:); Final and QA match the LibreOffice results. |
+| 1 | Download each template as `.xlsx` and open it in LibreOffice Calc. | No warning about lost features, or the warning is noted. |
+| 2 | Import its CSV again. | No error values (#NAME?, #VALUE!, Err:); Final and QA match the Google Sheets results. |
 | 3 | If Excel is available, open the `.xlsx` there too. | Same results as step 2. |
 
 ## TC-011: Every exception has a record

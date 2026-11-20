@@ -11,7 +11,7 @@ A fictional therapy practice is moving from "OldChart EHR" to a new system. The 
 ## How It Works
 
 1. **Extract:** [clients.csv](Data/Raw/clients.csv) (198 rows) and [appointments.csv](Data/Raw/appointments.csv) (580 rows).
-2. **Transform:** Two LibreOffice Calc workbooks built on the pattern from my [Automated Sorting Template](../ETL/). Each row is loaded, held, rejected or removed under the [business rules](Business_Rules.md), and loaded rows that need follow-up are flagged. The cleaning happens offline, as health data would be handled under HIPAA.
+2. **Transform:** Two templates, one per file, built on the pattern from my [Automated Sorting Template](../ETL/). Each row is loaded, held, rejected or removed under the [business rules](Business_Rules.md), and loaded rows that need follow-up are flagged. The finished templates run in LibreOffice Calc, offline, the way health data should be handled under HIPAA. I'm building them in Google Sheets only so anyone can watch the build and check my progress: [Clients template](https://docs.google.com/spreadsheets/d/15_gGBT6n25xQkl7i5VrP8VnQGjEmgo6A4orhkXxSW0g/edit?usp=sharing) and [Appointments template](https://docs.google.com/spreadsheets/d/17NDmtSCEUpI52yS8T974IYPIfXCzRfhJUM-9XUC5G0g/edit?usp=sharing) (view only). Each handles up to 1,000 rows and checks for overflow.
 3. **Load:** Into PostgreSQL on Supabase, clients first ([table setup](SQL/01_create_tables.sql)).
 4. **Validate:** Row counts must reconcile, and SQL checks look for duplicates, orphans and broken rules ([test cases](Testing/Test-Cases.md)).
 
@@ -30,13 +30,13 @@ A fictional therapy practice is moving from "OldChart EHR" to a new system. The 
 
 ## Still to Come
 
-- Clients and Appointments templates (published as `.xlsx`)
+- `.xlsx` downloads of the finished templates
 - SQL validation queries and their results
 - Test results and screenshots
 - Why I chose this project, decision records, and what I learned
 
 ## AI Transparency
 
-This is a **human-led** project. I'm building the workbooks and writing the SQL validation queries, and the business decisions are mine.
+This is a **human-led** project. I write every formula in the templates and the SQL validation queries, and the business decisions are mine. AI acts as a guide while I build: hints and which functions to look at, not finished formulas.
 
-AI generated the synthetic data and an answer key of the problems planted in it, and drafted the table setup script, business rules, test cases and this README. I'll publish the generator and answer key once I finish, so my results can be checked against them.
+AI generated the synthetic data and an answer key of the problems planted in it. It also drafted the table setup script, business rules, test cases and this README from my discussions with it; the decisions in them are mine, and I review every change. I'll publish the generator and answer key once I finish, so my results can be checked against them.
