@@ -1,7 +1,9 @@
 # SQL Refresher — Inventory Data Checks
 
-**Project status:** **In Progress** · **Activity:** Active (planning; implementation not started)  
+**Project status:** **In Progress** · **Activity:** Paused (planning only; no SQL written yet)  
 **Approach:** **AI-led**
+
+**On hold (Nov 2026):** I'm doing my SQL practice inside the [Practice Data Migration](../Practice_Data_Migration/) project for now, where I write the validation queries myself against real tables. When that's done, I plan to come back here and load the output of my [ETL workbook](../ETL/) into this inventory design, so the two projects connect. The design notes below stay as they are.
 
 ## Why I'm Doing This
 
