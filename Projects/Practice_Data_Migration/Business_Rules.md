@@ -33,7 +33,7 @@ The rules are grouped by what they do to a row, so you can see at a glance what 
 
 | ID | File | Rule |
 |---|---|---|
-| BR-31 | Both | Only if the record is out of scope, not allowed to move (retention period or deletion request), or impossible to identify *(confirm with client)*. Never for unpaid balances or missed visits. None occur in this export. |
+| BR-31 | Both | Only if the record is out of scope, not allowed to move (retention period or deletion request), or impossible to identify. Out of scope means the practice didn't ask to move it: a clinician who isn't joining the new system, appointments before the history cutoff date the practice chooses, or records from another location or practice that ended up in the same export *(confirm with client)*. An unknown clinician spelling is flagged, not rejected (BR-07), since a typo can't be told apart from someone who left. Never for unpaid balances or missed visits. None occur in this export. |
 
 ## Hold
 
